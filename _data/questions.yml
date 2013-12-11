@@ -1,0 +1,60 @@
+- num: 1
+  text: Have you faced problems when trying to access online services in an EU Member State other than the one in which you live?
+  to: enduser
+  type: multiple_choice
+  explanation: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  options:
+  - label: 'Yes'
+    details: "Please provide examples indicating the Member State, the sector and the type of content concerned (e.g. premium content such as certain films and TV series, audio-visual content in general, music, e-books, magazines, journals and newspapers, games, applications and other software)"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P451
+      - action: paste
+        key: P452
+      - action: remove
+        key: P453
+  - label: 'No'
+    odf:
+      - action: mark
+        key: P454
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P455
+
+- num: 2
+  text: Have you faced problems when seeking to provide online services across borders in the EU?
+  to: service provider
+  type: multiple_choice
+  explanation: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  options:
+  - label: 'Yes'
+    details: "Please explain whether such problems, in your experience, are related to copyright or to other issues (e.g. business decisions relating to the cost of providing services across borders, compliance with other laws such as consumer protection)? Please provide examples indicating the Member State, the sector and the type of content concerned (e.g. premium content such as certain films and TV series, audio-visual content in general, music, e-books, magazines, journals and newspapers, games, applications and other software)."
+    fulltext: true
+    odf:
+      - action: mark
+        key: P465
+      - action: paste
+        key: P466
+      - action: remove
+        key: P467
+  - label: 'No'
+    odf:
+      - action: mark
+        key: P468
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P469
+
+- num: 3
+  text: "How often are you asked to grant multi-territorial licences? Please indicate, if possible, the number of requests per year and provide examples indicating the Member State, the sector and the type of content concerned."
+  to: right holder or collective management organisation
+  type: open_question
+  explanation: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  odf:
+    - action: paste
+      key: P487
+    - action: remove
+      key: P488
