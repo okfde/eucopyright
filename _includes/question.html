@@ -1,0 +1,50 @@
+<div class="row q-{{ question.num }}">
+  <div class="col-lg-8">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          {% if question.text %}
+            {{ question.text }}
+          {% else %}
+            {% for q in question.question %}
+              <div>
+                <small>To {{ q.to }}</small><br/>
+                {{ q.text }}
+              </div>
+            {% endfor %}
+          {% endif %}
+        </h3>
+      </div>
+      <div class="panel-body">
+        {% if question.type == 'multiple_choice' %}
+          {% for option in question.options %}
+            <div class="radio">
+              <label>
+                <input type="radio" name="q-{{ question.num }}" id="q-{{ question.num }}-{{ forloop.index0 }}" value="option2">
+                <strong>{{ option.label }}</strong>
+              </label>
+              {% if option.fulltext %}
+                <div class="radio-text">
+                  <label for="q-{{ question.num }}-{{ forloop.index0 }}-text">
+                   {{ option.details }}
+                  </label>
+                  <textarea class="form-control" id="q-{{ question.num }}-{{ forloop.index0 }}-text"></textarea>
+                </div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        {% elsif question.type == 'open_question' %}
+          <textarea class="form-control" id="q-{{ question.num }}-text"></textarea>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    {% if question.explanation %}
+    <h4>Explanation</h4>
+    <p>
+      {{ question.explanation }}
+    </p>
+    {% endif %}
+  </div>
+</div>

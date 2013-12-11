@@ -1,0 +1,45 @@
+<div class="pull-right">
+  <a href="#intro-2e" class="toggle">Show introduction</a>
+</div>
+<div id="intro-2e" style="display:none" class="row">
+  <div class="col-lg-8">
+    <h3>
+      Is there a need for more clarity as regards the scope of what needs to be authorised (or not) in digital transmissions?
+    </h3>
+    <h4>
+      1. The definition of the rights involved in digital transmissions
+    </h4>
+    <p>
+      The EU framework for the protection of copyright and related rights in the digital environment is largely established by Directive 2001/29/EC<sup><a class="sdfootnoteanc" name="sdfootnote16anc" href="#sdfootnote16sym">16</a></sup> on the harmonisation of certain aspects of copyright and related rights in the information society. Other EU directives in this field that are relevant in the online environment are those relating to the protection of software<sup><a class="sdfootnoteanc" name="sdfootnote17anc" href="#sdfootnote17sym">17</a></sup> and databases<sup><a class="sdfootnoteanc" name="sdfootnote18anc" href="#sdfootnote18sym">18</a></sup>.
+    </p>
+    <p>
+      Directive 2001/29/EC harmonises the rights of authors and neighbouring rightholders<sup><a class="sdfootnoteanc" name="sdfootnote19anc" href="#sdfootnote19sym">19</a></sup> which are essential for the transmission of digital copies of works (e.g. an e-book) and other protected subject matter (e.g. a record in a MP3 format) over the internet or similar digital networks.
+    </p>
+    <p>
+      The most relevant rights for digital transmissions are the reproduction right, i.e. the right to authorise or prohibit the making of copies<sup><a class="sdfootnoteanc" name="sdfootnote20anc" href="#sdfootnote20sym">20</a></sup>, (notably relevant at the start of the transmission – e.g. the uploading of a digital copy of a work to a server in view of making it available – and at the users’ end – e.g. when a user downloads a digital copy of a work) and the communication to the public/making available right, i.e. the rights to authorise or prohibit the dissemination of the works in digital networks<sup><a class="sdfootnoteanc" name="sdfootnote21anc" href="#sdfootnote21sym">21</a></sup>. These rights are intrinsically linked in digital transmissions and both need to be cleared.
+    </p>
+
+    <h4>2. The act of “making available”</h4>
+    <p>
+      Directive 2001/29/EC specifies neither <U>wh</U><U>at</U> is covered by the making available right (e.g. the upload, the accessibility by the public, the actual reception by the public) nor <U>where</U> the act of “making available” takes place. This does not raise questions if the act is limited to a single territory. Questions arise however when the transmission covers several territories and rights need to be cleared (does the act of &quot;making available&quot; happen in the country of the upload only? in each of the countries where the content is potentially accessible? in each of the countries where the content is effectively accessed?). The most recent case law of the Court of Justice of the European Union (CJEU) suggests that a relevant criterion is the “targeting” of a certain Member State's public<sup><a class="sdfootnoteanc" name="sdfootnote22anc" href="#sdfootnote22sym">22</a></sup>. According to this approach the copyright-relevant act (which has to be licensed) occurs at least in those countries which are “targeted” by the online service provider. A service provider “targets” a group of customers residing in a specific country when it directs its activity to that group, e.g. via advertisement, promotions, a language or a currency specifically targeted at that group.
+    </p>
+  </div>
+  <div class="col-lg-4">
+    <h4>Summary</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+</div>
+
+{% for question_num in (8..9) %}
+  {% for question in site.data.questions %}
+    {% if question.num == question_num %}
+      {% include question.html %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+<h4>
+  1. The definition of the rights involved in digital transmissions
+</h4>

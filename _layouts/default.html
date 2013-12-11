@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-spy="scroll" data-target=".side-navbar">
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <form class="navbar-form navbar-left" role="search">
+    <button id="compile" type="submit" class="btn btn-default">Download ODT</button>
+  </form>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1>
+        <small>Inofficial web form for the</small><br/>
+          Public Consultation<br/>
+          on the review of the EU copyright rules
+      </h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-2">
+      <div class="side-navbar">
+        <ul class="nav">
+          <li>
+            <a href="#intro">Introduction</a>
+          </li>
+          <li>
+            <a href="#rights-single-market">Rights and the functioning of the Single Market</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-10">
+
+      {{ content }}
+
+    </div>
+  </div> <!-- /.row -->
+</div> <!-- /.container -->
+
+<!-- Modal -->
+<div class="modal fade" id="download-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Download</h4>
+      </div>
+      <div class="modal-body">
+        <p>Please send the downloaded document to <a href="mailto:markt-copyright-consultation@ec.europa.eu">markt-copyright-consultation@ec.europa.eu</a>.
+        </p>
+        <p>The <a href="http://ec.europa.eu/internal_market/consultations/2013/copyright-rules/docs/privacy-statement_en.pdf">Privacy statement of the European Commission</a> applies.</p>
+
+      </div>
+      <div class="modal-footer">
+        <a id="download" href="" class="pull-right btn btn-primary disabled">Download</a>
+        <div class="pull-left" id="download-preparing">Please wait while download is preparing...</div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jszip.js"></script>
+<script type="text/javascript" src="js/eucopyright.js"></script>
+</body>
+</html>
