@@ -317,7 +317,12 @@ $(function(){
 
   $('.toggle').click(function(e){
     e.preventDefault();
-    $($(this).attr('href')).toggle();
+    var div = $($(this).attr('href'));
+    if (div.css('display') === 'block') {
+      div.slideUp();
+    } else {
+      div.slideDown();
+    }
   });
 
   setTimeout(function () {
