@@ -40,11 +40,11 @@
     </div>
   </div>
   <div class="col-lg-4 col-md-4">
-    {% if question.explanation %}
-    <h4>Explanation</h4>
-    <p>
-      {{ question.explanation }}
-    </p>
-    {% endif %}
+    <div id="q-{{ question.num }}-explanation" class="explanation"{% unless question.explanation %} style="display:none"{% endunless %}>
+      <h4>Explanation</h4>
+      <p class="explanation-text">
+        {{ question.explanation }}
+      </p>
+    </div>
   </div>
 </div>
