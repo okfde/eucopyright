@@ -122,11 +122,11 @@ EUCopyright.compile = function(){
   }
 
   var underline = function(doc, key){
-    insertTextPropertiesStyle(doc, key, 'style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color"');
+    return insertTextPropertiesStyle(doc, key, 'style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color"');
   };
 
   var bold = function(doc, key){
-    insertTextPropertiesStyle(doc, key, 'fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"');
+    return insertTextPropertiesStyle(doc, key, 'fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"');
   }
 
   var applyOdf = function(text, odf, paste) {
@@ -157,7 +157,7 @@ EUCopyright.compile = function(){
     for (var i = 0; i < EUCopyright.questions.length; i += 1) {
       question = EUCopyright.questions[i];
 
-      if (question.type === 'multiple_choice') {
+      if (question.type === 'multiple_choice' && question.options) {
         for (j = 0; j < question.options.length; j += 1) {
           radio = $('#q-' + question.num + '-' + j);
           if (radio.prop('checked')) {
@@ -228,7 +228,6 @@ EUCopyright.compile = function(){
   var addFile = function(zip, zipPath){
     var d = $.Deferred();
     $.get('data/' + zipPath).done(function(parsed, mes, xhr){
-      console.log(arguments);
       zip.file(zipPath, xhr.responseText);
       d.resolve();
     });
@@ -276,7 +275,7 @@ EUCopyright.addAnswers = function(url){
       if (answers[EUCopyright.questions[i].num]) {
         question = EUCopyright.questions[i];
         answer = answers[question.num]
-        if (question.type === 'multiple_choice') {
+        if (question.type === 'multiple_choice' && question.options) {
           if (answer.option !== null) {
             $('#q-' + question.num + '-' + answer.option).prop('checked', true);
             if (question.options && question.options[answer.option].fulltext) {
