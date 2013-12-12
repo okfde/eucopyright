@@ -4,7 +4,7 @@
       <div class="panel-heading">
         <h3 class="panel-title">
           {% if question.text %}
-            {{ question.text }}
+            {{ question.num }}. {{ question.text }}
           {% else %}
             {% for q in question.question %}
               <div>
