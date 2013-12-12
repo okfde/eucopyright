@@ -11,6 +11,10 @@ h2 {
   font-weight: bold;
 }
 
+.side-navbar.affix {
+  position: static;
+}
+
 /* Show and affix the side nav when space allows it */
 @media (min-width: 992px) {
   .side-navbar .nav > .active > ul {
