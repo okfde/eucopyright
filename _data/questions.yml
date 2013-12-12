@@ -2,7 +2,7 @@
   text: Have you faced problems when trying to access online services in an EU Member State other than the one in which you live?
   to: enduser
   type: multiple_choice
-  explanation: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  explanation:
   options:
   - label: 'Yes'
     details: "Please provide examples indicating the Member State, the sector and the type of content concerned (e.g. premium content such as certain films and TV series, audio-visual content in general, music, e-books, magazines, journals and newspapers, games, applications and other software)"
@@ -27,7 +27,7 @@
   text: Have you faced problems when seeking to provide online services across borders in the EU?
   to: service provider
   type: multiple_choice
-  explanation: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  explanation:
   options:
   - label: 'Yes'
     details: "Please explain whether such problems, in your experience, are related to copyright or to other issues (e.g. business decisions relating to the cost of providing services across borders, compliance with other laws such as consumer protection)? Please provide examples indicating the Member State, the sector and the type of content concerned (e.g. premium content such as certain films and TV series, audio-visual content in general, music, e-books, magazines, journals and newspapers, games, applications and other software)."
@@ -52,7 +52,7 @@
   text: "How often are you asked to grant multi-territorial licences? Please indicate, if possible, the number of requests per year and provide examples indicating the Member State, the sector and the type of content concerned."
   to: right holder or collective management organisation
   type: open_question
-  explanation: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  explanation:
   odf:
     - action: paste
       key: P487
@@ -64,7 +64,7 @@
   text: If you have identified problems in the answers to any of the questions above – what would be the best way to tackle them?
   to: everyone
   type: open_question
-  explanation: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  explanation:
   odf:
     - action: paste
       key: P487
@@ -295,7 +295,7 @@
   type: multiple_choice
 
 - num: 48
-  text: If there are problems, how would they best be solved?
+  text: "If there are problems, how would they best be solved?"
   to: everyone
   type: open_question
 

@@ -1,5 +1,91 @@
 var EUCopyright = EUCopyright || {};
 
+EUCopyright.parseCSV = function( strData, strDelimiter ){
+    /*
+    This code taken from:
+    http://stackoverflow.com/a/1293163/114462
+    under CC-By-SA 3.0
+    */
+    // This will parse a delimited string into an array of
+    // arrays. The default delimiter is the comma, but this
+    // can be overriden in the second argument.
+      // Check to see if the delimiter is defined. If not,
+      // then default to comma.
+      strDelimiter = (strDelimiter || ",");
+
+      // Create a regular expression to parse the CSV values.
+      var objPattern = new RegExp(
+        (
+          // Delimiters.
+          "(\\" + strDelimiter + "|\\r?\\n|\\r|^)" +
+
+          // Quoted fields.
+          "(?:\"([^\"]*(?:\"\"[^\"]*)*)\"|" +
+
+          // Standard fields.
+          "([^\"\\" + strDelimiter + "\\r\\n]*))"
+        ),
+        "gi"
+        );
+
+
+      // Create an array to hold our data. Give the array
+      // a default empty first row.
+      var arrData = [[]];
+
+      // Create an array to hold our individual pattern
+      // matching groups.
+      var arrMatches = null;
+
+
+      // Keep looping over the regular expression matches
+      // until we can no longer find a match.
+      while (arrMatches = objPattern.exec( strData )){
+
+        // Get the delimiter that was found.
+        var strMatchedDelimiter = arrMatches[ 1 ];
+
+        // Check to see if the given delimiter has a length
+        // (is not the start of string) and if it matches
+        // field delimiter. If id does not, then we know
+        // that this delimiter is a row delimiter.
+        if (
+          strMatchedDelimiter.length &&
+          (strMatchedDelimiter != strDelimiter)
+          ){
+
+          // Since we have reached a new row of data,
+          // add an empty row to our data array.
+          arrData.push( [] );
+
+        }
+
+
+        // Now that we have our delimiter out of the way,
+        // let's check to see which kind of value we
+        // captured (quoted or unquoted).
+        if (arrMatches[ 2 ]){
+
+          // We found a quoted value. When we capture
+          // this value, unescape any double quotes.
+          var strMatchedValue = arrMatches[ 2 ].replace(
+            new RegExp( "\"\"", "g" ),
+            "\""
+            );
+
+        } else {
+          // We found a non-quoted value.
+          var strMatchedValue = arrMatches[ 3 ];
+
+        }
+        // Now that we have our value string, let's add
+        // it to the data array.
+        arrData[ arrData.length - 1 ].push( strMatchedValue );
+      }
+
+      // Return the parsed data.
+      return( arrData );
+    }
 
 EUCopyright.compile = function(){
   var escapeXML = function(str){
@@ -169,6 +255,47 @@ EUCopyright.compile = function(){
   return d;
 };
 
+EUCopyright.addAnswers = function(url){
+  $.get(url, function(text, status, xhr){
+    var csv = EUCopyright.parseCSV(xhr.responseText);
+    var answers = {};
+    var question, answer, num
+
+    for (var i = 1; i < csv.length; i += 1) {
+      var row = {};
+      for (var j = 0; j < csv[0].length; j += 1) {
+        row[csv[0][j]] = csv[i][j];
+      }
+      answers[parseInt(row['Question'], 10)] = {
+        option: row['Option'] ? parseInt(row['Option'], 10) - 1 : null,
+        answer: row['Answer'],
+        explanation: row['Explanation'],
+      };
+    }
+    for (i = 0; i < EUCopyright.questions.length; i += 1) {
+      if (answers[EUCopyright.questions[i].num]) {
+        question = EUCopyright.questions[i];
+        answer = answers[question.num]
+        if (question.type === 'multiple_choice') {
+          if (answer.option !== null) {
+            $('#q-' + question.num + '-' + answer.option).prop('checked', true);
+            if (question.options && question.options[answer.option].fulltext) {
+              $('#q-' + question.num + '-' + answer.option + '-text').val(answer.answer);
+            }
+          }
+        } else if (question.type == 'open_question') {
+          $('#q-' + question.num + '-text').val(answer.answer);
+        }
+        if (answer.explanation) {
+          $('#q-' + question.num + '-explanation').show().find('.explanation-text').text(answer.explanation);
+        } else {
+          $('#q-' + question.num + '-explanation').hide();
+        }
+      }
+    }
+  });
+};
+
 $(function(){
   $('#compile').click(function(e){
     e.preventDefault();
@@ -184,6 +311,10 @@ $(function(){
     $('#download-modal').modal();
   });
 
+  $('.suggested-answer').click(function(e){
+    e.preventDefault();
+    EUCopyright.addAnswers($(this).attr('href'));
+  });
 
   $('.toggle').click(function(e){
     e.preventDefault();
@@ -199,7 +330,6 @@ $(function(){
           var offsetTop      = $sideBar.offset().top;
           var sideBarMargin  = parseInt($sideBar.children(0).css('margin-top'), 10)
           var navOuterHeight = $('.navbar').height();
-          console.log(offsetTop - navOuterHeight - sideBarMargin);
           return (this.top = offsetTop - navOuterHeight - sideBarMargin)
         }
       , bottom: function () {
