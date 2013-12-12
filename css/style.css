@@ -7,6 +7,10 @@ h2 {
   padding-top: 70px;
 }
 
+.navbar-brand {
+  padding: 10px 10px;
+}
+
 .side-navbar .active {
   font-weight: bold;
 }
