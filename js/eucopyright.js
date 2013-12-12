@@ -188,5 +188,24 @@ $(function(){
   $('.toggle').click(function(e){
     e.preventDefault();
     $($(this).attr('href')).toggle();
-  })
+  });
+
+  setTimeout(function () {
+    var $sideBar = $('.side-navbar')
+
+    $sideBar.affix({
+      offset: {
+        top: function () {
+          var offsetTop      = $sideBar.offset().top;
+          var sideBarMargin  = parseInt($sideBar.children(0).css('margin-top'), 10)
+          var navOuterHeight = $('.navbar').height();
+          console.log(offsetTop - navOuterHeight - sideBarMargin);
+          return (this.top = offsetTop - navOuterHeight - sideBarMargin)
+        }
+      , bottom: function () {
+          return (this.bottom = $('.footer-row').outerHeight(true))
+        }
+      }
+    })
+  }, 100)
 });

@@ -2,11 +2,42 @@ body {
   padding-top: 70px;
 }
 
-p {
-  text-align: justify;
-  margin-top: 0.08in;
+h2 {
+  margin-top: 0px;
+  padding-top: 70px;
 }
 
-.top-bar {
-  position: fixed;
+.side-navbar .active {
+  font-weight: bold;
+}
+
+/* Show and affix the side nav when space allows it */
+@media (min-width: 992px) {
+  .side-navbar .nav > .active > ul {
+    display: block;
+  }
+  /* Widen the fixed sidebar */
+  .side-navbar.affix,
+  .side-navbar.affix-bottom {
+    width: 213px;
+  }
+  .side-navbar.affix {
+    position: fixed; /* Undo the static from mobile first approach */
+    top: 50px;
+  }
+  .side-navbar.affix-bottom {
+    position: absolute; /* Undo the static from mobile first approach */
+  }
+  .side-navbar.affix-bottom .bs-sidenav,
+  .side-navbar.affix .bs-sidenav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  /* Widen the fixed sidebar again */
+  .side-navbar.affix-bottom,
+  .side-navbar.affix {
+    width: 263px;
+  }
 }
