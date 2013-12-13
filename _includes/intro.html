@@ -21,6 +21,22 @@
 
   <div class="row">
     <div class="col-lg-8 col-md-8">
+      <h3>Preload answers</h3>
+      <p class="lead">The following organisations have provided answers that can be used and reviewed:</p>
+      <ul class="list-unstyled">
+      {% for answer in site.data.answers %}
+        <li>
+          <a href="{{ answer.data }}" class="suggested-answer btn btn-default">{{ answer.name }}</a>
+        </li>
+      {% endfor %}
+      </ul>
+      <p class="help-block">Click one to preload their answers. There are many questions, but we encourage you to review the answers organisations provide.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-8 col-md-8">
+      <h3>Let's get started!</h3>
       <div class="form-group">
         <label for="name">Name (optional)</label>
         <input type="text" class="form-control" id="name" placeholder="Optionally enter your name">
@@ -34,12 +50,15 @@
     </div>
   </div>
 
-  <h3>For organisations
-    <small>(if you are one)</small>
-  </h3>
-
-  <div class="row">
+  <div class="row well">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
     <div class="col-lg-8 col-md-8">
+      <h3>For organisations
+        <small>(if you are one)</small>
+      </h3>
+      <p>
+        In the interests of transparency, organisations (including, for example, NGOs, trade associations and commercial enterprises) are invited to provide the public with relevant information about themselves by registering in the <a href="http://ec.europa.eu/transparencyregister/info/homePage.do">Interest Representative Register and subscribing to its Code of Conduct</a>.
+      </p>
       <div class="form-group">
         <p>
           If you are a registered organisation, please indicate your Register ID number below. Your contribution will then be considered as representing the views of your organisation.
@@ -51,11 +70,6 @@
           Responses from organisations not registered will be published separately.
         </p>
       </div>
-    </div>
-    <div class="col-lg-4 col-md-4">
-      <p>
-        In the interests of transparency, organisations (including, for example, NGOs, trade associations and commercial enterprises) are invited to provide the public with relevant information about themselves by registering in the Interest Representative Register and subscribing to its Code of Conduct.
-      </p>
     </div>
   </div>
 
@@ -116,50 +130,53 @@
           <strong>Representative of publishers/producers/broadcasters</strong>
         </label>
       </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="typeofrespondent" id="typeofrespondent-intermediary" value="intermediary">
-          <strong>Intermediary/Distributor/Other service provider</strong>
-          <span class="help">
-            (e.g. online music or audiovisual service, games platform, social media, search engine, ICT industry)
-          </span>
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="typeofrespondent" id="typeofrespondent-representIntermediary" value="representIntermediary">
-          <strong>Representative of intermediaries/distributors/other service providers</strong>
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="typeofrespondent" id="typeofrespondent-collective" value="collective">
-          <strong>Collective Management Organisation</strong>
-        </label>
-      </div>
+      <a href="#more-typeofrespondent" class="toggle">Not one of these? Show more</a>
+      <div id="more-typeofrespondent" style="display:none">
+        <div class="radio">
+          <label>
+            <input type="radio" name="typeofrespondent" id="typeofrespondent-intermediary" value="intermediary">
+            <strong>Intermediary/Distributor/Other service provider</strong>
+            <span class="help">
+              (e.g. online music or audiovisual service, games platform, social media, search engine, ICT industry)
+            </span>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="typeofrespondent" id="typeofrespondent-representIntermediary" value="representIntermediary">
+            <strong>Representative of intermediaries/distributors/other service providers</strong>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="typeofrespondent" id="typeofrespondent-collective" value="collective">
+            <strong>Collective Management Organisation</strong>
+          </label>
+        </div>
 
-      <div class="radio">
-        <label>
-          <input type="radio" name="typeofrespondent" id="typeofrespondent-publicauthority" value="publicauthority">
-          <strong>Public authority</strong>
-        </label>
-      </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="typeofrespondent" id="typeofrespondent-publicauthority" value="publicauthority">
+            <strong>Public authority</strong>
+          </label>
+        </div>
 
-      <div class="radio">
-        <label>
-          <input type="radio" name="typeofrespondent" id="typeofrespondent-memberstate" value="memberstate">
-          <strong>Member State</strong>
-        </label>
-      </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="typeofrespondent" id="typeofrespondent-memberstate" value="memberstate">
+            <strong>Member State</strong>
+          </label>
+        </div>
 
-      <div class="radio">
-        <label>
-          <input type="radio" name="typeofrespondent" id="typeofrespondent-other" value="other">
-          <strong>Other</strong>
-        </label>
-        <div class="radio-text">
-          <label for="otherrespondent">Please explain</label>
-          <textarea class="form-control" id="typeofrespondent-other-text"></textarea>
+        <div class="radio">
+          <label>
+            <input type="radio" name="typeofrespondent" id="typeofrespondent-other" value="other">
+            <strong>Other</strong>
+          </label>
+          <div class="radio-text">
+            <label for="otherrespondent">Please explain</label>
+            <textarea class="form-control" id="typeofrespondent-other-text"></textarea>
+          </div>
         </div>
       </div>
     </div>

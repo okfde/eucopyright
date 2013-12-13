@@ -47,19 +47,6 @@ layout: default
 {% include intro.html %}
 
 <section>
-  <h3>Questionaire help</h3>
-  <p class="lead">The following organisations have provided answers that can be reviewed:</p>
-  <ul class="list-unstyled">
-  {% for answer in site.data.answers %}
-    <li>
-      <a href="{{ answer.data }}" class="suggested-answer btn btn-default">{{ answer.name }}</a>
-    </li>
-  {% endfor %}
-  </ul>
-  <p class="help-block">Click one to preload their answers.</p>
-</section>
-
-<section>
   <div class="page-header">
     <h2 id="rights-single-market">
       Rights and the functioning of the Single Market
