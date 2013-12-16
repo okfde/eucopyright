@@ -8,7 +8,12 @@ h2 {
 }
 
 .navbar-brand {
-  padding: 10px 10px;
+  margin-right: 2em;
+}
+
+.nav-btn {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .side-navbar .active {
