@@ -325,6 +325,10 @@ $(function(){
     }
   });
 
+  $('.radio-text textarea').on('keyup', function(){
+    $(this).parent().parent().find('input:not(checked)').prop('checked', true);
+  });
+
   setTimeout(function () {
     var $sideBar = $('.side-navbar')
 
