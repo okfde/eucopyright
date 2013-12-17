@@ -67,394 +67,1350 @@
   explanation:
   odf:
     - action: paste
-      key: P487
+      key: P492
     - action: remove
-      key: P488
+      key: P493
 
 - num: 5
   text: "Are there reasons why, even in cases where you hold all the necessary rights for all the territories in question, you would still find it necessary or justified to impose territorial restrictions on a service provider (in order, for instance, to ensure that access to certain content is not possible in certain European countries)?"
   to: "right holder, collective management organisation"
   type: multiple_choice
+  options:
+  - label: 'Yes'
+    details: "Please explain by giving examples"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P518
+      - action: paste
+        key: P519
+      - action: remove
+        key: P520
+  - label: 'No'
+    odf:
+      - action: mark
+        key: P521
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P522
 
 - num: 6
   text: "Are there reasons why, even in cases where you have acquired all the necessary rights for all the territories in question, you would still find it necessary or justified to impose territorial restrictions on the service recipient (in order for instance, to redirect the consumer to a different website than the one he is trying to access)?"
   to: "broadcaster, service provider"
   type: multiple_choice
+  options:
+  - label: 'Yes'
+    details: "Please explain by giving examples"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P546
+      - action: paste
+        key: P547
+      - action: remove
+        key: P548
+  - label: 'No'
+    odf:
+      - action: mark
+        key: P549
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P550
 
 - num: 7
-  text: "Are there reasons why, even in cases where you have acquired all the necessary rights for all the territories in question, you would still find it necessary or justified to impose territorial restrictions on the service recipient (in order for instance, to redirect the consumer to a different website than the one he is trying to access)?"
+  text: "Do you think that further measures (legislative or non-legislative, including market- led solutions) are needed at EU level to increase the cross-border availability of content services in the Single Market, while ensuring an adequate level of protection for right holders?"
   to: everyone
   type: multiple_choice
+  options:
+  - label: 'Yes'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P553
+      - action: paste
+        key: P554
+      - action: remove
+        key: P555
+  - label: 'No'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P556
+      - action: paste
+        key: P557
+      - action: remove
+        key: P558
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P559
 
 - num: 8
   text: Is the scope of the “making available” right in cross-border situations – i.e. when content is disseminated across borders – sufficiently clear?
   to: everyone
   type: multiple_choice
+  options:
+  - label: 'Yes'
+    odf:
+      - action: mark
+        key: P603
+  - label: 'No'
+    details: 'Please explain how this could be clarified and what type of clarification would be required (e.g. as in "targeting" approach explained above, as in "country of origin" approach)'
+    fulltext: true
+    odf:
+      - action: mark
+        key: P605
+      - action: paste
+        key: P608
+      - action: remove
+        key: P609
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P610
 
 - num: 9
   text: "Could a clarification of the territorial scope of the “making available” right have an effect on the recognition of your rights (e.g. whether you are considered to be an author or not, whether you are considered to have transferred your rights or not), on your remuneration, or on the enforcement of rights (including the availability of injunctive relief)?"
   to: right holder
   type: multiple_choice
+  options:
+  - label: 'Yes'
+    details: "Please explain how such potential effects could be addressed"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P650
+      - action: paste
+        key: P651
+      - action: remove
+        key: P652
+  - label: 'No'
+    odf:
+      - action: mark
+        key: P653
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P654
 
 - num: 10
   text: "Does the application of two rights to a single act of economic exploitation in the online environment (e.g. a download) create problems for you?"
   to: "service provider, right holder"
   type: multiple_choice
-
+  options:
+  - label: 'Yes'
+    details: 'Please explain what type of measures would be needed in order to address such problems (e.g. facilitation of joint licences when the rights are in different hands, legislation to achieve the "bundling of rights")'
+    fulltext: true
+    odf:
+      - action: mark
+        key: P666
+      - action: paste
+        key: P667
+      - action: remove
+        key: P668
+  - label: 'No'
+    odf:
+      - action: mark
+        key: P669
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P670
 
 - num: 11
   text: "Should the provision of a hyperlink leading to a work or other subject matter protected under copyright, either in general or under specific circumstances, be subject to the authorisation of the rightholder?"
   to: everyone
   type: multiple_choice
+  options:
+  - label: 'Yes'
+    details: "Please explain whether you consider this to be the case in general, or under specific circumstances, and why"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P676
+      - action: paste
+        key: P677
+      - action: remove
+        key: P678
+  - label: 'No'
+    details: "Please explain whether you consider this to be the case in general, or under specific circumstances, and why (e.g. because it does not amount to an act of communication to the public – or to a new public, or because it should be covered by a copyright exception)"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P679
+      - action: paste
+        key: P680
+      - action: remove
+        key: P681
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P682
 
 - num: 12
   text: "Should the viewing of a web-page where this implies the temporary reproduction of a work or other subject matter protected under copyright on the screen and in the cache memory of the user’s computer, either in general or under specific circumstances, be subject to the authorisation of the rightholder?"
   to: everyone
   type: multiple_choice
-
+  options:
+  - label: 'Yes'
+    details: "Please explain whether you consider this to be the case in general, or under specific circumstances, and why"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P684
+      - action: paste
+        key: P685
+      - action: remove
+        key: P686
+  - label: 'No'
+    details: "Please explain whether you consider this to be the case in general, or under specific circumstances, and why (e.g. because it is or should be covered by a copyright exception)"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P687
+      - action: paste
+        key: P688
+      - action: remove
+        key: P689
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P690
 
 - num: 13
   text: "Have you faced restrictions when trying to resell digital files that you have purchased (e.g. mp3 file, e-book)?"
   to: end user/consumer
   type: multiple_choice
-
+  options:
+  - label: 'Yes'
+    details: "Please explain by giving examples"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P715
+      - action: paste
+        key: P716
+      - action: remove
+        key: P717
+  - label: 'No'
+    odf:
+      - action: mark
+        key: P718
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P719
 
 - num: 14
   text: What would be the consequences of providing a legal framework enabling the resale of previously purchased digital content? Please specify per market (type of content) concerned.
   to: "right holder, service provider"
   type: open_question
-
+  odf:
+    - action: paste
+      key: P738
+    - action: remove
+      key: P739
 
 - num: 15
   text: Would the creation of a registration system at EU level help in the identification and licensing of works and other subject matter?
   to: everyone
   type: multiple_choice
-
+  options:
+  - label: 'Yes'
+    odf:
+      - action: mark
+        key: P744
+  - label: 'No'
+    odf:
+      - action: mark
+        key: P745
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P746
 
 - num: 16
   text: What would be the possible advantages of such a system?
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P750
+    - action: remove
+      key: P751
 
 - num: 17
   text: What would be the possible disadvantages of such a system?
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P755
+    - action: remove
+      key: P756
 
 - num: 18
   text: What incentives for registration by rightholders could be envisaged?
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P760
+    - action: remove
+      key: P761
 
 - num: 19
   text: "What should be the role of the EU in promoting the adoption of identifiers in the content sector, and in promoting the development and interoperability of rights ownership and permissions databases?"
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P769
+    - action: remove
+      key: P770
 
 - num: 20
   text: Are the current terms of copyright protection still appropriate in the digital environment?
   to: everyone
   type: multiple_choice
+  options:
+  - label: 'Yes'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P775
+      - action: paste
+        key: P776
+      - action: remove
+        key: P777
+  - label: 'No'
+    details: "Please explain if they should be longer or shorter"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P778
+      - action: paste
+        key: P779
+      - action: remove
+        key: P780
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P781
 
 - num: 21
   text: Are there problems arising from the fact that most limitations and exceptions provided in the EU copyright directives are optional for the Member States?
   to: everyone
   type: multiple_choice
+  options:
+  - label: 'Yes'
+    details: "Please explain by referring to specific cases"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P804
+      - action: paste
+        key: P805
+      - action: remove
+        key: P806
+  - label: 'No'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P807
+      - action: paste
+        key: P808
+      - action: remove
+        key: P809
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P810
 
 - num: 22
   text: "Should some/all of the exceptions be made mandatory and, if so, is there a need for a higher level of harmonisation of such exceptions?"
   to: everyone
   type: multiple_choice
+  options:
+  - label: 'Yes'
+    details: "Please explain by referring to specific cases"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P813
+      - action: paste
+        key: P814
+      - action: remove
+        key: P815
+  - label: 'No'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P816
+      - action: paste
+        key: P817
+      - action: remove
+        key: P818
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P819
 
 - num: 23
   text: "Should any new limitations and exceptions be added to or removed from the existing catalogue? Please explain by referring to specific cases"
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P830
+    - action: remove
+      key: P831
 
 - num: 24
   text: "Independently from the questions above, is there a need to provide for a greater degree of flexibility in the EU regulatory framework for limitations and exceptions?"
   to: everyone
   type: multiple_choice
+  options:
+  - label: 'Yes'
+    details: "Please explain why"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P838
+      - action: paste
+        key: P839
+      - action: remove
+        key: P840
+  - label: 'No'
+    details: "Please explain why"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P841
+      - action: paste
+        key: P842
+      - action: remove
+        key: P843
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P844
 
 - num: 25
   text: "If yes, what would be the best approach to provide for flexibility? (e.g. interpretation by national courts and the ECJ, periodic revisions of the directives, interpretations by the Commission, built-in flexibility, e.g. in the form of a fair-use or fair dealing provision / open norm, etc.)? Please explain indicating what would be the relative advantages and disadvantages of such an approach as well as its possible effects on the functioning of the Internal Market."
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P858
+    - action: remove
+      key: P859
 
 - num: 26
   text: "Does the territoriality of limitations and exceptions, in your experience, constitute a problem?"
   to: everyone
   type: multiple_choice
+  options:
+  - label: 'Yes'
+    details: "Please explain why and specify which exceptions you are referring to"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P862
+      - action: paste
+        key: P863
+      - action: remove
+        key: P864
+  - label: 'No'
+    details: "Please explain why and specify which exceptions you are referring to"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P865
+      - action: paste
+        key: P866
+      - action: remove
+        key: P867
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P868
 
 - num: 27
   text: "In the event that limitations and exceptions established at national level were to have cross-border effect, how should the question of “fair compensation” be addressed, when such compensation is part of the exception? (e.g. who pays whom, where?)"
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P872
+    - action: remove
+      key: P873
 
 - num: 28
   text: "(a) [In particular if you are an institutional user:] Have you experienced specific problems when trying to use an exception to preserve and archive specific works or other subject matter in your collection? (b) [In particular if you are a right holder:] Have you experienced problems with the use by libraries, educational establishments, museum or archives of the preservation exception?"
   to: switch
   type: multiple_choice
+  options:
+  - label: 'Yes'
+    details: "Please explain, by Member State, sector, and the type of use in question."
+    fulltext: true
+    odf:
+      - action: mark
+        key: P907
+      - action: paste
+        key: P908
+      - action: remove
+        key: P909
+  - label: 'No'
+    odf:
+      - action: mark
+        key: P910
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P911
 
 - num: 29
   text: "If there are problems, how would they best be solved?"
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P915
+    - action: remove
+      key: P916
 
 - num: 30
   text: "If your view is that a legislative solution is needed, what would be its main elements? Which activities of the beneficiary institutions should be covered and under which conditions?"
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P920
+    - action: remove
+      key: P921
 
 - num: 31
   text: "If your view is that a different solution is needed, what would it be?"
   to: everyone
   type: open_question
-
+  odf:
+    - action: paste
+      key: P925
+    - action: remove
+      key: P926
 
 - num: 32
   text: "(a) [In particular if you are an institutional user:] Have you experienced specific problems when trying to negotiate agreements with rights holders that enable you to provide remote access, including across borders, to your collections (or parts thereof) for purposes of research and private study? (b) [In particular if you are an end user/consumer:] Have you experienced specific problems when trying to consult, including across borders, works and other subject-matter held in the collections of institutions such as universities and national libraries when you are not on the premises of the institutions in question? (c) [In particular if you are a right holder:] Have you negotiated agreements with institutional users that enable those institutions to provide remote access, including across borders, to the works or other subject-matter in their collections, for purposes of research and private study?"
   to: switch
   type: open_question
+  odf:
+    - action: paste
+      key: P967
+    - action: remove
+      key: P968
 
 - num: 33
   text: "If there are problems, how would they best be solved?"
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P972
+    - action: remove
+      key: P973
 
 - num: 34
   text: "If your view is that a legislative solution is needed, what would be its main elements? Which activities of the beneficiary institutions should be covered and under which conditions?"
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P977
+    - action: remove
+      key: P978
 
 - num: 35
   text: "If your view is that a different solution is needed, what would it be?"
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P982
+    - action: remove
+      key: P983
 
 - num: 36
   text: "(a) [In particular if you are a library:] Have you experienced specific problems when trying to negotiate agreements to enable the electronic lending (e-lending), including across borders, of books or other materials held in your collection? (b) [In particular if you are an end user/consumer:] Have you experienced specific problems when trying to borrow books or other materials electronically (e-lending), including across borders, from institutions such as public libraries? (c) [In particular if you are a right holder:] Have you negotiated agreements with libraries to enable them to lend books or other materials electronically, including across borders?"
   to: switch
   type: multiple_choice
+  options:
+  - label: 'Yes'
+    details: "Please explain with specific examples"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1029
+      - action: paste
+        key: P1030
+      - action: remove
+        key: P1031
+  - label: 'No'
+    odf:
+      - action: mark
+        key: P1032
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P1033
 
 - num: 37
   text: "If there are problems, how would they best be solved?"
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P1038
+    - action: remove
+      key: P1039
 
 - num: 38
   text: "What differences do you see in the management of physical and online collections, including providing access to your subscribers? What problems have you encountered?"
   to: institutional user
   type: open_question
+  odf:
+    - action: paste
+      key: P1051
+    - action: remove
+      key: P1052
 
 - num: 39
   text: "What difference do you see between libraries’ traditional activities such as on-premises consultation or public lending and activities such as off-premises (online, at a distance) consultation and e-lending? What problems have you encountered?"
   to: right holder
   type: open_question
-
+  odf:
+    - action: paste
+      key: P1065
+    - action: remove
+      key: P1066
 
 - num: 40
   text: "Would it be necessary in your country to enact legislation to ensure that the results of the 2011 MoU (i.e. the agreements concluded between libraries and collecting societies) have a cross-border effect so that out of commerce works can be accessed across the EU?"
   to: "institutional user, engaging or wanting to engage in mass digitalisation, a right holder, collective management organisation"
   type: multiple_choice
+  options:
+  - label: 'Yes'
+    details: "Please explain why and how it could best be achieved"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1109
+      - action: paste
+        key: P1110
+      - action: remove
+        key: P1111
+  - label: 'No'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1112
+      - action: paste
+        key: P1113
+      - action: remove
+        key: P1114
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P1115
 
 - num: 41
   text: "Would it be necessary to develop mechanisms, beyond those already agreed for other types of content (e.g. for audio- or audio-visual collections, broadcasters’ archives)?"
   to: everyone
   type: multiple_choice
+  options:
+  - label: 'Yes'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1124
+      - action: paste
+        key: P1125
+      - action: remove
+        key: P1126
+  - label: 'No'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1127
+      - action: paste
+        key: P1128
+      - action: remove
+        key: P1129
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P1130
 
 - num: 42
   text: "(a) [In particular if you are an end user/consumer or an institutional user:] Have you experienced specific problems when trying to use works or other subject-matter for illustration for teaching, including across borders? (b) [In particular if you are a right holder:] Have you experienced specific problems resulting from the way in which works or other subject-matter are used for illustration for teaching, including across borders?"
   to: switch
   type: multiple_choice
-
+  options:
+  - label: 'Yes'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1168
+      - action: paste
+        key: P1169
+      - action: remove
+        key: P1170
+  - label: 'No'
+    odf:
+      - action: mark
+        key: P1171
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P1172
 
 - num: 43
   text: "If there are problems, how would they best be solved?"
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P1176
+    - action: remove
+      key: P1177
 
 - num: 44
   text: What mechanisms exist in the market place to facilitate the use of content for illustration for teaching purposes? How successful are they?
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P1181
+    - action: remove
+      key: P1182
 
 - num: 45
   text: "If your view is that a legislative solution is needed, what would be its main elements? Which activities of the beneficiary institutions should be covered and under what conditions?"
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P1186
+    - action: remove
+      key: P1187
 
 - num: 46
   text: "If your view is that a different solution is needed, what would it be?"
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P1191
+    - action: remove
+      key: P1192
 
 - num: 47
   text: "(a) [In particular if you are an end user/consumer or an institutional user:] Have you experienced specific problems when trying to use works or other subject matter in the context of research projects/activities, including across borders? (b) [In particular if you are a right holder:] Have you experienced specific problems resulting from the way in which works or other subject-matter are used in the context of research projects/activities, including across borders?"
   to: switch
   type: multiple_choice
+  options:
+  - label: 'Yes'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1234
+      - action: paste
+        key: P1235
+      - action: remove
+        key: P1236
+  - label: 'No'
+    odf:
+      - action: mark
+        key: P1237
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P1238
 
 - num: 48
   text: "If there are problems, how would they best be solved?"
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P1242
+    - action: remove
+      key: P1243
 
 - num: 49
   text: What mechanisms exist in the Member States to facilitate the use of content for research purposes? How successful are they?
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P1248
+    - action: remove
+      key: P1249
 
 - num: 50
   text: "(a) [In particular if you are a person with a disability or an organisation representing persons with disabilities:] Have you experienced problems with accessibility to content, including across borders, arising from Member States’ implementation of this exception? (b) [In particular if you are an organisation providing services for persons with disabilities:] Have you experienced problems when distributing/communicating works published in special formats across the EU? (c) [In particular if you are a right holder:] Have you experienced specific problems resulting from the application of limitations or exceptions allowing for the distribution/communication of works published in special formats, including across borders?"
   to: switch
   type: multiple_choice
+  options:
+  - label: 'Yes'
+    details: "Please explain by giving examples"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1293
+      - action: paste
+        key: P1294
+      - action: remove
+        key: P1295
+  - label: 'No'
+    odf:
+      - action: mark
+        key: P1296
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P1297
 
 - num: 51
   text: "If there are problems, what could be done to improve accessibility?"
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P1304
+    - action: remove
+      key: P1305
 
 - num: 52
   text: What mechanisms exist in the market place to facilitate accessibility to content? How successful are they?
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P1309
+    - action: remove
+      key: P1310
 
 - num: 53
   text: "(a) [In particular if you are an end user/consumer or an institutional user:] Have you experienced obstacles, linked to copyright, when trying to use text or data mining methods, including across borders? (b) [In particular if you are a service provider:] Have you experienced obstacles, linked to copyright, when providing services based on text or data mining methods, including across borders? (c) [In particular if you are a right holder:] Have you experienced specific problems resulting from the use of text and data mining in relation to copyright protected content, including across borders?"
   to: switch
   type: multiple_choice
+  options:
+  - label: 'Yes'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1367
+      - action: paste
+        key: P1368
+      - action: remove
+        key: P1369
+  - label: 'No'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1370
+      - action: paste
+        key: P1371
+      - action: remove
+        key: P1372
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P1373
 
 - num: 54
   text: "If there are problems, how would they best be solved?"
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P1377
+    - action: remove
+      key: P1378
 
 - num: 55
   text: "If your view is that a legislative solution is needed, what would be its main elements? Which activities should be covered and under what conditions?"
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P1382
+    - action: remove
+      key: P1383
 
 - num: 56
   text: "If your view is that a different solution is needed, what would it be?"
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P1387
+    - action: remove
+      key: P1388
 
 - num: 57
   text: "Are there other issues, unrelated to copyright, that constitute barriers to the use of text or data mining methods?"
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P1391
+    - action: remove
+      key: P1392
 
 - num: 58
   text: "(a) [In particular if you are an end user/consumer:] Have you experienced problems when trying to use pre-existing works or other subject matter to disseminate new content on the Internet, including across borders? (b) [In particular if you are a service provider:] Have you experienced problems when users publish/disseminate new content based on the pre-existing works or other subject-matter through your service, including across borders?(c) [In particular if you are a right holder:] Have you experienced problems resulting from the way the users are using pre-existing works or other subject-matter to disseminate new content on the Internet, including across borders?"
   to: switch
   type: multiple_choice
+  options:
+  - label: 'Yes'
+    details: "Please explain by giving examples"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1426
+      - action: paste
+        key: P1427
+      - action: remove
+        key: P1428
+  - label: 'No'
+    odf:
+      - action: mark
+        key: P1429
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P1430
 
 - num: 59
   text: "(a) [In particular if you are an end user/consumer or a right holder:] Have you experienced problems when trying to ensure that the work you have created (on the basis of pre-existing works) is properly identified for online use? Are proprietary systems sufficient in this context?(b) [In particular if you are a service provider:] Do you provide possibilities for users that are publishing/disseminating the works they have created (on the basis of pre-existing works) through your service to properly identify these works for online use?"
   to: switch
   type: multiple_choice
+  options:
+  - label: 'Yes'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1447
+      - action: paste
+        key: P1448
+      - action: remove
+        key: P1449
+  - label: 'No'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1450
+      - action: paste
+        key: P1451
+      - action: remove
+        key: P1452
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P1453
 
 - num: 60
   text: "(a) [In particular if you are an end user/consumer or a right holder):] Have you experienced problems when trying to be remunerated for the use of the work you have created (on the basis of pre-existing works)?(b) [In particular if you are a service provider:] Do you provide remuneration schemes for users publishing/disseminating the works they have created (on the basis of pre-existing works) through your service?"
   to: switch
   type: multiple_choice
+  options:
+  - label: 'Yes'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1470
+      - action: paste
+        key: P1471
+      - action: remove
+        key: P1472
+  - label: 'No'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1473
+      - action: paste
+        key: P1474
+      - action: remove
+        key: P1475
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P1476
 
 - num: 61
   text: "If there are problems, how would they best be solved?"
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P1480
+    - action: remove
+      key: P1481
 
 - num: 62
   text: "If your view is that a legislative solution is needed, what would be its main elements? Which activities should be covered and under what conditions?"
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P1485
+    - action: remove
+      key: P1486
 
 - num: 63
   text: "If your view is that a different solution is needed, what would it be?"
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P1490
+    - action: remove
+      key: P1491
 
 - num: 64
   text: "In your view, is there a need to clarify at the EU level the scope and application of the private copying and reprography exceptions in the digital environment?"
   to: everyone
   type: multiple_choice
+  options:
+  - label: 'Yes'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1508
+      - action: paste
+        key: P1509
+      - action: remove
+        key: P1510
+  - label: 'No'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1511
+      - action: paste
+        key: P1512
+      - action: remove
+        key: P1513
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P1514
 
 - num: 65
   text: "Should digital copies made by end users for private purposes in the context of a service that has been licensed by rightholders, and where the harm to the rightholder is minimal, be subject to private copying levies?"
   to: everyone
   type: multiple_choice
+  options:
+  - label: 'Yes'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1524
+      - action: paste
+        key: P1525
+      - action: remove
+        key: P1526
+  - label: 'No'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1527
+      - action: paste
+        key: P1528
+      - action: remove
+        key: P1529
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P1530
 
 - num: 66
   text: "How would changes in levies with respect to the application to  online services (e.g. services based on cloud computing  allowing, for instance, users to have copies on different devices) impact the development and functioning of new business models on the one hand and rightholders’ revenue on the other?"
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P1534
+    - action: remove
+      key: P1535
 
 - num: 67
   text: Would you see an added value in making levies visible on the invoices for products subject to levies?
   to: everyone
   type: open_question
+  options:
+  - label: 'Yes'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1542
+      - action: paste
+        key: P1543
+      - action: remove
+        key: P1544
+  - label: 'No'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1545
+      - action: paste
+        key: P1546
+      - action: remove
+        key: P1547
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P1548
 
 - num: 68
   text: "Have you experienced a situation where a cross-border transaction resulted in undue levy payments, or duplicate payments of the same levy, or other obstacles to the free movement of goods or services?"
   to: everyone
   type: multiple_choice
+  options:
+  - label: 'Yes'
+    details: "Please specify the type of transaction and indicate the percentage of the undue payments. Please also indicate how a priori exemption and/or ex post reimbursement schemes could help to remedy the situation."
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1552
+      - action: paste
+        key: P1553
+      - action: remove
+        key: P1554
+  - label: 'No'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1555
+      - action: paste
+        key: P1556
+      - action: remove
+        key: P1557
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P1558
 
 - num: 69
   text: "What percentage of products subject to a levy is sold to persons other than natural persons for purposes clearly unrelated to private copying? Do any of those transactions result in undue payments? Please explain in detail the example you provide (type of products, type of transaction, stakeholders, etc.)."
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P1564
+    - action: remove
+      key: P1565
 
 - num: 70
   text: "Where such undue payments arise, what percentage of trade do they affect? To what extent could a priori exemptions and/or ex post reimbursement schemes existing in some Member States help to remedy the situation?"
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P1569
+    - action: remove
+      key: P1570
 
 - num: 71
   text: "If you have identified specific problems with the current functioning of the levy system, how would these problems best be solved?"
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P1574
+    - action: remove
+      key: P1575
 
 - num: 72
   text: What is the best mechanism (or combination of mechanisms) to ensure that you receive an adequate remuneration for the exploitation of your works and performances?
   to: author/performer
   type: open_question
+  odf:
+    - action: paste
+      key: P1588
+    - action: remove
+      key: P1589
 
 - num: 73
   text: Is there a need to act at the EU level (for instance to prohibit certain clauses in contracts)?
   to: everyone
   type: multiple_choice
+  options:
+  - label: 'Yes'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1592
+      - action: paste
+        key: P1593
+      - action: remove
+        key: P1594
+  - label: 'No'
+    details: "Please explain why"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1595
+      - action: paste
+        key: P1596
+      - action: remove
+        key: P1597
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P1598
 
 - num: 74
   text: "If you consider that the current rules are not effective, what would you suggest to address the shortcomings you identify?"
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P1602
+    - action: remove
+      key: P1603
 
 - num: 75
   text: Should the civil enforcement system in the EU be rendered more efficient for infringements of copyright committed with a commercial purpose?
   to: everyone
   type: multiple_choice
+  options:
+  - label: 'Yes'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1610
+      - action: paste
+        key: P1611
+      - action: remove
+        key: P1612
+  - label: 'No'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1613
+      - action: paste
+        key: P1614
+      - action: remove
+        key: P1615
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P1616
 
 - num: 76
   text: "In particular, is the current legal framework  clear enough to allow for  sufficient involvement of intermediaries (such as Internet service providers, advertising brokers, payment service providers, domain name registrars, etc.) in inhibiting online copyright infringements with a commercial purpose? If not, what measures would be useful to foster the cooperation of intermediaries?"
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P1620
+    - action: remove
+      key: P1621
 
 - num: 77
   text: Does the current civil enforcement framework ensure that the right balance is achieved between the right to have one’s copyright respected and other rights such as the protection of private life and protection of personal data?
   to: everyone
   type: open_question
+  options:
+  - label: 'Yes'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1624
+      - action: paste
+        key: P1625
+      - action: remove
+        key: P1626
+  - label: 'No'
+    details: "Please explain"
+    fulltext: true
+    odf:
+      - action: mark
+        key: P1627
+      - action: paste
+        key: P1628
+      - action: remove
+        key: P1629
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P1630
 
 - num: 78
   text: "Should the EU pursue the establishment of a single EU Copyright Title, as a means of establishing a consistent framework for rights and exceptions to copyright across the EU, as well as a single framework for enforcement?"
   to: everyone
   type: multiple_choice
+  options:
+  - label: 'Yes'
+    odf:
+      - action: mark
+        key: P1634
+  - label: 'No'
+    odf:
+      - action: mark
+        key: P1635
+  - label: 'No Opinion'
+    odf:
+      - action: mark
+        key: P1636
 
 - num: 79
   text: Should this be the next step in the development of copyright in the EU? Does the current level of difference among the Member State legislation mean that this is a longer term project?
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P1641
+    - action: remove
+      key: P1642
 
 - num: 80
   text: Are there any other important matters related to the EU legal framework for copyright? Please explain and indicate how such matters should be addressed.
   to: everyone
   type: open_question
+  odf:
+    - action: paste
+      key: P1647
+    - action: remove
+      key: P1648
