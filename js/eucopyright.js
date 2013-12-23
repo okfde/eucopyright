@@ -329,6 +329,10 @@ $(function(){
     $(this).parent().parent().find('input:not(checked)').prop('checked', true);
   });
 
+  $('.sdfootnoteanc').click(function(){
+    $('#footnote-div').show();
+  });
+
   setTimeout(function () {
     var $sideBar = $('.side-navbar')
 
