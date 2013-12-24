@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Public Consultation on the review of the EU copyright rules</title>
+---
+layout: base
 
-  <link rel="stylesheet" href="{{ site.baseurl}}/css/bootstrap.min.css">
-  <link rel="stylesheet" href="{{ site.baseurl}}/css/style.css">
-  <link rel="shortcut icon" href="{{ site.baseurl}}/img/favicon.png" />
-
-</head>
-<body>
+---
 
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -50,65 +41,3 @@
   </div>
 </div> <!-- /.container -->
 
-<script>
-  var EUCopyright = EUCopyright || {};
-  EUCopyright.questions = [
-    {% for question in site.data.questions %}
-    {
-      num: {{ question.num }},
-      {% if question.options %}
-        options: [
-          {% for opt in question.options %}
-            {
-              num: {{ forloop.index0 }},
-              {% if opt.odf %}
-                odf: [
-                  {% for odf in opt.odf %}
-                    {
-                      action: "{{ odf.action }}",
-                      key: "{{ odf.key }}"
-                    }{% unless forloop.last %},{% endunless %}
-                  {% endfor %}
-                ],
-              {% endif %}
-              fulltext: {% if opt.fulltext %}true{% else %}false{% endif %}
-            }{% unless forloop.last %},{% endunless %}
-          {% endfor %}
-        ],
-      {% endif %}
-    {% if question.odf %}
-      odf: [
-      {% for odf in question.odf %}
-        {
-          action: "{{ odf.action }}",
-          key: "{{ odf.key }}"
-        }
-        {% unless forloop.last %},{% endunless %}
-      {% endfor %}
-      ],
-    {% endif %}
-    type: "{{ question.type }}"
-    }{% unless forloop.last %},{% endunless %}
-  {% endfor %}];
-  EUCopyright.answers = {
-    {% for answer in site.data.answers %}
-    {{ answer.slug }}: {
-      {% if answer.url contains "http://" or answer.url contains "https://" %}
-      url: "{{ answer.url }}",
-      {% else %}
-      url: "{{ site.baseurl}}{{ answer.url }}",
-      {% endif %}
-      slug: "{{ answer.slug }}",
-      name: "{{ answer.name }}"
-    }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  };
-</script>
-
-<script type="text/javascript" src="{{ site.baseurl}}/js/jquery.min.js"></script>
-<script type="text/javascript" src="{{ site.baseurl}}/js/autogrow.min.js"></script>
-<script type="text/javascript" src="{{ site.baseurl}}/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="{{ site.baseurl}}/js/jszip.js"></script>
-<script type="text/javascript" src="{{ site.baseurl}}/js/eucopyright.js"></script>
-</body>
-</html>
