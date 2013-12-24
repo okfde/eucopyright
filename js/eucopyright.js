@@ -347,6 +347,8 @@ $(function(){
 
   $('.load-question-guide').click(function(e){
     e.preventDefault();
+    $('.load-question-guide').removeClass('active');
+    $(this).addClass('active');
     var slug = $(this).attr('href').substr(1);
     EUCopyright.loadQuestionGuide(slug, function(answers){
       EUCopyright.applyGuideToAll(EUCopyright.answers[slug], answers);
