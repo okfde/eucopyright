@@ -59,8 +59,16 @@ textarea {
   }
 }
 
-.intro-link {
+.intro-link, .help {
   color: #bbb;
+}
+
+.help:hover {
+  color: #333;
+}
+
+.guide {
+  background-color: rgb(255, 255, 157);
 }
 
 .footer-row {
