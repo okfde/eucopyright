@@ -10,7 +10,7 @@
   <link rel="shortcut icon" href="{{ site.baseurl}}/img/favicon.png" />
 
 </head>
-<body data-spy="scroll" data-target=".side-navbar">
+<body>
 
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -30,25 +30,9 @@
 {% endif %}
 
 <div class="container">
-  <div class="row header-row">
-    <div class="col-lg-8">
-      <h1>
-        <small>Inofficial web form for the</small><br/>
-          Public Consultation<br/>
-          on the review of the EU copyright rules
-      </h1>
-    </div>
-    <div class="col-lg-4">
-      <a href="http://copyright4creativity.eu/">
-        <img src="{{ site.baseurl}}/img/c4c.png" alt="Coyright for Creativity">
-      </a>
-    </div>
-  </div>
-  <div class="row">
 
-    {{ content }}
+  {{ content }}
 
-  </div> <!-- /.row -->
   <div class="row footer-row">
     <div class="col-lg-12">
       <hr/>
@@ -66,47 +50,63 @@
   </div>
 </div> <!-- /.container -->
 
-<!-- Modal -->
-<div class="modal fade" id="download-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Almost done!</h4>
-      </div>
-      <div class="modal-body">
-        <p class="lead">
-          <strong>1. Click the "Download" button below</strong><br/>
-          <strong>2. Please send the downloaded document by email to</strong>
-        </p>
-
-        <div class="center-block text-center">
-          <div class="row">
-            <div class="col-xs-8 col-xs-offset-2">
-              <input type="text" class="form-control" value="markt-copyright-consultation@ec.europa.eu"/>
-            </div>
-          </div>
-        </div>
-
-        <hr/>
-
-        <p>
-          The <a href="http://ec.europa.eu/internal_market/consultations/2013/copyright-rules/docs/privacy-statement_en.pdf">Privacy statement of the European Commission</a> applies.
-        </p>
-
-        <p>Thanks for helping to change copyright policy for the better!</p>
-
-      </div>
-      <div class="modal-footer">
-        <a id="download" href="" class="pull-right btn btn-primary disabled">Download</a>
-        <div class="pull-left" id="download-preparing">Please wait while download is preparing...</div>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-
+<script>
+  var EUCopyright = EUCopyright || {};
+  EUCopyright.questions = [
+    {% for question in site.data.questions %}
+    {
+      num: {{ question.num }},
+      {% if question.options %}
+        options: [
+          {% for opt in question.options %}
+            {
+              num: {{ forloop.index0 }},
+              {% if opt.odf %}
+                odf: [
+                  {% for odf in opt.odf %}
+                    {
+                      action: "{{ odf.action }}",
+                      key: "{{ odf.key }}"
+                    }{% unless forloop.last %},{% endunless %}
+                  {% endfor %}
+                ],
+              {% endif %}
+              fulltext: {% if opt.fulltext %}true{% else %}false{% endif %}
+            }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ],
+      {% endif %}
+    {% if question.odf %}
+      odf: [
+      {% for odf in question.odf %}
+        {
+          action: "{{ odf.action }}",
+          key: "{{ odf.key }}"
+        }
+        {% unless forloop.last %},{% endunless %}
+      {% endfor %}
+      ],
+    {% endif %}
+    type: "{{ question.type }}"
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}];
+  EUCopyright.answers = {
+    {% for answer in site.data.answers %}
+    {{ answer.slug }}: {
+      {% if answer.url contains "http://" or answer.url contains "https://" %}
+      url: "{{ answer.url }}",
+      {% else %}
+      url: "{{ site.baseurl}}{{ answer.url }}",
+      {% endif %}
+      slug: "{{ answer.slug }}",
+      name: "{{ answer.name }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  };
+</script>
 
 <script type="text/javascript" src="{{ site.baseurl}}/js/jquery.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl}}/js/autogrow.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl}}/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl}}/js/jszip.js"></script>
 <script type="text/javascript" src="{{ site.baseurl}}/js/eucopyright.js"></script>

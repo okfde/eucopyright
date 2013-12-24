@@ -3,173 +3,187 @@ layout: default
 
 ---
 
-<div class="col-lg-3 col-md-3">
-  <div class="side-navbar">
-    <ul class="nav">
-      <li>
-        <a href="#intro">Introduction</a>
-      </li>
-      <li>
-        <a href="#rights-single-market">
-        	Rights and the functioning of the Single Market
-        </a>
-      </li>
-      <li>
-        <a href="#private-copying-and-reprography">
-        	Private copying and reprography
-        </a>
-      </li>
-			<li>
-        <a href="#fair-remunerations-of-authors-and-performers">
-      		Fair remuneration of authors and performers
-      	</a>
-      </li>
-      <li>
-    		<a href="#respect-for-rights">
-      		Respect for rights
-      	</a>
-      </li>
-      <li>
-      	<a href="#a-single-eu-cooyright-title">
-      		A single EU Copyright Title
-      	</a>
-      </li>
-      <li>
-      	<a href="#other-issues">
-      		Other issues
-      	</a>
-      </li>
-    </ul>
+<div class="row header-row">
+  <div class="col-lg-8">
+    <h1>
+      <small>Inofficial web form for the</small><br/>
+        Public Consultation<br/>
+        on the review of the EU copyright rules
+    </h1>
+  </div>
+  <div class="col-lg-4">
+    <a href="http://copyright4creativity.eu/">
+      <img src="{{ site.baseurl}}/img/c4c.png" alt="Coyright for Creativity">
+    </a>
   </div>
 </div>
-<div class="col-lg-9 col-md-9">
+<div class="row">
 
-{% include intro.html %}
-
-<section>
-  <div class="page-header">
-    <h2 id="rights-single-market">
-      Rights and the functioning of the Single Market
-      <br/>
-      <small>
-        Why is it not possible to access many online content services from anywhere in Europe?
-      </small>
-    </h2>
+  <div class="col-lg-3 col-md-3">
+    <div class="side-navbar">
+      <ul class="nav">
+        <li>
+          <a href="#intro">Introduction</a>
+        </li>
+        <li>
+          <a href="#rights-single-market">
+          	Rights and the functioning of the Single Market
+          </a>
+        </li>
+        <li>
+          <a href="#private-copying-and-reprography">
+          	Private copying and reprography
+          </a>
+        </li>
+  			<li>
+          <a href="#fair-remunerations-of-authors-and-performers">
+        		Fair remuneration of authors and performers
+        	</a>
+        </li>
+        <li>
+      		<a href="#respect-for-rights">
+        		Respect for rights
+        	</a>
+        </li>
+        <li>
+        	<a href="#a-single-eu-cooyright-title">
+        		A single EU Copyright Title
+        	</a>
+        </li>
+        <li>
+        	<a href="#other-issues">
+        		Other issues
+        	</a>
+        </li>
+      </ul>
+    </div>
   </div>
+  <div class="col-lg-9 col-md-9">
 
-	{% include section_2a.html %}
-	{% include section_2b.html %}
-	{% include section_2c.html %}
-	{% include section_2d.html %}
-	{% include section_2e.html %}
+  {% include intro.html %}
 
-</section>
+  <section class="question-section">
+    <div class="page-header">
+      <h2 id="rights-single-market">
+        Rights and the functioning of the Single Market
+        <br/>
+        <small>
+          Why is it not possible to access many online content services from anywhere in Europe?
+        </small>
+      </h2>
+    </div>
 
-<section>
-  <div class="page-header">
-    <h2 id="limitations-single-market">
-      Limitations and exceptions in the Single Market
-    </h2>
+  	{% include section_2a.html %}
+  	{% include section_2b.html %}
+  	{% include section_2c.html %}
+  	{% include section_2d.html %}
+  	{% include section_2e.html %}
+
+  </section>
+
+  <section class="question-section">
+    <div class="page-header">
+      <h2 id="limitations-single-market">
+        Limitations and exceptions in the Single Market
+      </h2>
+    </div>
+
+  	{% include section_3a.html %}
+  	{% include section_3b.html %}
+  	{% include section_3c.html %}
+  	{% include section_3d.html %}
+  	{% include section_3e.html %}
+  	{% include section_3f.html %}
+
+  </section>
+
+
+  <section class="question-section">
+    <div class="page-header">
+      <h2 id="private-copying-and-reprography">
+        Private copying and reprography
+      </h2>
+    </div>
+  	{% include section_4.html %}
+  </section>
+
+  <section class="question-section">
+    <div class="page-header">
+      <h2 id="fair-remunerations-of-authors-and-performers">
+        Fair remuneration of authors and performers
+      </h2>
+    </div>
+  	{% include section_5.html %}
+  </section>
+
+  <section class="question-section">
+    <div class="page-header">
+      <h2 id="respect-for-rights">
+        Respect for rights
+      </h2>
+    </div>
+  	{% include section_6.html %}
+  </section>
+
+  <section class="question-section">
+    <div class="page-header">
+      <h2 id="a-single-eu-cooyright-title">
+        A single EU Copyright Title
+      </h2>
+    </div>
+  	{% include section_7.html %}
+  </section>
+
+  <section class="question-section">
+    <div class="page-header">
+      <h2 id="other-issues">
+        Other issues
+      </h2>
+    </div>
+  	{% include section_8.html %}
+  </section>
+
+
+  {% include footnotes.html %}
+
   </div>
+</div> <!-- /.row -->
 
-	{% include section_3a.html %}
-	{% include section_3b.html %}
-	{% include section_3c.html %}
-	{% include section_3d.html %}
-	{% include section_3e.html %}
-	{% include section_3f.html %}
+<!-- Modal -->
+<div class="modal fade" id="download-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Almost done!</h4>
+      </div>
+      <div class="modal-body">
+        <p class="lead">
+          <strong>1. Click the "Download" button below</strong><br/>
+          <strong>2. Please send the downloaded document by email to</strong>
+        </p>
 
-</section>
+        <div class="center-block text-center">
+          <div class="row">
+            <div class="col-xs-8 col-xs-offset-2">
+              <input type="text" class="form-control" value="markt-copyright-consultation@ec.europa.eu"/>
+            </div>
+          </div>
+        </div>
 
+        <hr/>
 
-<section>
-  <div class="page-header">
-    <h2 id="private-copying-and-reprography">
-      Private copying and reprography
-    </h2>
-  </div>
-	{% include section_4.html %}
-</section>
+        <p>
+          The <a href="http://ec.europa.eu/internal_market/consultations/2013/copyright-rules/docs/privacy-statement_en.pdf">Privacy statement of the European Commission</a> applies.
+        </p>
 
-<section>
-  <div class="page-header">
-    <h2 id="fair-remunerations-of-authors-and-performers">
-      Fair remuneration of authors and performers
-    </h2>
-  </div>
-	{% include section_5.html %}
-</section>
+        <p>Thanks for helping to change copyright policy for the better!</p>
 
-<section>
-  <div class="page-header">
-    <h2 id="respect-for-rights">
-      Respect for rights
-    </h2>
-  </div>
-	{% include section_6.html %}
-</section>
-
-<section>
-  <div class="page-header">
-    <h2 id="a-single-eu-cooyright-title">
-      A single EU Copyright Title
-    </h2>
-  </div>
-	{% include section_7.html %}
-</section>
-
-<section>
-  <div class="page-header">
-    <h2 id="other-issues">
-      Other issues
-    </h2>
-  </div>
-	{% include section_8.html %}
-</section>
-
-
-{% include footnotes.html %}
-
-</div>
-
-<script>
-	var EUCopyright = EUCopyright || {};
-	EUCopyright.questions = [
-		{% for question in site.data.questions %}
-		{
-			num: {{ question.num }},
-			{% if question.options %}
-				options: [
-					{% for opt in question.options %}
-						{
-							num: {{ forloop.index0 }},
-							{% if opt.odf %}
-								odf: [
-									{% for odf in opt.odf %}
-										{
-											action: "{{ odf.action }}",
-											key: "{{ odf.key }}"
-										}{% unless forloop.last %},{% endunless %}
-									{% endfor %}
-								],
-							{% endif %}
-							fulltext: {% if opt.fulltext %}true{% else %}false{% endif %}
-						}{% unless forloop.last %},{% endunless %}
-					{% endfor %}
-				],
-			{% endif %}
-		{% if question.odf %}
-			odf: [
-			{% for odf in question.odf %}
-				{
-					action: "{{ odf.action }}",
-					key: "{{ odf.key }}"
-				}
-				{% unless forloop.last %},{% endunless %}
-			{% endfor %}
-			],
-		{% endif %}
-		type: "{{ question.type }}"
-		}{% unless forloop.last %},{% endunless %}
-	{% endfor %}];
-</script>
+      </div>
+      <div class="modal-footer">
+        <a id="download" href="" class="pull-right btn btn-primary disabled">Download</a>
+        <div class="pull-left" id="download-preparing">Please wait while download is preparing...</div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
