@@ -21,7 +21,7 @@
           {% for option in question.options %}
             <div class="radio">
               <label>
-                <input type="radio" name="q-{{ question.num }}" id="q-{{ question.num }}-{{ forloop.index0 }}" value="option2">
+                <input type="radio" name="q-{{ question.num }}" id="q-{{ question.num }}-{{ forloop.index0 }}" value="{{ forloop.index0 }}">
                 <strong>{{ option.label }}</strong>
               </label>
               {% if option.fulltext %}
