@@ -384,6 +384,8 @@ $(function(){
     $('#footnote-div').show();
   });
 
+  $('textarea').autogrow();
+
   setTimeout(function () {
     var $sideBar = $('.side-navbar');
 
