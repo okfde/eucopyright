@@ -5,3 +5,4 @@
 - name: Example Group
   slug: example
   url: "/guides/example.csv"
+  questions: [1]
