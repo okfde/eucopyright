@@ -76,10 +76,7 @@ EUCopyright.parseCSV = function( strData, strDelimiter ){
 
       // We found a quoted value. When we capture
       // this value, unescape any double quotes.
-      strMatchedValue = arrMatches[ 2 ].replace(
-        new RegExp(/\"\"/, 'g'),
-        '\"'
-        );
+      strMatchedValue = arrMatches[ 2 ].replace(/""/g, '"');
 
     } else {
       // We found a non-quoted value.
@@ -265,36 +262,55 @@ EUCopyright.compile = function(){
 
 EUCopyright.answerCache = {};
 
-EUCopyright.applyAnswers = function(answers){
-  var question, answer;
+EUCopyright.applyGuideToAll = function(guide){
+  var question, answer, answers = EUCopyright.answerCache[guide.slug];
   for (var i = 0; i < EUCopyright.questions.length; i += 1) {
     if (answers[EUCopyright.questions[i].num]) {
       question = EUCopyright.questions[i];
       answer = answers[question.num];
-      if (question.type === 'multiple_choice' && question.options) {
-        if (answer.option !== null) {
-          $('#q-' + question.num + '-' + answer.option).prop('checked', true);
-          if (question.options && question.options[answer.option].fulltext) {
-            $('#q-' + question.num + '-' + answer.option + '-text').val(answer.answer);
-          }
-        }
-      } else if (question.type == 'open_question') {
-        $('#q-' + question.num + '-text').val(answer.answer);
-      }
-      if (answer.explanation) {
-        $('#q-' + question.num + '-explanation').show().find('.explanation-text').text(answer.explanation);
-      } else {
-        $('#q-' + question.num + '-explanation').hide();
-      }
+      EUCopyright.applyGuide(guide, question, answer);
     }
   }
 };
 
-EUCopyright.addAnswers = function(url){
-  if (this.answerCache[url]){
-    EUCopyright.applyAnswers(this.answerCache[url]);
+EUCopyright.applyGuide = function(guide, question, answer) {
+  var isAnswered = false;
+  if (question.type === 'multiple_choice' && question.options) {
+    if (answer.option !== null) {
+      isAnswered = true;
+      $('#q-' + question.num + '-' + answer.option).prop('checked', true);
+      if (question.options && question.options[answer.option].fulltext) {
+        $('#q-' + question.num + '-' + answer.option + '-text').val(answer.answer);
+      }
+    }
+  } else if (question.type == 'open_question') {
+    if (answer.answer) {
+      isAnswered = true;
+    }
+    $('#q-' + question.num + '-text').val(answer.answer);
   }
-  $.get(url, function(text, status, xhr){
+  if (answer.explanation) {
+    isAnswered = true;
+    $('#q-' + question.num + '-customexplanation').text(answer.explanation).slideDown();
+  } else {
+    $('#q-' + question.num + '-customexplanation').slideUp();
+  }
+  $('.answer-choices-' + question.num + ' a').removeClass('active');
+  if (isAnswered) {
+    $('#answer-choice-' + guide.slug + '-' + question.num).addClass('active');
+  }
+};
+
+EUCopyright.loadQuestionGuide = function(slug, clb){
+  if (EUCopyright.answerCache[slug] !== undefined){
+    if (EUCopyright.answerCache[slug] === 'waiting') {
+      return;
+    }
+    return clb(EUCopyright.answerCache[slug]);
+  }
+
+  EUCopyright.answerCache[slug] = 'waiting';
+  $.get(EUCopyright.answers[slug].url, function(text, status, xhr){
     var csv = EUCopyright.parseCSV(xhr.responseText);
     var answers = {};
 
@@ -309,8 +325,8 @@ EUCopyright.addAnswers = function(url){
         explanation: row.Explanation,
       };
     }
-    this.answerCache[url] = answers;
-    EUCopyright.applyAnswers(this.answerCache[url]);
+    EUCopyright.answerCache[slug] = answers;
+    clb(EUCopyright.answerCache[slug]);
   });
 };
 
@@ -329,9 +345,25 @@ $(function(){
     $('#download-modal').modal();
   });
 
-  $('.suggested-answer').click(function(e){
+  $('.load-question-guide').click(function(e){
     e.preventDefault();
-    EUCopyright.addAnswers($(this).attr('href'));
+    var slug = $(this).attr('href').substr(1);
+    EUCopyright.loadQuestionGuide(slug, function(answers){
+      EUCopyright.applyGuideToAll(EUCopyright.answers[slug], answers);
+    });
+  });
+
+  $('.load-question').click(function(e){
+    e.preventDefault();
+    var slug = $(this).attr('href').substr(1);
+    var qnum = parseInt($(this).data('question'), 10);
+    EUCopyright.loadQuestionGuide(slug, function(answers){
+      EUCopyright.applyGuide(
+        EUCopyright.answers[slug],
+        EUCopyright.questions[qnum - 1],
+        answers[qnum]
+      );
+    });
   });
 
   $('.toggle').click(function(e){
