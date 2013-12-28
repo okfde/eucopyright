@@ -141,7 +141,7 @@ EUCopyright.compile = function(){
     if (odf.action == 'mark') {
       text = underline(text, odf.key);
       text = bold(text, odf.key);
-    } else if (odf.action == 'remove') {
+    } else if (odf.action == 'remove' && paste) {
       text = replaceParagraph(text, odf.key, '');
     } else if (odf.action == 'paste' && paste) {
       text = replaceParagraph(text, odf.key, paste);
