@@ -184,7 +184,7 @@ EUCopyright.compile = function(){
 
   var constructContents = function(zip){
     var d = $.Deferred();
-    $.get('data/content.xml').done(function(parsed, mes, xhr){
+    $.get(EUCopyright.baseurl + '/data/content.xml').done(function(parsed, mes, xhr){
       var text = xhr.responseText;
 
       var name = $('#name').val();
@@ -233,7 +233,7 @@ EUCopyright.compile = function(){
 
   var addFile = function(zip, zipPath){
     var d = $.Deferred();
-    $.get('data/' + zipPath).done(function(parsed, mes, xhr){
+    $.get(EUCopyright.baseurl + '/data/' + zipPath).done(function(parsed, mes, xhr){
       zip.file(zipPath, xhr.responseText);
       d.resolve();
     });
@@ -331,7 +331,7 @@ EUCopyright.loadQuestionGuide = function(slug, clb){
 };
 
 $(function(){
-  $('#compile').click(function(e){
+  $('.download-document').click(function(e){
     e.preventDefault();
     EUCopyright.compile().done(function(blob){
       $('#download').attr({
