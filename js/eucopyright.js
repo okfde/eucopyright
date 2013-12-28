@@ -2,6 +2,8 @@
 /* global $: false, JSZip: false */
 
 var EUCopyright = EUCopyright || {};
+EUCopyright.settings = EUCopyright.settings || {};
+EUCopyright.settings.defaultToNoOpinion = EUCopyright.settings.defaultToNoOpinion === undefined ? true : EUCopyright.settings.defaultToNoOpinion;
 
 (function(){
   "use strict";
@@ -158,21 +160,27 @@ EUCopyright.compile = function(){
   };
 
   var processQuestions = function(text) {
-    var question, j, paste, radio;
+    var question, j, paste, radio, checked;
 
     for (var i = 0; i < EUCopyright.questions.length; i += 1) {
       question = EUCopyright.questions[i];
 
       if (question.type === 'multiple_choice' && question.options) {
+        checked = false;
         for (j = 0; j < question.options.length; j += 1) {
           radio = $('#q-' + question.num + '-' + j);
           if (radio.prop('checked')) {
             paste = '';
+            checked = true;
             if (question.options[j].fulltext) {
               paste = $('#q-' + question.num + '-' + j + '-text').val();
             }
             text = applyOdfs(text, question.options[j].odf, paste);
           }
+        }
+        if (!checked && EUCopyright.settings.defaultToNoOpinion) {
+          // Check no opinion, if not filled in
+          text = applyOdfs(text, question.options[2].odf, '');
         }
       } else if (question.type == 'open_question') {
         paste = $('#q-' + question.num + '-text').val();
