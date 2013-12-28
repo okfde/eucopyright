@@ -195,7 +195,10 @@ EUCopyright.compile = function(){
         text = underline(text, 'P316');
       }
 
-      text = replaceParagraph(text, 'P293', $('#register-id').val());
+      var registerId = $('#register-id').val();
+      if (registerId) {
+        text = replaceParagraph(text, 'P293', registerId);
+      }
 
       var respondents = {
         enduser: ['T326'],
