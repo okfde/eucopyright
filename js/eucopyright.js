@@ -342,6 +342,18 @@ EUCopyright.loadQuestionGuide = function(slug, clb){
 };
 
 $(function(){
+  $('#lang-select button').click(function(event) {
+    event.preventDefault();
+
+    var lang =  $(this).data('lang');
+    $('h3.panel-title').each(function() {
+        if ($(this).find(".lang[data-lang=" + lang + "]").length) {
+            $(this).find('.lang').hide();
+            $(this).find(".lang[data-lang=" + lang + "]").show();
+        }
+    });
+  });
+
   $('.download-document').click(function(e){
     e.preventDefault();
     EUCopyright.compile().done(function(blob){
