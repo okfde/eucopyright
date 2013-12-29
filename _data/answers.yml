@@ -6,3 +6,7 @@
   slug: example
   url: "/guides/example.csv"
   questions: [1]
+- name: Junge Piraten (DE) work in progress
+  slug: jupis
+  url: "/guides/jupis.csv"
+  questions: [1, 4, 7, 11, 12, 20, 22, 23, 24, 79]
