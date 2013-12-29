@@ -8,6 +8,24 @@ EUCopyright.settings.defaultToNoOpinion = EUCopyright.settings.defaultToNoOpinio
 (function(){
   "use strict";
 
+var parseUrlParams = function (querystr) {
+  var urlParams;
+  querystr = querystr || window.location.search;
+  var match,
+      pl     = /\+/g,  // Regex for replacing addition symbol with a space
+      search = /([^&=]+)=?([^&]*)/g,
+      decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+      query  = querystr.substring(1);
+
+  urlParams = {};
+  match = search.exec(query);
+  while (match) {
+    urlParams[decode(match[1])] = decode(match[2]);
+    match = search.exec(query);
+  }
+  return urlParams;
+};
+
 EUCopyright.parseCSV = function( strData, strDelimiter ){
   /*
   This code taken from:
@@ -341,6 +359,15 @@ EUCopyright.loadQuestionGuide = function(slug, clb){
   });
 };
 
+var loadGuide = function(slug){
+  $('.load-question-guide').removeClass('active');
+  $('.load-question-guide-' + slug).addClass('active');
+
+  EUCopyright.loadQuestionGuide(slug, function(answers){
+    EUCopyright.applyGuideToAll(EUCopyright.answers[slug], answers);
+  });
+};
+
 $(function(){
   $('.download-document').click(function(e){
     e.preventDefault();
@@ -358,12 +385,8 @@ $(function(){
 
   $('.load-question-guide').click(function(e){
     e.preventDefault();
-    $('.load-question-guide').removeClass('active');
-    $(this).addClass('active');
-    var slug = $(this).attr('href').substr(1);
-    EUCopyright.loadQuestionGuide(slug, function(answers){
-      EUCopyright.applyGuideToAll(EUCopyright.answers[slug], answers);
-    });
+    var params = parseUrlParams($(this).attr('href'));
+    loadGuide(params.guide);
   });
 
   $('.load-question').click(function(e){
@@ -418,6 +441,11 @@ $(function(){
       }
     });
   }, 100);
+
+  var urlParams = parseUrlParams();
+  if (urlParams.guide) {
+    loadGuide(urlParams.guide);
+  }
 });
 
 }());

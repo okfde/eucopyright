@@ -173,7 +173,7 @@
       <p class="lead">The following organisations have provided guides to the questions:</p>
       <div class="list-group" id="question-guides">
       {% for answer in site.data.answers %}
-        <a href="#{{ answer.slug }}" class="list-group-item load-question-guide">
+        <a href="?guide={{ answer.slug }}" class="list-group-item load-question-guide load-question-guide-{{ answer.slug }}">
           <h4 class="list-group-item-heading">
             {{ answer.name }}
           </h4>
