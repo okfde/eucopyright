@@ -13,6 +13,7 @@ body {
 ul {
   list-style: none;
   padding: 0;
+  margin-top: 1em;
 }
 @media (min-width: 992px) { ul {
   -webkit-column-count: 2;
@@ -49,18 +50,24 @@ ul li label .problem {
 #tab-end h2:first-of-type {
   padding: 0 0 .5em;
 }
-div.radio > label {
-  display: none;
-}
+div.radio label,
 div.radio:not(.isChecked) {
   display: none;
 }
+
+blockquote.guide {
+  line-height: 1.5em;
+  background-color: transparent;
+  color: #09c;
+  border-left: 0;
+}
+  
 </style>
 <script type="text/javascript">
 var problems2questions = {
   youtube: ['q-1'],
-  imagesharing: ['q-58'],
-  filesharingconfusion: ['q-14'],
+  imagesharing: ['q-1'],
+  filesharingconfusion: ['q-1'],
   drm: ['q-13'],
   mediacountry: ['q-21'],
   remix: ['q-64'],
@@ -79,7 +86,17 @@ var currentProblem = 0;
 
 function start(btn) {
   $('input[type=checkbox]').each(function(i, cb) {
-    if (cb.checked) problems.push([cb.value, cb.getAttribute('title')]);
+    if (cb.checked) {
+      var isDuplicate = false;
+      for (var j=0; j<problems.length; j++) { // is it already in there?
+        if (problems2questions[problems[j][0]][0] == problems2questions[cb.value][0]) {
+          // first question for this problem is equal? TODO this only works in simple cases
+          isDuplicate = true;
+          problems[j][1] += '<br />& '+cb.getAttribute('title');
+        }
+      }
+     if (!isDuplicate) problems.push([cb.value, cb.getAttribute('title')]);
+    }
   });
   if (problems.length > 0) {
     $('.container')[0].className = 'container tab-problem'; // switch to next "tab"
@@ -94,7 +111,7 @@ function start(btn) {
 function step() {
   if (currentProblem < problems.length) { // not at end yet
 
-    $('#tab-problem h2').text(problems[currentProblem][1]);
+    $('#tab-problem h2')[0].innerHTML = problems[currentProblem][1];
 
     // move last q's back to hidden container
     var cl = document.getElementById('problem').children.length;
