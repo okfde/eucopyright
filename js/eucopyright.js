@@ -466,7 +466,6 @@ $(function(){
       }
     });
     $('input[type=radio]').on('click change', function() {
-      alert('change');
       var name = $(this).attr('name');
       var value = $(this).val();
       if (value !== null) {
