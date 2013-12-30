@@ -14,6 +14,26 @@ ul {
   list-style: none;
   padding: 0;
 }
+@media (min-width: 992px) { ul {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  -ms-column-count: 2;
+  -o-column-count: 2;
+  column-count: 2;
+} }
+ul li {
+  line-height: 1.4em;
+  margin-bottom: .4em;
+  clear: both;
+}
+ul li label input {
+  float: left;
+}
+ul li label .problem {
+  float: left;
+  width: 90%;
+  margin-left: .7em;
+}
 .container .jumbotron {
   display: none;
 }
@@ -103,68 +123,68 @@ function step() {
     <img src="{{ site.baseurl}}/img/30c3.png" width="200" align="right" />
     <h1>Help reform copyright!</h1>
    
-    <p><strong>The EU wants to hear your opinion</strong> on copyright reform. On this site we're making it easy for you to respond to the <a href="http://ameliaandersdotter.eu/copyright-consultation-model-responses">official EU consultation</a> on the topic by filtering out the questions that don't apply to you. Together we can make our opinions and experiences heard!</p>
+    <p><strong>The EU wants to hear your opinion</strong> on copyright reform. On this site we're making it easy for you to respond to the <a href="http://ameliaandersdotter.eu/copyright-consultation-model-responses">official EU consultation</a> by filtering out the questions that don't apply to you. Together we can make our opinions and experiences heard!</p>
     <h2>Which of these problems have you encountered with copyright in the EU?</h2>
     <ul>
       {% assign problem = "YouTube videos not playable in my country" %}
       <li><label><input type="checkbox" value="youtube" title="{{ problem }}" />
-      {{ problem }}
+        <span class="problem">{{ problem }}</span>
       </label></li>
       {% assign problem = "Confused about legality of sharing images on Facebook, Tumblr, etc" %}
       <li><label><input type="checkbox" value="imagesharing" title="{{ problem }}" />
-      {{ problem }}
+        <span class="problem">{{ problem }}</span>
       </label></li>
       {% assign problem = "Confused about legality of filesharing/torrenting or even got in trouble because of filesharing/torrenting" %}
       <li><label><input type="checkbox" value="filesharingconfusion" title="{{ problem }}" />
-      {{ problem }}
+        <span class="problem">{{ problem }}</span>
       </label></li>
       {% assign problem = "Could not freely use media I bought because of DRM, in fact had less freedom than I would have offline/in the analog world" %}
       <li><label><input type="checkbox" value="drm" title="{{ problem }}" />
-      {{ problem }}
+        <span class="problem">{{ problem }}</span>
       </label></li>
       {% assign problem = "Certain media not available to buy in my country or a website I wanted to use was blocked in my country" %}
       <li><label><input type="checkbox" value="mediacountry" title="{{ problem }}" />
-      {{ problem }}
+        <span class="problem">{{ problem }}</span>
       </label></li>
       {% assign problem = "Don't dare make a remix because of fear of repercussions" %}
       <li><label><input type="checkbox" value="remix" title="{{ problem }}" />
-        {{ problem }}
+        <span class="problem">{{ problem }}</span>
       </label></li>
       {% assign problem = "Confused about legality of subtitling, translating, converting etc. media" %}
       <li><label><input type="checkbox" value="subtitle" title="{{ problem }}" />
-        {{ problem }}
+        <span class="problem">{{ problem }}</span>
       </label></li>
       {% assign problem = "My fan fiction or fan art might be illegal" %}
       <li><label><input type="checkbox" value="fanfiction" title="{{ problem }}" />
-        {{ problem }}
+        <span class="problem">{{ problem }}</span>
       </label></li>
       {% assign problem = "Someone stole my content OMFG" %}
       <li><label><input type="checkbox" value="stolencontent" title="{{ problem }}" />
-        {{ problem }}
+        <span class="problem">{{ problem }}</span>
       </label></li>
       {% assign problem = "Provided a web service that was confronted with takedown notices and complaints" %}
       <li><label><input type="checkbox" value="takedown" title="{{ problem }}" />
-        {{ problem }}
+        <span class="problem">{{ problem }}</span>
       </label></li>
       {% assign problem = "I can't afford buying media and feel socially excluded" %}
       <li><label><input type="checkbox" value="affordmedia" title="{{ problem }}" />
-        {{ problem }}
+        <span class="problem">{{ problem }}</span>
       </label></li>
       {% assign problem = "Someone told me I need permission to play music at parties" %}
       <li><label><input type="checkbox" value="parties" title="{{ problem }}" />
-        {{ problem }}
+        <span class="problem">{{ problem }}</span>
       </label></li>
       {% assign problem = "Collection society doesn't allow me to release my music under a Creative Commons license" %}
       <li><label><input type="checkbox" value="cclicense" title="{{ problem }}" />
-        {{ problem }}
+        <span class="problem">{{ problem }}</span>
       </label></li>
       {% assign problem = "My totally legitimate backups on MegaUpload were removed" %}
       <li><label><input type="checkbox" value="sharing" title="{{ problem }}" />
-        {{ problem }}
+        <span class="problem">{{ problem }}</span>
       </label></li>
       {% assign problem = "Confused about legality of sharing links to content under copyright protection" %}
       <li><label><input type="checkbox" value="links" title="{{ problem }}" />
-        {{ problem }}
+        <span class="problem">{{ problem }}</span>
       </label></li>
     </ul>
     
