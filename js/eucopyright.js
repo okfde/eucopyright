@@ -243,15 +243,20 @@ EUCopyright.compile = function(){
         other: ['T421']
       };
 
-      var typeOfRespondent = $('*[name="typeofrespondent"]:checked').val();
-      $(respondents[typeOfRespondent]).each(function(i, key){
-        text = underline(text, key);
+      var typeOfRespondent = $('*[name="typeofrespondent"]');
+      typeOfRespondent.each(function(i, el){
+        el = $(el);
+        if (el.attr('type') !== 'checkbox' || el.prop('checked')){
+          var currentTypeOfRespondent = el.val();
+          $(respondents[currentTypeOfRespondent]).each(function(j, key){
+            text = underline(text, key);
+          });
+          if (currentTypeOfRespondent === 'other') {
+            text = replaceParagraph(text, 'P423', $('#typeofrespondent-other-text').val());
+            text = replaceParagraph(text, 'P424', '');
+          }
+        }
       });
-      if (typeOfRespondent === 'other') {
-        text = replaceParagraph(text, 'P423', $('#typeofrespondent-other-text').val());
-        text = replaceParagraph(text, 'P424', '');
-      }
-
       text = processQuestions(text);
 
       zip.file('content.xml', text);
