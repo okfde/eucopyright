@@ -1,0 +1,42 @@
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          {% if question.text %}
+            {{ question.num }}.
+            {% for text in question.text %}
+              <span data-lang="{{ text[0] }}" class="lang"{% if text[0] != "default" %} style="display: none;"{% endif %}>{{ text[1] }}</span>
+            {% endfor %}
+          {% else %}
+            {% for q in question.question %}
+              <div>
+                <small>To {{ q.to }}</small><br/>
+                {{ q.text }}
+              </div>
+            {% endfor %}
+          {% endif %}
+        </h3>
+      </div>
+      <div class="panel-body">
+        <blockquote class="guide" style="display:none" id="q-{{ question.num }}-customexplanation"></blockquote>
+        {% if question.type == 'multiple_choice' %}
+          {% for option in question.options %}
+            <div class="radio">
+              <label>
+                <input type="radio" name="q-{{ question.num }}" id="q-{{ question.num }}-{{ forloop.index0 }}" value="{{ forloop.index0 }}">
+                <strong>{{ option.label }}</strong>
+              </label>
+              {% if option.fulltext %}
+                <div class="radio-text help">
+                  <label for="q-{{ question.num }}-{{ forloop.index0 }}-text">
+                   {{ option.details }}
+                  </label>
+                  <textarea class="form-control" id="q-{{ question.num }}-{{ forloop.index0 }}-text"></textarea>
+                </div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        {% elsif question.type == 'open_question' %}
+          <textarea class="form-control" id="q-{{ question.num }}-text"></textarea>
+        {% endif %}
+      </div>
+    </div>

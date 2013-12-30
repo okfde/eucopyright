@@ -1,7 +1,7 @@
 ---
 layout: base
 title: "Reform copyright – 30c3 "
-language: de
+language: en
 ---
 <style type="text/css">
 body { 
@@ -17,22 +17,23 @@ ul {
 .container .jumbotron {
   display: none;
 }
-.container.state-start #state-start.jumbotron,
-.container.state-problem #state-problem.jumbotron,
-.container.state-end #state-end.jumbotron {
+.container.tab-start #tab-start.jumbotron,
+.container.tab-problem #tab-problem.jumbotron,
+.container.tab-end #tab-end.jumbotron {
   display: block;
 }
 #questions, .download-document {
   display: none;
 }
-#state-problem h2 {
+#tab-problem h2:first-of-type,
+#tab-end h2:first-of-type {
   padding: 0 0 .5em;
 }
 div.radio > label {
   display: none;
 }
-div.radio.val-0 {
-  outline: 10px solid red;
+div.radio:not(.isChecked) {
+  display: none;
 }
 </style>
 <script type="text/javascript">
@@ -56,30 +57,32 @@ var problems2questions = {
 var problems = [];
 var currentProblem = 0;
 
-function start() {
+function start(btn) {
   $('input[type=checkbox]').each(function(i, cb) {
     if (cb.checked) problems.push([cb.value, cb.getAttribute('title')]);
   });
-  $('.container')[0].className = 'container state-problem';
-  $('.download-document').click(function(e){ step() });
-
-  //TODO var guide = EUCopyright.loadGuide
-  //EUCopyright.applyGuideToAll(guide);
-  
-  step();
+  if (problems.length > 0) {
+    $('.container')[0].className = 'container tab-problem'; // switch to next "tab"
+    $('.download-document').click(function(e){ step() }); // make final button do the right thing
+    EUCopyright.loadGuide('jupis');
+    step();
+  } else { // nothing selected
+    btn.innerHTML = "Please select a problem above before continuing &raquo;";
+  }
 }
+
 function step() {
   if (currentProblem < problems.length) { // not at end yet
 
-    $('#state-problem h2').text(problems[currentProblem][1]);
+    $('#tab-problem h2').text(problems[currentProblem][1]);
 
-    //move last q's back to hidden contAiner
+    // move last q's back to hidden container
     var cl = document.getElementById('problem').children.length;
     for (var i=0; i<cl; i++) {
       $('#questions')[0].appendChild($('#problem')[0].children[0]);
     }
     
-    //fetch new q's
+    // fetch new q's
     $(problems2questions[problems[currentProblem][0]]).each(function(i, q) {
       $('#problem')[0].appendChild($('.'+q)[0]);
     });
@@ -91,13 +94,12 @@ function step() {
     currentProblem++;
     
   } else { // reached end
-    $('.container')[0].className = 'container state-end';
+    $('.container')[0].className = 'container tab-end';
   }
-  //TODO end: Name, submit, progress bar
 }
 </script>
-<div class="container state-start">
-  <div id="state-start" class="jumbotron">
+<div class="container tab-start">
+  <div id="tab-start" class="jumbotron">
     <img src="{{ site.baseurl}}/img/30c3.png" width="200" align="right" />
     <h1>Reform copyright!</h1>
     <p><strong>The EU wants to hear your opinion</strong> on copyright reform. On this site we're making it easy for you to respond to the <a href="http://ameliaandersdotter.eu/copyright-consultation-model-responses">official EU consultation</a> on the topic. Together we can make our opinions and experiences heard!</p>
@@ -169,19 +171,19 @@ function step() {
         <img src="img/youtube.png" alt="Dieses Video ist in deinem Land nicht verfügbar"/>
       </div>
     </div> -->
-    <a href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="start()">Continue &raquo;</a>
+    <a href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="start(this)">Continue &raquo;</a>
   </div>
 
-  <div id="state-problem" class="jumbotron">
+  <div id="tab-problem" class="jumbotron">
     <p>Your problem:</p>
     <h2></h2>
-    <p>This problem relates to the following questions in the consultation:</p>
+    <p>This problem relates to the following question(s) in the consultation:</p>
     <div id="problem"></div>
     <a id="next" href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="step()">Next problem &raquo;</a>
     <a href="javascript:void(0)" class="download-document btn btn-primary btn-lg">Send answers &raquo;</a>
   </div>
 
-  <div id="state-end" class="jumbotron">
+  <div id="tab-end" class="jumbotron">
     <h2>Now send your feedback to the European Commission</h2>
 
     <!-- prefilled fields -->
@@ -191,29 +193,33 @@ function step() {
     <ol>
       <li>        
         <div class="form-group">
-          <label for="name">Your name (optional)</label>
+          <label for="name">Your name</label>
           <input type="text" class="form-control" id="name" placeholder="Optionally enter your name">
           <p class="help-block">
-            You don't have to give your name, your answer can be anonymous.
+            Please note that your contributions <strong>will be published online</strong> by the EU!<br />
+            You don't have to give your name, but it is recommended.
           </p>
         </div>
       </li>
       <li>
     <a id="download" href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="">Download response file</a>      
       </li>
-      <li>Please send the downloaded document by email to
-        <input value="markt-copyright-consultation@ec.europa.eu" onclick="this.select()" />
+      <li><a href="mailto:markt-copyright-consultation@ec.europa.eu?subject=My+contribution+to+the+copyright+consultation&body=PLEASE+MAKE+SURE+THE+.ODT+FILE+YOU+DOWNLOADED+IS+ATTACHED+TO+THIS+EMAIL+AND+REMOVE+THIS+NOTICE" target="_blank" class="btn btn-primary btn-lg">Send the downloaded document by email</a> to
+        <input size="43" value="markt-copyright-consultation@ec.europa.eu" onclick="this.select()" />
+        <p>
+          <small>The <a href="http://ec.europa.eu/internal_market/consultations/2013/copyright-rules/docs/privacy-statement_en.pdf">Privacy statement of the European Commission</a> applies.</small>
+        </p>
       </li>
     </ol>
     
     <h2>Thanks for helping advocate for copyright reform!</h2>
 
-    <p>Now share this page with your friends.</p>
+    <p>Now please share this page with your friends.</p>
   </div>
 </div>
 
 <div id="questions">
 {% for question in site.data.questions %}
-  {% include question.html %} <!-- todo own include? -->
+  {% include question_only.html %}
 {% endfor %}
 </div>

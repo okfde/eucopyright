@@ -307,7 +307,9 @@ EUCopyright.applyGuide = function(guide, question, answer) {
   if (question.type === 'multiple_choice' && question.options) {
     if (answer.option !== null) {
       isAnswered = true;
-      $('#q-' + question.num + '-' + answer.option).prop('checked', true);
+      $('#q-' + question.num + '-' + answer.option).
+        prop('checked', true).
+        parents('div').addClass('isChecked'); // microsites might need this to hide unrecommended answer options
       if (question.options && question.options[answer.option].fulltext) {
         $('#q-' + question.num + '-' + answer.option + '-text').val(answer.answer);
       }
@@ -359,7 +361,7 @@ EUCopyright.loadQuestionGuide = function(slug, clb){
   });
 };
 
-var loadGuide = function(slug){
+EUCopyright.loadGuide = function(slug){
   $('.load-question-guide').removeClass('active');
   $('.load-question-guide-' + slug).addClass('active');
 
@@ -386,7 +388,7 @@ $(function(){
   $('.load-question-guide').click(function(e){
     e.preventDefault();
     var params = parseUrlParams($(this).attr('href'));
-    loadGuide(params.guide);
+    EUCopyright.loadGuide(params.guide);
   });
 
   $('.load-question').click(function(e){
@@ -444,7 +446,7 @@ $(function(){
 
   var urlParams = parseUrlParams();
   if (urlParams.guide) {
-    loadGuide(urlParams.guide);
+    EUCopyright.loadGuide(urlParams.guide);
   }
 });
 
