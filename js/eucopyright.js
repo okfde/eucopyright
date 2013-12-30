@@ -383,6 +383,11 @@ $(function(){
         'href': window.URL.createObjectURL(blob),
         'download': 'consultation-document_en.odt'
       }).removeClass('disabled');
+      $('#download').click(function(){
+        if (window._paq !== undefined) {
+          window._paq.push(['trackGoal', 1]);
+        }
+      });
       $('#download-preparing').fadeOut();
     });
 
