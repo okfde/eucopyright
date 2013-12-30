@@ -6,6 +6,7 @@ language: en
 <style type="text/css">
 body { 
   background: url("{{ site.baseurl}}/img/30c3-corner.jpg") -400px 0 no-repeat, url("{{ site.baseurl}}/img/30c3-bg.png");
+  margin-bottom: 6em;
 }
 .jumbotron {
   background: rgba(255,255,255,.8);
@@ -130,8 +131,12 @@ function step() {
     }
     currentProblem++;
     
+    $('#problem').find(':input:first').focus(); // TODO doesn't work?
+    //$('#problem textarea')[0].focus(); // if there's a textarea, place the cursor inside
+    
   } else { // reached end
     $('.container')[0].className = 'container tab-end';
+    $('#tab-end').find(':input:first')[0].focus(); // TODO doesn't work?
   }
 }
 </script>
@@ -254,7 +259,7 @@ function step() {
     
     <h2>Thanks for helping advocate for copyright reform!</h2>
 
-    <p>Now please share this page with your friends.</p>
+    <p>Would you share this page with your friends? The more responses the EU gets, the better the reform will be.</p>
   </div>
 </div>
 
