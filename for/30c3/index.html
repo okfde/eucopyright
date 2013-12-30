@@ -25,7 +25,8 @@ ul {
 #questions, .download-document {
   display: none;
 }
-#tab-problem h2, #tab-end h2 {
+#tab-problem h2:first-of-type,
+#tab-end h2:first-of-type {
   padding: 0 0 .5em;
 }
 div.radio > label {
@@ -49,16 +50,18 @@ var problems2questions = {
 var problems = [];
 var currentProblem = 0;
 
-function start() {
+function start(btn) {
   $('input[type=checkbox]').each(function(i, cb) {
     if (cb.checked) problems.push([cb.value, cb.getAttribute('title')]);
   });
-  $('.container')[0].className = 'container tab-problem';
-  $('.download-document').click(function(e){ step() });
-
-  EUCopyright.loadGuide('jupis');
-  
-  step();
+  if (problems.length > 0) {
+    $('.container')[0].className = 'container tab-problem'; // switch to next "tab"
+    $('.download-document').click(function(e){ step() }); // make final button do the right thing
+    EUCopyright.loadGuide('jupis');
+    step();
+  } else { // nothing selected
+    btn.innerHTML = "Please select a problem above before continuing &raquo;";
+  }
 }
 
 function step() {
@@ -125,7 +128,7 @@ No Netflix or Hulu wtf?!
         <img src="img/youtube.png" alt="Dieses Video ist in deinem Land nicht verfügbar"/>
       </div>
     </div> -->
-    <a href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="start()">Continue &raquo;</a>
+    <a href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="start(this)">Continue &raquo;</a>
   </div>
 
   <div id="tab-problem" class="jumbotron">
