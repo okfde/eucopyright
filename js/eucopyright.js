@@ -302,6 +302,14 @@ EUCopyright.applyGuideToAll = function(guide){
   }
 };
 
+EUCopyright.supports_html5_storage = function() {
+  try {
+    return 'localStorage' in window && window['localStorage'] !== null;
+  } catch (e) {
+    return false;
+  }
+};
+
 EUCopyright.applyGuide = function(guide, question, answer) {
   var isAnswered = false;
   if (question.type === 'multiple_choice' && question.options) {
@@ -413,7 +421,16 @@ $(function(){
   });
 
   $('.radio-text textarea').on('keyup', function(){
-    $(this).parent().parent().find('input:not(checked)').prop('checked', true);
+    var radio = $(this).parent().parent().find('input:not(checked)');
+    radio.prop('checked', true);
+
+    if (EUCopyright.supports_html5_storage()) {
+      var name = radio.attr('name');
+      var value = radio.val();
+      if (value !== null) {
+        localStorage.setItem(name, value);
+      }
+    }
   });
 
   $('.sdfootnoteanc').click(function(){
@@ -421,6 +438,49 @@ $(function(){
   });
 
   $('textarea').autogrow();
+
+  if (EUCopyright.supports_html5_storage()) {
+    $('textarea').each(function() {
+      var id = $(this).attr('id');
+      var value = localStorage.getItem(id);
+      $(this).val(value);
+    });
+    $('input[type=radio]').each(function() {
+      var name = $(this).attr('name');
+      var value = localStorage.getItem(name);
+      if (value !== null) {
+        $('input[type=radio]#' + name + '-' + value).prop('checked', true);
+      }
+    });
+    $('input[type=text]').each(function() {
+      var id = $(this).attr('id');
+      var value = localStorage.getItem(id);
+      $(this).val(value);
+    });
+
+    $('textarea').on('keydown change', function() {
+      var id = $(this).attr('id');
+      var value = $(this).val();
+      if (value !== null) {
+        localStorage.setItem(id, value);
+      }
+    });
+    $('input[type=radio]').on('click change', function() {
+      alert('change');
+      var name = $(this).attr('name');
+      var value = $(this).val();
+      if (value !== null) {
+        localStorage.setItem(name, value);
+      }
+    });
+    $('input[type=text]').on('keydown change', function() {
+      var id = $(this).attr('id');
+      var value = $(this).val();
+      if (value !== null) {
+        localStorage.setItem(id, value);
+      }
+    });
+  }
 
   setTimeout(function () {
     var $sideBar = $('.side-navbar');
