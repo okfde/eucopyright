@@ -68,18 +68,18 @@ blockquote.guide {
 var problems2questions = {
   youtube: ['q-1'],
   imagesharing: ['q-58'],
-  filesharingconfusion: ['q-14'],
-  drm: ['q-13'],
+  filesharingconfusion: ['q-80'],
+  drm: ['q-13', 'q-64'],
   mediacountry: ['q-21'],
-  remix: ['q-64'],
-  subtitle: ['q-64'],
-  fanfiction: ['q-64'],
-  stolencontent: ['q-72'],
-  takedown: ['q-8'],
+  remix: ['q-23'],
+  subtitle: ['q-80'],
+  fanfiction: ['q-23'],
+  stolencontent: ['q-72', 'q-74'],
+  takedown: ['q-80'],
   affordmedia: ['q-20'],
-  parties: ['q-22'],
+  travel: ['q-22'],
   cclicense: ['q-15'],
-  sharing: ['q-77'],
+  enforcement: ['q-77'],
   links: ['q-11']
 };
 var problems = [];
@@ -172,7 +172,7 @@ function step() {
       <li><label><input type="checkbox" value="remix" title="{{ problem }}" />
         <span class="problem">{{ problem }}</span>
       </label></li>
-      {% assign problem = "Confused about legality of subtitling, translating, converting etc. media" %}
+      {% assign problem = "Confused about legality of subtitling, translating, converting, etc. media" %}
       <li><label><input type="checkbox" value="subtitle" title="{{ problem }}" />
         <span class="problem">{{ problem }}</span>
       </label></li>
@@ -188,20 +188,20 @@ function step() {
       <li><label><input type="checkbox" value="takedown" title="{{ problem }}" />
         <span class="problem">{{ problem }}</span>
       </label></li>
-      {% assign problem = "I can't afford buying media and feel socially excluded" %}
+      <!--{% assign problem = "I can't afford buying media and feel socially excluded" %}
       <li><label><input type="checkbox" value="affordmedia" title="{{ problem }}" />
         <span class="problem">{{ problem }}</span>
-      </label></li>
-      {% assign problem = "Someone told me I need permission to play music at parties" %}
-      <li><label><input type="checkbox" value="parties" title="{{ problem }}" />
+      </label></li-->
+      {% assign problem = "When I travel to another member state, I am unsure how local copyright laws differ from at home" %}
+      <li><label><input type="checkbox" value="travel" title="{{ problem }}" />
         <span class="problem">{{ problem }}</span>
       </label></li>
-      {% assign problem = "Collection society doesn't allow me to release my music under a Creative Commons license" %}
+      <!--{% assign problem = "Collection society doesn't allow me to release my music under a Creative Commons license" %}
       <li><label><input type="checkbox" value="cclicense" title="{{ problem }}" />
         <span class="problem">{{ problem }}</span>
-      </label></li>
-      {% assign problem = "My totally legitimate backups on MegaUpload were removed" %}
-      <li><label><input type="checkbox" value="sharing" title="{{ problem }}" />
+      </label></li-->
+      {% assign problem = "I have made the experience that copyright enforcement puts to the interests of rightholders above those of citizens" %}
+      <li><label><input type="checkbox" value="enforcement" title="{{ problem }}" />
         <span class="problem">{{ problem }}</span>
       </label></li>
       {% assign problem = "Confused about legality of sharing links to content under copyright protection" %}
