@@ -1,7 +1,7 @@
 ---
 layout: base
 title: "Reform copyright – 30c3 "
-language: de
+language: en
 ---
 <style type="text/css">
 body { 
@@ -17,22 +17,22 @@ ul {
 .container .jumbotron {
   display: none;
 }
-.container.state-start #state-start.jumbotron,
-.container.state-problem #state-problem.jumbotron,
-.container.state-end #state-end.jumbotron {
+.container.tab-start #tab-start.jumbotron,
+.container.tab-problem #tab-problem.jumbotron,
+.container.tab-end #tab-end.jumbotron {
   display: block;
 }
 #questions, .download-document {
   display: none;
 }
-#state-problem h2 {
+#tab-problem h2, #tab-end h2 {
   padding: 0 0 .5em;
 }
 div.radio > label {
   display: none;
 }
-div.radio.val-0 {
-  outline: 10px solid red;
+div.radio:not(.isChecked) {
+  display: none;
 }
 </style>
 <script type="text/javascript">
@@ -53,18 +53,17 @@ function start() {
   $('input[type=checkbox]').each(function(i, cb) {
     if (cb.checked) problems.push([cb.value, cb.getAttribute('title')]);
   });
-  $('.container')[0].className = 'container state-problem';
+  $('.container')[0].className = 'container tab-problem';
   $('.download-document').click(function(e){ step() });
 
-  //TODO var guide = EUCopyright.loadGuide
-  //EUCopyright.applyGuideToAll(guide);
+  EUCopyright.loadGuide('jupis');
   
   step();
 }
 function step() {
   if (currentProblem < problems.length) { // not at end yet
 
-    $('#state-problem h2').text(problems[currentProblem][1]);
+    $('#tab-problem h2').text(problems[currentProblem][1]);
 
     //move last q's back to hidden contAiner
     var cl = document.getElementById('problem').children.length;
@@ -84,13 +83,13 @@ function step() {
     currentProblem++;
     
   } else { // reached end
-    $('.container')[0].className = 'container state-end';
+    $('.container')[0].className = 'container tab-end';
   }
   //TODO end: Name, submit, progress bar
 }
 </script>
-<div class="container state-start">
-  <div id="state-start" class="jumbotron">
+<div class="container tab-start">
+  <div id="tab-start" class="jumbotron">
     <img src="{{ site.baseurl}}/img/30c3.png" width="200" align="right" />
     <h1>Reform copyright!</h1>
     <p><strong>The EU wants to hear your opinion</strong> on copyright reform. On this site we're making it easy for you to respond to the <a href="http://ameliaandersdotter.eu/copyright-consultation-model-responses">official EU consultation</a> on the topic. Together we can make our opinions and experiences heard!</p>
@@ -129,16 +128,16 @@ No Netflix or Hulu wtf?!
     <a href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="start()">Continue &raquo;</a>
   </div>
 
-  <div id="state-problem" class="jumbotron">
+  <div id="tab-problem" class="jumbotron">
     <p>Your problem:</p>
     <h2></h2>
-    <p>This problem relates to the following questions in the consultation:</p>
+    <p>This problem relates to the following question(s) in the consultation:</p>
     <div id="problem"></div>
     <a id="next" href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="step()">Next problem &raquo;</a>
     <a href="javascript:void(0)" class="download-document btn btn-primary btn-lg">Send answers &raquo;</a>
   </div>
 
-  <div id="state-end" class="jumbotron">
+  <div id="tab-end" class="jumbotron">
     <h2>Now send your feedback to the European Commission</h2>
 
     <!-- prefilled fields -->
@@ -171,6 +170,6 @@ No Netflix or Hulu wtf?!
 
 <div id="questions">
 {% for question in site.data.questions %}
-  {% include question.html %} <!-- todo own include? -->
+  {% include question_only.html %}
 {% endfor %}
 </div>
