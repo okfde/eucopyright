@@ -4,7 +4,7 @@ title: "Help reform copyright!"
 language: en
 ---
 <style type="text/css">
-body { 
+body {
   background: url("img/30c3-corner.jpg") -400px 0 no-repeat, url("img/30c3-bg.png");
   margin-bottom: 6em;
 }
@@ -62,7 +62,7 @@ blockquote.guide {
   color: #09c;
   border-left: 0;
 }
-  
+
 </style>
 <script type="text/javascript">
 var problems2questions = {
@@ -119,7 +119,7 @@ function step() {
     for (var i=0; i<cl; i++) {
       $('#questions')[0].appendChild($('#problem')[0].children[0]);
     }
-    
+
     // fetch new q's
     $(problems2questions[problems[currentProblem][0]]).each(function(i, q) {
       $('#problem')[0].appendChild($('.'+q)[0]);
@@ -131,10 +131,10 @@ function step() {
       $('.download-document').show();
     }
     currentProblem++;
-    
+
     $('#problem').find(':input:first').focus(); // TODO doesn't work?
     //$('#problem textarea')[0].focus(); // if there's a textarea, place the cursor inside
-    
+
   } else { // reached end
     $('.container')[0].className = 'container tab-end';
     $('#tab-end').find(':input:first')[0].focus(); // TODO doesn't work?
@@ -145,7 +145,7 @@ function step() {
   <div id="tab-start" class="jumbotron">
     <img src="img/30c3.png" width="200" align="right" />
     <h1>Help reform copyright!</h1>
-   
+
     <p><strong>The EU wants to hear your opinion</strong> on copyright reform. On this site we're making it easy for you to respond to the <a href="http://ameliaandersdotter.eu/copyright-consultation-model-responses">official EU consultation</a> by filtering out the questions that don't apply to you. Together we can make our opinions and experiences heard!</p>
     <p><small>One more thing: You can answer the question in any European language you are comfortable with!</small></p>
     <h2>Which of these problems have you encountered with copyright in the EU?</h2>
@@ -202,7 +202,7 @@ function step() {
       <li><label><input type="checkbox" value="cclicense" title="{{ problem }}" />
         <span class="problem">{{ problem }}</span>
       </label></li-->
-      {% assign problem = "I have made the experience that copyright enforcement puts to the interests of rightholders above those of citizens" %}
+      {% assign problem = "I have made the experience that copyright enforcement puts the interests of rightholders above those of citizens" %}
       <li><label><input type="checkbox" value="enforcement" title="{{ problem }}" />
         <span class="problem">{{ problem }}</span>
       </label></li>
@@ -211,13 +211,13 @@ function step() {
         <span class="problem">{{ problem }}</span>
       </label></li>
     </ul>
-    
+
 <!--       <div class="col-lg-6">
         <img src="img/youtube.png" alt="Dieses Video ist in deinem Land nicht verfügbar"/>
       </div>
     </div> -->
     <a href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="start(this)">Continue &raquo;</a>
-    
+
     <p><br /><small>Would you like to <a href="{{ site.baseurl}}/">respond to the full 80-question consultation</a> rather than this simplified form? It's not necessary to answer all the questions.</small></p>
   </div>
 
@@ -243,11 +243,11 @@ function step() {
 
     <!-- prefilled fields -->
     <input type="hidden" name="typeofrespondent" value="enduser" checked>
-    <input type="hidden" class="form-control" id="register-id" placeholder="Register ID">        
+    <input type="hidden" class="form-control" id="register-id" placeholder="Register ID">
 
     <ol>
       <li>
-    <a id="download" href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="">Download response file</a>      
+    <a id="download" href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="">Download response file</a>
       </li>
       <li><a href="mailto:markt-copyright-consultation@ec.europa.eu?subject=My%20contribution%20to%20the%20copyright%20consultation&body=PLEASE%20MAKE%20SURE%20THE%20FILE%20consultation-document_en.odt%20WHICH%20YOU%20DOWNLOADED%20IS%20ATTACHED%20TO%20THIS%20EMAIL%20AND%20REMOVE%20THIS%20NOTICE" target="_blank" class="btn btn-primary btn-lg">Send the downloaded document by email</a> to
         <input size="43" value="markt-copyright-consultation@ec.europa.eu" onclick="this.select()" />
@@ -256,7 +256,7 @@ function step() {
         </p>
       </li>
     </ol>
-    
+
     <h2>Thanks for helping advocate for copyright reform!</h2>
 
     <p>Would you share this page with your friends? The more responses the EU gets, the better the reform will be.</p>
