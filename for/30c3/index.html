@@ -1,0 +1,176 @@
+---
+layout: base
+title: "Reform copyright – 30c3 "
+language: de
+---
+<style type="text/css">
+body { 
+  background: url("{{ site.baseurl}}/img/30c3-corner.jpg") -400px 0 no-repeat, url("{{ site.baseurl}}/img/30c3-bg.png");
+}
+.jumbotron {
+  background: rgba(255,255,255,.8);
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.container .jumbotron {
+  display: none;
+}
+.container.state-start #state-start.jumbotron,
+.container.state-problem #state-problem.jumbotron,
+.container.state-end #state-end.jumbotron {
+  display: block;
+}
+#questions, .download-document {
+  display: none;
+}
+#state-problem h2 {
+  padding: 0 0 .5em;
+}
+div.radio > label {
+  display: none;
+}
+div.radio.val-0 {
+  outline: 10px solid red;
+}
+</style>
+<script type="text/javascript">
+var problems2questions = {
+  youtube: ['q-1'],
+  imagesharing: ['q-8', 'q-15'],
+  filesharingconfusion: ['q-7', 'q-20'],
+  filesharingtrouble: ['q-2'],
+  paid: ['q-40', 'q-41', 'q-42'],
+  drm: ['q-60'],
+  country: ['q-8'],
+  netflix: ['q-80']
+}
+var problems = [];
+var currentProblem = 0;
+
+function start() {
+  $('input[type=checkbox]').each(function(i, cb) {
+    if (cb.checked) problems.push([cb.value, cb.getAttribute('title')]);
+  });
+  $('.container')[0].className = 'container state-problem';
+  $('.download-document').click(function(e){ step() });
+
+  //TODO var guide = EUCopyright.loadGuide
+  //EUCopyright.applyGuideToAll(guide);
+  
+  step();
+}
+function step() {
+  if (currentProblem < problems.length) { // not at end yet
+
+    $('#state-problem h2').text(problems[currentProblem][1]);
+
+    //move last q's back to hidden contAiner
+    var cl = document.getElementById('problem').children.length;
+    for (var i=0; i<cl; i++) {
+      $('#questions')[0].appendChild($('#problem')[0].children[0]);
+    }
+    
+    //fetch new q's
+    $(problems2questions[problems[currentProblem][0]]).each(function(i, q) {
+      $('#problem')[0].appendChild($('.'+q)[0]);
+    });
+
+    if (currentProblem == problems.length-1) {
+      $('#next').hide();
+      $('.download-document').show();
+    }
+    currentProblem++;
+    
+  } else { // reached end
+    $('.container')[0].className = 'container state-end';
+  }
+  //TODO end: Name, submit, progress bar
+}
+</script>
+<div class="container state-start">
+  <div id="state-start" class="jumbotron">
+    <img src="{{ site.baseurl}}/img/30c3.png" width="200" align="right" />
+    <h1>Reform copyright!</h1>
+    <p><strong>The EU wants to hear your opinion</strong> on copyright reform. On this site we're making it easy for you to respond to the <a href="http://ameliaandersdotter.eu/copyright-consultation-model-responses">official EU consultation</a> on the topic. Together we can make our opinions and experiences heard!</p>
+    <h2>Which of these problems have you encountered with copyright in the EU?</h2>
+    <ul>
+      <li><label><input type="checkbox" value="youtube" title="Some YouTube videos are not playable in my country" />
+        Some YouTube videos are not playable in my country
+      </label></li>
+      <li><label><input type="checkbox" value="imagesharing" title="Confused about legality of sharing images on Facebook, Tumblr, etc" />
+Confused about legality of sharing images on Facebook, Tumblr, etc
+      </label></li>
+      <li><label><input type="checkbox" value="filesharingconfusion" title="Confused about legality of filesharing/torrenting" />
+Confused about legality of filesharing/torrenting
+      </label></li>
+      <li><label><input type="checkbox" value="filesharingtrouble" title="Got in trouble because of filesharing/torrenting" />
+Got in trouble because of filesharing/torrenting
+      </label></li>
+      <li><label><input type="checkbox" value="paid" title="Paid a lawyer to prevent a court case" />
+Paid a lawyer to prevent a court case
+      </label></li>
+      <li><label><input type="checkbox" value="drm" title="Could not freely use media I bought, was deprived of freedoms I would have had with analog media" />
+Could not freely use media I bought, was deprived of freedoms I would have had with analog media
+      </label></li>
+      <li><label><input type="checkbox" value="country" title="Media not available to buy in my country" />
+Media not available to buy in my country
+      </label></li>
+      <li><label><input type="checkbox" value="netflix" title="No Netflix or Hulu wtf?!" />
+No Netflix or Hulu wtf?!
+      </label></li>
+    </ul>
+    
+<!--       <div class="col-lg-6">
+        <img src="img/youtube.png" alt="Dieses Video ist in deinem Land nicht verfügbar"/>
+      </div>
+    </div> -->
+    <a href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="start()">Continue &raquo;</a>
+  </div>
+
+  <div id="state-problem" class="jumbotron">
+    <p>Your problem:</p>
+    <h2></h2>
+    <p>This problem relates to the following questions in the consultation:</p>
+    <div id="problem"></div>
+    <a id="next" href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="step()">Next problem &raquo;</a>
+    <a href="javascript:void(0)" class="download-document btn btn-primary btn-lg">Send answers &raquo;</a>
+  </div>
+
+  <div id="state-end" class="jumbotron">
+    <h2>Now send your feedback to the European Commission</h2>
+
+    <!-- prefilled fields -->
+    <input type="hidden" name="typeofrespondent" value="enduser" checked>
+    <input type="hidden" class="form-control" id="register-id" placeholder="Register ID">        
+
+    <ol>
+      <li>        
+        <div class="form-group">
+          <label for="name">Your name (optional)</label>
+          <input type="text" class="form-control" id="name" placeholder="Optionally enter your name">
+          <p class="help-block">
+            You don't have to give your name, your answer can be anonymous.
+          </p>
+        </div>
+      </li>
+      <li>
+    <a id="download" href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="">Download response file</a>      
+      </li>
+      <li>Please send the downloaded document by email to
+        <input value="markt-copyright-consultation@ec.europa.eu" onclick="this.select()" />
+      </li>
+    </ol>
+    
+    <h2>Thanks for helping advocate for copyright reform!</h2>
+
+    <p>Now share this page with your friends.</p>
+  </div>
+</div>
+
+<div id="questions">
+{% for question in site.data.questions %}
+  {% include question.html %} <!-- todo own include? -->
+{% endfor %}
+</div>
