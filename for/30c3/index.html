@@ -127,6 +127,7 @@ function step() {
 
     if (currentProblem == problems.length-1) {
       $('#next').hide();
+      $('.give-name').show();
       $('.download-document').show();
     }
     currentProblem++;
@@ -225,6 +226,14 @@ function step() {
     <p>This problem relates to the following question(s) in the consultation:</p>
     <div id="problem"></div>
     <a id="next" href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="step()">Next problem &raquo;</a>
+    <div class="form-group give-name" style="display:none">
+      <label for="name">Your name</label>
+      <input type="text" class="form-control" id="name" placeholder="Optionally enter your name">
+      <p class="help-block">
+        Please note that your contributions <strong>will be published online</strong> by the EU!<br />
+        You don't have to give your name, but it is recommended.
+      </p>
+    </div>
     <a href="javascript:void(0)" class="download-document btn btn-primary btn-lg">Send answers &raquo;</a>
   </div>
 
@@ -236,16 +245,6 @@ function step() {
     <input type="hidden" class="form-control" id="register-id" placeholder="Register ID">        
 
     <ol>
-      <li>        
-        <div class="form-group">
-          <label for="name">Your name</label>
-          <input type="text" class="form-control" id="name" placeholder="Optionally enter your name">
-          <p class="help-block">
-            Please note that your contributions <strong>will be published online</strong> by the EU!<br />
-            You don't have to give your name, but it is recommended.
-          </p>
-        </div>
-      </li>
       <li>
     <a id="download" href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="">Download response file</a>      
       </li>
