@@ -66,21 +66,21 @@ blockquote.guide {
 </style>
 <script type="text/javascript">
 var problems2questions = {
-  youtube: ['q-1'],
-  imagesharing: ['q-58'],
-  filesharingconfusion: ['q-80'],
-  drm: ['q-13', 'q-64'],
-  mediacountry: ['q-21'],
-  remix: ['q-23'],
-  subtitle: ['q-80'],
-  fanfiction: ['q-23'],
-  stolencontent: ['q-72', 'q-74'],
-  takedown: ['q-80'],
-  affordmedia: ['q-20'],
-  travel: ['q-22'],
-  cclicense: ['q-15'],
-  enforcement: ['q-77'],
-  links: ['q-11']
+  youtube: [1],
+  imagesharing: [58],
+  filesharingconfusion: [80],
+  drm: [13, 64],
+  mediacountry: [21],
+  remix: [23],
+  subtitle: [80],
+  fanfiction: [23],
+  stolencontent: [72, 74],
+  takedown: [80],
+  affordmedia: [20],
+  travel: [22],
+  cclicense: [15],
+  enforcement: [77],
+  links: [11]
 };
 var problems = [];
 var currentProblem = 0;
@@ -122,7 +122,7 @@ function step() {
 
     // fetch new q's
     $(problems2questions[problems[currentProblem][0]]).each(function(i, q) {
-      $('#problem')[0].appendChild($('.'+q)[0]);
+      $('#problem')[0].appendChild($('.q-'+q)[0]);
     });
 
     if (currentProblem == problems.length-1) {
