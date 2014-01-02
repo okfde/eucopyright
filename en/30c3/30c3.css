@@ -33,16 +33,16 @@ ul li label .problem {
 .container .jumbotron {
   display: none;
 }
-.container.tab-start #tab-start.jumbotron,
-.container.tab-problem #tab-problem.jumbotron,
-.container.tab-end #tab-end.jumbotron {
+.container.step-start #step-start.jumbotron,
+.container.step-problem #step-problem.jumbotron,
+.container.step-end #step-end.jumbotron {
   display: block;
 }
 #questions, .download-document {
   display: none;
 }
-#tab-problem h2:first-of-type,
-#tab-end h2:first-of-type {
+#step-problem h2:first-of-type,
+#step-end h2:first-of-type {
   padding: 0 0 .5em;
 }
 div.radio label,

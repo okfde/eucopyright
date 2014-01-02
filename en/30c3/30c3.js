@@ -16,7 +16,7 @@ function start(btn) {
     }
   });
   if (problems.length > 0) {
-    $('.container')[0].className = 'container tab-problem'; // switch to next "tab"
+    $('.container')[0].className = 'container step-problem'; // switch to next "tab"
     $('.download-document').click(function(e){ step() }); // make final button do the right thing
     EUCopyright.loadGuide('crew_30c3');
     step();
@@ -28,7 +28,7 @@ function start(btn) {
 function step() {
   if (currentProblem < problems.length) { // not at end yet
 
-    $('#tab-problem h2')[0].innerHTML = problems[currentProblem][1];
+    $('#step-problem h2')[0].innerHTML = problems[currentProblem][1];
 
     // move last q's back to hidden container
     var cl = document.getElementById('problem').children.length;
@@ -52,7 +52,7 @@ function step() {
     //$('#problem textarea')[0].focus(); // if there's a textarea, place the cursor inside
 
   } else { // reached end
-    $('.container')[0].className = 'container tab-end';
-    $('#tab-end').find(':input:first')[0].focus(); // TODO doesn't work?
+    $('.container')[0].className = 'container step-end';
+    $('#step-end').find(':input:first')[0].focus(); // TODO doesn't work?
   }
 }
