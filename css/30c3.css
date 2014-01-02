@@ -1,5 +1,5 @@
 body {
-  background: url("img/30c3-corner.jpg") -400px 0 no-repeat, url("img/30c3-bg.png");
+  background: url("../img/30c3/30c3-corner.jpg") -400px 0 no-repeat, url("../img/30c3/30c3-bg.png");
   margin-bottom: 6em;
 }
 .jumbotron {

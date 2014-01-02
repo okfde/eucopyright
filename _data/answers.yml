@@ -1,16 +1,20 @@
 - name: Wikimedia Germany
   slug: wikimedia
+  language: en
   url: "https://docs.google.com/spreadsheet/pub?key=0Am6UBdM-6oM6dDBEaGZxbmtEaXg2Vlp2VkR3MkxXNlE&output=csv"
   description: "They run, among other projects, the German Wikipedia."
-- name: Example Group
-  slug: example
-  url: "/guides/example.csv"
-  questions: [1]
 - name: Junge Piraten (DE) work in progress
   slug: jupis
+  language: de
   url: "/guides/jupis.csv"
   questions: [1, 4, 7, 11, 12, 20, 22, 23, 24, 79]
 - name: "Crew 30c3"
   slug: "crew_30c3"
+  language: en
   url: "/guides/30c3.csv"
+  questions: [1, 58, 80, 13, 64, 21, 23, 72, 74, 20, 22, 15, 77, 11]
+- name: "Crew 30c3 (DE)"
+  slug: "crew_30c3_de"
+  language: de
+  url: "/guides/30c3_de.csv"
   questions: [1, 58, 80, 13, 64, 21, 23, 72, 74, 20, 22, 15, 77, 11]
