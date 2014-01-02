@@ -1,5 +1,6 @@
 var problems = [];
 var currentProblem = 0;
+var guideSlug = 'crew_30c3';
 
 function start(btn) {
   $('input[type=checkbox]').each(function(i, cb) {
@@ -18,7 +19,11 @@ function start(btn) {
   if (problems.length > 0) {
     $('.container')[0].className = 'container step-problem'; // switch to next "tab"
     $('.download-document').click(function(e){ step() }); // make final button do the right thing
-    EUCopyright.loadGuide('crew_30c3');
+    if (typeof guideSlug != 'undefined') {
+      EUCopyright.loadGuide(guideSlug);
+    } else {
+      EUCopyright.loadGuide('30c3');
+    }
     step();
   } else { // nothing selected
     btn.innerHTML = "Please select a problem above before continuing &raquo;";
