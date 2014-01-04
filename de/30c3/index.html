@@ -1,0 +1,110 @@
+---
+layout: base
+title: "Refomiert das Urheberrecht!"
+language: de
+---
+<style type="text/css"> @import "../../css/30c3.css"; </style>
+<script type="text/javascript" src="../../js/30c3.js"></script>
+<script type="text/javascript">
+var problems2questions = {
+  youtube: [1],
+  imagesharing: [58],
+  filesharingconfusion: [80],
+  drm: [13, 64],
+  mediacountry: [21],
+  remix: [23],
+  subtitle: [80],
+  fanfiction: [23],
+  stolencontent: [72, 74],
+  takedown: [80],
+  affordmedia: [20],
+  travel: [22],
+  cclicense: [15],
+  enforcement: [77],
+  links: [11]
+};
+var guideSlug = 'crew_30c3_de'
+</script>
+
+<div class="container step-start">
+  <div id="step-start" class="jumbotron">
+    
+    <img src="../../img/30c3/30c3.png" width="200" align="right" />
+    <h1>Reformiert das Urheberrecht!</h1>
+
+    <p><strong>Die EU will deine Meinung zur Urheberrechtsreform hören.</strong> Auf dieser Seite kannst du ganz einfach der <a href="https://ameliaandersdotter.eu/europaisches-urheberrecht-und-ihr-macht-mit">offiziellen Urheberrechts-Anhörung</a> antworten, indem du die für dich wichtigen Fragen heraussuchst. Zusammen schaffen wir es, dass unsere Meinung gehört wird!</p>
+    <p><small>Eine Sache noch: Du kannst die Fragen in jeder beliebigen europäischen Sprache beantworten – wie es für dich am einfachsten ist!</small></p>
+
+    <h2>Auf welches dieser Probleme bist du innerhalb der EU schon gestoßen?</h2>
+    <ul>
+      {% include problem.html key="youtube" text="YouTube-Videos sind in meinem Land nicht abspielbar" %}
+      {% include problem.html key="imagesharing" text="Verwirrung über die Legalität beim Teilen von Bildern auf Facebook, Tumblr, etc" %}
+      {% include problem.html key="filesharingconfusion" text="Verwirrung wegen der Legalität von Filesharing/Torrenting bzw. schon rechtliche Schwierigkeiten wegen Filesharing/Torrenting gehabt" %}
+      {% include problem.html key="drm" text="Medien konnten aufgrund von DRM nicht frei verwendet werden, weniger Freiheiten als in der analogen Welt" %}
+      {% include problem.html key="mediacountry" text="Diverse Medien sind in meinem Land nicht zu kaufen oder eine Website, die ich verwenden wollte, war in meinem EU-Land nicht verfügbar" %}
+      {% include problem.html key="remix" text="Ich habe mich aus Angst vor Repressionen nicht getraut, einen Remix zu erstellen" %}
+      {% include problem.html key="subtitle" text="Unsicherheiten bezüglich der Legalität beim Erstellen von Untertiteln, Übersetzungen,  Umwandlungen, etc. von Medien" %}
+      {% include problem.html key="fanfiction" text="Meine Fangeschichten oder Fan-Kunst könnten illegal sein" %}
+      {% include problem.html key="stolencontent" text="Jemand hat meine Inhalte gestohlen OMFG" %}
+      {% include problem.html key="takedown" text="Ich betreibe einen Webservice und bin mit Abmahnungen und Beschwerden konfrontiert worden" %}
+      <!--{% include problem.html key="affordmedia" text="I can't afford buying media and feel socially excluded" %}-->
+      {% include problem.html key="travel" text="Bei Reisen in einen anderen Mitgliedsstaat herrscht Unklarheit über die Unterschiede zu eigenen Urheberrechtsgesetzen" %}
+      <!--{% include problem.html key="cclicense" text="Collection society doesn't allow me to release my music under a Creative Commons license" %}-->
+      {% include problem.html key="enforcement" text="Ich habe die Erfahrung gemacht, dass bei der Durchsetzung von Urheberrechten die Interessen von Rechteinhabern denen von Bürgern übergeordnet sind" %}
+      {% include problem.html key="links" text="Verwirrung über die Legalität beim Teilen von Links auf Inhalte, die unter dem Schutz vom Urheberrecht stehen" %}
+    </ul>
+
+    <a href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="start(this)">Fortfahren &raquo;</a>
+
+    <p><br /><small>Möchstest du lieber <a href="{{ site.baseurl}}/de/">diesen kompletten, 80 Fragen umfassenden Katalog</a> als diese vereinfachte Version beantworten? Es ist nicht notwendig, alle Fragen zu beantworten.</small></p>
+  </div>
+
+  <div id="step-problem" class="jumbotron">
+    <p>Dein Problem:</p>
+    <h2></h2>
+    <p>Dieses Problem hängt mit folgenden Fragen zusammen:</p>
+    <div id="problem"></div>
+    <a id="next" href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="step()">Nächstes Problem &raquo;</a>
+    <div class="form-group give-name" style="display:none">
+      <label for="name">Dein Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Trage deinen Namen ein">
+      <p class="help-block">
+        Bitte beachte, dass deine Angaben von der EU <strong>im Internet veröffentlicht</strong> werden!<br />
+        Du musst zwar deinen Namen angeben. Wenn du jedoch nicht möchtest, dass dein Name veröffentlicht wird, klicke hier um deine Antworten anonym abzuschicken.
+      </p>
+    </div>
+    <a href="javascript:void(0)" class="download-document btn btn-primary btn-lg">Antworten verschicken &raquo;</a>
+  </div>
+
+  <div id="step-end" class="jumbotron">
+    <h2>Schicke dein Feedback nun an die Europäische Kommission</h2>
+
+    <!-- prefilled fields -->
+    <input type="hidden" name="typeofrespondent" value="enduser" checked>
+    <input type="hidden" class="form-control" id="register-id" placeholder="Register ID">
+
+    <ol>
+      <li>
+        <a id="download" href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="">Lade das Antwortformular herunter</a>
+      </li>
+      <li>
+        <a href="mailto:markt-copyright-consultation@ec.europa.eu?subject={{ "My contribution to the copyright consultation" | uri_escape }}&body={{ "PLEASE MAKE SURE THE FILE consultation-document_en.odt WHICH YOU DOWNLOADED IS ATTACHED TO THIS EMAIL AND REMOVE THIS NOTICE" | uri_escape }}" target="_blank" class="btn btn-primary btn-lg">Sende das heruntergeladene Dokument per E-Mail</a> an
+        <input size="43" value="markt-copyright-consultation@ec.europa.eu" onclick="this.select()" />
+        <p>
+          <small>Die  <a href="http://ec.europa.eu/internal_market/consultations/2013/copyright-rules/docs/privacy-statement_en.pdf">Datenschutzerklärung der Europäischen Kommission</a> findet hier Anwendung.</small>
+        </p>
+      </li>
+    </ol>
+
+    <h2>Vielen Dank, dass du die Reform des Urheberrechts unterstützt!</h2>
+
+    <p>Bitte teile diese Seite mit deinen Freunden. Je mehr Antworten an die EU gehen, desto erfolgreicher wird die Reform werden.</p>
+
+  </div>
+</div>
+
+<div id="questions"><!-- visually hidden -->
+{% for question in site.data.questions %}
+  {% include question_only.html %}
+{% endfor %}
+</div>
