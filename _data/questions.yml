@@ -1,7 +1,7 @@
 - num: 1
   text:
     en: Have you faced problems when trying to access online services in an EU Member State other than the one in which you live?
-    de: Hattest du schon mal das Problem, dass Onlinedienste aus einem anderen EU-Mitgliedstaat in deinem Land nicht verfügbar sind? Wenn ja, welche und in welchem Land?
+    de: Hattest du schon einmal Probleme auf Online-Dienste aus einem anderen EU-Staat als dem, in dem du lebst, zuzugreifen?
   to: enduser
   type: multiple_choice
   explanation:
@@ -237,7 +237,7 @@
 - num: 11
   text:
     en: "Should the provision of a hyperlink leading to a work or other subject matter protected under copyright, either in general or under specific circumstances, be subject to the authorisation of the rightholder?"
-    de: Sollten Rechteinhaber das Recht haben, Links auf urheberrechtlich geschützte Inhalte zu verbieten (entweder allgemein oder unter bestimmten Umständen)?
+    de: Sollte das Bereitstellen eines Hyperlinks, welcher zu einem urheberrechtlich geschützten Werk oder anderen Gegenstand führt, entweder im Allgemeinen oder unter bestimmten Umständen die Erlaubnis des Rechteinhabers erfordern?
   to: everyone
   type: multiple_choice
   options:
@@ -301,6 +301,7 @@
 - num: 13
   text:
     en: "Have you faced restrictions when trying to resell digital files that you have purchased (e.g. mp3 file, e-book)?"
+    de: "Warst du beim Versuch des Weiterverkaufs digitaler Dateien (z. B. MP3-Dateien, eBooks), die du zuvor erworben hattest, mit Einschränkungen konfrontiert?"
   to: end user/consumer
   type: multiple_choice
   options:
@@ -432,6 +433,7 @@
 - num: 21
   text:
     en: Are there problems arising from the fact that most limitations and exceptions provided in the EU copyright directives are optional for the Member States?
+    de: "Werden aufgrund der Tatsache, dass die Einschränkungen und Ausnahmen in den EU-Richtlininen für die Mitgliedsstaaten auf Freiwilligkeit basieren, Probleme entstehen?"
   to: everyone
   type: multiple_choice
   options:
@@ -495,7 +497,7 @@
 - num: 23
   text:
     en: "Should any new limitations and exceptions be added to or removed from the existing catalogue? Please explain by referring to specific cases"
-    de: Sollten neue Schranken und Ausnahmen vom Urheberrecht eingeführt werden? Bitte nennt konkrete Beispiele.
+    de: Sollten neue Schranken und Ausnahmen vom Urheberrecht eingeführt werden? Bitte nenne konkrete Beispiele.
   to: everyone
   type: open_question
   odf:
@@ -1052,6 +1054,7 @@
 - num: 58
   text:
     en: "(a) [In particular if you are an end user/consumer:] Have you experienced problems when trying to use pre-existing works or other subject matter to disseminate new content on the Internet, including across borders? (b) [In particular if you are a service provider:] Have you experienced problems when users publish/disseminate new content based on the pre-existing works or other subject-matter through your service, including across borders?(c) [In particular if you are a right holder:] Have you experienced problems resulting from the way the users are using pre-existing works or other subject-matter to disseminate new content on the Internet, including across borders?"
+    de: "(a) [im Besonderen, wenn du Privatanwender/Konsument bist:] Hattest du schon Probleme, als du versuchtest, schon existierende Arbeiten  oder andere Angelegenheiten für neue Veröffentlichungen zu verwenden, auch über Grenzen hinweg? (b) [im Besonderen, wenn du ein Diensteanbieter bist:]  Hast du schon von Problemen von Nutzern erfahren, die schon existierende Arbeiten für neue Veröffentlichungen verwendet haben, auch grenzüberschreitend und über deine Dienste? (c) [im Besonderen, wenn du ein Rechteinhaber bist:] Hast du schon Probleme bei Veröffentlichungen basierend auf schon existierenden Arbeiten durch User, auch über Grenzen hinweg, festgestellt?"
   to: switch
   type: multiple_choice
   options:
@@ -1172,6 +1175,7 @@
 - num: 64
   text:
     en: "In your view, is there a need to clarify at the EU level the scope and application of the private copying and reprography exceptions in the digital environment?"
+    de: "Ist es aus deiner Sicht notwendig, auf EU-Ebene die Reichweite und den Zweck der Ausnahmeregelungen für Privatkopien und Vervielfältigungen im digitalen Bereich zu klären?"
   to: everyone
   type: multiple_choice
   options:
@@ -1340,6 +1344,7 @@
 - num: 72
   text:
     en: What is the best mechanism (or combination of mechanisms) to ensure that you receive an adequate remuneration for the exploitation of your works and performances?
+    de: "Welche Mechanismen (auch Kombinationen aus verschiedenen Mechanismen) stellen ein passendes Entgelt für die Nutzung deiner Arbeiten und Leistungen am besten sicher?"
   to: author/performer
   type: open_question
   odf:
@@ -1382,6 +1387,7 @@
 - num: 74
   text:
     en: "If you consider that the current rules are not effective, what would you suggest to address the shortcomings you identify?"
+    de: "Wenn du denkst, die geltenden Vorschriften wären nicht wirksam? Wie würdest du die von dir erkannten Defizite beheben?"
   to: everyone
   type: open_question
   odf:
@@ -1435,6 +1441,7 @@
 - num: 77
   text:
     en: Does the current civil enforcement framework ensure that the right balance is achieved between the right to have one’s copyright respected and other rights such as the protection of private life and protection of personal data?
+    de: "Stellen die aktuellen zivilrechtlichen Durchsetzungs-Voraussetzungen sicher, dass das richtige Gleichgewicht zwischen dem Urheberrecht und anderen Rechten, wie dem Schutz des Privatlebens und der persönlichen Daten, zustande kommt?"
   to: everyone
   type: open_question
   options:
@@ -1498,6 +1505,7 @@
 - num: 80
   text:
     en: Are there any other important matters related to the EU legal framework for copyright? Please explain and indicate how such matters should be addressed.
+    de: "Gibt es weitere wichtige Dinge im Zusammenhang mit der europäischen Rechtslage im Bezug auf das Urheberrecht?  Bitte erklären und darauf hinweisen, wie man diese Fälle ansprechen könnte"
   to: everyone
   type: open_question
   odf:
