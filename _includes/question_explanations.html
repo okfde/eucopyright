@@ -7,10 +7,12 @@
     </div>
     <div class="list-group answer-choices-{{ question.num }}">
     {% for answer in site.data.answers %}
-      {% if answer.questions == null or answer.questions contains question.num %}
-        <a href="#{{ answer.slug }}" id="answer-choice-{{ answer.slug }}-{{ question.num }}" data-question="{{ question.num }}" class="list-group-item load-question answer-choice-{{ answer.slug }}">
-          {{ answer.name }}
-        </a>
+      {% if page.language == answer.language %}
+        {% if answer.questions == null or answer.questions contains question.num %}
+          <a href="#{{ answer.slug }}" id="answer-choice-{{ answer.slug }}-{{ question.num }}" data-question="{{ question.num }}" class="list-group-item load-question answer-choice-{{ answer.slug }}">
+            {{ answer.name }}
+          </a>
+        {% endif %}
       {% endif %}
     {% endfor %}
     </div>
