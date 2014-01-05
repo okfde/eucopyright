@@ -432,6 +432,21 @@ $(function(){
     }
   });
 
+  if (!EUCopyright.supports_html5_storage()) {
+    $('#localstorage-hint').hide();
+  }
+
+  if (EUCopyright.supports_html5_storage()) {
+    $('.delete-localstorage').click(function(){
+      var answer = window.confirm('Are you sure?');
+      if (!answer) { return; }
+      for (var key in localStorage) {
+        delete localStorage[key];
+      }
+      window.location.reload();
+    });
+  }
+
   $('.radio-text textarea').on('keyup', function(){
     var radio = $(this).parent().parent().find('input:not(checked)');
     radio.prop('checked', true);
