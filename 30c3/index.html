@@ -1,0 +1,109 @@
+---
+layout: base
+title: "Help reform copyright!"
+language: en
+---
+<style type="text/css"> @import "../css/30c3.css"; </style>
+<script type="text/javascript" src="../js/30c3.js"></script>
+<script type="text/javascript">
+var problems2questions = {
+  youtube: [1],
+  imagesharing: [58],
+  filesharingconfusion: [80],
+  drm: [13, 64],
+  mediacountry: [21],
+  remix: [23],
+  subtitle: [80],
+  fanfiction: [23],
+  stolencontent: [72, 74],
+  takedown: [80],
+  affordmedia: [20],
+  travel: [22],
+  cclicense: [15],
+  enforcement: [77],
+  links: [11]
+};
+</script>
+
+<div class="container step-start">
+  <div id="step-start" class="jumbotron">
+    
+    <img src="../img/30c3/30c3.png" width="200" align="right" />
+    <h1>Help reform copyright!</h1>
+
+    <p><strong>The EU wants to hear your opinion</strong> on copyright reform. On this site we're making it easy for you to respond to the <a href="http://ameliaandersdotter.eu/copyright-consultation-model-responses">official EU consultation</a> by filtering out the questions that don't apply to you. Together we can make our opinions and experiences heard!</p>
+    <p><small>One more thing: You can answer the question in any European language you are comfortable with!</small></p>
+    
+    <h2>Which of these problems have you encountered with copyright in the EU?</h2>
+    <ul>
+      {% include problem.html key="youtube" text="YouTube videos not playable in my country" %}
+      {% include problem.html key="imagesharing" text="Confused about legality of sharing images on Facebook, Tumblr, etc" %}
+      {% include problem.html key="filesharingconfusion" text="Confused about legality of filesharing/torrenting or even got in trouble because of filesharing/torrenting" %}
+      {% include problem.html key="drm" text="Could not freely use media I bought because of DRM, in fact had less freedom than I would have offline/in the analog world" %}
+      {% include problem.html key="mediacountry" text="Certain media not available to buy in my country or a website I wanted to use was blocked in my country" %}
+      {% include problem.html key="remix" text="Don't dare make a remix because of fear of repercussions" %}
+      {% include problem.html key="subtitle" text="Confused about legality of subtitling, translating, converting, etc. media" %}
+      {% include problem.html key="fanfiction" text="My fan fiction or fan art might be illegal" %}
+      {% include problem.html key="stolencontent" text="Someone stole my content OMFG" %}
+      {% include problem.html key="takedown" text="Provided a web service that was confronted with takedown notices and complaints (my Youtube/Vimeo video was blocked)" %}
+      <!--{% include problem.html key="affordmedia" text="I can't afford buying media and feel socially excluded" %}-->
+      {% include problem.html key="travel" text="When I travel to another member state, I am unsure how local copyright laws differ from at home" %}
+      <!--{% include problem.html key="cclicense" text="Collection society doesn't allow me to release my music under a Creative Commons license" %}-->
+      {% include problem.html key="enforcement" text="I have made the experience that copyright enforcement puts the interests of rightholders above those of citizens" %}
+      {% include problem.html key="links" text="Confused about legality of sharing links to content under copyright protection" %}
+    </ul>
+
+    <a href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="start(this)">Continue &raquo;</a>
+
+    <p><br /><small>Would you like to <a href="{{ site.baseurl}}/">respond to the full 80-question consultation</a> rather than this simplified form? It's not necessary to answer all the questions.</small></p>
+  </div>
+
+  <div id="step-problem" class="jumbotron">
+    <p>Your problem:</p>
+    <h2></h2>
+    <p>This problem relates to the following question(s) in the consultation:</p>
+    <div id="problem"></div>
+    <a id="next" href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="step()">Next problem &raquo;</a>
+    <div class="form-group give-name" style="display:none">
+      <label for="name">Your name</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      <p class="help-block">
+        Please note that your contributions <strong>will be published online</strong> by the EU!<br />
+        You don't have to give your name, but it is recommended.
+      </p>
+    </div>
+    <a href="javascript:void(0)" class="download-document btn btn-primary btn-lg">Send answers &raquo;</a>
+  </div>
+
+  <div id="step-end" class="jumbotron">
+    <h2>Now send your feedback to the European Commission</h2>
+
+    <!-- prefilled fields -->
+    <input type="hidden" name="typeofrespondent" value="enduser" checked>
+    <input type="hidden" class="form-control" id="register-id" placeholder="Register ID">
+
+    <ol>
+      <li>
+        <a id="download" href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="">Download response file</a>
+      </li>
+      <li>
+        <a href="mailto:markt-copyright-consultation@ec.europa.eu?subject={{ "My contribution to the copyright consultation" | uri_escape }}&body={{ "PLEASE MAKE SURE THE FILE consultation-document_en.odt WHICH YOU DOWNLOADED IS ATTACHED TO THIS EMAIL AND REMOVE THIS NOTICE" | uri_escape }}" target="_blank" class="btn btn-primary btn-lg">Send the downloaded document by email</a> to
+        <input size="43" value="markt-copyright-consultation@ec.europa.eu" onclick="this.select()" />
+        <p>
+          <small>The <a href="http://ec.europa.eu/internal_market/consultations/2013/copyright-rules/docs/privacy-statement_en.pdf">Privacy statement of the European Commission</a> applies.</small>
+        </p>
+      </li>
+    </ol>
+
+    <h2>Thanks for helping advocate for copyright reform!</h2>
+
+    <p>Would you share this page with your friends? The more responses the EU gets, the better the reform will be.</p>
+
+  </div>
+</div>
+
+<div id="questions"><!-- visually hidden -->
+{% for question in site.data.questions %}
+  {% include question_only.html %}
+{% endfor %}
+</div>

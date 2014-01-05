@@ -176,16 +176,18 @@
       <p class="lead">The following organisations have provided guides to the questions:</p>
       <div class="list-group" id="question-guides">
       {% for answer in site.data.answers %}
-        <a href="?guide={{ answer.slug }}" class="list-group-item load-question-guide load-question-guide-{{ answer.slug }}">
-          <h4 class="list-group-item-heading">
-            {{ answer.name }}
-          </h4>
-          {% if answer.description %}
-          <p class="list-group-item-text">
-            {{ answer.description }}
-          </p>
-          {% endif %}
-        </a>
+        {% if page.language == answer.language %}
+          <a href="?guide={{ answer.slug }}" class="list-group-item load-question-guide load-question-guide-{{ answer.slug }}">
+            <h4 class="list-group-item-heading">
+              {{ answer.name }}
+            </h4>
+            {% if answer.description %}
+            <p class="list-group-item-text">
+              {{ answer.description }}
+            </p>
+            {% endif %}
+          </a>
+        {% endif %}
       {% endfor %}
       </div>
       <p class="help-block">Click to load their explanations and suggestions. <span class="guide">Their text will be marked like this</span>.</p>

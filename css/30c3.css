@@ -1,0 +1,58 @@
+body {
+  background: url("../img/30c3/30c3-corner.jpg") -400px 0 no-repeat, url("../img/30c3/30c3-bg.png");
+  margin-bottom: 6em;
+}
+.jumbotron {
+  background: rgba(255,255,255,.8);
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1em;
+}
+@media (min-width: 992px) { ul {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  -ms-column-count: 2;
+  -o-column-count: 2;
+  column-count: 2;
+} }
+ul li {
+  line-height: 1.4em;
+  margin-bottom: .4em;
+  clear: both;
+}
+ul li label input {
+  float: left;
+}
+ul li label .problem {
+  float: left;
+  width: 90%;
+  margin-left: .7em;
+}
+.container .jumbotron {
+  display: none;
+}
+.container.step-start #step-start.jumbotron,
+.container.step-problem #step-problem.jumbotron,
+.container.step-end #step-end.jumbotron {
+  display: block;
+}
+#questions, .download-document {
+  display: none;
+}
+#step-problem h2:first-of-type,
+#step-end h2:first-of-type {
+  padding: 0 0 .5em;
+}
+div.radio label,
+div.radio:not(.isChecked) {
+  display: none;
+}
+
+blockquote.guide {
+  line-height: 1.5em;
+  background-color: transparent;
+  color: #09c;
+  border-left: 0;
+}
