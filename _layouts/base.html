@@ -76,6 +76,20 @@
 <script type="text/javascript" src="{{ site.baseurl}}/js/jszip.js"></script>
 <script type="text/javascript" src="{{ site.baseurl}}/js/eucopyright.js"></script>
 
+<script type="text/javascript">
+(function(){
+  /* Use downloadify if Blob URLs are not supported */
+  if (window.URL === undefined || !JSZip.support.blob) {
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src="{{ site.baseurl}}/js/swfobject.js";
+    s.parentNode.insertBefore(g,s);
+    g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src="{{ site.baseurl}}/js/downloadify.min.js";
+    s.parentNode.insertBefore(g,s);
+  }
+}());
+</script>
+
 <!-- Piwik -->
 <script type="text/javascript">
   var _paq = _paq || [];

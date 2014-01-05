@@ -288,7 +288,7 @@ EUCopyright.compile = function(){
   var d = $.Deferred();
 
   $.when.apply($, jobs).then(function(){
-    d.resolve(zip.generate({type: "blob"}));
+    d.resolve(zip);
   });
 
   return d;
@@ -309,7 +309,7 @@ EUCopyright.applyGuideToAll = function(guide){
 
 EUCopyright.supports_html5_storage = function() {
   try {
-    return 'localStorage' in window && window['localStorage'] !== null;
+    return 'localStorage' in window && window.localStorage !== null;
   } catch (e) {
     return false;
   }
@@ -386,16 +386,36 @@ EUCopyright.loadGuide = function(slug){
 $(function(){
   $('.download-document').click(function(e){
     e.preventDefault();
-    EUCopyright.compile().done(function(blob){
-      $('#download').attr({
-        'href': window.URL.createObjectURL(blob),
-        'download': 'consultation-document_en.odt'
-      }).removeClass('disabled');
-      $('#download').click(function(){
-        if (window._paq !== undefined) {
-          window._paq.push(['trackGoal', 1]);
-        }
-      });
+    EUCopyright.compile().done(function(zip){
+      var filename = 'consultation-document_en.odt';
+      if (window.URL === undefined || !JSZip.support.blob) {
+        $('#download-link-container').downloadify({
+          swf: EUCopyright.baseurl + '/js/downloadify.swf',
+          downloadImage: EUCopyright.baseurl + '/img/downloadbutton.png',
+          width: 116,
+          height: 45,
+          filename: filename,
+          data: function(){
+            return zip.generate();
+          },
+          dataType: 'base64',
+          onComplete: function(){
+            if (window._paq !== undefined) {
+              window._paq.push(['trackGoal', 1]);
+            }
+          }
+        });
+      } else {
+        $('#download').attr({
+          'href': window.URL.createObjectURL(zip.generate({type: "blob"})),
+          'download': filename
+        }).removeClass('disabled');
+        $('#download').click(function(){
+          if (window._paq !== undefined) {
+            window._paq.push(['trackGoal', 1]);
+          }
+        });
+      }
       $('#download-preparing').fadeOut();
     });
 
