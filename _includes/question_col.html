@@ -1,18 +1,11 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title">
-          {% if question.text %}
-            {{ question.num }}.
-            {% for text in question.text %}
-              <span data-lang="{{ text[0] }}" class="lang"{% if text[0] != "default" %} style="display: none;"{% endif %}>{{ text[1] }}</span>
-            {% endfor %}
+          {{ question.num }}.
+          {% if question.text[page.language] %}
+            {{ question.text[page.language]|newline_to_br }}
           {% else %}
-            {% for q in question.question %}
-              <div>
-                <small>To {{ q.to }}</small><br/>
-                {{ q.text }}
-              </div>
-            {% endfor %}
+            {{ question.text.en|newline_to_br }}
           {% endif %}
         </h3>
       </div>
@@ -23,12 +16,16 @@
             <div class="radio">
               <label>
                 <input type="radio" name="q-{{ question.num }}" id="q-{{ question.num }}-{{ forloop.index0 }}" value="{{ forloop.index0 }}">
-                <strong>{{ option.label }}</strong>
+                <strong>{% if page.language == 'en' %}{{ option.label }}{% else %}{{ site.data.translations[option.label][page.language] }}{% endif %}</strong>
               </label>
               {% if option.fulltext %}
                 <div class="radio-text help">
                   <label for="q-{{ question.num }}-{{ forloop.index0 }}-text">
-                   {{ option.details }}
+                  {% if option.details[page.language] %}
+                    {{ option.details[page.language]|newline_to_br }}
+                  {% else %}
+                    {{ option.details.en|newline_to_br }}
+                  {% endif %}
                   </label>
                   <textarea class="form-control" id="q-{{ question.num }}-{{ forloop.index0 }}-text"></textarea>
                 </div>
