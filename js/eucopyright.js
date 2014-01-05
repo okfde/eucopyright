@@ -1,4 +1,4 @@
-/* jshint strict: true, quotmark: false */
+/* jshint strict: true, quotmark: false, es3: true */
 /* global $: false, JSZip: false */
 
 var EUCopyright = EUCopyright || {};
@@ -366,7 +366,7 @@ EUCopyright.loadQuestionGuide = function(slug, clb){
       answers[parseInt(row.Question, 10)] = {
         option: row.Option ? parseInt(row.Option, 10) - 1 : null,
         answer: row.Answer,
-        explanation: row.Explanation,
+        explanation: row.Explanation
       };
     }
     EUCopyright.answerCache[slug] = answers;
