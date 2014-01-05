@@ -68,11 +68,7 @@
 - num: 4
   text:
     en: If you have identified problems in the answers to any of the questions above – what would be the best way to tackle them?
-<<<<<<< HEAD
     de: "Falls du schon mal solche Probleme hattest, was kann dagegen unternommen werden?"
-=======
-    de: Falls du schon mal solche Probleme hattest, was kann dagegen unternommen werden?
->>>>>>> 585a629b3bc4ef5441ac27536507438c68a0e206
   to: everyone
   type: open_question
   explanation:
@@ -135,11 +131,7 @@
 - num: 7
   text:
     en: "Do you think that further measures (legislative or non-legislative, including market- led solutions) are needed at EU level to increase the cross-border availability of content services in the Single Market, while ensuring an adequate level of protection for right holders?"
-<<<<<<< HEAD
     de: "Sollten weitere Maßnahmen (Gesetze oder andere, inkl. Initiativen des Marktes) auf EU-Ebene angestoßen werden, um die grenzübergreifende Verfügbarkeit von Inhalten zu gewährleisten?"
-=======
-    de: Sollten weitere Maßnahmen (Gesetze oder andere, inkl. Initiativen des Marktes) auf EU-Ebene angestoßen werden, um die grenzübergreifende Verfügbarkeit von Inhalten zu gewährleisten?
->>>>>>> 585a629b3bc4ef5441ac27536507438c68a0e206
   to: everyone
   type: multiple_choice
   options:
