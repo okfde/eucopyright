@@ -28,6 +28,10 @@ textarea {
   position: static;
 }
 
+.transparentotron {
+  background-color: transparent;
+}
+
 /* Show and affix the side nav when space allows it */
 @media (min-width: 992px) {
   .side-navbar .nav > .active > ul {
