@@ -38,22 +38,25 @@
   <div class="row well">
     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
     <div class="col-lg-8 col-md-8">
-      <h3>For organisations
-        <small>(if you are one)</small>
-      </h3>
-      <p>
-        In the interests of transparency, organisations (including, for example, NGOs, trade associations and commercial enterprises) are invited to provide the public with relevant information about themselves by registering in the <a href="http://ec.europa.eu/transparencyregister/info/homePage.do">Interest Representative Register and subscribing to its Code of Conduct</a>.
-      </p>
-      <div class="form-group">
+      <a href="#for-organisations" class="toggle">Do you represent an organisation?</a>
+      <div id="for-organisations" style="display:none">
+        <h3>
+          For organisations
+        </h3>
         <p>
-          If you are a registered organisation, please indicate your Register ID number below. Your contribution will then be considered as representing the views of your organisation.
+          In the interests of transparency, organisations (including, for example, NGOs, trade associations and commercial enterprises) are invited to provide the public with relevant information about themselves by registering in the <a href="http://ec.europa.eu/transparencyregister/info/homePage.do">Interest Representative Register and subscribing to its Code of Conduct</a>.
         </p>
-        <label for="register-id">EU Lobby Register ID</label>
-        <input type="text" class="form-control" id="register-id" placeholder="Register ID">
-        <p>
-          If your organisation is not registered, you have the opportunity to <a href="http://ec.europa.eu/transparencyregister/info/homePage.do">register now</a>.
-          Responses from organisations not registered will be published separately.
-        </p>
+        <div class="form-group">
+          <p>
+            If you are a registered organisation, please indicate your Register ID number below. Your contribution will then be considered as representing the views of your organisation.
+          </p>
+          <label for="register-id">EU Lobby Register ID</label>
+          <input type="text" class="form-control" id="register-id" placeholder="Register ID">
+          <p>
+            If your organisation is not registered, you have the opportunity to <a href="http://ec.europa.eu/transparencyregister/info/homePage.do">register now</a>.
+            Responses from organisations not registered will be published separately.
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -186,6 +189,15 @@
       {% endfor %}
       </div>
       <p class="help-block">Click to load their explanations and suggestions. <span class="guide">Their text will be marked like this</span>.</p>
+    </div>
+    <div class="col-lg-4 col-md-4" id="localstorage-hint">
+      <h4>Your answers are saved</h4>
+      <p>
+        You can take a break and come back later and your answers will not get lost.
+      </p>
+      <button class="delete-localstorage btn btn-default btn-sm">
+        Delete saved answers
+      </button>
     </div>
   </div>
 

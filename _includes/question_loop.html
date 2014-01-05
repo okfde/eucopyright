@@ -1,0 +1,5 @@
+{% for question in site.data.questions %}
+  {% if question.num == question_num %}
+    {% include question.html %}
+  {% endif %}
+{% endfor %}
