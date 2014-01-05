@@ -14,17 +14,64 @@ language: en
       The EU will change copyright rules and your voice can make them better!<br/>
       Just answer some questions and email a document.
     </p>
-    <a href="{{ site.baseurl }}/en/" class="btn btn-default btn-lg">Answer in English</a>
-    <a href="{{ site.baseurl }}/de/" class="btn btn-default btn-lg">Antworte auf Deutsch</a>
+    <a href="{{ site.baseurl }}/en/" class="btn btn-default btn-lg">
+      <span class="flag flag-gb"></span>
+      Answer in English
+    </a>
+    <a href="{{ site.baseurl }}/de/" class="btn btn-default btn-lg">
+      <span class="flag flag-de"></span>
+      Antworte auf Deutsch
+    </a>
+    <p class="lead">
+      We have only <span id="days">some</span> days left to act!
+    </p>
   </div>
   <div class="row">
     <div class="col-lg-5 col-md-5 col-lg-offset-1 col-md-offset-1">
-      <h3>Focused question guides</h3>
-      <a href="{{ site.baseurl }}/en/30c3/" class="btn btn-primary">
-        Questions with focus on Digital Copyright
+      <h3>Guide with focus on digital copyright</h3>
+      <a href="{{ site.baseurl }}/30c3/" class="btn btn-default">
+        <span class="flag flag-gb"></span>
+        Answer in English
+      </a>
+      <a href="{{ site.baseurl }}/30c3/de/" class="btn btn-default">
+        <span class="flag flag-de"></span>
+        Antworte auf Deutsch
       </a>
     </div>
     <div class="col-lg-5 col-md-5">
     </div>
   </div>
+
+
+  <div class="row footer-row">
+    <div class="col-lg-12">
+      <hr/>
+      <div class="row">
+        <div class="col-lg-6">
+          <a href="https://github.com/okfde/eucopyright">Code on GitHub</a>
+        </div>
+        <div class="col-lg-6 text-right">
+          <a href="http://www.okfn.de/">
+            <img src="{{ site.baseurl}}/img/okf.png" alt="Open Knowledge Foundation Germany"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+<script>
+(function(){
+  var _second = 1000;
+  var _minute = _second * 60;
+  var _hour = _minute * 60;
+  var _day = _hour * 24;
+  var end = new Date('02/05/2014 12:00 AM');
+  var now = new Date();
+  var distance = end - now;
+  var days = Math.floor(distance / _day);
+  var hours = Math.floor((distance % _day) / _hour);
+  var minutes = Math.floor((distance % _hour) / _minute);
+  var seconds = Math.floor((distance % _minute) / _second);
+  document.getElementById('days').innerHTML = '' + days;
+}());
+</script>
