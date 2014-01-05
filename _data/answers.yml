@@ -2,10 +2,6 @@
   slug: wikimedia
   url: "https://docs.google.com/spreadsheet/pub?key=0Am6UBdM-6oM6dDBEaGZxbmtEaXg2Vlp2VkR3MkxXNlE&output=csv"
   description: "They run, among other projects, the German Wikipedia."
-- name: Example Group
-  slug: example
-  url: "/guides/example.csv"
-  questions: [1]
 - name: Junge Piraten (DE) work in progress
   slug: jupis
   url: "/guides/jupis.csv"
