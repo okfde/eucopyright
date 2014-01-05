@@ -246,7 +246,7 @@ EUCopyright.compile = function(){
       var typeOfRespondent = $('*[name="typeofrespondent"]');
       typeOfRespondent.each(function(i, el){
         el = $(el);
-        if (el.attr('type') !== 'checkbox' || el.prop('checked')){
+        if ((el.attr('type') !== 'checkbox' && el.attr('type') !== 'radio') || el.prop('checked')){
           var currentTypeOfRespondent = el.val();
           $(respondents[currentTypeOfRespondent]).each(function(j, key){
             text = underline(text, key);
