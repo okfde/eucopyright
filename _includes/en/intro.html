@@ -24,7 +24,7 @@
       <h3>Let's get started!</h3>
       <div class="form-group">
         <label for="name">Your name</label>
-        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        <input type="text" class="form-control save" id="name" placeholder="Enter your name">
         <p class="help-block">
           Please provide your name to make your voice count.
         </p>
@@ -51,7 +51,7 @@
             If you are a registered organisation, please indicate your Register ID number below. Your contribution will then be considered as representing the views of your organisation.
           </p>
           <label for="register-id">EU Lobby Register ID</label>
-          <input type="text" class="form-control" id="register-id" placeholder="Register ID">
+          <input type="text" class="form-control save" id="register-id" placeholder="Register ID">
           <p>
             If your organisation is not registered, you have the opportunity to <a href="http://ec.europa.eu/transparencyregister/info/homePage.do">register now</a>.
             Responses from organisations not registered will be published separately.
@@ -66,7 +66,7 @@
       <h4>Type of respondent</h4>
       <div class="radio">
         <label>
-          <input type="radio" name="typeofrespondent" value="enduser">
+          <input type="radio" class="save" name="typeofrespondent" value="enduser">
           <strong>End user/consumer</strong>
           <span class="help">
             (e.g. internet user, reader, subscriber to music or audiovisual service, researcher, student)
@@ -75,13 +75,13 @@
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="typeofrespondent" id="typeofrespondent-representEnduser" value="representEnduser">
+          <input type="radio" class="save" name="typeofrespondent" id="typeofrespondent-representEnduser" value="representEnduser">
           <strong>Representative of end users/consumers</strong>
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="typeofrespondent" id="typeofrespondent-institution" value="institution">
+          <input type="radio" class="save" name="typeofrespondent" id="typeofrespondent-institution" value="institution">
           <strong>Institutional user</strong>
           <span class="help">
             (e.g. school, university, research centre, library, archive)
@@ -90,31 +90,31 @@
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="typeofrespondent" id="typeofrespondent-representInstitution" value="representInstitution">
+          <input type="radio" class="save" name="typeofrespondent" id="typeofrespondent-representInstitution" value="representInstitution">
           <strong>Representative of institutional users</strong>
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="typeofrespondent" id="typeofrespondent-author" value="author">
+          <input type="radio" class="save" name="typeofrespondent" id="typeofrespondent-author" value="author">
           <strong>Author/Performer</strong>
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="typeofrespondent" id="typeofrespondent-representAuthor" value="representAuthor">
+          <input type="radio" class="save" name="typeofrespondent" id="typeofrespondent-representAuthor" value="representAuthor">
           <strong>Representative of authors/performers</strong>
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="typeofrespondent" id="typeofrespondent-publisher" value="publisher">
+          <input type="radio" class="save" name="typeofrespondent" id="typeofrespondent-publisher" value="publisher">
           <strong>Publisher/Producer/Broadcaster</strong>
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="typeofrespondent" id="typeofrespondent-representPublisher" value="representPublisher">
+          <input type="radio" class="save" name="typeofrespondent" id="typeofrespondent-representPublisher" value="representPublisher">
           <strong>Representative of publishers/producers/broadcasters</strong>
         </label>
       </div>
@@ -122,7 +122,7 @@
       <div id="more-typeofrespondent" style="display:none">
         <div class="radio">
           <label>
-            <input type="radio" name="typeofrespondent" id="typeofrespondent-intermediary" value="intermediary">
+            <input type="radio" class="save" name="typeofrespondent" id="typeofrespondent-intermediary" value="intermediary">
             <strong>Intermediary/Distributor/Other service provider</strong>
             <span class="help">
               (e.g. online music or audiovisual service, games platform, social media, search engine, ICT industry)
@@ -131,39 +131,39 @@
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="typeofrespondent" id="typeofrespondent-representIntermediary" value="representIntermediary">
+            <input type="radio" class="save" name="typeofrespondent" id="typeofrespondent-representIntermediary" value="representIntermediary">
             <strong>Representative of intermediaries/distributors/other service providers</strong>
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="typeofrespondent" id="typeofrespondent-collective" value="collective">
+            <input type="radio" class="save" name="typeofrespondent" id="typeofrespondent-collective" value="collective">
             <strong>Collective Management Organisation</strong>
           </label>
         </div>
 
         <div class="radio">
           <label>
-            <input type="radio" name="typeofrespondent" id="typeofrespondent-publicauthority" value="publicauthority">
+            <input type="radio" class="save" name="typeofrespondent" id="typeofrespondent-publicauthority" value="publicauthority">
             <strong>Public authority</strong>
           </label>
         </div>
 
         <div class="radio">
           <label>
-            <input type="radio" name="typeofrespondent" id="typeofrespondent-memberstate" value="memberstate">
+            <input type="radio" class="save" name="typeofrespondent" id="typeofrespondent-memberstate" value="memberstate">
             <strong>Member State</strong>
           </label>
         </div>
 
         <div class="radio">
           <label>
-            <input type="radio" name="typeofrespondent" id="typeofrespondent-other" value="other">
+            <input type="radio" class="save" name="typeofrespondent" id="typeofrespondent-other" value="other">
             <strong>Other</strong>
           </label>
           <div class="radio-text">
             <label for="otherrespondent">Please explain</label>
-            <textarea class="form-control" id="typeofrespondent-other-text"></textarea>
+            <textarea class="form-control save" id="typeofrespondent-other-text"></textarea>
           </div>
         </div>
       </div>

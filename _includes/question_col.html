@@ -15,7 +15,7 @@
           {% for option in question.options %}
             <div class="radio">
               <label>
-                <input type="radio" name="q-{{ question.num }}" id="q-{{ question.num }}-{{ forloop.index0 }}" value="{{ forloop.index0 }}">
+                <input type="radio" name="q-{{ question.num }}" id="q-{{ question.num }}-{{ forloop.index0 }}" value="{{ forloop.index0 }}" class="save">
                 <strong>{% if page.language == 'en' %}{{ option.label }}{% else %}{{ site.data.translations[option.label][page.language] }}{% endif %}</strong>
               </label>
               {% if option.fulltext %}
@@ -27,13 +27,13 @@
                     {{ option.details.en|newline_to_br }}
                   {% endif %}
                   </label>
-                  <textarea class="form-control" id="q-{{ question.num }}-{{ forloop.index0 }}-text"></textarea>
+                  <textarea class="form-control save" id="q-{{ question.num }}-{{ forloop.index0 }}-text"></textarea>
                 </div>
               {% endif %}
             </div>
           {% endfor %}
         {% elsif question.type == 'open_question' %}
-          <textarea class="form-control" id="q-{{ question.num }}-text"></textarea>
+          <textarea class="form-control save" id="q-{{ question.num }}-text"></textarea>
         {% endif %}
       </div>
     </div>

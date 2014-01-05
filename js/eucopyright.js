@@ -447,7 +447,7 @@ $(function(){
     });
   }
 
-  $('.radio-text textarea').on('keyup', function(){
+  $('.radio-text textarea.save').on('keyup', function(){
     var radio = $(this).parent().parent().find('input:not(checked)');
     radio.prop('checked', true);
 
@@ -467,39 +467,39 @@ $(function(){
   $('textarea').autogrow();
 
   if (EUCopyright.supports_html5_storage()) {
-    $('textarea').each(function() {
+    $('textarea.save').each(function() {
       var id = $(this).attr('id');
       var value = localStorage.getItem(id);
       $(this).val(value);
     });
-    $('input[type=radio]').each(function() {
+    $('input[type=radio].save').each(function() {
       var name = $(this).attr('name');
       var value = localStorage.getItem(name);
       if (value !== null) {
         $('input[type=radio]#' + name + '-' + value).prop('checked', true);
       }
     });
-    $('input[type=text]').each(function() {
+    $('input[type=text].save').each(function() {
       var id = $(this).attr('id');
       var value = localStorage.getItem(id);
       $(this).val(value);
     });
 
-    $('textarea').on('keydown change', function() {
+    $('textarea.save').on('keydown change', function() {
       var id = $(this).attr('id');
       var value = $(this).val();
       if (value !== null) {
         localStorage.setItem(id, value);
       }
     });
-    $('input[type=radio]').on('click change', function() {
+    $('input[type=radio].save').on('click change', function() {
       var name = $(this).attr('name');
       var value = $(this).val();
       if (value !== null) {
         localStorage.setItem(name, value);
       }
     });
-    $('input[type=text]').on('keydown change', function() {
+    $('input[type=text].save').on('keydown change', function() {
       var id = $(this).attr('id');
       var value = $(this).val();
       if (value !== null) {
