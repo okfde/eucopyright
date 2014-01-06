@@ -1,4 +1,4 @@
-/* jshint strict: true, quotmark: false */
+/* jshint strict: true, quotmark: false, es3: true */
 /* global $: false, JSZip: false */
 
 var EUCopyright = EUCopyright || {};
@@ -246,7 +246,7 @@ EUCopyright.compile = function(){
       var typeOfRespondent = $('*[name="typeofrespondent"]');
       typeOfRespondent.each(function(i, el){
         el = $(el);
-        if (el.attr('type') !== 'checkbox' || el.prop('checked')){
+        if ((el.attr('type') !== 'checkbox' && el.attr('type') !== 'radio') || el.prop('checked')){
           var currentTypeOfRespondent = el.val();
           $(respondents[currentTypeOfRespondent]).each(function(j, key){
             text = underline(text, key);
@@ -288,7 +288,7 @@ EUCopyright.compile = function(){
   var d = $.Deferred();
 
   $.when.apply($, jobs).then(function(){
-    d.resolve(zip.generate({type: "blob"}));
+    d.resolve(zip);
   });
 
   return d;
@@ -309,7 +309,7 @@ EUCopyright.applyGuideToAll = function(guide){
 
 EUCopyright.supports_html5_storage = function() {
   try {
-    return 'localStorage' in window && window['localStorage'] !== null;
+    return 'localStorage' in window && window.localStorage !== null;
   } catch (e) {
     return false;
   }
@@ -366,7 +366,7 @@ EUCopyright.loadQuestionGuide = function(slug, clb){
       answers[parseInt(row.Question, 10)] = {
         option: row.Option ? parseInt(row.Option, 10) - 1 : null,
         answer: row.Answer,
-        explanation: row.Explanation,
+        explanation: row.Explanation
       };
     }
     EUCopyright.answerCache[slug] = answers;
@@ -386,16 +386,36 @@ EUCopyright.loadGuide = function(slug){
 $(function(){
   $('.download-document').click(function(e){
     e.preventDefault();
-    EUCopyright.compile().done(function(blob){
-      $('#download').attr({
-        'href': window.URL.createObjectURL(blob),
-        'download': 'consultation-document_en.odt'
-      }).removeClass('disabled');
-      $('#download').click(function(){
-        if (window._paq !== undefined) {
-          window._paq.push(['trackGoal', 1]);
-        }
-      });
+    EUCopyright.compile().done(function(zip){
+      var filename = 'consultation-document_en.odt';
+      if (window.URL === undefined || !JSZip.support.blob) {
+        $('#download-link-container').downloadify({
+          swf: EUCopyright.baseurl + '/js/downloadify.swf',
+          downloadImage: EUCopyright.baseurl + '/img/downloadbutton.png',
+          width: 116,
+          height: 45,
+          filename: filename,
+          data: function(){
+            return zip.generate();
+          },
+          dataType: 'base64',
+          onComplete: function(){
+            if (window._paq !== undefined) {
+              window._paq.push(['trackGoal', 1]);
+            }
+          }
+        });
+      } else {
+        $('#download').attr({
+          'href': window.URL.createObjectURL(zip.generate({type: "blob"})),
+          'download': filename
+        }).removeClass('disabled');
+        $('#download').click(function(){
+          if (window._paq !== undefined) {
+            window._paq.push(['trackGoal', 1]);
+          }
+        });
+      }
       $('#download-preparing').fadeOut();
     });
 
@@ -432,7 +452,22 @@ $(function(){
     }
   });
 
-  $('.radio-text textarea').on('keyup', function(){
+  if (!EUCopyright.supports_html5_storage()) {
+    $('#localstorage-hint').hide();
+  }
+
+  if (EUCopyright.supports_html5_storage()) {
+    $('.delete-localstorage').click(function(){
+      var answer = window.confirm('Are you sure?');
+      if (!answer) { return; }
+      for (var key in localStorage) {
+        delete localStorage[key];
+      }
+      window.location.reload();
+    });
+  }
+
+  $('.radio-text textarea.save').on('keyup', function(){
     var radio = $(this).parent().parent().find('input:not(checked)');
     radio.prop('checked', true);
 
@@ -452,39 +487,39 @@ $(function(){
   $('textarea').autogrow();
 
   if (EUCopyright.supports_html5_storage()) {
-    $('textarea').each(function() {
+    $('textarea.save').each(function() {
       var id = $(this).attr('id');
       var value = localStorage.getItem(id);
       $(this).val(value);
     });
-    $('input[type=radio]').each(function() {
+    $('input[type=radio].save').each(function() {
       var name = $(this).attr('name');
       var value = localStorage.getItem(name);
       if (value !== null) {
         $('input[type=radio]#' + name + '-' + value).prop('checked', true);
       }
     });
-    $('input[type=text]').each(function() {
+    $('input[type=text].save').each(function() {
       var id = $(this).attr('id');
       var value = localStorage.getItem(id);
       $(this).val(value);
     });
 
-    $('textarea').on('keydown change', function() {
+    $('textarea.save').on('keydown change', function() {
       var id = $(this).attr('id');
       var value = $(this).val();
       if (value !== null) {
         localStorage.setItem(id, value);
       }
     });
-    $('input[type=radio]').on('click change', function() {
+    $('input[type=radio].save').on('click change', function() {
       var name = $(this).attr('name');
       var value = $(this).val();
       if (value !== null) {
         localStorage.setItem(name, value);
       }
     });
-    $('input[type=text]').on('keydown change', function() {
+    $('input[type=text].save').on('keydown change', function() {
       var id = $(this).attr('id');
       var value = $(this).val();
       if (value !== null) {

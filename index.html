@@ -1,155 +1,77 @@
 ---
-layout: default
+layout: base
 title: Public Consultation on the review of the EU copyright rules
-headline: EU Copyright Consultation
-downloadaction: Download Finished Document
 language: en
 ---
 
-<div class="row header-row">
-  <div class="col-lg-8">
-    <h1>
-      <small>Inofficial web form for the</small><br/>
-        Public Consultation<br/>
-        on the review of the EU copyright rules
-    </h1>
-  </div>
-  <div class="col-lg-4">
-    <a href="http://copyright4creativity.eu/">
+<div class="container">
+  <div class="jumbotron transparentotron">
+    <a class="pull-right" href="http://copyright4creativity.eu/">
       <img src="{{ site.baseurl}}/img/c4c.png" alt="Coyright for Creativity">
     </a>
+    <h1>Let's fix EU Copyright!</h1>
+    <p>
+      The EU will change copyright rules and your voice can make them better!<br/>
+      Just answer some questions and email a document.
+    </p>
+    <a href="{{ site.baseurl }}/en/" class="btn btn-default btn-lg">
+      <span class="flag flag-gb"></span>
+      Answer in English
+    </a>
+    <a href="{{ site.baseurl }}/de/" class="btn btn-default btn-lg">
+      <span class="flag flag-de"></span>
+      Antworte auf Deutsch
+    </a>
+    <p class="lead">
+      We have only <span id="days">some</span> days left to act!
+    </p>
+  </div>
+  <div class="row">
+    <div class="col-lg-5 col-md-5 col-lg-offset-1 col-md-offset-1">
+      <h3>Guide with focus on digital copyright</h3>
+      <a href="{{ site.baseurl }}/30c3/" class="btn btn-default">
+        <span class="flag flag-gb"></span>
+        Answer in English
+      </a>
+      <a href="{{ site.baseurl }}/30c3/de/" class="btn btn-default">
+        <span class="flag flag-de"></span>
+        Antworte auf Deutsch
+      </a>
+    </div>
+    <div class="col-lg-5 col-md-5">
+    </div>
+  </div>
+
+
+  <div class="row footer-row">
+    <div class="col-lg-12">
+      <hr/>
+      <div class="row">
+        <div class="col-lg-6">
+          <a href="https://github.com/okfde/eucopyright">Code on GitHub</a>
+        </div>
+        <div class="col-lg-6 text-right">
+          <a href="http://www.okfn.de/">
+            <img src="{{ site.baseurl}}/img/okf.png" alt="Open Knowledge Foundation Germany"/>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-<div class="row">
-
-  <div class="col-lg-3 col-md-3">
-    <div class="side-navbar">
-      <ul class="nav">
-        <li>
-          <a href="#intro">Introduction</a>
-        </li>
-        <li>
-          <a href="#rights-single-market">
-          	Rights and the functioning of the Single Market
-          </a>
-        </li>
-        <li>
-          <a href="#private-copying-and-reprography">
-          	Private copying and reprography
-          </a>
-        </li>
-  			<li>
-          <a href="#fair-remunerations-of-authors-and-performers">
-        		Fair remuneration of authors and performers
-        	</a>
-        </li>
-        <li>
-      		<a href="#respect-for-rights">
-        		Respect for rights
-        	</a>
-        </li>
-        <li>
-        	<a href="#a-single-eu-cooyright-title">
-        		A single EU Copyright Title
-        	</a>
-        </li>
-        <li>
-        	<a href="#other-issues">
-        		Other issues
-        	</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="col-lg-9 col-md-9">
-
-  {% include intro.html %}
-
-  <section class="question-section">
-    <div class="page-header">
-      <h2 id="rights-single-market">
-        Rights and the functioning of the Single Market
-        <br/>
-        <small>
-          Why is it not possible to access many online content services from anywhere in Europe?
-        </small>
-      </h2>
-    </div>
-
-  	{% include section_2a.html %}
-  	{% include section_2b.html %}
-  	{% include section_2c.html %}
-  	{% include section_2d.html %}
-  	{% include section_2e.html %}
-
-  </section>
-
-  <section class="question-section">
-    <div class="page-header">
-      <h2 id="limitations-single-market">
-        Limitations and exceptions in the Single Market
-      </h2>
-    </div>
-
-  	{% include section_3a.html %}
-  	{% include section_3b.html %}
-  	{% include section_3c.html %}
-  	{% include section_3d.html %}
-  	{% include section_3e.html %}
-  	{% include section_3f.html %}
-
-  </section>
-
-
-  <section class="question-section">
-    <div class="page-header">
-      <h2 id="private-copying-and-reprography">
-        Private copying and reprography
-      </h2>
-    </div>
-  	{% include section_4.html %}
-  </section>
-
-  <section class="question-section">
-    <div class="page-header">
-      <h2 id="fair-remunerations-of-authors-and-performers">
-        Fair remuneration of authors and performers
-      </h2>
-    </div>
-  	{% include section_5.html %}
-  </section>
-
-  <section class="question-section">
-    <div class="page-header">
-      <h2 id="respect-for-rights">
-        Respect for rights
-      </h2>
-    </div>
-  	{% include section_6.html %}
-  </section>
-
-  <section class="question-section">
-    <div class="page-header">
-      <h2 id="a-single-eu-cooyright-title">
-        A single EU Copyright Title
-      </h2>
-    </div>
-  	{% include section_7.html %}
-  </section>
-
-  <section class="question-section">
-    <div class="page-header">
-      <h2 id="other-issues">
-        Other issues
-      </h2>
-    </div>
-  	{% include section_8.html %}
-  </section>
-
-
-  {% include footnotes.html %}
-
-  </div>
-</div> <!-- /.row -->
-
-{% include download/en.html %}
+<script>
+(function(){
+  var _second = 1000;
+  var _minute = _second * 60;
+  var _hour = _minute * 60;
+  var _day = _hour * 24;
+  var end = new Date('02/05/2014 12:00 AM');
+  var now = new Date();
+  var distance = end - now;
+  var days = Math.floor(distance / _day);
+  var hours = Math.floor((distance % _day) / _hour);
+  var minutes = Math.floor((distance % _hour) / _minute);
+  var seconds = Math.floor((distance % _minute) / _second);
+  document.getElementById('days').innerHTML = '' + days;
+}());
+</script>
