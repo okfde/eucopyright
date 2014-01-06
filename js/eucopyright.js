@@ -422,7 +422,7 @@ $(function(){
       }
       $('#download-preparing').fadeOut();
     });
-
+    $('#download').addClass('disabled');
     $('#download-preparing').show();
     $('#download-modal').modal();
   });
