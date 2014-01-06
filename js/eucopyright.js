@@ -324,14 +324,18 @@ EUCopyright.applyGuide = function(guide, question, answer) {
         prop('checked', true).
         parents('div').addClass('isChecked'); // microsites might need this to hide unrecommended answer options
       if (question.options && question.options[answer.option].fulltext) {
-        $('#q-' + question.num + '-' + answer.option + '-text').val(answer.answer);
+        if ($('#q-' + question.num + '-' + answer.option + '-text').val() === '') {
+          $('#q-' + question.num + '-' + answer.option + '-text').val(answer.answer);
+        }
       }
     }
   } else if (question.type == 'open_question') {
     if (answer.answer) {
       isAnswered = true;
     }
-    $('#q-' + question.num + '-text').val(answer.answer);
+    if ($('#q-' + question.num + '-text').val() === '') {
+      $('#q-' + question.num + '-text').val(answer.answer);
+    }
   }
   if (answer.explanation) {
     isAnswered = true;
