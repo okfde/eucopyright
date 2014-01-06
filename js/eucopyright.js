@@ -503,6 +503,13 @@ $(function(){
         $('input[type=radio]#' + name + '-' + value).prop('checked', true);
       }
     });
+    $('input[type=checkbox].save').each(function() {
+      var name = $(this).attr('name');
+      var value = localStorage.getItem(name);
+      if (value !== null) {
+        $('input[type=checkbox]#' + name + '-' + value).prop('checked', true);
+      }
+    });
     $('input[type=text].save').each(function() {
       var id = $(this).attr('id');
       var value = localStorage.getItem(id);
@@ -517,6 +524,13 @@ $(function(){
       }
     });
     $('input[type=radio].save').on('click change', function() {
+      var name = $(this).attr('name');
+      var value = $(this).val();
+      if (value !== null) {
+        localStorage.setItem(name, value);
+      }
+    });
+    $('input[type=checkbox].save').on('click change', function() {
       var name = $(this).attr('name');
       var value = $(this).val();
       if (value !== null) {
