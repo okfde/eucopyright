@@ -1279,7 +1279,7 @@
   text:
     en: Would you see an added value in making levies visible on the invoices for products subject to levies?
   to: everyone
-  type: open_question
+  type: multiple_choice
   options:
   - label: 'Yes'
     details: "Please explain"
@@ -1472,7 +1472,7 @@
     en: Does the current civil enforcement framework ensure that the right balance is achieved between the right to have one’s copyright respected and other rights such as the protection of private life and protection of personal data?
     de: "Stellen die aktuellen zivilrechtlichen Durchsetzungs-Voraussetzungen sicher, dass das richtige Gleichgewicht zwischen dem Urheberrecht und anderen Rechten, wie dem Schutz des Privatlebens und der persönlichen Daten, zustande kommt?"
   to: everyone
-  type: open_question
+  type: multiple_choice
   options:
   - label: 'Yes'
     details: "Please explain"
