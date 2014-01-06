@@ -174,16 +174,18 @@
       <p class="lead">Folgende Organisationen haben Hinweise zu den Anfragen vorbereitet:</p>
       <div class="list-group" id="question-guides">
       {% for answer in site.data.answers %}
-        <a href="?guide={{ answer.slug }}" class="list-group-item load-question-guide load-question-guide-{{ answer.slug }}">
-          <h4 class="list-group-item-heading">
-            {{ answer.name }}
-          </h4>
-          {% if answer.description %}
-          <p class="list-group-item-text">
-            {{ answer.description }}
-          </p>
-          {% endif %}
-        </a>
+        {% if page.language == answer.language %}
+          <a href="?guide={{ answer.slug }}" class="list-group-item load-question-guide load-question-guide-{{ answer.slug }}">
+            <h4 class="list-group-item-heading">
+              {{ answer.name }}
+            </h4>
+            {% if answer.description %}
+            <p class="list-group-item-text">
+              {{ answer.description }}
+            </p>
+            {% endif %}
+          </a>
+        {% endif %}
       {% endfor %}
       </div>
       <p class="help-block">Klick eine an, um die Hinweise zu laden. <span class="guide">Ihr Text wird so gekennzeichnet sein</span>.</p>
