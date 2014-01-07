@@ -327,7 +327,7 @@ EUCopyright.showDownloadModal = function(){
 };
 
 $(function(){
-  $('.download-document').removeClass('hide')
+  $('.submit-form').removeClass('hide')
     .click(function(e){
       e.preventDefault();
       $('#consultation-form').submit();
