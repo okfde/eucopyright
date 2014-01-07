@@ -59,7 +59,7 @@ language: de
     </div>
   </div>
   <div class="col-lg-9 col-md-9">
-  <form id="consultation-form" method="post" action="{{ site.document_service }}">
+  <form id="consultation-form" method="post" action="{{ site.document_service }}?redirect=http%3a//{{ site.domain }}/{{ page.language }}/thanks.html">
     <input type="hidden" name="language" value="{{ page.language }}"/>
 
   {% include de/intro.html %}
