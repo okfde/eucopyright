@@ -125,8 +125,13 @@
       other: ['T421']
     };
 
+    if (Object.prototype.toString.call(data.typeofrespondent) !== '[object Array]') {
+      data.typeofrespondent = [data.typeofrespondent];
+    }
+
     for (var i = 0; i < data.typeofrespondent.length; i += 1) {
       var respondentKeys = respondents[data.typeofrespondent[i]];
+      if (!respondentKeys) { continue; }
       for (var j = 0; j < respondentKeys.length; j += 1) {
         text = underline(text, respondentKeys[j]);
       }
