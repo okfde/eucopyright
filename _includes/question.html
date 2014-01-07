@@ -1,6 +1,8 @@
 <div class="row q-{{ question.num }}">
-  <div class="col-lg-8 col-md-8">
+  <div class="col-lg-4 col-md-4 col-md-push-8 col-lg-push-8">
+    {% include question_explanations.html %}
+  </div>
+  <div class="col-lg-8 col-md-8 col-md-pull-4 col-lg-pull-4">
     {% include question_col.html %}
   </div>
-  {% include question_explanations.html %}
 </div>
