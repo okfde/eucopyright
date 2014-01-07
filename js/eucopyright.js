@@ -419,10 +419,10 @@ $(function(){
       }
     });
     $('input[type=checkbox].save').each(function() {
-      var name = $(this).attr('name');
+      var name = $(this).attr('id');
       var value = localStorage.getItem(name);
       if (value !== null) {
-        $('input[type=checkbox]#' + name + '-' + value).prop('checked', true);
+        $('input[type=checkbox]#' + name).prop('checked', true);
       }
     });
     $('input[type=text].save, input[type=email].save').each(function() {
@@ -446,7 +446,7 @@ $(function(){
       }
     });
     $('input[type=checkbox].save').on('click change', function() {
-      var name = $(this).attr('name');
+      var name = $(this).attr('id');
       var value = $(this).val();
       if (value !== null) {
         localStorage.setItem(name, value);
