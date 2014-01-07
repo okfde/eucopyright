@@ -369,6 +369,8 @@ $(function(){
     }
   });
 
+  $('.needs-js').removeClass('hide');
+
   if (!EUCopyright.supports_html5_storage()) {
     $('#localstorage-hint').hide();
   }

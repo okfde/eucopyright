@@ -10,7 +10,7 @@
         </h3>
       </div>
       <div class="panel-body">
-        <blockquote class="guide" style="display:none" id="q-{{ question.num }}-customexplanation"></blockquote>
+        <blockquote class="guide div-toggle" id="q-{{ question.num }}-customexplanation"{% unless question.explanation %} style="display:none"{% endunless %}>{{ question.explanation }}</blockquote>
         {% if question.type == 'multiple_choice' %}
           {% for option in question.options %}
             <div class="radio">

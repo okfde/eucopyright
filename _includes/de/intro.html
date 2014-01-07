@@ -28,10 +28,12 @@
         </p>
       </div>
       <div class="form-group">
-        <label for="name">Optional: E-Mail-Adresse</label>
+        <label for="email"><span class="hidden-xs hidden-sm">Optional: </span>Deine E-Mail-Adresse</label>
         <input type="email" class="form-control save" name="email" placeholder="email">
         <p class="help-block">
-          Wir können dir das fertige Dokument zuschicken, so dass du es direkt weiterleiten kannst.
+          <strong class="visible-xs visible-sm">Das fertige Dokument wird an deine E-Mail-Adresse geschickt.</strong>
+          <span class="hidden-xs hidden-sm">Wir können dir das fertige Dokument zuschicken.</span>
+          <small>Deine E-Mail-Adresse und alle anderen Angaben werden <strong>nicht</strong> von uns gespeichert.</small>
         </p>
       </div>
 
@@ -45,7 +47,7 @@
     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
     <div class="col-lg-8 col-md-8">
       <a href="#for-organisations" class="toggle">Repräsentierst du eine Organisation?</a>
-      <div id="for-organisations">
+      <div id="for-organisations" class="div-toggle">
         <h3>
           Für Organisationen
         </h3>
@@ -113,7 +115,7 @@
         </label>
       </div>
       <a href="#more-typeofrespondent" class="toggle">Keine von den oben genannten? Mehr Auswahl</a>
-      <div id="more-typeofrespondent" class="toggle-div">
+      <div id="more-typeofrespondent" class="div-toggle">
         <div class="checkbox">
           <label>
             <input type="checkbox" class="save" name="typeofrespondent" id="typeofrespondent-intermediary" value="intermediary">
@@ -164,7 +166,7 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row needs-js hide">
     <div class="col-lg-8 col-md-8">
       <h3>Anfragehinweise</h3>
       <p class="lead">Folgende Organisationen haben Hinweise zu den Anfragen vorbereitet:</p>
