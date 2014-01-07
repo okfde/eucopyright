@@ -81,7 +81,7 @@ var sendEmail = function(email, name, buffer, lang){
   var body = emailBody[lang] || emailBody.en;
   name = name || emailName[lang] || emailName.en;
   body = body.replace(/\{\{\s*name\s*\}\}/, name);
-
+  console.info('Sending email to ' + email);
   postmark.send({
       'From': process.env.FROM_EMAIL_ADDRESS,
       'To': email,
@@ -92,14 +92,19 @@ var sendEmail = function(email, name, buffer, lang){
         'Name': ODTFilename,
         'ContentType': ODTContentType
       }]
+  }, function(error) {
+      if(error) {
+          console.error('Unable to send to ' + email + ' via postmark: ' + error.message);
+          return;
+      }
+      console.info('Sent email to ' + email);
   });
 };
 
 app.post('/document', function(req, res){
   var buffer = createODT(createText(req.body, {}));
   if (req.body.email && validateEmail(req.body.email)) {
-    console.log('Sending email to ' + req.body.email);
-    sendEmail(req.body.name, req.body.email, buffer, req.body.language || 'en');
+    sendEmail(req.body.email, req.body.name, buffer, req.body.language || 'en');
     if (req.query.redirect) {
       return res.redirect(req.query.redirect);
     }
