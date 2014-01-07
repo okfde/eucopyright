@@ -21,6 +21,7 @@
   "dependencies": {
     "postmark": "~0.2.0",
     "express": "~3.4.7",
-    "js-yaml": "~3.0.1"
+    "js-yaml": "~3.0.1",
+    "adm-zip": "~0.4.3"
   }
 }
