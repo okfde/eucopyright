@@ -60,6 +60,8 @@ language: en
   </div>
   <div class="col-lg-9 col-md-9">
 
+  <form id="consultation-form" method="post" action="{{ site.document_service }}">
+    <input type="hidden" name="language" value="{{ page.language }}"/>
   {% include en/intro.html %}
 
   <section class="question-section">
@@ -146,6 +148,7 @@ language: en
     &rarr; {{ page.downloadaction }}
   </button>
 
+  </form>
   {% include en/footnotes.html %}
 
   </div>

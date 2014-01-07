@@ -1,5 +1,5 @@
 /* jshint strict: true, quotmark: false, es3: true */
-/* global $: false, JSZip: false */
+/* global $: false, JSZip: false, odtprocessor: false */
 
 var EUCopyright = EUCopyright || {};
 EUCopyright.settings = EUCopyright.settings || {};
@@ -113,158 +113,43 @@ EUCopyright.parseCSV = function( strData, strDelimiter ){
   return arrData ;
 };
 
-EUCopyright.compile = function(){
-  var escapeXML = function(str){
-    return str.replace(/&/g, '&amp;')
-               .replace(/</g, '&lt;')
-               .replace(/>/g, '&gt;')
-               .replace(/"/g, '&quot;')
-               .replace(/'/g, '&apos;');
-  };
+EUCopyright.collectData = function() {
+  var data = {};
+  var question, j, radio;
 
-  var replaceParagraph = function(doc, key, value){
-    return doc.replace(
-      new RegExp('(<text:p text:style-name="' + key + '">).*?(</text:p>)'),
-      '$1' + escapeXML(value) + '$2'
-    );
-  };
-
-  var insertTextPropertiesStyle = function(doc, key, style){
-    var re = new RegExp('(<style:style style:name="' + key + '"[^>]*>(?:<style:paragraph-properties[^/]*/>)?<style:text-properties)([^/]*/></style:style>)');
-    if (!re.test(doc)) {
-      var re2 = new RegExp('(<style:style style:name="' + key + '"[^>]*>(?:<style:paragraph-properties[^/]*/>)?)(</style:style>)');
-      if (!re2.test(doc)) {
-        throw new Error('could not underline at ' + key);
-      }
-      return doc.replace(
-        re2,
-        '$1<style:text-properties ' + style + '/>$2'
-      );
+  var typesOfRespondents = [];
+  $('*[name="typeofrespondent"]').each(function(i, el){
+    el = $(el);
+    if ((el.attr('type') !== 'checkbox' && el.attr('type') !== 'radio') || el.prop('checked')){
+      typesOfRespondents.push(el.val());
     }
-    return doc.replace(
-      re,
-      '$1 ' + style + '$2'
-    );
-  };
+  });
 
-  var underline = function(doc, key){
-    return insertTextPropertiesStyle(doc, key, 'style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color"');
-  };
-
-  var bold = function(doc, key){
-    return insertTextPropertiesStyle(doc, key, 'fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"');
-  };
-
-  var applyOdf = function(text, odf, paste) {
-    if (odf.action == 'mark') {
-      text = underline(text, odf.key);
-      text = bold(text, odf.key);
-    } else if (odf.action == 'remove' && paste) {
-      text = replaceParagraph(text, odf.key, '');
-    } else if (odf.action == 'paste' && paste) {
-      text = replaceParagraph(text, odf.key, paste);
-    }
-    return text;
-  };
-
-  var applyOdfs = function(text, odfs, paste) {
-    if (!odfs) {
-      return text;
-    }
-    for (var i = 0; i < odfs.length; i += 1) {
-      text = applyOdf(text, odfs[i], paste);
-    }
-    return text;
-  };
-
-  var processQuestions = function(text) {
-    var question, j, paste, radio, checked;
-
-    for (var i = 0; i < EUCopyright.questions.length; i += 1) {
-      question = EUCopyright.questions[i];
-
-      if (question.type === 'multiple_choice' && question.options) {
-        checked = false;
-        for (j = 0; j < question.options.length; j += 1) {
-          radio = $('#q-' + question.num + '-' + j);
-          if (radio.prop('checked')) {
-            paste = '';
-            checked = true;
-            if (question.options[j].fulltext) {
-              paste = $('#q-' + question.num + '-' + j + '-text').val();
-            }
-            text = applyOdfs(text, question.options[j].odf, paste);
+  for (var i = 0; i < EUCopyright.questions.length; i += 1) {
+    question = EUCopyright.questions[i];
+    if (question.type === 'multiple_choice' && question.options) {
+      for (j = 0; j < question.options.length; j += 1) {
+        radio = $('#q-' + question.num + '-' + j);
+        if (radio.prop('checked')) {
+          data['q-' + question.num] = j;
+          if (question.options[j].fulltext) {
+            data['q-' + question.num + '-' + j + '-text'] = $('#q-' + question.num + '-' + j + '-text').val();
           }
         }
-        if (!checked && EUCopyright.settings.defaultToNoOpinion) {
-          // Check no opinion, if not filled in
-          text = applyOdfs(text, question.options[2].odf, '');
-        }
-      } else if (question.type == 'open_question') {
-        paste = $('#q-' + question.num + '-text').val();
-        text = applyOdfs(text, question.odf, paste);
       }
+    } else if (question.type == 'open_question') {
+      data['q-' + question.num + '-text'] = $('#q-' + question.num + '-text').val();
     }
-    return text;
-  };
+  }
 
-  var constructContents = function(zip){
-    var d = $.Deferred();
-    $.get(EUCopyright.baseurl + '/data/content.xml').done(function(parsed, mes, xhr){
-      var text = xhr.responseText;
+  data.name = $('#name').val();
+  data.registerid = $('#register-id').val();
+  data.typeofrespondent = typesOfRespondents;
+  data.typeofrespondentother = $('#typeofrespondent-other-text').val();
+  return data;
+};
 
-      var name = $('#name').val();
-      if (name) {
-        text = replaceParagraph(text, 'P288', name);
-        text = replaceParagraph(text, 'P289', '');
-      } else {
-        text = underline(text, 'P316');
-      }
-
-      var registerId = $('#register-id').val();
-      if (registerId) {
-        text = replaceParagraph(text, 'P293', registerId);
-      }
-
-      var respondents = {
-        enduser: ['T326'],
-        representEnduser: ['T340', 'T341', 'T342', 'T343', 'T344', 'T345'],
-        institution: ['T354'],
-        representInstitution: ['T367', 'T368', 'T369', 'T370'],
-        author: ['P378'],
-        representAuthor: ['P378'],
-        publisher: ['P380'],
-        representPublisher: ['P380'],
-        intermediary: ['T393', 'T394', 'T395', 'T396', 'T397'],
-        representIntermediary: ['T405', 'T406'],
-        collective: ['P414'],
-        publicauthority: ['P416'],
-        memberstate: ['P418'],
-        other: ['T421']
-      };
-
-      var typeOfRespondent = $('*[name="typeofrespondent"]');
-      typeOfRespondent.each(function(i, el){
-        el = $(el);
-        if ((el.attr('type') !== 'checkbox' && el.attr('type') !== 'radio') || el.prop('checked')){
-          var currentTypeOfRespondent = el.val();
-          $(respondents[currentTypeOfRespondent]).each(function(j, key){
-            text = underline(text, key);
-          });
-          if (currentTypeOfRespondent === 'other') {
-            text = replaceParagraph(text, 'P423', $('#typeofrespondent-other-text').val());
-            text = replaceParagraph(text, 'P424', '');
-          }
-        }
-      });
-      text = processQuestions(text);
-
-      zip.file('content.xml', text);
-      d.resolve();
-    });
-    return d;
-  };
-
+EUCopyright.compile = function(data, settings){
   var addFile = function(zip, zipPath){
     var d = $.Deferred();
     $.get(EUCopyright.baseurl + '/data/' + zipPath).done(function(parsed, mes, xhr){
@@ -274,10 +159,28 @@ EUCopyright.compile = function(){
     return d;
   };
 
+  var constructContents = function(zip, data, settings) {
+    var d = $.Deferred();
+    $.get(EUCopyright.baseurl + '/data/content.xml').done(function(parsed, mes, xhr){
+      var text = xhr.responseText;
+
+      text = odtprocessor.renderText(
+        text,
+        data,
+        EUCopyright.questions,
+        settings
+      );
+
+      zip.file('content.xml', text);
+      d.resolve();
+    });
+    return d;
+  };
+
   var zip = new JSZip();
 
   var jobs = [
-    constructContents(zip),
+    constructContents(zip, data, settings),
     addFile(zip, 'mimetype'),
     addFile(zip, 'META-INF/manifest.xml'),
     addFile(zip, 'meta.xml'),
@@ -387,44 +290,53 @@ EUCopyright.loadGuide = function(slug){
   });
 };
 
-$(function(){
-  $('.download-document').click(function(e){
-    e.preventDefault();
-    EUCopyright.compile().done(function(zip){
-      var filename = 'consultation-document_en.odt';
-      if (window.URL === undefined || !JSZip.support.blob) {
-        $('#download-link-container').downloadify({
-          swf: EUCopyright.baseurl + '/js/downloadify.swf',
-          downloadImage: EUCopyright.baseurl + '/img/downloadbutton.png',
-          width: 116,
-          height: 45,
-          filename: filename,
-          data: function(){
-            return zip.generate();
-          },
-          dataType: 'base64',
-          onComplete: function(){
-            if (window._paq !== undefined) {
-              window._paq.push(['trackGoal', 1]);
-            }
-          }
-        });
-      } else {
-        $('#download').attr({
-          'href': window.URL.createObjectURL(zip.generate({type: "blob"})),
-          'download': filename
-        }).removeClass('disabled');
-        $('#download').click(function(){
-          if (window._paq !== undefined) {
-            window._paq.push(['trackGoal', 1]);
-          }
-        });
+EUCopyright.createDownload = function(zip){
+  var filename = 'consultation-document_en.odt';
+  if (window.URL === undefined || !JSZip.support.blob) {
+    $('#download-link-container').downloadify({
+      swf: EUCopyright.baseurl + '/js/downloadify.swf',
+      downloadImage: EUCopyright.baseurl + '/img/downloadbutton.png',
+      width: 116,
+      height: 45,
+      filename: filename,
+      data: function(){
+        return zip.generate();
+      },
+      dataType: 'base64',
+      onComplete: function(){
+        if (window._paq !== undefined) {
+          window._paq.push(['trackGoal', 1]);
+        }
       }
-      $('#download-preparing').fadeOut();
     });
-    $('#download').addClass('disabled');
-    $('#download-preparing').show();
-    $('#download-modal').modal();
+  } else {
+    $('#download').attr({
+      'href': window.URL.createObjectURL(zip.generate({type: "blob"})),
+      'download': filename
+    }).removeClass('disabled');
+  }
+  $('#download-preparing').fadeOut();
+};
+
+EUCopyright.showDownloadModal = function(){
+  var data = EUCopyright.collectData();
+  EUCopyright.compile(data, EUCopyright.settings).done(EUCopyright.createDownload);
+  $('#download').addClass('disabled');
+  $('#download-preparing').show();
+  $('#download-modal').modal();
+};
+
+$(function(){
+  $('.download-document').removeClass('hide')
+    .click(function(e){
+      e.preventDefault();
+      EUCopyright.showDownloadModal();
+    });
+
+  $('#download').click(function(){
+    if (window._paq !== undefined) {
+      window._paq.push(['trackGoal', 1]);
+    }
   });
 
   $('.load-question-guide').click(function(e){
@@ -446,7 +358,8 @@ $(function(){
     });
   });
 
-  $('.toggle').click(function(e){
+  $('.div-toggle').hide();
+  $('.toggle').show().click(function(e){
     e.preventDefault();
     var div = $($(this).attr('href'));
     if (div.css('display') === 'block') {
@@ -510,7 +423,7 @@ $(function(){
         $('input[type=checkbox]#' + name + '-' + value).prop('checked', true);
       }
     });
-    $('input[type=text].save').each(function() {
+    $('input[type=text].save, input[type=email].save').each(function() {
       var id = $(this).attr('id');
       var value = localStorage.getItem(id);
       $(this).val(value);
@@ -537,7 +450,7 @@ $(function(){
         localStorage.setItem(name, value);
       }
     });
-    $('input[type=text].save').on('keydown change', function() {
+    $('input[type=text].save, input[type=email].save').on('keydown change', function() {
       var id = $(this).attr('id');
       var value = $(this).val();
       if (value !== null) {

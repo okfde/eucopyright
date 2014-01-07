@@ -1,0 +1,27 @@
+{
+  "name": "eucopyright-mailer",
+  "version": "0.0.0",
+  "description": "EUCopyright Web App.",
+  "main": "web.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/okfde/eucopyright.git"
+  },
+  "keywords": [
+    "copyright"
+  ],
+  "author": "Stefan Wehrmeyer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/okfde/eucopyright/issues"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+    "postmark": "~0.2.0",
+    "express": "~3.4.7",
+    "js-yaml": "~3.0.1",
+    "adm-zip": "~0.4.3"
+  }
+}

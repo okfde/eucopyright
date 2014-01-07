@@ -79,6 +79,11 @@ textarea {
   padding: 1em 0;
 }
 
+.toggle {
+  display: none;
+}
+
+
 .flag {
   display: inline-block;
   width: 16px;
