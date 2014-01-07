@@ -330,7 +330,7 @@ $(function(){
   $('.download-document').removeClass('hide')
     .click(function(e){
       e.preventDefault();
-      EUCopyright.showDownloadModal();
+      $('#consultation-form').submit();
     });
 
   $('#download').click(function(){
