@@ -27,13 +27,13 @@
                     {{ option.details.en|newline_to_br }}
                   {% endif %}
                   </label>
-                  <textarea class="form-control save" id="q-{{ question.num }}-{{ forloop.index0 }}-text"></textarea>
+                  <textarea class="form-control save" name="q-{{ question.num }}-{{ forloop.index0 }}-text" id="q-{{ question.num }}-{{ forloop.index0 }}-text"></textarea>
                 </div>
               {% endif %}
             </div>
           {% endfor %}
         {% elsif question.type == 'open_question' %}
-          <textarea class="form-control save" id="q-{{ question.num }}-text"></textarea>
+          <textarea class="form-control save" id="q-{{ question.num }}-text" name="q-{{ question.num }}-text"></textarea>
         {% endif %}
       </div>
     </div>
