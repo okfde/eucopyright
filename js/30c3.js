@@ -3,6 +3,10 @@ var currentProblem = 0;
 var guideSlug = 'crew_30c3';
 
 function start(btn) {
+  $('.download-document').click(function(){
+    var data = EUCopyright.collectData();
+    EUCopyright.compile(data, EUCopyright.settings).done(EUCopyright.createDownload);
+  });
   $('input[type=checkbox]').each(function(i, cb) {
     if (cb.checked) {
       var isDuplicate = false;
