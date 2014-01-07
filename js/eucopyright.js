@@ -113,9 +113,43 @@ EUCopyright.parseCSV = function( strData, strDelimiter ){
   return arrData ;
 };
 
-EUCopyright.compile = function(){
+EUCopyright.collectData = function() {
+  var data = {};
+  var question, j, radio;
 
+  var typesOfRespondents = [];
+  $('*[name="typeofrespondent"]').each(function(i, el){
+    el = $(el);
+    if ((el.attr('type') !== 'checkbox' && el.attr('type') !== 'radio') || el.prop('checked')){
+      typesOfRespondents.push(el.val());
+    }
+  });
 
+  for (var i = 0; i < EUCopyright.questions.length; i += 1) {
+    question = EUCopyright.questions[i];
+    if (question.type === 'multiple_choice' && question.options) {
+      for (j = 0; j < question.options.length; j += 1) {
+        radio = $('#q-' + question.num + '-' + j);
+        if (radio.prop('checked')) {
+          data['q-' + question.num] = j;
+          if (question.options[j].fulltext) {
+            data['q-' + question.num + '-' + j + '-text'] = $('#q-' + question.num + '-' + j + '-text').val();
+          }
+        }
+      }
+    } else if (question.type == 'open_question') {
+      data['q-' + question.num + '-text'] = $('#q-' + question.num + '-text').val();
+    }
+  }
+
+  data.name = $('#name').val();
+  data.registerid = $('#register-id').val();
+  data.typeofrespondent = typesOfRespondents;
+  data.typeofrespondentother = $('#typeofrespondent-other-text').val();
+  return data;
+};
+
+EUCopyright.compile = function(data, settings){
   var addFile = function(zip, zipPath){
     var d = $.Deferred();
     $.get(EUCopyright.baseurl + '/data/' + zipPath).done(function(parsed, mes, xhr){
@@ -125,55 +159,16 @@ EUCopyright.compile = function(){
     return d;
   };
 
-  var collectData = function() {
-
-    var typesOfRespondents = [];
-    $('*[name="typeofrespondent"]').each(function(i, el){
-      el = $(el);
-      if ((el.attr('type') !== 'checkbox' && el.attr('type') !== 'radio') || el.prop('checked')){
-        typesOfRespondents.push(el.val());
-      }
-    });
-
-    var replies = {}, question, j, radio;
-
-    for (var i = 0; i < EUCopyright.questions.length; i += 1) {
-      question = EUCopyright.questions[i];
-      if (question.type === 'multiple_choice' && question.options) {
-        for (j = 0; j < question.options.length; j += 1) {
-          radio = $('#q-' + question.num + '-' + j);
-          replies[question.num + '-' + j] = false;
-          if (radio.prop('checked')) {
-            replies[question.num + '-' + j] = true;
-            if (question.options[j].fulltext) {
-              replies[question.num + '-' + j + '-text'] = $('#q-' + question.num + '-' + j + '-text').val();
-            }
-          }
-        }
-      } else if (question.type == 'open_question') {
-        replies[question.num + '-text'] = $('#q-' + question.num + '-text').val();
-      }
-    }
-
-    return {
-      name: $('#name').val(),
-      registerid: $('#register-id').val(),
-      respondents: typesOfRespondents,
-      typeofrespondentother: $('#typeofrespondent-other-text').val(),
-      replies: replies
-    };
-  };
-
-  var constructContents = function(zip) {
+  var constructContents = function(zip, data, settings) {
     var d = $.Deferred();
     $.get(EUCopyright.baseurl + '/data/content.xml').done(function(parsed, mes, xhr){
       var text = xhr.responseText;
 
       text = odtprocessor.renderText(
         text,
-        collectData(),
+        data,
         EUCopyright.questions,
-        EUCopyright.settings
+        settings
       );
 
       zip.file('content.xml', text);
@@ -185,7 +180,7 @@ EUCopyright.compile = function(){
   var zip = new JSZip();
 
   var jobs = [
-    constructContents(zip),
+    constructContents(zip, data, settings),
     addFile(zip, 'mimetype'),
     addFile(zip, 'META-INF/manifest.xml'),
     addFile(zip, 'meta.xml'),
@@ -295,44 +290,53 @@ EUCopyright.loadGuide = function(slug){
   });
 };
 
-$(function(){
-  $('.download-document').click(function(e){
-    e.preventDefault();
-    EUCopyright.compile().done(function(zip){
-      var filename = 'consultation-document_en.odt';
-      if (window.URL === undefined || !JSZip.support.blob) {
-        $('#download-link-container').downloadify({
-          swf: EUCopyright.baseurl + '/js/downloadify.swf',
-          downloadImage: EUCopyright.baseurl + '/img/downloadbutton.png',
-          width: 116,
-          height: 45,
-          filename: filename,
-          data: function(){
-            return zip.generate();
-          },
-          dataType: 'base64',
-          onComplete: function(){
-            if (window._paq !== undefined) {
-              window._paq.push(['trackGoal', 1]);
-            }
-          }
-        });
-      } else {
-        $('#download').attr({
-          'href': window.URL.createObjectURL(zip.generate({type: "blob"})),
-          'download': filename
-        }).removeClass('disabled');
-        $('#download').click(function(){
-          if (window._paq !== undefined) {
-            window._paq.push(['trackGoal', 1]);
-          }
-        });
+EUCopyright.createDownload = function(zip){
+  var filename = 'consultation-document_en.odt';
+  if (window.URL === undefined || !JSZip.support.blob) {
+    $('#download-link-container').downloadify({
+      swf: EUCopyright.baseurl + '/js/downloadify.swf',
+      downloadImage: EUCopyright.baseurl + '/img/downloadbutton.png',
+      width: 116,
+      height: 45,
+      filename: filename,
+      data: function(){
+        return zip.generate();
+      },
+      dataType: 'base64',
+      onComplete: function(){
+        if (window._paq !== undefined) {
+          window._paq.push(['trackGoal', 1]);
+        }
       }
-      $('#download-preparing').fadeOut();
     });
-    $('#download').addClass('disabled');
-    $('#download-preparing').show();
-    $('#download-modal').modal();
+  } else {
+    $('#download').attr({
+      'href': window.URL.createObjectURL(zip.generate({type: "blob"})),
+      'download': filename
+    }).removeClass('disabled');
+  }
+  $('#download-preparing').fadeOut();
+};
+
+EUCopyright.showDownloadModal = function(){
+  var data = EUCopyright.collectData();
+  EUCopyright.compile(data, EUCopyright.settings).done(EUCopyright.createDownload);
+  $('#download').addClass('disabled');
+  $('#download-preparing').show();
+  $('#download-modal').modal();
+};
+
+$(function(){
+  $('.download-document').removeClass('hide')
+    .click(function(e){
+      e.preventDefault();
+      EUCopyright.showDownloadModal();
+    });
+
+  $('#download').click(function(){
+    if (window._paq !== undefined) {
+      window._paq.push(['trackGoal', 1]);
+    }
   });
 
   $('.load-question-guide').click(function(e){
@@ -354,7 +358,8 @@ $(function(){
     });
   });
 
-  $('.toggle').click(function(e){
+  $('.div-toggle').hide();
+  $('.toggle').show().click(function(e){
     e.preventDefault();
     var div = $($(this).attr('href'));
     if (div.css('display') === 'block') {
@@ -418,7 +423,7 @@ $(function(){
         $('input[type=checkbox]#' + name + '-' + value).prop('checked', true);
       }
     });
-    $('input[type=text].save').each(function() {
+    $('input[type=text].save, input[type=email].save').each(function() {
       var id = $(this).attr('id');
       var value = localStorage.getItem(id);
       $(this).val(value);
@@ -445,7 +450,7 @@ $(function(){
         localStorage.setItem(name, value);
       }
     });
-    $('input[type=text].save').on('keydown change', function() {
+    $('input[type=text].save, input[type=email].save').on('keydown change', function() {
       var id = $(this).attr('id');
       var value = $(this).val();
       if (value !== null) {

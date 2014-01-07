@@ -73,13 +73,13 @@
 
       if (question.type === 'multiple_choice' && question.options) {
         checked = false;
+        radio = parseInt(replies['q-' + question.num], 10);
         for (j = 0; j < question.options.length; j += 1) {
-          radio = replies[question.num + '-' + j];
-          if (radio) {
+          if (radio === j) {
             paste = '';
             checked = true;
             if (question.options[j].fulltext) {
-              paste = replies[question.num + '-' + j + '-text'];
+              paste = replies['q-' + question.num + '-' + j + '-text'];
             }
             text = applyOdfs(text, question.options[j].odf, paste);
           }
@@ -89,7 +89,7 @@
           text = applyOdfs(text, question.options[2].odf, '');
         }
       } else if (question.type == 'open_question') {
-        paste = replies[question.num + '-text'];
+        paste = replies['q-' + question.num + '-text'];
         text = applyOdfs(text, question.odf, paste);
       }
     }
@@ -125,18 +125,18 @@
       other: ['T421']
     };
 
-    for (var i = 0; i < data.respondents.length; i += 1) {
-      var respondentKeys = respondents[data.respondents[i]];
+    for (var i = 0; i < data.typeofrespondent.length; i += 1) {
+      var respondentKeys = respondents[data.typeofrespondent[i]];
       for (var j = 0; j < respondentKeys.length; j += 1) {
         text = underline(text, respondentKeys[j]);
       }
-      if (data.respondents[i] === 'other') {
+      if (data.typeofrespondent[i] === 'other') {
         text = replaceParagraph(text, 'P423', data.typeofrespondentother);
         text = replaceParagraph(text, 'P424', '');
       }
     }
 
-    text = processQuestions(text, data.replies, questions, settings);
+    text = processQuestions(text, data, questions, settings);
 
     return text;
   };
