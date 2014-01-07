@@ -125,47 +125,53 @@ EUCopyright.compile = function(){
     return d;
   };
 
+  var collectData = function() {
+
+    var typesOfRespondents = [];
+    $('*[name="typeofrespondent"]').each(function(i, el){
+      el = $(el);
+      if ((el.attr('type') !== 'checkbox' && el.attr('type') !== 'radio') || el.prop('checked')){
+        typesOfRespondents.push(el.val());
+      }
+    });
+
+    var replies = {}, question, j, radio;
+
+    for (var i = 0; i < EUCopyright.questions.length; i += 1) {
+      question = EUCopyright.questions[i];
+      if (question.type === 'multiple_choice' && question.options) {
+        for (j = 0; j < question.options.length; j += 1) {
+          radio = $('#q-' + question.num + '-' + j);
+          replies[question.num + '-' + j] = false;
+          if (radio.prop('checked')) {
+            replies[question.num + '-' + j] = true;
+            if (question.options[j].fulltext) {
+              replies[question.num + '-' + j + '-text'] = $('#q-' + question.num + '-' + j + '-text').val();
+            }
+          }
+        }
+      } else if (question.type == 'open_question') {
+        replies[question.num + '-text'] = $('#q-' + question.num + '-text').val();
+      }
+    }
+
+    return {
+      name: $('#name').val(),
+      registerid: $('#register-id').val(),
+      respondents: typesOfRespondents,
+      typeofrespondentother: $('#typeofrespondent-other-text').val(),
+      replies: replies
+    };
+  };
+
   var constructContents = function(zip) {
     var d = $.Deferred();
     $.get(EUCopyright.baseurl + '/data/content.xml').done(function(parsed, mes, xhr){
       var text = xhr.responseText;
 
-      var typesOfRespondents = [];
-      $('*[name="typeofrespondent"]').each(function(i, el){
-        el = $(el);
-        if ((el.attr('type') !== 'checkbox' && el.attr('type') !== 'radio') || el.prop('checked')){
-          typesOfRespondents.push(el.val());
-        }
-      });
-
-      var replies = {}, question, j, radio;
-
-      for (var i = 0; i < EUCopyright.questions.length; i += 1) {
-        question = EUCopyright.questions[i];
-        if (question.type === 'multiple_choice' && question.options) {
-          for (j = 0; j < question.options.length; j += 1) {
-            radio = $('#q-' + question.num + '-' + j);
-            replies[question.num + '-' + j] = false;
-            if (radio.prop('checked')) {
-              replies[question.num + '-' + j] = true;
-              if (question.options[j].fulltext) {
-                replies[question.num + '-' + j + '-text'] = $('#q-' + question.num + '-' + j + '-text').val();
-              }
-            }
-          }
-        } else if (question.type == 'open_question') {
-          replies[question.num + '-text'] = $('#q-' + question.num + '-text').val();
-        }
-      }
-
-      text = odtprocessor.renderText(text,
-        {
-          name: $('#name').val(),
-          registerid: $('#register-id').val(),
-          respondents: typesOfRespondents,
-          typeofrespondentother: $('#typeofrespondent-other-text').val(),
-          replies: replies
-        },
+      text = odtprocessor.renderText(
+        text,
+        collectData(),
         EUCopyright.questions,
         EUCopyright.settings
       );
