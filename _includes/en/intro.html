@@ -24,9 +24,16 @@
       <h3>Let's get started!</h3>
       <div class="form-group">
         <label for="name">Your full name</label>
-        <input type="text" class="form-control save" id="name" placeholder="Enter your name">
+        <input type="text" class="form-control save" name="name" id="name" placeholder="Enter your name">
         <p class="help-block">
           Please provide your name to make your voice count.
+        </p>
+      </div>
+      <div class="form-group">
+        <label for="name">Optional: email address</label>
+        <input type="email" class="form-control save" name="email" placeholder="email">
+        <p class="help-block">
+          We can send the finished document to you, so you can forward it directly.
         </p>
       </div>
     </div>
@@ -39,7 +46,7 @@
     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
     <div class="col-lg-8 col-md-8">
       <a href="#for-organisations" class="toggle">Do you represent an organisation?</a>
-      <div id="for-organisations" style="display:none">
+      <div id="for-organisations">
         <h3>
           For organisations
         </h3>
@@ -51,7 +58,7 @@
             If you are a registered organisation, please indicate your Register ID number below. Your contribution will then be considered as representing the views of your organisation.
           </p>
           <label for="register-id">EU Lobby Register ID</label>
-          <input type="text" class="form-control save" id="register-id" placeholder="Register ID">
+          <input type="text" class="form-control save" name="registerid" id="register-id" placeholder="Register ID">
           <p>
             If your organisation is not registered, you have the opportunity to <a href="http://ec.europa.eu/transparencyregister/info/homePage.do">register now</a>.
             Responses from organisations not registered will be published separately.
@@ -109,7 +116,7 @@
       <small>
         <a href="#more-typeofrespondent" class="toggle">Not any of these? Show more</a>
       </small>
-      <div id="more-typeofrespondent" style="display:none">
+      <div id="more-typeofrespondent" class="toggle-div">
         <div class="checkbox">
           <label>
             <input type="checkbox" class="save" name="typeofrespondent" id="typeofrespondent-intermediary" value="intermediary">

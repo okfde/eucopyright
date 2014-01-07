@@ -27,6 +27,14 @@
           Bitte gib deinen Namen an, damit deine Stimme bei der EU zählt.
         </p>
       </div>
+      <div class="form-group">
+        <label for="name">Optional: E-Mail-Adresse</label>
+        <input type="email" class="form-control save" name="email" placeholder="email">
+        <p class="help-block">
+          Wir können dir das fertige Dokument zuschicken, so dass du es direkt weiterleiten kannst.
+        </p>
+      </div>
+
     </div>
     <div class="col-lg-4 col-md-4">
 
@@ -37,7 +45,7 @@
     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
     <div class="col-lg-8 col-md-8">
       <a href="#for-organisations" class="toggle">Repräsentierst du eine Organisation?</a>
-      <div id="for-organisations" style="display:none">
+      <div id="for-organisations">
         <h3>
           Für Organisationen
         </h3>
@@ -105,7 +113,7 @@
         </label>
       </div>
       <a href="#more-typeofrespondent" class="toggle">Keine von den oben genannten? Mehr Auswahl</a>
-      <div id="more-typeofrespondent" style="display:none">
+      <div id="more-typeofrespondent" class="toggle-div">
         <div class="checkbox">
           <label>
             <input type="checkbox" class="save" name="typeofrespondent" id="typeofrespondent-intermediary" value="intermediary">
