@@ -1,10 +1,19 @@
 body {
-  background: url("../img/30c3/30c3-corner.jpg") -400px 0 no-repeat, url("../img/30c3/30c3-bg.png");
+  background: #04000e url("../img/30c3/vector.jpg") no-repeat;
+  /* cc-by http://www.thevectorart.com/free-abstract-background-vector-art-219.html */
+  /* 0 0 no-repeat, url("../img/30c3/30c3-bg.png"); */
+  background-size: 100%;
   margin-bottom: 6em;
+  width: 100%;
 }
+
+a img { border: 0; }
+
 .jumbotron {
-  background: rgba(255,255,255,.8);
+  background: rgba(255,255,255,.85);
+  margin-bottom: 20px;
 }
+
 ul {
   list-style: none;
   padding: 0;
@@ -55,4 +64,9 @@ blockquote.guide {
   background-color: transparent;
   color: #09c;
   border-left: 0;
+}
+
+#credits {
+  float: right;
+  color: #ccc;
 }
