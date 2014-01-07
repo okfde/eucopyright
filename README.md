@@ -21,3 +21,19 @@ The `_data/questions.yml` contains the questions with text keys and language sub
 Then copy `en/index.html` (or for a simpler version `de/index.html`) to a folder with your language and adapt accordingly. Also create a language sub folder in `_includes/` and translate the `intro.html` and `download_modal.html`. You can also translate one of the existing mini-sites (e.g. `30c3`).
 
 You can provide a translated version of a guide as well. See the available guides under `_data/answers.yml` and under `guides/`.
+
+
+## Setup the backup server on Heroku
+
+Install the Heroku toolbelt, create an app and add the `heroku` Git remote. Then:
+
+    # Do this to explicitly define node.js as build pack
+    heroku config:add BUILDPACK_URL=https://github.com/heroku/heroku-buildpack-nodejs
+    git push heroku gh-pages:master
+
+Add the Postmark Add-On to you app, add sending signatures.
+
+Set some environment variables:
+
+    heroku config:set FROM_EMAIL_ADDRESS=verified@emailaddress.eu
+    heroku config:set "ALLOWED_DOMAIN=http://youcan.fixcopyright.eu"
