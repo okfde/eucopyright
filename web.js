@@ -36,6 +36,11 @@ var emailBody = {
   de: 'Hallo {{ name }},\n\n bitte leite diese E-Mail MIT ANHANG weiter an: ' + ECMailAddress + '\n\nDanke!'
 };
 
+var emailName = {
+  en: 'user',
+  de: 'Nutzer/in'
+};
+
 var allowCrossDomain = function(req, res, next) {
     res.header('Access-Control-Allow-Origin', process.env.ALLOWED_DOMAIN);
     res.header('Access-Control-Allow-Methods', 'POST');
@@ -72,12 +77,16 @@ var createText = function(data, settings) {
   );
 };
 
-var sendEmail = function(email, buffer, lang){
+var sendEmail = function(email, name, buffer, lang){
+  var body = emailBody[lang] || emailBody.en;
+  name = name || emailName[lang] || emailName.en;
+  body = body.replace(/\{\{\s*name\s*\}\}/, name);
+
   postmark.send({
       'From': process.env.FROM_EMAIL_ADDRESS,
       'To': email,
       'Subject': emailSubject[lang] || emailSubject.en,
-      'TextBody': emailBody[lang] || emailBody.en,
+      'TextBody': body,
       'Attachments': [{
         'Content': buffer.toString('base64'),
         'Name': ODTFilename,
@@ -90,7 +99,7 @@ app.post('/document', function(req, res){
   var buffer = createODT(createText(req.body, {}));
   if (req.body.email && validateEmail(req.body.email)) {
     console.log('Sending email to ' + req.body.email);
-    sendEmail(req.body.email, buffer, req.body.language || 'en');
+    sendEmail(req.body.name, req.body.email, buffer, req.body.language || 'en');
     if (req.query.redirect) {
       return res.redirect(req.query.redirect);
     }
