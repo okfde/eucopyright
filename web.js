@@ -21,8 +21,20 @@ var files = {
   styles: fs.readFileSync('data/styles.xml'),
 };
 
+
 var ODTContentType = 'application/vnd.oasis.opendocument.text';
 var ODTFilename = 'consultation-document_en.odt';
+var ECMailAddress = 'markt-copyright-consultation@ec.europa.eu';
+
+var emailSubject = {
+  en: 'Public Consultation on the review of the EU copyright rules',
+  de: 'Öffentliche Konsultation zur Überprüfung der Regeln zum EU-Urheberrecht'
+};
+
+var emailBody = {
+  en: 'Dear {{ name }},\n\n please FORWARD this email WITH THE ATTACHMENT to: ' + ECMailAddress + '\n\nThanks!',
+  de: 'Hallo {{ name }},\n\n bitte leite diese E-Mail MIT ANHANG weiter an: ' + ECMailAddress + '\n\nDanke!'
+};
 
 var allowCrossDomain = function(req, res, next) {
     res.header('Access-Control-Allow-Origin', process.env.ALLOWED_DOMAIN);
@@ -60,12 +72,12 @@ var createText = function(data, settings) {
   );
 };
 
-var sendEmail = function(email, buffer){
+var sendEmail = function(email, buffer, lang){
   postmark.send({
       'From': process.env.FROM_EMAIL_ADDRESS,
       'To': email,
-      'Subject': 'Test',
-      'TextBody': 'Test Message',
+      'Subject': emailSubject[lang] || emailSubject.en,
+      'TextBody': emailBody[lang] || emailBody.en,
       'Attachments': [{
         'Content': buffer.toString('base64'),
         'Name': ODTFilename,
@@ -78,7 +90,7 @@ app.post('/document', function(req, res){
   var buffer = createODT(createText(req.body, {}));
   if (req.body.email && validateEmail(req.body.email)) {
     console.log('Sending email to ' + req.body.email);
-    sendEmail(req.body.email, buffer);
+    sendEmail(req.body.email, buffer, req.body.language || 'en');
   }
   if (req.query.redirect) {
     return res.redirect(req.query.redirect);
