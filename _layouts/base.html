@@ -4,7 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>{{ page.title }}</title>
-
+  <script>
+    if (document.location.hostname.indexOf('okfde.github.io') !== -1) {
+      document.location.replace('http://{{ site.domain }}/' + document.location.pathname.split('/').slice(2).join('/'));
+    }
+  </script>
   <link rel="stylesheet" href="{{ site.baseurl}}/css/bootstrap.min.css">
   <link rel="stylesheet" href="{{ site.baseurl}}/css/style.css">
   <link rel="shortcut icon" href="{{ site.baseurl}}/img/favicon.png" />
