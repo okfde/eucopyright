@@ -91,9 +91,9 @@ app.post('/document', function(req, res){
   if (req.body.email && validateEmail(req.body.email)) {
     console.log('Sending email to ' + req.body.email);
     sendEmail(req.body.email, buffer, req.body.language || 'en');
-  }
-  if (req.query.redirect) {
-    return res.redirect(req.query.redirect);
+    if (req.query.redirect) {
+      return res.redirect(req.query.redirect);
+    }
   }
   res.setHeader('Content-Type', ODTContentType);
   res.setHeader('Content-Length', buffer.length);
