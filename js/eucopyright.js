@@ -330,7 +330,19 @@ $(function(){
   $('.submit-form').removeClass('hide')
     .click(function(e){
       e.preventDefault();
-      $('#consultation-form').submit();
+      var $c = $('#consultation-form');
+      var $dm = $('#download-modal');
+      $dm.find('.final-cases').addClass('hide');
+      if ($c.find('*[name=email]').val()) {
+        $dm.find('.email-sent').removeClass('hide');
+      } else {
+        $dm.find('.download-only').removeClass('hide');
+      }
+      $dm.modal();
+      var action = $c.attr('action');
+      action = action.split('?')[0];
+      $c.attr('action', action);
+      $c.submit();
     });
 
   $('#download').click(function(){
