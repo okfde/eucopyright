@@ -20,22 +20,7 @@
   <div class="row">
     <div class="col-lg-8 col-md-8">
       <h3>Los geht's!</h3>
-      <div class="form-group">
-        <label for="name">Dein vollständiger Name</label>
-        <input type="text" class="form-control save" name="name" id="name" placeholder="Enter your name">
-        <p class="help-block">
-          Bitte gib deinen Namen an, damit deine Stimme bei der EU zählt.
-        </p>
-      </div>
-      <div class="form-group">
-        <label for="email"><span class="hidden-xs hidden-sm">Optional: </span>Deine E-Mail-Adresse</label>
-        <input type="email" class="form-control save" name="email" placeholder="email">
-        <p class="help-block">
-          <strong class="visible-xs visible-sm">Das fertige Dokument wird an deine E-Mail-Adresse geschickt.</strong>
-          <span class="hidden-xs hidden-sm">Wir können dir das fertige Dokument zuschicken.</span>
-          <small>Deine E-Mail-Adresse und alle anderen Angaben werden <strong>nicht</strong> von uns gespeichert.</small>
-        </p>
-      </div>
+      {% include de/email_name.html %}
 
     </div>
     <div class="col-lg-4 col-md-4">
