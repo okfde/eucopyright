@@ -4,10 +4,11 @@
 var fs = require('fs');
 var yaml = require('js-yaml');
 var EUCopyrightQuestions = yaml.safeLoad(fs.readFileSync('_data/questions.yml', 'utf8'));
+var translations = yaml.safeLoad(fs.readFileSync('_data/translations.yml', 'utf8'));
 var AdmZip = require('adm-zip');
 var postmark = require('postmark')(process.env.POSTMARK_API_KEY);
 var odtprocessor = require('./js/odtprocessor.js');
-
+console.log(translations);
 var express = require('express');
 var app = express();
 
@@ -24,22 +25,7 @@ var files = {
 
 var ODTContentType = 'application/vnd.oasis.opendocument.text';
 var ODTFilename = 'consultation-document_en.odt';
-var ECMailAddress = 'markt-copyright-consultation@ec.europa.eu';
 
-var emailSubject = {
-  en: 'Public Consultation on the review of the EU copyright rules',
-  de: 'Öffentliche Konsultation zur Überprüfung der Regeln zum EU-Urheberrecht'
-};
-
-var emailBody = {
-  en: 'Dear {{ name }},\n\n please FORWARD this email WITH THE ATTACHMENT to: ' + ECMailAddress + '\n\nThanks!',
-  de: 'Hallo {{ name }},\n\n bitte leite diese E-Mail MIT ANHANG weiter an: ' + ECMailAddress + '\n\nDanke!'
-};
-
-var emailName = {
-  en: 'user',
-  de: 'Nutzer/in'
-};
 
 var allowCrossDomain = function(req, res, next) {
     res.header('Access-Control-Allow-Origin', process.env.ALLOWED_DOMAIN);
@@ -78,14 +64,14 @@ var createText = function(data, settings) {
 };
 
 var sendEmail = function(email, name, buffer, lang){
-  var body = emailBody[lang] || emailBody.en;
-  name = name || emailName[lang] || emailName.en;
+  var body = translations.emailBody[lang] || translations.emailBody.en;
+  name = name || translations.emailName[lang] || translations.emailName.en;
   body = body.replace(/\{\{\s*name\s*\}\}/, name);
   console.info('Sending email to ' + email);
   postmark.send({
       'From': process.env.FROM_EMAIL_ADDRESS,
       'To': email,
-      'Subject': emailSubject[lang] || emailSubject.en,
+      'Subject': translations.emailSubject[lang] || translations.emailSubject.en,
       'TextBody': body,
       'Attachments': [{
         'Content': buffer.toString('base64'),
