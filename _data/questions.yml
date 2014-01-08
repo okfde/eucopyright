@@ -169,7 +169,7 @@
 
 - num: 8
   text:
-    pl: "Czy wystarczająco jasno określono zakres prawa "udostępniania" w przypadkach transgranicznych, tj. wtedy, gdy treści rozpowszechniane są poza granicami państw?"
+    pl: 'Czy wystarczająco jasno określono zakres prawa "udostępniania" w przypadkach transgranicznych, tj. wtedy, gdy treści rozpowszechniane są poza granicami państw?'
     en: Is the scope of the “making available” right in cross-border situations – i.e. when content is disseminated across borders – sufficiently clear?
   to: everyone
   type: multiple_choice
@@ -195,7 +195,7 @@
 
 - num: 9
   text:
-    pl: "[W szczególności, jeśli są Państwo posiadaczami praw autorskich:] Czy wyjaśnienie zakresu terytorialnego prawa "udostępniania" może wpłynąć na rozpoznanie Państwa praw (niezależnie od tego, czy są Państwo autorami czy nie oraz czy przenieśli Państwo prawa czy nie), wynagrodzenia lub egzekwowanie praw (włącznie z dostępnością roszczeń zakazowych)?"
+    pl: '[W szczególności, jeśli są Państwo posiadaczami praw autorskich:] Czy wyjaśnienie zakresu terytorialnego prawa "udostępniania" może wpłynąć na rozpoznanie Państwa praw (niezależnie od tego, czy są Państwo autorami czy nie oraz czy przenieśli Państwo prawa czy nie), wynagrodzenia lub egzekwowanie praw (włącznie z dostępnością roszczeń zakazowych)?'
     en: "Could a clarification of the territorial scope of the “making available” right have an effect on the recognition of your rights (e.g. whether you are considered to be an author or not, whether you are considered to have transferred your rights or not), on your remuneration, or on the enforcement of rights (including the availability of injunctive relief)?"
   to: right holder
   type: multiple_choice
@@ -609,7 +609,7 @@
 
 - num: 27
   text:
-    pl: "Jeżeli ograniczenia i wyjątki ustanowione na poziomie krajowym miałyby być skuteczne za granicą, w jaki sposób powinno się uregulować kwestię "słusznej rekompensaty", jeżeli taka rekompensata jest częścią wyjątku? (np. kto płaci komu, gdzie?)"
+    pl: 'Jeżeli ograniczenia i wyjątki ustanowione na poziomie krajowym miałyby być skuteczne za granicą, w jaki sposób powinno się uregulować kwestię "słusznej rekompensaty", jeżeli taka rekompensata jest częścią wyjątku? (np. kto płaci komu, gdzie?)'
     en: "In the event that limitations and exceptions established at national level were to have cross-border effect, how should the question of “fair compensation” be addressed, when such compensation is part of the exception? (e.g. who pays whom, where?)"
   to: everyone
   type: open_question
