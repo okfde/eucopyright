@@ -421,9 +421,7 @@ $(function(){
     $('input[type=checkbox].save').each(function() {
       var name = $(this).attr('id');
       var value = localStorage.getItem(name);
-      if (value !== null) {
-        $('input[type=checkbox]#' + name).prop('checked', true);
-      }
+      $('input[type=checkbox]#' + name).prop('checked', !!value);
     });
     $('input[type=text].save, input[type=email].save').each(function() {
       var id = $(this).attr('id');
@@ -447,9 +445,11 @@ $(function(){
     });
     $('input[type=checkbox].save').on('click change', function() {
       var name = $(this).attr('id');
-      var value = $(this).val();
-      if (value !== null) {
+      var value = $(this).prop('checked');
+      if (value) {
         localStorage.setItem(name, value);
+      } else {
+        delete localStorage[name];
       }
     });
     $('input[type=text].save, input[type=email].save').on('keydown change', function() {
