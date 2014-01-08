@@ -129,9 +129,12 @@
       data.typeofrespondent = [data.typeofrespondent];
     }
 
+    var alreadyChecked = {};
     for (var i = 0; i < data.typeofrespondent.length; i += 1) {
       var respondentKeys = respondents[data.typeofrespondent[i]];
       if (!respondentKeys) { continue; }
+      if (alreadyChecked[data.typeofrespondent[i]] !== undefined) { continue; }
+      alreadyChecked[data.typeofrespondent[i]] = true;
       for (var j = 0; j < respondentKeys.length; j += 1) {
         text = underline(text, respondentKeys[j]);
       }
