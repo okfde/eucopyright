@@ -3,3 +3,4 @@ beta: false
 domain: "youcan.fixcopyright.eu"
 exclude: [node_modules]
 document_service: "https://fixcopyright.herokuapp.com/document"
+languages: [en, de, pl]
