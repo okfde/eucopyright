@@ -11,6 +11,7 @@
   };
 
   var replaceParagraph = function(doc, key, value){
+    value = value || '';
     return doc.replace(
       new RegExp('(<text:p text:style-name="' + key + '">).*?(</text:p>)'),
       '$1' + escapeXML(value) + '$2'
