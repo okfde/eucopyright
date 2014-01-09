@@ -254,7 +254,9 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain whether you consider this to be the case in general, or under specific circumstances, and why"
+    details: 
+      pl: "Czy uważają Pastwo, że powinno tak być w każdym przypadku, czy tylko w niektórych i dlaczego"
+      en: "Please explain whether you consider this to be the case in general, or under specific circumstances, and why"
     fulltext: true
     odf:
       - action: mark
@@ -287,7 +289,9 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain whether you consider this to be the case in general, or under specific circumstances, and why"
+    details: 
+      en: "Please explain whether you consider this to be the case in general, or under specific circumstances, and why"
+      pl: "wyjaśnij czemu i czy zasada ma dotyczyć każdego przeglądania, czy tylko jakichś specyficznych przypadków"
     fulltext: true
     odf:
       - action: mark
@@ -297,7 +301,9 @@
       - action: remove
         key: P686
   - label: 'No'
-    details: "Please explain whether you consider this to be the case in general, or under specific circumstances, and why (e.g. because it is or should be covered by a copyright exception)"
+    details: 
+      en: "Please explain whether you consider this to be the case in general, or under specific circumstances, and why (e.g. because it is or should be covered by a copyright exception)"
+      pl: " wyjaśnij czemu i czy zasada ma dotyczyć każdego przeglądania, czy tylko jakichś specyficznych przypadków"
     fulltext: true
     odf:
       - action: mark
@@ -427,7 +433,9 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain"
+    details: 
+      pl: "Wyjaśnij dlaczego"
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
@@ -437,7 +445,9 @@
       - action: remove
         key: P777
   - label: 'No'
-    details: "Please explain if they should be longer or shorter"
+    details: 
+      pl: "Wyjaśnij, czy powinien być dłuższy, czy krótszy"
+      en: "Please explain if they should be longer or shorter"
     fulltext: true
     odf:
       - action: mark
@@ -460,7 +470,9 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain by referring to specific cases"
+    details: 
+      de: "Please explain by referring to specific cases"
+      pl: "Wyjaśnij w oparciu o konkretne przypadki"
     fulltext: true
     odf:
       - action: mark
@@ -470,7 +482,9 @@
       - action: remove
         key: P806
   - label: 'No'
-    details: "Please explain"
+    details:       
+      pl: "Wyjaśnij dlaczego"
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
@@ -503,7 +517,9 @@
       - action: remove
         key: P815
   - label: 'No'
-    details: "Please explain"
+    details: 
+      pl: "Wyjaśnij dlaczego"
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
@@ -823,7 +839,9 @@
       - action: remove
         key: P1111
   - label: 'No'
-    details: "Please explain"
+    details: 
+      pl: "Wyjaśnij dlaczego"
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
@@ -845,7 +863,9 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain"
+    details: 
+      pl: "Wyjaśnij dlaczego"
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
@@ -855,7 +875,9 @@
       - action: remove
         key: P1126
   - label: 'No'
-    details: "Please explain"
+    details: 
+      pl: "Wyjaśnij dlaczego"
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
@@ -881,7 +903,9 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain"
+    details: 
+      pl: "Wyjaśnij dlaczego"
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
@@ -959,7 +983,9 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain"
+    details: 
+      pl: "Wyjaśnij dlaczego"
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
@@ -1071,7 +1097,9 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain"
+    details: 
+      pl: "Wyjaśnij dlaczego"
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
@@ -1081,7 +1109,9 @@
       - action: remove
         key: P1369
   - label: 'No'
-    details: "Please explain"
+    details: 
+      pl: "Wyjaśnij dlaczego"
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
@@ -1191,7 +1221,9 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain"
+    details: 
+      pl: "Wyjaśnij dlaczego"
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
@@ -1201,7 +1233,9 @@
       - action: remove
         key: P1449
   - label: 'No'
-    details: "Please explain"
+    details: 
+      pl: "Wyjaśnij dlaczego"
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
@@ -1227,7 +1261,9 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain"
+    details: 
+      pl: "Wyjaśnij dlaczego"
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
@@ -1237,7 +1273,9 @@
       - action: remove
         key: P1472
   - label: 'No'
-    details: "Please explain"
+    details: 
+      pl: "Wyjaśnij dlaczego"
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
@@ -1296,7 +1334,9 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain"
+    details: 
+      pl: "Wyjaśnij dlaczego"
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
@@ -1306,7 +1346,9 @@
       - action: remove
         key: P1510
   - label: 'No'
-    details: "Please explain"
+    details: 
+      pl: "Wyjaśnij dlaczego"
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
@@ -1328,7 +1370,9 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain"
+    details: 
+      pl: "Wyjaśnij dlaczego"
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
@@ -1338,7 +1382,9 @@
       - action: remove
         key: P1526
   - label: 'No'
-    details: "Please explain"
+    details: 
+      pl: "Wyjaśnij dlaczego"
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
@@ -1372,7 +1418,9 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain"
+    details: 
+      pl: "Wyjaśnij dlaczego"
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
@@ -1382,7 +1430,9 @@
       - action: remove
         key: P1544
   - label: 'No'
-    details: "Please explain"
+    details: 
+      pl: "Wyjaśnij dlaczego"
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
@@ -1414,7 +1464,9 @@
       - action: remove
         key: P1554
   - label: 'No'
-    details: "Please explain"
+    details: 
+      pl: "Wyjaśnij dlaczego"
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
@@ -1485,7 +1537,9 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain"
+    details: 
+      pl: "Wyjaśnij dlaczego"
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
@@ -1530,7 +1584,9 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain"
+    details: 
+      pl: "Wyjaśnij dlaczego"
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
@@ -1540,7 +1596,9 @@
       - action: remove
         key: P1612
   - label: 'No'
-    details: "Please explain"
+    details: 
+      pl: "Wyjaśnij dlaczego"
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
@@ -1575,7 +1633,9 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain"
+    details: 
+      pl: "Wyjaśnij dlaczego"
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
@@ -1585,7 +1645,9 @@
       - action: remove
         key: P1626
   - label: 'No'
-    details: "Please explain"
+    details: 
+      pl: "Wyjaśnij dlaczego"
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
