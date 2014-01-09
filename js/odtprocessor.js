@@ -11,6 +11,9 @@
   };
 
   var replaceParagraph = function(doc, key, value){
+    if (Object.prototype.toString.call(value) === '[object Array]') {
+      value = value[0];
+    }
     value = value || '';
     return doc.replace(
       new RegExp('(<text:p text:style-name="' + key + '">).*?(</text:p>)'),
