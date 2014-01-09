@@ -441,7 +441,9 @@ $(function(){
     $('input[type=checkbox].save').each(function() {
       var name = $(this).attr('id');
       var value = localStorage.getItem(name);
-      $('input[type=checkbox]#' + name).prop('checked', !!value);
+      if (!!value) {
+        $('input[type=checkbox]#' + name).prop('checked', true);
+      }
     });
     $('input[type=text].save, input[type=email].save').each(function() {
       var id = $(this).attr('id');
