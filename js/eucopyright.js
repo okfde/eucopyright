@@ -338,9 +338,11 @@ $(function(){
       var $c = $('#consultation-form');
       var $dm = $('#download-modal');
       $dm.find('.final-cases').addClass('hide');
-      if ($c.find('*[name=email]').val()) {
+      var email = $c.find('*[name=email]').val();
+      if (email) {
         EUCopyright.trackGoal(2);
         $dm.find('.email-sent').removeClass('hide');
+        $dm.find('.email-sent-to').text(email);
       } else {
         $dm.find('.download-only').removeClass('hide');
       }
