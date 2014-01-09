@@ -10,6 +10,7 @@
   - label: 'Yes'
     details:
       en: "Please provide examples indicating the Member State, the sector and the type of content concerned (e.g. premium content such as certain films and TV series, audio-visual content in general, music, e-books, magazines, journals and newspapers, games, applications and other software)"
+      de: "Bitte gib Beispiele mit deinem Land, dem Art des Inhalts an (z.B. Premium-Inhalte wie bestimmte Filme, TV-Serien, Musik, E-Books, Magazine, Zeitschriften und Zeitungen, Spiele, Anwendungen und andere Software)"
     fulltext: true
     odf:
       - action: mark
@@ -31,12 +32,15 @@
   text:
     pl: "[W szczególności, jeśli dostarczają Państwo usługi online:] Czy spotkali się Państwo z problemami w zakresie dostarczania usług online wewnątrz Unii Europejskiej?"
     en: Have you faced problems when seeking to provide online services across borders in the EU?
+    de: "Hattest du schon einmal Probleme, als du Dienstleistungen in der EU über Grenzen hinweg anbieten wolltest?"
   to: service provider
   type: multiple_choice
   explanation:
   options:
   - label: 'Yes'
-    details: "Please explain whether such problems, in your experience, are related to copyright or to other issues (e.g. business decisions relating to the cost of providing services across borders, compliance with other laws such as consumer protection)? Please provide examples indicating the Member State, the sector and the type of content concerned (e.g. premium content such as certain films and TV series, audio-visual content in general, music, e-books, magazines, journals and newspapers, games, applications and other software)."
+    details:
+      en: "Please explain whether such problems, in your experience, are related to copyright or to other issues (e.g. business decisions relating to the cost of providing services across borders, compliance with other laws such as consumer protection)? Please provide examples indicating the Member State, the sector and the type of content concerned (e.g. premium content such as certain films and TV series, audio-visual content in general, music, e-books, magazines, journals and newspapers, games, applications and other software)."
+      de: "Bitte beschreibe, ob diese Probleme deiner Erfahrung nach mit dem Urheberrecht oder mit anderen Problemen zusammenhängen (z.B. Unternehmensentscheidungen zu Kosten grenzüberschreitender Dienste, Einhaltung anderer Gesetze wie Verbraucherschutz)? Bitte gib Beispiele mit Mitgliedsstaat, Sektor und Art von Inhalt (z.B. Premium-Inhalte wie bestimmte Filme, TV-Serien, Musik, E-Books, Magazine, Zeitschriften und Zeitungen, Spiele, Anwendungen und andere Software)."
     fulltext: true
     odf:
       - action: mark
@@ -90,7 +94,8 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain by giving examples"
+    details:
+      en: "Please explain by giving examples"
     fulltext: true
     odf:
       - action: mark
@@ -116,7 +121,8 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain by giving examples"
+    details:
+      en: "Please explain by giving examples"
     fulltext: true
     odf:
       - action: mark
@@ -143,7 +149,8 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain"
+    details:
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
@@ -153,7 +160,8 @@
       - action: remove
         key: P555
   - label: 'No'
-    details: "Please explain"
+    details:
+      en: "Please explain"
     fulltext: true
     odf:
       - action: mark
@@ -179,7 +187,8 @@
       - action: mark
         key: P603
   - label: 'No'
-    details: 'Please explain how this could be clarified and what type of clarification would be required (e.g. as in "targeting" approach explained above, as in "country of origin" approach)'
+    details:
+      en: 'Please explain how this could be clarified and what type of clarification would be required (e.g. as in "targeting" approach explained above, as in "country of origin" approach)'
     fulltext: true
     odf:
       - action: mark
@@ -201,7 +210,8 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain how such potential effects could be addressed"
+    details:
+      en: "Please explain how such potential effects could be addressed"
     fulltext: true
     odf:
       - action: mark
@@ -227,7 +237,8 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: 'Please explain what type of measures would be needed in order to address such problems (e.g. facilitation of joint licences when the rights are in different hands, legislation to achieve the "bundling of rights")'
+    details:
+      en: 'Please explain what type of measures would be needed in order to address such problems (e.g. facilitation of joint licences when the rights are in different hands, legislation to achieve the "bundling of rights")'
     fulltext: true
     odf:
       - action: mark
@@ -254,7 +265,7 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: 
+    details:
       pl: "Czy uważają Pastwo, że powinno tak być w każdym przypadku, czy tylko w niektórych i dlaczego"
       en: "Please explain whether you consider this to be the case in general, or under specific circumstances, and why"
     fulltext: true
@@ -266,7 +277,8 @@
       - action: remove
         key: P678
   - label: 'No'
-    details: "Please explain whether you consider this to be the case in general, or under specific circumstances, and why (e.g. because it does not amount to an act of communication to the public – or to a new public, or because it should be covered by a copyright exception)"
+    details:
+      en: "Please explain whether you consider this to be the case in general, or under specific circumstances, and why (e.g. because it does not amount to an act of communication to the public – or to a new public, or because it should be covered by a copyright exception)"
     fulltext: true
     odf:
       - action: mark
@@ -289,7 +301,7 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: 
+    details:
       en: "Please explain whether you consider this to be the case in general, or under specific circumstances, and why"
       pl: "wyjaśnij czemu i czy zasada ma dotyczyć każdego przeglądania, czy tylko jakichś specyficznych przypadków"
     fulltext: true
@@ -301,7 +313,7 @@
       - action: remove
         key: P686
   - label: 'No'
-    details: 
+    details:
       en: "Please explain whether you consider this to be the case in general, or under specific circumstances, and why (e.g. because it is or should be covered by a copyright exception)"
       pl: " wyjaśnij czemu i czy zasada ma dotyczyć każdego przeglądania, czy tylko jakichś specyficznych przypadków"
     fulltext: true
@@ -326,7 +338,8 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain by giving examples"
+    details:
+      en: "Please explain by giving examples"
     fulltext: true
     odf:
       - action: mark
@@ -433,7 +446,7 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: 
+    details:
       pl: "Wyjaśnij dlaczego"
       en: "Please explain"
     fulltext: true
@@ -445,7 +458,7 @@
       - action: remove
         key: P777
   - label: 'No'
-    details: 
+    details:
       pl: "Wyjaśnij, czy powinien być dłuższy, czy krótszy"
       en: "Please explain if they should be longer or shorter"
     fulltext: true
@@ -470,7 +483,7 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: 
+    details:
       de: "Please explain by referring to specific cases"
       pl: "Wyjaśnij w oparciu o konkretne przypadki"
     fulltext: true
@@ -482,7 +495,7 @@
       - action: remove
         key: P806
   - label: 'No'
-    details:       
+    details:
       pl: "Wyjaśnij dlaczego"
       en: "Please explain"
     fulltext: true
@@ -507,7 +520,8 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain by referring to specific cases"
+    details:
+      en: "Please explain by referring to specific cases"
     fulltext: true
     odf:
       - action: mark
@@ -517,7 +531,7 @@
       - action: remove
         key: P815
   - label: 'No'
-    details: 
+    details:
       pl: "Wyjaśnij dlaczego"
       en: "Please explain"
     fulltext: true
@@ -555,7 +569,8 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain why"
+    details:
+      en: "Please explain why"
     fulltext: true
     odf:
       - action: mark
@@ -565,7 +580,8 @@
       - action: remove
         key: P840
   - label: 'No'
-    details: "Please explain why"
+    details:
+      en: "Please explain why"
     fulltext: true
     odf:
       - action: mark
@@ -599,7 +615,8 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain why and specify which exceptions you are referring to"
+    details:
+      en: "Please explain why and specify which exceptions you are referring to"
     fulltext: true
     odf:
       - action: mark
@@ -609,7 +626,8 @@
       - action: remove
         key: P864
   - label: 'No'
-    details: "Please explain why and specify which exceptions you are referring to"
+    details:
+      en: "Please explain why and specify which exceptions you are referring to"
     fulltext: true
     odf:
       - action: mark
@@ -645,7 +663,8 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain, by Member State, sector, and the type of use in question."
+    details:
+      en: "Please explain, by Member State, sector, and the type of use in question."
     fulltext: true
     odf:
       - action: mark
@@ -767,7 +786,8 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain with specific examples"
+    details:
+      en: "Please explain with specific examples"
     fulltext: true
     odf:
       - action: mark
@@ -829,7 +849,8 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain why and how it could best be achieved"
+    details:
+      en: "Please explain why and how it could best be achieved"
     fulltext: true
     odf:
       - action: mark
@@ -839,7 +860,7 @@
       - action: remove
         key: P1111
   - label: 'No'
-    details: 
+    details:
       pl: "Wyjaśnij dlaczego"
       en: "Please explain"
     fulltext: true
@@ -863,7 +884,7 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: 
+    details:
       pl: "Wyjaśnij dlaczego"
       en: "Please explain"
     fulltext: true
@@ -875,7 +896,7 @@
       - action: remove
         key: P1126
   - label: 'No'
-    details: 
+    details:
       pl: "Wyjaśnij dlaczego"
       en: "Please explain"
     fulltext: true
@@ -903,7 +924,7 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: 
+    details:
       pl: "Wyjaśnij dlaczego"
       en: "Please explain"
     fulltext: true
@@ -983,7 +1004,7 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: 
+    details:
       pl: "Wyjaśnij dlaczego"
       en: "Please explain"
     fulltext: true
@@ -1041,7 +1062,8 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain by giving examples"
+    details:
+      en: "Please explain by giving examples"
     fulltext: true
     odf:
       - action: mark
@@ -1097,7 +1119,7 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: 
+    details:
       pl: "Wyjaśnij dlaczego"
       en: "Please explain"
     fulltext: true
@@ -1109,7 +1131,7 @@
       - action: remove
         key: P1369
   - label: 'No'
-    details: 
+    details:
       pl: "Wyjaśnij dlaczego"
       en: "Please explain"
     fulltext: true
@@ -1191,7 +1213,8 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please explain by giving examples"
+    details:
+      en: "Please explain by giving examples"
     fulltext: true
     odf:
       - action: mark
@@ -1221,7 +1244,7 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: 
+    details:
       pl: "Wyjaśnij dlaczego"
       en: "Please explain"
     fulltext: true
@@ -1233,7 +1256,7 @@
       - action: remove
         key: P1449
   - label: 'No'
-    details: 
+    details:
       pl: "Wyjaśnij dlaczego"
       en: "Please explain"
     fulltext: true
@@ -1261,7 +1284,7 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: 
+    details:
       pl: "Wyjaśnij dlaczego"
       en: "Please explain"
     fulltext: true
@@ -1273,7 +1296,7 @@
       - action: remove
         key: P1472
   - label: 'No'
-    details: 
+    details:
       pl: "Wyjaśnij dlaczego"
       en: "Please explain"
     fulltext: true
@@ -1334,7 +1357,7 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: 
+    details:
       pl: "Wyjaśnij dlaczego"
       en: "Please explain"
     fulltext: true
@@ -1346,7 +1369,7 @@
       - action: remove
         key: P1510
   - label: 'No'
-    details: 
+    details:
       pl: "Wyjaśnij dlaczego"
       en: "Please explain"
     fulltext: true
@@ -1370,7 +1393,7 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: 
+    details:
       pl: "Wyjaśnij dlaczego"
       en: "Please explain"
     fulltext: true
@@ -1382,7 +1405,7 @@
       - action: remove
         key: P1526
   - label: 'No'
-    details: 
+    details:
       pl: "Wyjaśnij dlaczego"
       en: "Please explain"
     fulltext: true
@@ -1418,7 +1441,7 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: 
+    details:
       pl: "Wyjaśnij dlaczego"
       en: "Please explain"
     fulltext: true
@@ -1430,7 +1453,7 @@
       - action: remove
         key: P1544
   - label: 'No'
-    details: 
+    details:
       pl: "Wyjaśnij dlaczego"
       en: "Please explain"
     fulltext: true
@@ -1454,7 +1477,8 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: "Please specify the type of transaction and indicate the percentage of the undue payments. Please also indicate how a priori exemption and/or ex post reimbursement schemes could help to remedy the situation."
+    details:
+      en: "Please specify the type of transaction and indicate the percentage of the undue payments. Please also indicate how a priori exemption and/or ex post reimbursement schemes could help to remedy the situation."
     fulltext: true
     odf:
       - action: mark
@@ -1464,7 +1488,7 @@
       - action: remove
         key: P1554
   - label: 'No'
-    details: 
+    details:
       pl: "Wyjaśnij dlaczego"
       en: "Please explain"
     fulltext: true
@@ -1537,7 +1561,7 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: 
+    details:
       pl: "Wyjaśnij dlaczego"
       en: "Please explain"
     fulltext: true
@@ -1549,7 +1573,8 @@
       - action: remove
         key: P1594
   - label: 'No'
-    details: "Please explain why"
+    details:
+      en: "Please explain why"
     fulltext: true
     odf:
       - action: mark
@@ -1584,7 +1609,7 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: 
+    details:
       pl: "Wyjaśnij dlaczego"
       en: "Please explain"
     fulltext: true
@@ -1596,7 +1621,7 @@
       - action: remove
         key: P1612
   - label: 'No'
-    details: 
+    details:
       pl: "Wyjaśnij dlaczego"
       en: "Please explain"
     fulltext: true
@@ -1633,7 +1658,7 @@
   type: multiple_choice
   options:
   - label: 'Yes'
-    details: 
+    details:
       pl: "Wyjaśnij dlaczego"
       en: "Please explain"
     fulltext: true
@@ -1645,7 +1670,7 @@
       - action: remove
         key: P1626
   - label: 'No'
-    details: 
+    details:
       pl: "Wyjaśnij dlaczego"
       en: "Please explain"
     fulltext: true
