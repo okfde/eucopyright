@@ -290,6 +290,12 @@ EUCopyright.loadGuide = function(slug){
   });
 };
 
+EUCopyright.trackGoal = function(goalId){
+  if (window._paq !== undefined) {
+    window._paq.push(['trackGoal', goalId]);
+  }
+};
+
 EUCopyright.createDownload = function(zip){
   var filename = 'consultation-document_en.odt';
   if (window.URL === undefined || !JSZip.support.blob) {
@@ -304,9 +310,7 @@ EUCopyright.createDownload = function(zip){
       },
       dataType: 'base64',
       onComplete: function(){
-        if (window._paq !== undefined) {
-          window._paq.push(['trackGoal', 1]);
-        }
+        EUCopyright.trackGoal(1);
       }
     });
   } else {
@@ -330,10 +334,12 @@ $(function(){
   $('.submit-form').removeClass('hide')
     .click(function(e){
       e.preventDefault();
+      EUCopyright.trackGoal(1);
       var $c = $('#consultation-form');
       var $dm = $('#download-modal');
       $dm.find('.final-cases').addClass('hide');
       if ($c.find('*[name=email]').val()) {
+        EUCopyright.trackGoal(2);
         $dm.find('.email-sent').removeClass('hide');
       } else {
         $dm.find('.download-only').removeClass('hide');
