@@ -8,7 +8,7 @@ var translations = yaml.safeLoad(fs.readFileSync('_data/translations.yml', 'utf8
 var AdmZip = require('adm-zip');
 var postmark = require('postmark')(process.env.POSTMARK_API_KEY);
 var odtprocessor = require('./js/odtprocessor.js');
-console.log(translations);
+
 var express = require('express');
 var app = express();
 
@@ -21,6 +21,14 @@ var files = {
   settings: fs.readFileSync('data/settings.xml'),
   styles: fs.readFileSync('data/styles.xml'),
 };
+
+var zip = new AdmZip();
+zip.addFile('mimetype', files.mimetype);
+zip.addFile('META-INF/manifest.xml', files.manifest);
+zip.addFile('meta.xml', files.meta);
+zip.addFile('settings.xml', files.settings);
+zip.addFile('styles.xml', files.styles);
+zip.addFile('content.xml', new Buffer(''));
 
 
 var ODTContentType = 'application/vnd.oasis.opendocument.text';
@@ -44,13 +52,7 @@ var validateEmail = function(email) {
 };
 
 var createODT = function(content) {
-  var zip = new AdmZip();
-  zip.addFile('mimetype', files.mimetype);
-  zip.addFile('META-INF/manifest.xml', files.manifest);
-  zip.addFile('meta.xml', files.meta);
-  zip.addFile('settings.xml', files.settings);
-  zip.addFile('styles.xml', files.styles);
-  zip.addFile('content.xml', new Buffer(content));
+  zip.updateFile('content.xml', new Buffer(content));
   return zip.toBuffer();
 };
 
