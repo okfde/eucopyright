@@ -5,7 +5,7 @@
     de: "Hattest du schon einmal Probleme auf Online-Dienste aus einem anderen EU-Staat als dem, in dem du lebst, zuzugreifen?"
     fr: "Avez vous rencontré des problèmes en essayant d'accéder à des services en ligne venant d'un autre pays membre de l'UE que celui dans lequel vous vivez ?"
     es: ¿Se ha encontrado con problemas al intentar acceder a servicios online en un estado miembro de la Unión Europea distinto de aquel en el que vive?
-    it: Hai riscontrato problemi accedendo a servizi online in un paese membro dell'Unione europea, apparte quello in cui vivi?
+    it: "Hai riscontrato problemi accedendo a servizi online in un paese membro dell'Unione europea, apparte quello in cui vivi?"
     nl: Heb je ooit problemen ondervonden wanneer je online diensten uit andere lidstaten dan jouw eigen land probeert te gebruiken?
   to: enduser
   type: multiple_choice
@@ -67,7 +67,7 @@
   text:
     pl: "[W szczególności, jeśli są Państwo posiadaczami praw autorskich bądź reprezentują Państwo organizację zbiorowego zarządzania:] Jak często spotykają się Państwo z prośbą o licencje wieloterytorialne? Jeśli to możliwe, proszę podać liczbę zapytań w skali roku oraz przykłady z informacją, z jakiego kraju członkowskiego i z jakiego sektora pochodziło zapytanie oraz jakiego rodzaju usług/treści dotyczyło."
     en: "How often are you asked to grant multi-territorial licences? Please indicate, if possible, the number of requests per year and provide examples indicating the Member State, the sector and the type of content concerned."
-    nl: Hoe vaak word je gevraagd om licenties over meerdere landen te verstrekken? Indien mogelijk, geef alsjeblief een indicatie van het aantal verzoeken per jaar en voorbeelden met vermelding van de lidstaat, sector en type werk in kwestie.
+    nl: "Hoe vaak word je gevraagd om licenties over meerdere landen te verstrekken? Indien mogelijk, geef alsjeblief een indicatie van het aantal verzoeken per jaar en voorbeelden met vermelding van de lidstaat, sector en type werk in kwestie."
   to: right holder or collective management organisation
   type: open_question
   explanation:
@@ -97,7 +97,7 @@
   text:
     pl: "[W szczególności, jeśli są Państwo posiadaczami praw autorskich bądź reprezentują Państwo organizację zbiorowego zarządzania:] Czy istnieją powody, dla których - nawet jeśli posiadają Państwo wszelkie niezbędne prawa obejmujące dane terytoria - w dalszym ciągu uznaliby Państwo za konieczne i uzasadnione, aby narzucać ograniczenia terytorialne dostarczycielom usług (na przykład po to, aby uniemożliwić dostęp do pewnych treści w wybranych krajach europejskich)?"
     en: "Are there reasons why, even in cases where you hold all the necessary rights for all the territories in question, you would still find it necessary or justified to impose territorial restrictions on a service provider (in order, for instance, to ensure that access to certain content is not possible in certain European countries)?"
-    nl: Zijn er redenen waarom, zelfs in zaken waar je alle noodzakelijke rechten beheert voor alle landen in kwestie, je het nog steeds noodzakelijk zou vinden om restricties per land op een aanbieder van diensten te leggen (bijvoorbeeld om ervoor te zorgen dat bepaalde werken niet toegankelijk zijn in bepaalde Europese landen)?
+    nl: "Zijn er redenen waarom, zelfs in zaken waar je alle noodzakelijke rechten beheert voor alle landen in kwestie, je het nog steeds noodzakelijk zou vinden om restricties per land op een aanbieder van diensten te leggen (bijvoorbeeld om ervoor te zorgen dat bepaalde werken niet toegankelijk zijn in bepaalde Europese landen)?"
   to: "right holder, collective management organisation"
   type: multiple_choice
   options:
@@ -125,7 +125,7 @@
   text:
     pl: "[W szczególności, jeśli reprezentują Państwo nadawcę lub dostawcę usług online:] Czy istnieją powody, dla których - nawet jeśli nabyli Państwo wszelkie niezbędne prawa obejmujące dane terytoria - w dalszym ciągu uznaliby Państwo za konieczne i uzasadnione, aby narzucać ograniczenia terytorialne odbiorcom swoich usług (na przykład po to, aby przekierować konsumenta na inną stronę niż ta, którą pierwotnie chce odwiedzić)?"
     en: "Are there reasons why, even in cases where you have acquired all the necessary rights for all the territories in question, you would still find it necessary or justified to impose territorial restrictions on the service recipient (in order for instance, to redirect the consumer to a different website than the one he is trying to access)?"
-    nl: Zijn er redenen waarom, zelfs in gevallen waar je alle noodzakelijke rechten verworven hebt voor alle landen in kwestie, je het nog steeds noodzakelijk zou vinden om beperkingen per land op een aanbieder van diensten te leggen (om er bijvoorbeeld voor te zorgen dat bepaalde werken niet toegankelijk zijn in bepaalde Europese landen)?
+    nl: "Zijn er redenen waarom, zelfs in gevallen waar je alle noodzakelijke rechten verworven hebt voor alle landen in kwestie, je het nog steeds noodzakelijk zou vinden om beperkingen per land op een aanbieder van diensten te leggen (om er bijvoorbeeld voor te zorgen dat bepaalde werken niet toegankelijk zijn in bepaalde Europese landen)?"
   to: "broadcaster, service provider"
   type: multiple_choice
   options:
@@ -154,7 +154,7 @@
     pl: "Czy uważają Państwo, że na poziomie UE potrzebne są dalsze środki (legislacja lub inne, w tym rozwiązania proponowane przez rynek) w celu zwiększenia transgranicznej dostępności treści na Wspólnym Rynku, przy jednoczesnym zapewnieniu odpowiedniego poziomu ochrony posiadaczom praw?"
     en: "Do you think that further measures (legislative or non-legislative, including market- led solutions) are needed at EU level to increase the cross-border availability of content services in the Single Market, while ensuring an adequate level of protection for right holders?"
     de: "Sollten weitere Maßnahmen (Gesetze oder andere, inkl. Initiativen des Marktes) auf EU-Ebene angestoßen werden, um die grenzübergreifende Verfügbarkeit von Inhalten zu gewährleisten?"
-    nl: Denk je dat verdere maatregelen (middels wetgeving of niet middels wetgeving, zoals de markt het laten oplossen) op Europees niveau nodig zijn om diensten die werken aanbieden beter bereikbaar te maken over de grenzen binnen de Europese markt, terwijl er een adequaat niveau van bescherming gehandhaafd blijft voor de houders van rechten?
+    nl: "Denk je dat verdere maatregelen (middels wetgeving of niet middels wetgeving, zoals de markt het laten oplossen) op Europees niveau nodig zijn om diensten die werken aanbieden beter bereikbaar te maken over de grenzen binnen de Europese markt, terwijl er een adequaat niveau van bescherming gehandhaafd blijft voor de houders van rechten?"
   to: everyone
   type: multiple_choice
   options:
@@ -549,10 +549,10 @@
     pl: "Czy niektóre/wszystkie wyjątki powinny być obowiązkowe i jeśli tak, czy istnieje potrzeba większej harmonizacji takich wyjątków?"
     en: "Should some/all of the exceptions be made mandatory and, if so, is there a need for a higher level of harmonisation of such exceptions?"
     de: "Sollen einige oder alle Ausnahmen vom Urheberrecht verpflichtend in allen Mitgliedstaaten gelten? Wenn ja, sollen diese Ausnahmen in allen Ländern gleich ausgestaltet werden?"
-    fr: Est-ce que certaines/toutes les exceptions devraient être rendues obligatoires, et si oui y a-t-il besoin d'un plus haut niveau d'harmonisation de telles exceptions ?
-    es: ¿Deberían algunas/todas las excepciones tener carácter obligatorio? Y, si es así, ¿hay una necesidad de un mayor nivel de armonización de tales excepciones?
-    it: Dovrebbero alcune o tutte le eccezione essere obbligatorie e, in tal caso, c'è necessità di un livello superiore di armonizzazione per tali eccezioni?
-    nl: Moeten sommige / alle uitzonderingen verplicht worden gesteld en, zo ja, is er behoefte aan een hoger niveau van harmonisatie van dergelijke uitzonderingen?
+    fr: "Est-ce que certaines/toutes les exceptions devraient être rendues obligatoires, et si oui y a-t-il besoin d'un plus haut niveau d'harmonisation de telles exceptions ?"
+    es: "¿Deberían algunas/todas las excepciones tener carácter obligatorio? Y, si es así, ¿hay una necesidad de un mayor nivel de armonización de tales excepciones?"
+    it: "Dovrebbero alcune o tutte le eccezione essere obbligatorie e, in tal caso, c'è necessità di un livello superiore di armonizzazione per tali eccezioni?"
+    nl: "Moeten sommige / alle uitzonderingen verplicht worden gesteld en, zo ja, is er behoefte aan een hoger niveau van harmonisatie van dergelijke uitzonderingen?"
   to: everyone
   type: multiple_choice
   options:
