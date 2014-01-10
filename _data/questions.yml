@@ -3,6 +3,7 @@
     pl: "[W szczególności, jeżeli są Państwo użytkownikami końcowymi/konsumentami:] Czy spotkali się Państwo z problemami w zakresie dostępu do usług online w innym państwie członkowskim Unii Europejskiej niż Państwa kraj zamieszkania?"
     en: Have you faced problems when trying to access online services in an EU Member State other than the one in which you live?
     de: "Hattest du schon einmal Probleme auf Online-Dienste aus einem anderen EU-Staat als dem, in dem du lebst, zuzugreifen?"
+    fr: "Avez vous rencontré des problèmes en essayant d'accéder à des services en ligne venant d'un autre pays membre de l'UE que celui dans lequel vous vivez ?"
   to: enduser
   type: multiple_choice
   explanation:
@@ -261,6 +262,7 @@
     pl: "Czy podanie hiperłącza odnoszącego do utworu lub innego przedmiotu chronionego prawem autorskim, czy generalnie czy w specyficznych okolicznościach, powinno wymagać zezwolenia posiadacza praw?"
     en: "Should the provision of a hyperlink leading to a work or other subject matter protected under copyright, either in general or under specific circumstances, be subject to the authorisation of the rightholder?"
     de: "Sollte das Bereitstellen eines Hyperlinks, welcher zu einem urheberrechtlich geschützten Werk oder anderen Gegenstand führt, entweder im Allgemeinen oder unter bestimmten Umständen die Erlaubnis des Rechteinhabers erfordern?"
+    fr: Est-ce que la mise à disposition d'un lien hypertexte menant à une œuvre ou à d'autres objets protégés en vertu du droit d'auteur, soit de manière générale ou dans des circonstances particulières, devrait être soumise à l'autorisation du titulaire des droits?
   to: everyone
   type: multiple_choice
   options:
@@ -334,6 +336,7 @@
     pl: "[W szczególności, jeśli są Państwo użytkownikami końcowymi/konsumentami:] Czy spotkali się Państwo z ograniczeniami przy próbie odsprzedania plików cyfrowych, który zostały wcześniej nabyte (np. pliki mp3, e-booki)?"
     en: "Have you faced restrictions when trying to resell digital files that you have purchased (e.g. mp3 file, e-book)?"
     de: "Warst du beim Versuch des Weiterverkaufs digitaler Dateien (z. B. MP3-Dateien, eBooks), die du zuvor erworben hattest, mit Einschränkungen konfrontiert?"
+    fr: Avez vous rencontré des restrictions en essayant de revendre des fichiers numériques que vous avez achetés (par exemple des fichiers mp3 ou des e-books) ?
   to: end user/consumer
   type: multiple_choice
   options:
@@ -479,6 +482,7 @@
     pl: "Czy fakt, że większość organiczeń i wyjątków ustanowionych przez dyrektywy unijne dotyczące prawa autorskiego jest opcjonalna dla krajów członkowskich, stanowi źródło problemów?"
     en: Are there problems arising from the fact that most limitations and exceptions provided in the EU copyright directives are optional for the Member States?
     de: "Werden aufgrund der Tatsache, dass die Einschränkungen und Ausnahmen in den EU-Richtlininen für die Mitgliedsstaaten auf Freiwilligkeit basieren, Probleme entstehen?"
+    fr: Est-ce que ces problèmes découlent du fait que la plupart de ces limitations et exceptions prévues par les directives sur le droit d'auteur sont facultatives pour les États membres ?
   to: everyone
   type: multiple_choice
   options:
@@ -516,6 +520,7 @@
     pl: "Czy niektóre/wszystkie wyjątki powinny być obowiązkowe i jeśli tak, czy istnieje potrzeba większej harmonizacji takich wyjątków?"
     en: "Should some/all of the exceptions be made mandatory and, if so, is there a need for a higher level of harmonisation of such exceptions?"
     de: "Sollen einige oder alle Ausnahmen vom Urheberrecht verpflichtend in allen Mitgliedstaaten gelten? Wenn ja, sollen diese Ausnahmen in allen Ländern gleich ausgestaltet werden?"
+    fr: Est-ce que certaines/toutes les exceptions devraient être rendues obligatoires, et si oui y a-t-il besoin d'un plus haut niveau d'harmonisation de telles exceptions ?
   to: everyone
   type: multiple_choice
   options:
@@ -552,6 +557,7 @@
     pl: "Czy nowe ograniczenia i wyjątki powinny zostać dodane lub usunięte z istniejącego katalogu? Proszę uzasadnić, nawiązując do poszczególnych przypadków."
     en: "Should any new limitations and exceptions be added to or removed from the existing catalogue? Please explain by referring to specific cases"
     de: "Sollten neue Schranken und Ausnahmen vom Urheberrecht eingeführt werden? Bitte nenne konkrete Beispiele."
+    fr: Est-ce que toute nouvelle limitation ou exception devrait être ajoutée ou retirée du catalogue existant ? Expliquez en vous référant à des cas précis.
   to: everyone
   type: open_question
   odf:
@@ -1209,6 +1215,10 @@
       (a) [im Besonderen, wenn du Privatanwender/Konsument bist:] Hattest du schon Probleme, als du versuchtest, schon existierende Arbeiten  oder andere Angelegenheiten für neue Veröffentlichungen zu verwenden, auch über Grenzen hinweg?
       (b) [im Besonderen, wenn du ein Diensteanbieter bist:]  Hast du schon von Problemen von Nutzern erfahren, die schon existierende Arbeiten für neue Veröffentlichungen verwendet haben, auch grenzüberschreitend und über deine Dienste?
       (c) [im Besonderen, wenn du ein Rechteinhaber bist:] Hast du schon Probleme bei Veröffentlichungen basierend auf schon existierenden Arbeiten durch User, auch über Grenzen hinweg, festgestellt?
+    fr: |
+      (a) [En particulier si vous êtes un utilisateur/consommateur final] Avez-vous rencontré des problèmes lorsque vous avez voulu utiliser des œuvres préexistantes ou un autre objet pour diffuser de nouveaux contenus sur Internet, y compris au delà des frontières ?
+      (b) [En particulier si vous êtes un prestataire de services:] Avez-vous rencontré des problèmes lorsque les utilisateurs publient / diffusent un nouveau contenu basé sur des œuvres préexistantes ou un autre objet par le biais de votre service, y compris au delà des frontières ?
+      (c) [En particulier si vous êtes un ayant-droit:] Avez-vous eu des problèmes dûs à la façon dont les utilisateurs utilisaient des œuvres préexistantes ou d'autres objets pour disséminer du nouveau contenu sur internet, y compris au delà des frontières ?
   to: switch
   type: multiple_choice
   options:
@@ -1353,6 +1363,7 @@
     pl: "Czy według Państwa istnieje potrzeba wyjaśnienia na poziomie europejskim zakresu i zastosowania wyjątków dotyczących kopiowania na użytek prywatny i wyjątków reprograficznych w środowisku cyfrowym?"
     en: "In your view, is there a need to clarify at the EU level the scope and application of the private copying and reprography exceptions in the digital environment?"
     de: "Ist es aus deiner Sicht notwendig, auf EU-Ebene die Reichweite und den Zweck der Ausnahmeregelungen für Privatkopien und Vervielfältigungen im digitalen Bereich zu klären?"
+    fr: D'après vous, est-il nécessaire de clarifier au niveau de l'Union Européenne la portée et les applications du droit à la copie privée et des exceptions à la reprographie dans le monde numérique ?
   to: everyone
   type: multiple_choice
   options:
@@ -1545,6 +1556,7 @@
     pl: "[W szczególności, jeśli są Państwo autorami/wykonawcami:] Jaki jest najlepszy mechanizm (lub zestaw mechanizmów), który zapewniłby otrzymanie przez Państwa właściwego wynagrodzenia za wykorzystanie Pastwa utworów lub wykonań?"
     en: What is the best mechanism (or combination of mechanisms) to ensure that you receive an adequate remuneration for the exploitation of your works and performances?
     de: "Welche Mechanismen (auch Kombinationen aus verschiedenen Mechanismen) stellen ein passendes Entgelt für die Nutzung deiner Arbeiten und Leistungen am besten sicher?"
+    fr: Quelles sont les procédures (ou combinaisons de procédures) qui vous permettraient  de recevoir une rémunération juste pour l’exploitation de vos oeuvres ou de vos performances ?
   to: author/performer
   type: open_question
   odf:
@@ -1593,6 +1605,7 @@
     pl: "Jeśli uważają Państwo obecne zasady za nieskuteczne, jak należałoby uregulować zidentyfikowane nieprawidłowości?"
     en: "If you consider that the current rules are not effective, what would you suggest to address the shortcomings you identify?"
     de: "Wenn du denkst, die geltenden Vorschriften wären nicht wirksam? Wie würdest du die von dir erkannten Defizite beheben?"
+    fr: Si vous considérez que la réglementation actuelle n’est pas efficace, que suggèreriez-vous pour pallier les défauts que vous identifiez ?
   to: everyone
   type: open_question
   odf:
@@ -1654,6 +1667,7 @@
     pl: "Czy obecny system egzekwowania odpowiedzialności cywilnej zapewnia odpowiednią równowagę pomiędzy prawem do poszanowania prawa autorskiego oraz innych praw, jak ochrona życia prywatnego i danych osobowych?"
     en: Does the current civil enforcement framework ensure that the right balance is achieved between the right to have one’s copyright respected and other rights such as the protection of private life and protection of personal data?
     de: "Stellen die aktuellen zivilrechtlichen Durchsetzungs-Voraussetzungen sicher, dass das richtige Gleichgewicht zwischen dem Urheberrecht und anderen Rechten, wie dem Schutz des Privatlebens und der persönlichen Daten, zustande kommt?"
+    fr: Est-ce que le cadre réglementaire civil actuel assure que le bon équilibre soit atteint entre le droit de chacun de voir ses droits d'auteur respectés et d'autres droits comme la protection de la vie privée et la protection des données personnelles ?
   to: everyone
   type: multiple_choice
   options:
@@ -1725,6 +1739,7 @@
     pl: "Czy istnieją inne istote kwestie związane z europejskim systemem prawnoautorskim? Proszę uzasadnić i wskazać, jak kwestie te powinny być uregulowane."
     en: Are there any other important matters related to the EU legal framework for copyright? Please explain and indicate how such matters should be addressed.
     de: "Gibt es weitere wichtige Dinge im Zusammenhang mit der europäischen Rechtslage im Bezug auf das Urheberrecht?  Bitte erklären und darauf hinweisen, wie man diese Fälle ansprechen könnte"
+    fr: Y a-t-il d'autres questions importantes liées au cadre juridique de l'UE du droit d'auteur ? Expliquez et indiquez s'il vous plait comment ces questions doivent être abordées.
   to: everyone
   type: open_question
   odf:
