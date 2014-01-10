@@ -12,21 +12,6 @@ language: en
         The European Commission is thinking about the future of copyright in the EU, and your input can push them into the right direction.
       </p>
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-4">
-      <h4>Other languages</h4>
-      <ul class="list-unstyled">
-        {% for lang in site.languages %}
-          {% if lang != page.language %}
-            <li>
-              <a href="{{ site.baseurl }}/{{ lang }}/" class="btn btn-default">
-                <span class="flag flag-{{ lang }}"></span>
-                {{ site.data.translations.replyInLanguage[lang] }}
-              </a>
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
   </div>
 <form id="consultation-form" method="post" action="{{ site.document_service }}?redirect=http%3a//{{ site.domain }}/{{ page.language }}/thanks.html">
 
@@ -94,6 +79,19 @@ language: en
       </div>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4">
+      <h4>Other languages</h4>
+      <ul class="list-unstyled">
+        {% for lang in site.languages %}
+          {% if lang != page.language %}
+            <li>
+              <a href="{{ site.baseurl }}/{{ lang }}/" class="btn btn-default">
+                <span class="flag flag-{{ lang }}"></span>
+                {{ site.data.translations.replyInLanguage[lang] }}
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
       <h4>Other answering guides</h4>
       <a href="http://www.copywrongs.eu/" class="btn btn-default">
         30C3 Crew's Guide
