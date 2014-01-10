@@ -15,15 +15,39 @@ emailBody:
   en: |
     Dear {{ name }},
     
-    please FORWARD this email WITH THE ATTACHMENT to: markt-copyright-consultation@ec.europa.eu
+    Please forward the e-mail below with attachment to markt-copyright-consultation@ec.europa.eu .
     
-    Thanks!
+    Thanks for your support!
+    
+    Fixcopyright.eu
+    
+    ***
+    
+    Dear Madam, Sir
+    
+    Please find attached my submission to the EU copyright consultation.
+    Is it possible to please confirm receipt of my submission?
+    
+    Many thanks in advance.
+    Kind regards
   de: |
     Hallo {{ name }},
     
-    bitte leite diese E-Mail MIT ANHANG weiter an: markt-copyright-consultation@ec.europa.eu
+    bitte leite die untenstehende E-Mail mit Anhang weiter an: markt-copyright-consultation@ec.europa.eu
     
-    Danke!
+    Danke für deine Unterstützung!
+    
+    Fixcopyright.eu
+    
+    ***
+    
+    Sehr geehrte Damen und Herren,
+    
+    Sie finden meine Einreichung zur EU-Urheberrechts-Konsultation im Anhang.
+    Ist es mögliche eine Empfangsbestätigung meiner Einreichung zu erhalten?
+    
+    Vielen Dank im Voraus!
+    Mit freundlichen Grüßen
 emailName:
   en: 'user'
   de: 'Nutzer/in'
@@ -31,3 +55,7 @@ replyInLanguage:
   en: "Reply in English"
   de: "Antworte auf Deutsch"
   pl: "Odpowiedz po polsku"
+  es: "Responder en Español"
+  it: "Risposta in italiano"
+  nl: "Antwoorden in het Nederlands"
+  fr: "Répondre en français"
