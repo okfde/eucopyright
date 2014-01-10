@@ -18,3 +18,8 @@
   language: fr
   url: "/guides/30c3_fr.csv"
   questions: [1, 58, 80, 13, 64, 21, 23, 72, 74, 22, 77, 11]
+- name: "Crew 30c3 (ES)"
+  slug: "crew_30c3_es"
+  language: es
+  url: "/guides/30c3_es.csv"
+  questions: [1, 58, 80, 13, 64, 21, 23, 72, 74, 22, 77, 11]
