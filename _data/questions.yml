@@ -3,6 +3,10 @@
     pl: "[W szczególności, jeżeli są Państwo użytkownikami końcowymi/konsumentami:] Czy spotkali się Państwo z problemami w zakresie dostępu do usług online w innym państwie członkowskim Unii Europejskiej niż Państwa kraj zamieszkania?"
     en: Have you faced problems when trying to access online services in an EU Member State other than the one in which you live?
     de: "Hattest du schon einmal Probleme auf Online-Dienste aus einem anderen EU-Staat als dem, in dem du lebst, zuzugreifen?"
+    fr: "Avez vous rencontré des problèmes en essayant d'accéder à des services en ligne venant d'un autre pays membre de l'UE que celui dans lequel vous vivez ?"
+    es: ¿Se ha encontrado con problemas al intentar acceder a servicios online en un estado miembro de la Unión Europea distinto de aquel en el que vive?
+    it: Hai riscontrato problemi accedendo a servizi online in un paese membro dell'Unione europea, apparte quello in cui vivi?
+    nl: Heb je ooit problemen ondervonden wanneer je online diensten uit andere lidstaten dan jouw eigen land probeert te gebruiken?
   to: enduser
   type: multiple_choice
   explanation:
@@ -33,6 +37,7 @@
     pl: "[W szczególności, jeśli dostarczają Państwo usługi online:] Czy spotkali się Państwo z problemami w zakresie dostarczania usług online wewnątrz Unii Europejskiej?"
     en: Have you faced problems when seeking to provide online services across borders in the EU?
     de: "Hattest du schon einmal Probleme, als du Dienstleistungen in der EU über Grenzen hinweg anbieten wolltest?"
+    nl: Ben je wel eens in de problemen gekomen als je probeert om jouw online diensten aan te bieden in de EU?
   to: service provider
   type: multiple_choice
   explanation:
@@ -62,6 +67,7 @@
   text:
     pl: "[W szczególności, jeśli są Państwo posiadaczami praw autorskich bądź reprezentują Państwo organizację zbiorowego zarządzania:] Jak często spotykają się Państwo z prośbą o licencje wieloterytorialne? Jeśli to możliwe, proszę podać liczbę zapytań w skali roku oraz przykłady z informacją, z jakiego kraju członkowskiego i z jakiego sektora pochodziło zapytanie oraz jakiego rodzaju usług/treści dotyczyło."
     en: "How often are you asked to grant multi-territorial licences? Please indicate, if possible, the number of requests per year and provide examples indicating the Member State, the sector and the type of content concerned."
+    nl: Hoe vaak word je gevraagd om licenties over meerdere landen te verstrekken? Indien mogelijk, geef alsjeblief een indicatie van het aantal verzoeken per jaar en voorbeelden met vermelding van de lidstaat, sector en type werk in kwestie.
   to: right holder or collective management organisation
   type: open_question
   explanation:
@@ -77,6 +83,7 @@
     pl: "Jeśli spotkali się Państwo z problemami wyszczególnionymi w którymkolwiek z powyższych pytań - w jaki sposób należałoby sobie z nimi radzić?"
     en: If you have identified problems in the answers to any of the questions above – what would be the best way to tackle them?
     de: "Falls du schon mal solche Probleme hattest, was kann dagegen unternommen werden?"
+    nl: Als je problemen hebt geïdentificeerd in de antwoorden op de bovenstaande vragen - wat zou de makkelijkste manier zijn om ze op te lossen?
   to: everyone
   type: open_question
   explanation:
@@ -90,6 +97,7 @@
   text:
     pl: "[W szczególności, jeśli są Państwo posiadaczami praw autorskich bądź reprezentują Państwo organizację zbiorowego zarządzania:] Czy istnieją powody, dla których - nawet jeśli posiadają Państwo wszelkie niezbędne prawa obejmujące dane terytoria - w dalszym ciągu uznaliby Państwo za konieczne i uzasadnione, aby narzucać ograniczenia terytorialne dostarczycielom usług (na przykład po to, aby uniemożliwić dostęp do pewnych treści w wybranych krajach europejskich)?"
     en: "Are there reasons why, even in cases where you hold all the necessary rights for all the territories in question, you would still find it necessary or justified to impose territorial restrictions on a service provider (in order, for instance, to ensure that access to certain content is not possible in certain European countries)?"
+    nl: Zijn er redenen waarom, zelfs in zaken waar je alle noodzakelijke rechten beheert voor alle landen in kwestie, je het nog steeds noodzakelijk zou vinden om restricties per land op een aanbieder van diensten te leggen (bijvoorbeeld om ervoor te zorgen dat bepaalde werken niet toegankelijk zijn in bepaalde Europese landen)?
   to: "right holder, collective management organisation"
   type: multiple_choice
   options:
@@ -117,6 +125,7 @@
   text:
     pl: "[W szczególności, jeśli reprezentują Państwo nadawcę lub dostawcę usług online:] Czy istnieją powody, dla których - nawet jeśli nabyli Państwo wszelkie niezbędne prawa obejmujące dane terytoria - w dalszym ciągu uznaliby Państwo za konieczne i uzasadnione, aby narzucać ograniczenia terytorialne odbiorcom swoich usług (na przykład po to, aby przekierować konsumenta na inną stronę niż ta, którą pierwotnie chce odwiedzić)?"
     en: "Are there reasons why, even in cases where you have acquired all the necessary rights for all the territories in question, you would still find it necessary or justified to impose territorial restrictions on the service recipient (in order for instance, to redirect the consumer to a different website than the one he is trying to access)?"
+    nl: Zijn er redenen waarom, zelfs in gevallen waar je alle noodzakelijke rechten verworven hebt voor alle landen in kwestie, je het nog steeds noodzakelijk zou vinden om beperkingen per land op een aanbieder van diensten te leggen (om er bijvoorbeeld voor te zorgen dat bepaalde werken niet toegankelijk zijn in bepaalde Europese landen)?
   to: "broadcaster, service provider"
   type: multiple_choice
   options:
@@ -145,6 +154,7 @@
     pl: "Czy uważają Państwo, że na poziomie UE potrzebne są dalsze środki (legislacja lub inne, w tym rozwiązania proponowane przez rynek) w celu zwiększenia transgranicznej dostępności treści na Wspólnym Rynku, przy jednoczesnym zapewnieniu odpowiedniego poziomu ochrony posiadaczom praw?"
     en: "Do you think that further measures (legislative or non-legislative, including market- led solutions) are needed at EU level to increase the cross-border availability of content services in the Single Market, while ensuring an adequate level of protection for right holders?"
     de: "Sollten weitere Maßnahmen (Gesetze oder andere, inkl. Initiativen des Marktes) auf EU-Ebene angestoßen werden, um die grenzübergreifende Verfügbarkeit von Inhalten zu gewährleisten?"
+    nl: Denk je dat verdere maatregelen (middels wetgeving of niet middels wetgeving, zoals de markt het laten oplossen) op Europees niveau nodig zijn om diensten die werken aanbieden beter bereikbaar te maken over de grenzen binnen de Europese markt, terwijl er een adequaat niveau van bescherming gehandhaafd blijft voor de houders van rechten?
   to: everyone
   type: multiple_choice
   options:
@@ -179,6 +189,7 @@
   text:
     pl: 'Czy wystarczająco jasno określono zakres prawa "udostępniania" w przypadkach transgranicznych, tj. wtedy, gdy treści rozpowszechniane są poza granicami państw?'
     en: Is the scope of the “making available” right in cross-border situations – i.e. when content is disseminated across borders – sufficiently clear?
+    nl: Is de reikwijdte van het recht om iets 'beschikbaar te maken' in situaties over de grenzen heen - dat is als er werken over de grens gedistribueerd worden - voldoende helder?
   to: everyone
   type: multiple_choice
   options:
@@ -206,6 +217,7 @@
   text:
     pl: '[W szczególności, jeśli są Państwo posiadaczami praw autorskich:] Czy wyjaśnienie zakresu terytorialnego prawa "udostępniania" może wpłynąć na rozpoznanie Państwa praw (niezależnie od tego, czy są Państwo autorami czy nie oraz czy przenieśli Państwo prawa czy nie), wynagrodzenia lub egzekwowanie praw (włącznie z dostępnością roszczeń zakazowych)?'
     en: "Could a clarification of the territorial scope of the “making available” right have an effect on the recognition of your rights (e.g. whether you are considered to be an author or not, whether you are considered to have transferred your rights or not), on your remuneration, or on the enforcement of rights (including the availability of injunctive relief)?"
+    nl: Zou een verduidelijking van de territoriale werkingssfeer van het recht "ter beschikking te stellen" een effect kunnen hebben op de erkenning van uw rechten (bijvoorbeeld of u wordt beschouwd de auteur te zijn of niet, of u nu geacht wordt uw rechten te hebben overgedragen of niet), op uw beloning, of op de handhaving van rechten (waaronder de beschikbaarheid van voorlopige voorziening*)?
   to: right holder
   type: multiple_choice
   options:
@@ -233,6 +245,7 @@
   text:
     pl: "[W szczególności, jeśli dostarczają Państwo usługi online lub są posiadaczami praw autorskich:] Czy zastosowanie dwóch uprawnień do pojedynczego aktu eksploatacji ekonomicznej w środowisku online (np. w przypadku ściągania) jest dla Państwa problemem?"
     en: "Does the application of two rights to a single act of economic exploitation in the online environment (e.g. a download) create problems for you?"
+    nl: Leidt het toepassen van twee rechten op een enkele daad van economische uitbating in de online omgeving (bijvoorbeeld een download) tot problemen voor u?
   to: "service provider, right holder"
   type: multiple_choice
   options:
@@ -261,6 +274,10 @@
     pl: "Czy podanie hiperłącza odnoszącego do utworu lub innego przedmiotu chronionego prawem autorskim, czy generalnie czy w specyficznych okolicznościach, powinno wymagać zezwolenia posiadacza praw?"
     en: "Should the provision of a hyperlink leading to a work or other subject matter protected under copyright, either in general or under specific circumstances, be subject to the authorisation of the rightholder?"
     de: "Sollte das Bereitstellen eines Hyperlinks, welcher zu einem urheberrechtlich geschützten Werk oder anderen Gegenstand führt, entweder im Allgemeinen oder unter bestimmten Umständen die Erlaubnis des Rechteinhabers erfordern?"
+    fr: Est-ce que la mise à disposition d'un lien hypertexte menant à une œuvre ou à d'autres objets protégés en vertu du droit d'auteur, soit de manière générale ou dans des circonstances particulières, devrait être soumise à l'autorisation du titulaire des droits?
+    es: ¿Debería la prestación de un hipervínculo que lleva a una obra u otro material protegido por derechos de autor, ya sea en general o en determinadas circunstancias, estar sujeto a la autorización del titular de los derechos?
+    it: Mettere a disposizione un collegamento a un opera o ad un altro oggetto protetto da diritto d'autore, in generale o anche in casi specifici, dovrebbe essere soggetto all'autorizzazione del detentore dei diritti d'autore?
+    nl: Moet het verschaffen van een hyperlink die leidt naar een werk of een andere zaak beschermd door het auteursrecht, hetzij in het algemeen of in specifieke omstandigheden, afhankelijk zijn van de toestemming van de rechthebbende?
   to: everyone
   type: multiple_choice
   options:
@@ -297,6 +314,7 @@
     pl: "Czy przeglądanie strony internetowej, jeśli wiąże się to z dostępem do tymczasowej reprodukcji utworu lub innego przedmiotu chronionego prawem autorskim na ekranie i w pamięci podręcznej komputera użytkownika, czy generalnie czy w specyficznych okolicznościach,  powinno wymagać zezwolenia posiadacza praw?"
     en: "Should the viewing of a web-page where this implies the temporary reproduction of a work or other subject matter protected under copyright on the screen and in the cache memory of the user’s computer, either in general or under specific circumstances, be subject to the authorisation of the rightholder?"
     de: "Soll das Betrachten einer Website, was ja bedeutet, dass urheberrechtsgeschützer Websiteinhalt kurzzeitig reproduziert werden könnte auf den Bildschirm oder in den Cache, entweder generell oder in bestimmten Fällen nur mit Erlaubnis des Rechteinhabers möglich sein?"
+    nl: Moet het bekijken van een webpagina waar dit impliceert de tijdelijke reproductie van een werk of ander krachtens het auteursrecht beschermd materiaal op het scherm en in het cachegeheugen van de computer van de gebruiker, hetzij in het algemeen of in specifieke omstandigheden, afhankelijk zijn van de goedkeuring van de rechthebbende?
   to: everyone
   type: multiple_choice
   options:
@@ -334,6 +352,10 @@
     pl: "[W szczególności, jeśli są Państwo użytkownikami końcowymi/konsumentami:] Czy spotkali się Państwo z ograniczeniami przy próbie odsprzedania plików cyfrowych, który zostały wcześniej nabyte (np. pliki mp3, e-booki)?"
     en: "Have you faced restrictions when trying to resell digital files that you have purchased (e.g. mp3 file, e-book)?"
     de: "Warst du beim Versuch des Weiterverkaufs digitaler Dateien (z. B. MP3-Dateien, eBooks), die du zuvor erworben hattest, mit Einschränkungen konfrontiert?"
+    fr: Avez vous rencontré des restrictions en essayant de revendre des fichiers numériques que vous avez achetés (par exemple des fichiers mp3 ou des e-books) ?
+    es: ¿Se ha encontrado con restricciones cuando ha intentado revender archivos digitales que había comprado previamente (p.e. archivos mp3, libros electrónicos)?
+    it: Hai mai incontrato restrizioni provando a rivendere contenuti digitali che hai comprato (per esempio mp3 o libri)?
+    nl: Bent u tegen beperkingen aangelopen toen u probeerde om digitale bestanden weer te verkopen die u aangeschaft heeft (bijv. mp3-bestand, e-book)?
   to: end user/consumer
   type: multiple_choice
   options:
@@ -361,6 +383,7 @@
   text:
     pl: "[W szczególności, jeśli są Państwo posiadaczami praw autorskich lub dostarczają usługi online:] Jakie byłyby konsekwencje stworzenia systemu prawnegoj pozwalającego na odsprzedawanie wcześniej nabytych cyfrowych treści? Proszę określić rodzaj rynku (rodzaj treści)."
     en: What would be the consequences of providing a legal framework enabling the resale of previously purchased digital content? Please specify per market (type of content) concerned.
+    nl: Wat zouden de gevolgen zijn van het bieden van een wettelijk kader dat de wederverkoop van eerder gekochte digitale inhoud regelt? Gelieve te specificeren per markt (per type content).
   to: "right holder, service provider"
   type: open_question
   odf:
@@ -373,6 +396,7 @@
   text:
     pl: "Czy stworzenie systemu rejestracji na poziomie europejskim pomogłoby w identyfikacji i licencjonowaniu utworów i innych przedmiotów prawa autorskiego?"
     en: Would the creation of a registration system at EU level help in the identification and licensing of works and other subject matter?
+    nl: Zou de invoering van een registratiesysteem op EU-niveau helpen bij het identificeren en vergunnen van werken en andere onderwerpen?
   to: everyone
   type: multiple_choice
   options:
@@ -393,6 +417,7 @@
   text:
     pl: "Jakie byłyby potencjalne zalety takiego systemu?"
     en: What would be the possible advantages of such a system?
+    nl: Wat zijn de mogelijke voordelen van een dergelijk systeem?
   to: everyone
   type: open_question
   odf:
@@ -405,6 +430,7 @@
   text:
     pl: "Jakie byłyby potencjalne wady takiego systemu?"
     en: What would be the possible disadvantages of such a system?
+    nl: Wat zijn de mogelijke nadelen van een dergelijk systeem?
   to: everyone
   type: open_question
   odf:
@@ -417,6 +443,7 @@
   text:
     pl: "Jakie mogłaby być motywacja do rejestrowania utworów przez posiadaczy praw?"
     en: What incentives for registration by rightholders could be envisaged?
+    nl: Welke prikkels voor registratie door de rechthebbenden kunnen worden overwogen?
   to: everyone
   type: open_question
   odf:
@@ -429,6 +456,7 @@
   text:
     pl: "Jaka powinna być rola Unii Europejskiej w promowaniu upowszechnienia się identyfikatorów w sektorze kreatywnym i w promowaniu rozwoju oraz interoperacyjności baz danych o uprawnionych oraz udzielonych licencjach"
     en: "What should be the role of the EU in promoting the adoption of identifiers in the content sector, and in promoting the development and interoperability of rights ownership and permissions databases?"
+    nl: Wat moet de rol van de EU zijn bij het bevorderen van de goedkeuring van identificatielabels in de 'content' sector, en bij het bevorderen van de ontwikkeling en interoperabiliteit van rechteneigendom en machtigingen-databases?
   to: everyone
   type: open_question
   odf:
@@ -442,6 +470,7 @@
     pl: "Czy obecne terminy ochrony prawnoautorskiej są wciąż odpowiednie w kontekście środowiska cyfrowego?"
     en: Are the current terms of copyright protection still appropriate in the digital environment?
     de: Sind die Längen der Schutzfristen im digitalen Zeitalter noch zeitgemäß?
+    nl: Zijn de huidige termijnen van auteursrechtelijke bescherming nog steeds passend in de digitale omgeving?
   to: everyone
   type: multiple_choice
   options:
@@ -479,6 +508,10 @@
     pl: "Czy fakt, że większość organiczeń i wyjątków ustanowionych przez dyrektywy unijne dotyczące prawa autorskiego jest opcjonalna dla krajów członkowskich, stanowi źródło problemów?"
     en: Are there problems arising from the fact that most limitations and exceptions provided in the EU copyright directives are optional for the Member States?
     de: "Werden aufgrund der Tatsache, dass die Einschränkungen und Ausnahmen in den EU-Richtlininen für die Mitgliedsstaaten auf Freiwilligkeit basieren, Probleme entstehen?"
+    fr: Est-ce que ces problèmes découlent du fait que la plupart de ces limitations et exceptions prévues par les directives sur le droit d'auteur sont facultatives pour les États membres ?
+    es: ¿Surgen problemas derivados del hecho de que la mayoría de las limitaciones y excepciones previstas en las directivas de derechos de autor de la Unión Europea son opcionales para los Estados Miembros?
+    it: Il fatto che molte delle limitazioni ed eccezioni previste dalle direttive dell'Unione europea siano opzionali per gli stati membri genera problemi?
+    nl: Zijn er problemen die voortvloeien uit het feit dat de meeste beperkingen en uitzonderingen bij de EU-richtlijnen inzake auteursrecht optioneel zijn voor de lidstaten?
   to: everyone
   type: multiple_choice
   options:
@@ -516,6 +549,10 @@
     pl: "Czy niektóre/wszystkie wyjątki powinny być obowiązkowe i jeśli tak, czy istnieje potrzeba większej harmonizacji takich wyjątków?"
     en: "Should some/all of the exceptions be made mandatory and, if so, is there a need for a higher level of harmonisation of such exceptions?"
     de: "Sollen einige oder alle Ausnahmen vom Urheberrecht verpflichtend in allen Mitgliedstaaten gelten? Wenn ja, sollen diese Ausnahmen in allen Ländern gleich ausgestaltet werden?"
+    fr: Est-ce que certaines/toutes les exceptions devraient être rendues obligatoires, et si oui y a-t-il besoin d'un plus haut niveau d'harmonisation de telles exceptions ?
+    es: ¿Deberían algunas/todas las excepciones tener carácter obligatorio? Y, si es así, ¿hay una necesidad de un mayor nivel de armonización de tales excepciones?
+    it: Dovrebbero alcune o tutte le eccezione essere obbligatorie e, in tal caso, c'è necessità di un livello superiore di armonizzazione per tali eccezioni?
+    nl: Moeten sommige / alle uitzonderingen verplicht worden gesteld en, zo ja, is er behoefte aan een hoger niveau van harmonisatie van dergelijke uitzonderingen?
   to: everyone
   type: multiple_choice
   options:
@@ -552,6 +589,10 @@
     pl: "Czy nowe ograniczenia i wyjątki powinny zostać dodane lub usunięte z istniejącego katalogu? Proszę uzasadnić, nawiązując do poszczególnych przypadków."
     en: "Should any new limitations and exceptions be added to or removed from the existing catalogue? Please explain by referring to specific cases"
     de: "Sollten neue Schranken und Ausnahmen vom Urheberrecht eingeführt werden? Bitte nenne konkrete Beispiele."
+    fr: Est-ce que toute nouvelle limitation ou exception devrait être ajoutée ou retirée du catalogue existant ? Expliquez en vous référant à des cas précis.
+    es: ¿Se deberían añadir o eliminar nuevas limitaciones o excepciones al catálogo existente? Por favor, explique haciendo referencia a casos específicos.
+    it: Si dovrebbero aggiungere o rimuovere nuove limitazioni ed eccezioni dal catalogo esistente? Per favore spiegate riferendovi a casi specifici.
+    nl: Moeten er nieuwe beperkingen en uitzonderingen worden toegevoegd aan of verwijderd uit de bestaande catalogus ? Gelieve te verklaren met verwijzing naar specifieke gevallen.
   to: everyone
   type: open_question
   odf:
@@ -565,6 +606,7 @@
     pl: "Niezależnie od powyższych pytań, czy istnieje potrzeba uwzględnienia większej elastyczności w strukturze regulacyjnej Unii Europejskiej w zakresie ograniczeń i wyjątków?"
     en: "Independently from the questions above, is there a need to provide for a greater degree of flexibility in the EU regulatory framework for limitations and exceptions?"
     de: "Unabhängig von den letzten beiden Fragen, sollen die europäischen Regeln zu Ausnahmen vom Urheberrecht flexibler gestaltet werden?"
+    nl: Is er, los van bovenstaande vragen, behoefte om te voorzien in een grotere mate van flexibiliteit in het EU-regelgevingskader voor beperkingen en uitzonderingen?
   to: everyone
   type: multiple_choice
   options:
@@ -599,6 +641,7 @@
   text:
     pl: "Jeśli tak, w jaki sposób najlepiej byłoby uwzględnić taką elastyczność? (np. interpretacja sądów pastwowych i Trybunału Sprawiedliwości, okresowe rewizje dyrektyw, interpretacje Komisji Europejskiej, wbudowana elastyczność, np. w formie fair use lub fair dealing / otwartej normy, itp.)? Proszę wyjaśnić, wskazując na relatywne zalety i wady takiego podejścia, a także jego potencjalny wpływ na funkcjonowanie Rynku Wewnętrznego."
     en: "If yes, what would be the best approach to provide for flexibility? (e.g. interpretation by national courts and the ECJ, periodic revisions of the directives, interpretations by the Commission, built-in flexibility, e.g. in the form of a fair-use or fair dealing provision / open norm, etc.)? Please explain indicating what would be the relative advantages and disadvantages of such an approach as well as its possible effects on the functioning of the Internal Market."
+    nl: Zo ja, wat zou de beste aanpak zijn om te zorgen voor flexibiliteit? (zoals interpretatie door de nationale rechter en het Hof van Justitie, periodieke herzieningen van de richtlijnen, interpretaties door de Commissie, ingebouwde flexibiliteit, bijvoorbeeld in de vorm van een voorziening voor fair-use of fair dealing / open normen, etc.)? Gelieve uit te leggen door aan te geven wat de relatieve voor- en nadelen van een dergelijke aanpak zouden zijn, alsmede de mogelijke effecten op de werking van de interne markt.
   to: everyone
   type: open_question
   odf:
@@ -611,6 +654,7 @@
   text:
     pl: "Czy na podstawie Państwa doświadczenia, terytorialny zakres ograniczeń i wyjątków stanowi problem?"
     en: "Does the territoriality of limitations and exceptions, in your experience, constitute a problem?"
+    nl: Vormen de territorialiteit van de beperkingen en de uitzonderingen, in uw ervaring, een probleem?
   to: everyone
   type: multiple_choice
   options:
@@ -1209,6 +1253,22 @@
       (a) [im Besonderen, wenn du Privatanwender/Konsument bist:] Hattest du schon Probleme, als du versuchtest, schon existierende Arbeiten  oder andere Angelegenheiten für neue Veröffentlichungen zu verwenden, auch über Grenzen hinweg?
       (b) [im Besonderen, wenn du ein Diensteanbieter bist:]  Hast du schon von Problemen von Nutzern erfahren, die schon existierende Arbeiten für neue Veröffentlichungen verwendet haben, auch grenzüberschreitend und über deine Dienste?
       (c) [im Besonderen, wenn du ein Rechteinhaber bist:] Hast du schon Probleme bei Veröffentlichungen basierend auf schon existierenden Arbeiten durch User, auch über Grenzen hinweg, festgestellt?
+    fr: |
+      (a) [En particulier si vous êtes un utilisateur/consommateur final] Avez-vous rencontré des problèmes lorsque vous avez voulu utiliser des œuvres préexistantes ou un autre objet pour diffuser de nouveaux contenus sur Internet, y compris au delà des frontières ?
+      (b) [En particulier si vous êtes un prestataire de services:] Avez-vous rencontré des problèmes lorsque les utilisateurs publient / diffusent un nouveau contenu basé sur des œuvres préexistantes ou un autre objet par le biais de votre service, y compris au delà des frontières ?
+      (c) [En particulier si vous êtes un ayant-droit:] Avez-vous eu des problèmes dûs à la façon dont les utilisateurs utilisaient des œuvres préexistantes ou d'autres objets pour disséminer du nouveau contenu sur internet, y compris au delà des frontières ?
+    es: |
+      (a) [En particular, si usted es un usuario final/consumidor:] ¿Ha experimentado problemas al intentar utilizar obras preexistentes u otro material con el objeto de difundir nuevos contenidos en Internet, incluso cruzando fronteras?
+      (b) [En particular, si usted es un proveedor de servicios:] ¿Ha experimentado problemas cuando los usuarios publican/difunden nuevos contenidos basados ​​en obras preexistentes u otro material a través de su servicio, incluyendo cruzando fronteras?
+      (c) [Especialmente si usted es titular de los derechos:] ¿Ha experimentado problemas derivados de la forma en que los usuarios utilizan obras preexistentes u otro material para difundir nuevos contenidos en Internet, incluso cruzando fronteras?
+    it: |
+      (a) [In particolare  se sei un utente finale/consumatore:] Hai mai avuto problemi provando a usare lavori o altri oggetti preesistenti per disseminare nuovi contenuti su Internet, incluso verso attraverso confini nazionali?
+      (b) [In  particolare se sei un fornitore/trice di servizi:] Hai mai avuto problemi quando gli utenti pubblicano/disseminano nuovi contenuti basati su lavori o oggetti preesistenti attraverso il tuo servizio, incluso attraverso confini nazionali?
+      (c) [In particolare se sei un detetentore di diritti d'autore:] Hai mai avuto problemi risultati dal modo in cui gli utenti usano lavori o altri oggetti preesistenti su Internet, incluso attraverso confini nazionali?
+    nl: |
+      (a) [In het bijzonder als je een eindgebruiker/consument bent:] Heb je problemen ondervonden bij het proberen om bestaande werken of anderszins beschermde zaken andere betreffende zaken te gebruiken  om nieuwe inhoud te verspreiden op het Internet, ook over grenzen heen?
+      (b) [In het bijzonder als je een dienstaanbieder bent:]   Heb je problemen ondervonden wanneer gebruikers nieuwe inhoud die gebaseerd is op bestaande werken of andere betreffende zaken publiceren/verspreiden via jouw dienst, ook over grenzen heen?
+      (c) [In het bijzonder als je een rechthebbende bent:] Heb je problemen ondervonden die kwamen door de manier waarop de gebruikers bestaande werken of andere betreffende zaken gebruiken om nieuwe inhoud te verspreiden op het Internet, ook over grenzen heen?
   to: switch
   type: multiple_choice
   options:
@@ -1353,6 +1413,9 @@
     pl: "Czy według Państwa istnieje potrzeba wyjaśnienia na poziomie europejskim zakresu i zastosowania wyjątków dotyczących kopiowania na użytek prywatny i wyjątków reprograficznych w środowisku cyfrowym?"
     en: "In your view, is there a need to clarify at the EU level the scope and application of the private copying and reprography exceptions in the digital environment?"
     de: "Ist es aus deiner Sicht notwendig, auf EU-Ebene die Reichweite und den Zweck der Ausnahmeregelungen für Privatkopien und Vervielfältigungen im digitalen Bereich zu klären?"
+    fr: D'après vous, est-il nécessaire de clarifier au niveau de l'Union Européenne la portée et les applications du droit à la copie privée et des exceptions à la reprographie dans le monde numérique ?
+    es: En su opinión, ¿Existe la necesidad de aclarar a nivel de la Unión Europea, el alcance y la aplicación de las excepciones particulares de la copia privada y la reprografía en el entorno digital?
+    it: Secondo voi, c'è la necessità di chiarificare a livello di Unione europea lo scopo e l'applicazione delle eccezioni di copia e fotocopia ad uso personale nel mondo digitale?
   to: everyone
   type: multiple_choice
   options:
@@ -1545,6 +1608,9 @@
     pl: "[W szczególności, jeśli są Państwo autorami/wykonawcami:] Jaki jest najlepszy mechanizm (lub zestaw mechanizmów), który zapewniłby otrzymanie przez Państwa właściwego wynagrodzenia za wykorzystanie Pastwa utworów lub wykonań?"
     en: What is the best mechanism (or combination of mechanisms) to ensure that you receive an adequate remuneration for the exploitation of your works and performances?
     de: "Welche Mechanismen (auch Kombinationen aus verschiedenen Mechanismen) stellen ein passendes Entgelt für die Nutzung deiner Arbeiten und Leistungen am besten sicher?"
+    fr: Quelles sont les procédures (ou combinaisons de procédures) qui vous permettraient  de recevoir une rémunération juste pour l’exploitation de vos oeuvres ou de vos performances ?
+    es: Cual es el mejor mecanismo (o combinación de mecanismos) para asegurar que usted reciba una remuneración adecuada por la explotación de sus obras y actuaciones?
+    it: Qual è il miglior meccanismo (o combinazione di meccanismi) per assicurarsi di ricevere adeguata remunerazione per lo sfuttamento delle vostre opere e performance?
   to: author/performer
   type: open_question
   odf:
@@ -1593,6 +1659,9 @@
     pl: "Jeśli uważają Państwo obecne zasady za nieskuteczne, jak należałoby uregulować zidentyfikowane nieprawidłowości?"
     en: "If you consider that the current rules are not effective, what would you suggest to address the shortcomings you identify?"
     de: "Wenn du denkst, die geltenden Vorschriften wären nicht wirksam? Wie würdest du die von dir erkannten Defizite beheben?"
+    fr: Si vous considérez que la réglementation actuelle n’est pas efficace, que suggèreriez-vous pour pallier les défauts que vous identifiez ?
+    es: Si usted considera que las reglas actuales no son efectivas, ¿Qué sugiere para hacer frente a las deficiencias que ha identificado?
+    it: Se ritenete che le regole attuali non siano effettive, in che modo suggerite di trattare le carenze da voi identificate?
   to: everyone
   type: open_question
   odf:
@@ -1654,6 +1723,9 @@
     pl: "Czy obecny system egzekwowania odpowiedzialności cywilnej zapewnia odpowiednią równowagę pomiędzy prawem do poszanowania prawa autorskiego oraz innych praw, jak ochrona życia prywatnego i danych osobowych?"
     en: Does the current civil enforcement framework ensure that the right balance is achieved between the right to have one’s copyright respected and other rights such as the protection of private life and protection of personal data?
     de: "Stellen die aktuellen zivilrechtlichen Durchsetzungs-Voraussetzungen sicher, dass das richtige Gleichgewicht zwischen dem Urheberrecht und anderen Rechten, wie dem Schutz des Privatlebens und der persönlichen Daten, zustande kommt?"
+    fr: Est-ce que le cadre réglementaire civil actuel assure que le bon équilibre soit atteint entre le droit de chacun de voir ses droits d'auteur respectés et d'autres droits comme la protection de la vie privée et la protection des données personnelles ?
+    es: ¿El marco de aplicación civil actual asegura que se consiga el equilibrio adecuado entre el respeto de los derechos de autor y otros derechos como la protección de la privacidad y la protección de los datos personales?
+    it: L'attuale infrastruttura civile assicura che si raggiunga un giusto equilibrio tra il rispetto dei diritti d'autore ed altri diritti come ad esempio la protezione della vita privata e dei dati personali?
   to: everyone
   type: multiple_choice
   options:
@@ -1725,6 +1797,10 @@
     pl: "Czy istnieją inne istote kwestie związane z europejskim systemem prawnoautorskim? Proszę uzasadnić i wskazać, jak kwestie te powinny być uregulowane."
     en: Are there any other important matters related to the EU legal framework for copyright? Please explain and indicate how such matters should be addressed.
     de: "Gibt es weitere wichtige Dinge im Zusammenhang mit der europäischen Rechtslage im Bezug auf das Urheberrecht?  Bitte erklären und darauf hinweisen, wie man diese Fälle ansprechen könnte"
+    fr: Y a-t-il d'autres questions importantes liées au cadre juridique de l'UE du droit d'auteur ? Expliquez et indiquez s'il vous plait comment ces questions doivent être abordées.
+    es: ¿Hay otras cuestiones importantes relacionadas con el marco jurídico de la UE para los derechos de autor? Por favor, explíquelo e indique cómo deberían abordarse estas cuestiones.
+    it: Ci sono altre questioni importanti riguardo al sistema legale del diritto d'autore nell'Unione europea? Per piacere spiega e indica in che modo queste questioni dovrebbero essere risolte.
+    nl: Zijn er andere belangrijke zaken die samenhangen met het rechtssysteem voor copyright in de EU?  Leg uit en toon aan hoe zulke zaken moeten worden aangepakt.
   to: everyone
   type: open_question
   odf:
