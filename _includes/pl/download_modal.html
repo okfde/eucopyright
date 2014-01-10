@@ -7,13 +7,9 @@
         <h4 class="modal-title" id="myModalLabel">Almost done!</h4>
       </div>
       <div class="modal-body">
-        <p class="lead hide email-sent final-cases">
-          The finished document is sent to you by email (<span class="email-sent-to"></span>)
-          Please forward it to:
-        </p>
-
-        <p class="lead hide download-only final-cases">
-          The document is now downloading. Please send it by email to:
+        <p class="lead">
+          <strong>1. Kliknij przycisk „Pobierz" poniżej</strong><br/>
+          <strong>2. Prosimy o wysłanie pobranego dokumentu na adres e-mail</strong>
         </p>
 
         <div class="center-block text-center">
@@ -26,10 +22,18 @@
 
         <hr/>
 
-        <small>
-          The <a href="http://ec.europa.eu/internal_market/consultations/2013/copyright-rules/docs/privacy-statement_en.pdf">Privacy statement of the European Commission</a> applies.
-        </small>
+        <p>
+          Zasady prywatności Komisji Europejskiej: <a href="http://ec.europa.eu/internal_market/consultations/2013/copyright-rules/docs/privacy-statement_en.pdf">Privacy statement of the European Commission</a>.
+        </p>
 
+        <p>Dziękujemy za pomoc w zmianie prawa autorskiego na lepsze!</p>
+
+      </div>
+      <div class="modal-footer">
+        <div class="pull-right" id="download-link-container">
+          <a id="download" href="" class="btn btn-lg btn-primary disabled">Download</a>
+        </div>
+        <div class="pull-left" id="download-preparing">Proszę czekaj aż przygotujemy Twój plik</div>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

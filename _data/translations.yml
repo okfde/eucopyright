@@ -27,3 +27,7 @@ emailBody:
 emailName:
   en: 'user'
   de: 'Nutzer/in'
+replyInLanguage:
+  en: "Reply in English"
+  de: "Antworte auf Deutsch"
+  pl: "Odpowiedz po polsku"

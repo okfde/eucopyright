@@ -1,0 +1,329 @@
+---
+layout: base
+title: Public Consultation on the review of the EU copyright rules
+language: en
+---
+
+<div class="container">
+  <h1 class="big-title">Let's fix EU Copyright!</h1>
+  <div class="row">
+    <div class="col-lg-8 col-md-8 col-sm-8">
+      <p class="lead">
+        The European Commission is thinking about the future of copyright in the EU, and your input can push them into the right direction.
+      </p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4">
+      <h4>Other languages</h4>
+      <ul class="list-unstyled">
+        {% for lang in site.languages %}
+          {% if lang != page.language %}
+            <li>
+              <a href="{{ site.baseurl }}/{{ lang }}/" class="btn btn-default">
+                <span class="flag flag-{{ lang }}"></span>
+                {{ site.data.translations.replyInLanguage[lang] }}
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+<form id="consultation-form" method="post" action="{{ site.document_service }}?redirect=http%3a//{{ site.domain }}/{{ page.language }}/thanks.html">
+
+<div id="persona-section">
+  <div class="row">
+    <div class="col-lg-8 col-md-8 col-sm-8 personas">
+      <p>
+        Select one or more categories below that best describe you – this will lead you to the questions that are most relevant to your activities. Alternatively, if you are brave enough, <a href="/en/">have a look at all 80 consultation questions!</a>
+      </p>
+      <div class="row">
+        <div class="col-md-6 col-lg-6">
+          <label class="thumbnail" id="label-onlineuser">
+            <input type="checkbox" name="typeofrespondent" id="typeofrespondent-enduser" value="enduser" checked>
+            I’m an online user who shares pictures, watches videos, buys media online, etc.
+          </label>
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <label class="thumbnail" id="label-parent">
+            <input type="checkbox" class="save" name="typeofrespondent" id="typeofrespondent-representEnduser" value="representEnduser">
+            I’m a parent worrying about whether what my kids do online will get them (and me) into trouble
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-6">
+          <label class="thumbnail" id="label-teacher">
+            <input type="checkbox" class="save" name="typeofrespondent" id="typeofrespondent-institution" value="institution">
+            I’m a teacher, academic or researcher
+          </label>
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <label class="thumbnail" id="label-business">
+            <input type="checkbox" class="save" name="typeofrespondent" id="typeofrespondent-intermediary" value="intermediary">
+            I’m a freelancer, entrepreneur or businessperson
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-6">
+          <label class="thumbnail" id="label-librarian">
+            <input type="checkbox" class="save" name="typeofrespondent" id="typeofrespondent-institution" value="institution">
+            I’m a librarian or active in the cultural heritage area
+          </label>
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <label class="thumbnail" id="label-blogger">
+            <input type="checkbox" class="save" name="typeofrespondent" id="typeofrespondent-author" value="author">
+            I’m creating content as a blogger and produce remixes of protected material
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-6">
+          <label class="thumbnail" id="label-disabled">
+            <input type="checkbox" class="save" name="typeofrespondent" id="typeofrespondent-enduser" value="enduser">
+            I’m a disabled user trying to access or adapt content in formats that I can actually use
+          </label>
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <label class="thumbnail" id="label-rightsholder">
+            <input type="checkbox" class="save" name="typeofrespondent" id="typeofrespondent-publisher" value="publisher">
+            I’m a rightsholder that would like to benefit from new forms of remuneration
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4">
+      <h4>Other answering guides</h4>
+      <a href="http://www.copywrongs.eu/" class="btn btn-default">
+        30C3 Crew's Guide
+      </a>
+      <br/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8 col-md-8 col-sm-8">
+      <a href="#persona-questions" class="continue-questions btn btn-primary btn-lg">
+        &raquo; Continue to the questions
+      </a>
+    </div>
+  </div>
+</div>
+  <div class="row" id="persona-questions">
+    <div class="col-lg-8 col-md-8 col-sm-8">
+      <input type="hidden" name="language" value="{{ page.language }}"/>
+      <section class="question-section section-teaching not-general">
+        <h3>Teaching</h3>
+        {% for question_num in (42..46) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+      </section>
+      <section class="question-section section-research not-general">
+        <h3>Research</h3>
+        {% for question_num in (47..49) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+      </section>
+      <section class="question-section section-textmining not-general">
+        <h3>Text and data mining</h3>
+        {% for question_num in (53..57) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+      </section>
+      <section class="question-section section-usergenerated not-general">
+        <h3>User generated content</h3>
+        {% for question_num in (58..63) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+      </section>
+      <section class="question-section section-rightsholder not-general">
+        <h3>Rightsholder</h3>
+        {% for question_num in (2..2) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+        {% for question_num in (4..4) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+        {% for question_num in (7..8) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+      </section>
+      <section class="question-section section-libraries not-general">
+        <h3>Access to content in libraries and archives</h3>
+        {% for question_num in (28..31) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+        <h4>Off-premises access to library collections</h4>
+        {% for question_num in (32..35) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+        <h4>E-Lending</h4>
+        {% for question_num in (36..39) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+        <h4>Mass digitisation</h4>
+        {% for question_num in (40..41) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+      </section>
+      <section class="question-section section-disabilities not-general">
+        <h3>Disabilities</h3>
+        {% for question_num in (50..52) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+      </section>
+      <section class="question-section section-remuneration not-general">
+        <h3>Fair remuneration of authors &amp; performers</h3>
+        {% for question_num in (72..74) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+      </section>
+      <section class="question-section section-registration not-general">
+        <h3>Registration of works</h3>
+        {% for question_num in (15..18) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+      </section>
+      <section class="question-section section-privatecopying2 not-general">
+        <h3>Private copying &amp; reprography</h3>
+        {% for question_num in (66..66) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+      </section>
+      <section class="question-section section-privatecopying3 not-general">
+        {% for question_num in (69..69) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+      </section>
+      <section class="question-section section-rightsholder2 not-general">
+        <h3>Rightsholder</h3>
+        {% for question_num in (9..10) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+        {% for question_num in (14..14) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+      </section>
+     <section class="question-section section-access general">
+        <h3>Access to Content</h3>
+        {% for question_num in (1..1) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+      </section>
+     <section class="question-section section-linking general">
+        <h3>Linking and Browsing</h3>
+        {% for question_num in (11..12) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+      </section>
+      <section class="question-section section-digitalcontent general">
+        <h3>Download to own digital content</h3>
+        {% for question_num in (13..13) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+      </section>
+      <section class="question-section section-limitations general">
+        <h3>Limitations and exceptions</h3>
+        {% for question_num in (21..26) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+      </section>
+      <section class="question-section section-privatecopying general">
+        <h3>Private Copying &amp; repography</h3>
+        {% for question_num in (64..65) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+        {% for question_num in (67..68) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+        {% for question_num in (71..71) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+      </section>
+      <section class="question-section section-respectforrights general">
+        <h3>Respect for rights</h3>
+        {% for question_num in (77..77) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+      </section>
+      <section class="question-section section-termofprotection general">
+        <h3>Term of protection</h3>
+        {% for question_num in (20..20) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+      </section>
+      <section class="question-section section-otherissues general">
+        <h3>Other issues</h3>
+        {% for question_num in (80..80) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+      </section>
+
+      <div class="well">
+        {% include en/email_name.html %}
+
+        <button type="submit" class="submit-form btn btn-lg btn-success">
+          Submit this form
+        </button>
+      </div>
+    </div>
+  </div>
+  </form>
+  {% include footer.html %}
+  {% include en/download_modal.html %}
+</div>
+<script>
+$(function(){
+  var personaSections = {
+    general: ['access', 'linking', 'digitalcontent', 'termofprotection', 'limitations', 'privatecopying', 'respectforrights', 'otherissues'],
+    onlineuser: ['access', 'linking', 'digitalcontent', 'limitations', 'privatecopying', 'respectforrights'],
+    parent: ['linking', 'digitalcontent', 'limitations', 'privatecopying', 'respectforrights'],
+    teacher: ['teaching', 'research', 'textmining'],
+    business: ['rightsholder', 'textmining', 'usergeneratedcontent', 'privatecopying2', 'privatecopying3'],
+    librarian: ['libraries', 'textmining'],
+    blogger: ['usergeneratedcontent'],
+    rightsholder: ['rightsholder2', 'remuneration', 'registration', 'privatecopying2'],
+    disabled: ['disabilities']
+  };
+
+  var toggleSections = function() {
+
+    var personas = [];
+    $('.personas .thumbnail').each(function(i, el) {
+      el = $(el);
+      el.toggleClass('active', el.find('input').prop('checked'));
+      if (el.hasClass('active')) {
+        personas.push(el.attr('id').split('-')[1]);
+      }
+    });
+    var groupObj = {}, personaSection;
+    for (var i = 0; i < personas.length; i += 1) {
+      personaSection = personaSections[personas[i]];
+      for (var j = 0; j < personaSection.length; j += 1) {
+        if (groupObj[personaSection[j]] === undefined) {
+          groupObj[personaSection[j]] = true;
+        }
+      }
+    }
+
+    $('#persona-questions .question-section').hide();
+    $('#persona-questions .question-section.general').show();
+    for (var group in groupObj) {
+      $('#persona-questions .section-' + group).show();
+    }
+  };
+
+  $('.personas .thumbnail input').change(function(e){
+    toggleSections();
+  });
+  $('.delete-localstorage').show();
+  $('#persona-questions').hide();
+  $('.continue-questions').click(function(){
+    $('#persona-section').hide();
+    $('#persona-questions').show();
+  });
+  window.setTimeout(function(){
+    toggleSections();
+  }, 100);
+});
+</script>
