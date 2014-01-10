@@ -10,8 +10,15 @@
 emailSubject:
   en: 'Public Consultation on the review of the EU copyright rules'
   de: 'Öffentliche Konsultation zur Überprüfung der Regeln zum EU-Urheberrecht'
+  pl: 'Konsultacje społeczne dotyczące przeglądu zasad prawa autorskiego Unii Europejskiej'
 # Keep trailing spaces in the following!
 emailBody:
+  pl: |
+    Szanowny/a {{ name }},
+
+    prosimy o PRZESŁANIE tego e-maila RAZEM Z ZAŁĄCZNIKIEM do: markt-copyright-consultation@ec.europa.eu
+
+    Dziękujemy!
   en: |
     Dear {{ name }},
     
@@ -27,3 +34,4 @@ emailBody:
 emailName:
   en: 'user'
   de: 'Nutzer/in'
+  pl: 'użytkownik/czka'
