@@ -396,7 +396,8 @@ $(function(){
   }
 
   if (EUCopyright.supports_html5_storage()) {
-    $('.delete-localstorage').click(function(){
+    $('.delete-localstorage').click(function(e){
+      e.preventDefault();
       var answer = window.confirm('Are you sure?');
       if (!answer) { return; }
       for (var key in localStorage) {
