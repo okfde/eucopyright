@@ -1735,7 +1735,7 @@
   text:
     pl: "Czy system sankcji cywilnych w UE powinien być bardziej wydajny w przypadku naruszeń dokonanych w celu komercyjnym?"
     en: Should the civil enforcement system in the EU be rendered more efficient for infringements of copyright committed with a commercial purpose?
-    en: "Sollte das System der zivilrechtliche Durchsetzung in der EU effizienter bei gewerblichen Urheberrechtsverletzungen werden?"
+    de: "Sollte das System der zivilrechtliche Durchsetzung in der EU effizienter bei gewerblichen Urheberrechtsverletzungen werden?"
   to: everyone
   type: multiple_choice
   options:
