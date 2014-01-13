@@ -15,6 +15,7 @@
     details:
       en: "Please provide examples indicating the Member State, the sector and the type of content concerned (e.g. premium content such as certain films and TV series, audio-visual content in general, music, e-books, magazines, journals and newspapers, games, applications and other software)"
       de: "Bitte gib Beispiele mit deinem Land, dem Art des Inhalts an (z.B. Premium-Inhalte wie bestimmte Filme, TV-Serien, Musik, E-Books, Magazine, Zeitschriften und Zeitungen, Spiele, Anwendungen und andere Software)"
+      pl: "Proszę podać przykłady, wskazując na państwo członkowskie, sektor i rodzaj treści (np. treści płatne takie jak niektóre filmy i seriale telewizyjne, treści audiowizualne, muzyka, e-booki, magazyny, czasopisma i dzienniki, gry, aplikacje i oprogramowania komputerowe)"
     fulltext: true
     odf:
       - action: mark
@@ -46,6 +47,7 @@
     details:
       en: "Please explain whether such problems, in your experience, are related to copyright or to other issues (e.g. business decisions relating to the cost of providing services across borders, compliance with other laws such as consumer protection)? Please provide examples indicating the Member State, the sector and the type of content concerned (e.g. premium content such as certain films and TV series, audio-visual content in general, music, e-books, magazines, journals and newspapers, games, applications and other software)."
       de: "Bitte beschreibe, ob diese Probleme deiner Erfahrung nach mit dem Urheberrecht oder mit anderen Problemen zusammenhängen (z.B. Unternehmensentscheidungen zu Kosten grenzüberschreitender Dienste, Einhaltung anderer Gesetze wie Verbraucherschutz)? Bitte gib Beispiele mit Mitgliedsstaat, Sektor und Art von Inhalt (z.B. Premium-Inhalte wie bestimmte Filme, TV-Serien, Musik, E-Books, Magazine, Zeitschriften und Zeitungen, Spiele, Anwendungen und andere Software)."
+      pl: "Proszę wyjaśnić, czy z Państwa doświadczenia wynika, że problemy te są związane z prawem autorskim czy innymi kwestiami (np. decyzjami biznesowymi związanymi z kosztami dostarczania usług transgranicznie, zgodność z innymi prawami, takimi jak ochrona konsumenta)? Proszę podać przykłady, wskazując na państwo członkowskie, sektor działaności i rodzaj treści (np. treści płatne takie jak niektóre filmy i seriale telewizyjne, treści audiowizualne, muzyka, e-booki, magazyny, czasopisma i dzienniki, gry, aplikacje i oprogramowania komputerowe)."
     fulltext: true
     odf:
       - action: mark
@@ -211,6 +213,7 @@
     details:
       en: 'Please explain how this could be clarified and what type of clarification would be required (e.g. as in "targeting" approach explained above, as in "country of origin" approach)'
       de: 'Bitte erklären Sie wie dies besser klargestellt werden kann und welche Art von Klarstellung nötig wäre'
+      pl: 'Proszę zasugerować, w jaki sposób mogłoby to być wyjaśnione i jaki rodzaj wyjaśnienia byłby wymagany.'
     fulltext: true
     odf:
       - action: mark
@@ -268,6 +271,7 @@
     details:
       en: 'Please explain what type of measures would be needed in order to address such problems (e.g. facilitation of joint licences when the rights are in different hands, legislation to achieve the "bundling of rights")'
       de: 'Bitte erläutern Sie, welche Art von Maßnahmen notwendig wären, um solche Probleme anzugehen (z.B. die Förderung von gemeinsamen Lizenzen, wenn die Rechte in verschiedenen Händen sind; die Gesetzgebung für "Bündelung der Rechte")'
+      pl: 'Proszę wyjaśnić, jak należałoby rozwiązać powyższe problemy (np. ułatwienie licencji łączonych, kiedy jest kilku posiadaczy praw, rozwiązania legislacyjne mające na celu możliwość tworzenia "pakietów praw").'
     fulltext: true
     odf:
       - action: mark
@@ -314,6 +318,7 @@
     details:
       en: "Please explain whether you consider this to be the case in general, or under specific circumstances, and why (e.g. because it does not amount to an act of communication to the public – or to a new public, or because it should be covered by a copyright exception)"
       de: "Bitte erkläre, ob das generell der Fall ist oder unter speziellen Umständen und warum (z.B. weil es kein Kommunikationsvorgang mit der Öffentlichkeit - oder mit einer neuen Öffentlichkeit - ist, oder weil es eine Urheberrechtsausnahme sein sollte)"
+      pl: 'Czy uważają Pastwo, że powinno tak być w każdym przypadku, czy tylko w niektórych i dlaczego (np. ponieważ działanie to nie jest równoważne z publicznym - w tym skierowanym do osób nieznajomych - aktem komunikacji  lub powinno ono być uznane za wyjątek).'
     fulltext: true
     odf:
       - action: mark
@@ -757,6 +762,7 @@
     details:
       en: "Please explain, by Member State, sector, and the type of use in question."
       de: "Bitte erklären Sie, nach Mitgliedstaat, Sektor und Nutzungstyp"
+      pl: "Proszę uzasadnić, podając państwo członkowskie, sektor działalności i rodzaj zastosowania wyjątków."
     fulltext: true
     odf:
       - action: mark
