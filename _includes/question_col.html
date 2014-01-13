@@ -11,7 +11,7 @@
       </div>
       <div class="panel-body">
         <blockquote class="guide div-toggle" id="q-{{ question.num }}-customexplanation"{% unless question.explanation %} style="display:none"{% endunless %}>
-          <p id="q-{{ question.num }}-customexplanation-text">{{ question.explanation|newline_to_br }}</p>
+          <p id="q-{{ question.num }}-customexplanation-text">{% if question.explanation[page.language] %}{{ question.explanation[page.language]|newline_to_br }}{% endif %}</p>
             <a href="#q-{{ question.num }}-customexplanationmore-text" class="toggle" style="display: none">
               {% if site.data.translations.readmore[page.language] %}
                 {{ site.data.translations.readmore[page.language] }}
@@ -20,7 +20,7 @@
               {% endif %}
             </a>
           <p id="q-{{ question.num }}-customexplanationmore-text" style="display:none">
-            {{ question.explanationmore|newline_to_br }}
+            {{ question.explanationmore[page.language]|newline_to_br }}
           </p>
         </blockquote>
         {% if question.type == 'multiple_choice' %}
