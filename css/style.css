@@ -104,6 +104,12 @@ textarea {
   /*display: none;*/
 }
 
+#progress-bar {
+  position: fixed; /* Undo the static from mobile first approach */
+  bottom: 0px;
+  z-index: 100;
+  margin-bottom: 0;
+}
 
 @media (min-width: 992px) {
   .personas .thumbnail {
