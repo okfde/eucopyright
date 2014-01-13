@@ -16,11 +16,25 @@ Contact stefan.wehrmeyer@okfn.org to be included with your answers.
 
 ## Provide translations
 
-The `_data/questions.yml` contains the questions with text keys and language sub keys (en, de). Add your question translations there. Provide simple translations of Yes, No and No Opinion in `_data/translations.yml`.
+The `_data/questions.yml` contains the questions with text keys and language sub keys (en, de). Add your question translations there. Provide further translations for strings in `_data/translations.yml`.
 
-Then copy `en/index.html` (or for a simpler version `de/index.html`) to a folder with your language and adapt accordingly. Also create a language sub folder in `_includes/` and translate the `intro.html` and `download_modal.html`. You can also translate one of the existing mini-sites (e.g. `30c3`).
+### Persona site
+
+Add your translations to the head of `_layouts/persona.html`.
+Then create a document with like this:
+
+    ---
+    layout: persona
+    language: <language code (e.g. en)>
+    ---
+
+and put it into your language folder.
+The full question versions are at `en/full/index.html`
+
+### Guides
 
 You can provide a translated version of a guide as well. See the available guides under `_data/answers.yml` and under `guides/`.
+Postfix your guide slug with the language code: `c4c_en`.
 
 
 ## Setup the backup server on Heroku
