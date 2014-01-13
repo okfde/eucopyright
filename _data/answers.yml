@@ -1,3 +1,7 @@
+- name: Creativity4Copyright
+  slug: c4c
+  language: en
+  url: "https://docs.google.com/spreadsheet/pub?key=0ArFfxkXoJit-dFBJMV8xM2UtTGNrOGhRVjh1d0xSYlE&output=csv"
 - name: Wikimedia
   slug: wikimedia
   language: en
