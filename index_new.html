@@ -190,6 +190,12 @@ language: en
           {% include question_only_loop.html %}
         {% endfor %}
       </section>
+      <section class="question-section section-identifiers">
+        <h3>Interoperability of identifiers</h3>
+        {% for question_num in (19..19) %}
+          {% include question_only_loop.html %}
+        {% endfor %}
+      </section>
       <section class="question-section section-privatecopying2 not-general">
         <h3>Private copying &amp; reprography</h3>
         {% for question_num in (66..66) %}
@@ -286,7 +292,7 @@ $(function(){
     parent: ['linking', 'digitalcontent', 'limitations', 'privatecopying', 'respectforrights'],
     teacher: ['teaching', 'research', 'textmining'],
     business: ['rightsholder', 'textmining', 'usergeneratedcontent', 'privatecopying2', 'privatecopying3'],
-    librarian: ['libraries', 'textmining'],
+    librarian: ['libraries', 'textmining', 'registration', 'termofprotection', 'identifiers'],
     blogger: ['usergeneratedcontent'],
     rightsholder: ['rightsholder2', 'remuneration', 'registration', 'privatecopying2'],
     disabled: ['disabilities']
