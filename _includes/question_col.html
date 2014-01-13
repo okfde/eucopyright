@@ -10,7 +10,19 @@
         </h3>
       </div>
       <div class="panel-body">
-        <blockquote class="guide div-toggle" id="q-{{ question.num }}-customexplanation"{% unless question.explanation %} style="display:none"{% endunless %}>{{ question.explanation }}</blockquote>
+        <blockquote class="guide div-toggle" id="q-{{ question.num }}-customexplanation"{% unless question.explanation %} style="display:none"{% endunless %}>
+          <p id="q-{{ question.num }}-customexplanation-text">{{ question.explanation|newline_to_br }}</p>
+            <a href="#q-{{ question.num }}-customexplanationmore-text" class="toggle" style="display: none">
+              {% if site.data.translations.readmore[page.language] %}
+                {{ site.data.translations.readmore[page.language] }}
+              {% else %}
+                {{ site.data.translations.readmore.en }}
+              {% endif %}
+            </a>
+          <p id="q-{{ question.num }}-customexplanationmore-text" style="display:none">
+            {{ question.explanationmore|newline_to_br }}
+          </p>
+        </blockquote>
         {% if question.type == 'multiple_choice' %}
           {% for option in question.options %}
             <div class="radio">

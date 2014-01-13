@@ -242,9 +242,18 @@ EUCopyright.applyGuide = function(guide, question, answer) {
   }
   if (answer.explanation) {
     isAnswered = true;
-    $('#q-' + question.num + '-customexplanation').text(answer.explanation).slideDown();
+    $('#q-' + question.num + '-customexplanation').slideDown();
+    $('#q-' + question.num + '-customexplanation-text').text(answer.explanation);
+    if (answer.explanationmore) {
+      $('#q-' + question.num + '-customexplanation').find('.toggle').show();
+      $('#q-' + question.num + '-customexplanationmore-text').text(answer.explanationmore);
+    } else {
+      $('#q-' + question.num + '-customexplanation').find('.toggle').hide();
+      $('#q-' + question.num + '-customexplanationmore-text').text('').hide();
+    }
   } else {
     $('#q-' + question.num + '-customexplanation').slideUp();
+    $('#q-' + question.num + '-customexplanationmore-text').slideUp();
   }
   $('.answer-choices-' + question.num + ' a').removeClass('active');
   if (isAnswered) {
@@ -273,7 +282,8 @@ EUCopyright.loadQuestionGuide = function(slug, clb){
       answers[parseInt(row.Question, 10)] = {
         option: row.Option ? parseInt(row.Option, 10) - 1 : null,
         answer: row.Answer,
-        explanation: row.Explanation
+        explanation: row.Explanation,
+        explanationmore: row.Explanation_more
       };
     }
     EUCopyright.answerCache[slug] = answers;

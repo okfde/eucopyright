@@ -343,6 +343,7 @@ $(function(){
 
   var $progressBar = $('#progress-bar').hide();
   $progressBar.css('width', $progressBar.parent().width() + 'px');
+
   var offsets = $([]), targets = $([]);
   var $scrollElement = $(window);
   var activeTarget = null;
@@ -365,7 +366,6 @@ $(function(){
   };
   var activate = function(target){
     if (qIndex[target] === undefined) { return; }
-    console.log(target, qIndex[target], qCount);
     $progressBar.find('.progress-bar').attr({
       'aria-valuenow': qIndex[target],
       'aria-valuemin': 1,
@@ -385,13 +385,13 @@ $(function(){
       })
       .sort(function (a, b) { return a[0] - b[0] })
       .each(function () {
-        offsets.push(this[0])
-        targets.push(this[1])
+        offsets.push(this[0]);
+        targets.push(this[1]);
       });
-    console.log(offsets, targets);
   };
   refreshScroll();
   $(window).resize(refreshScroll);
-  $scrollElement.on('scroll', process);
+  $('body').on('scroll', process);
+  EUCopyright.loadGuide('c4c')
 });
 </script>
