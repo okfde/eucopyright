@@ -5,12 +5,35 @@ layout: base
 
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
-    <a class="navbar-brand" href="/">
-      {{ page.headline }}
-    </a>
-    <button type="submit" class="submit-form nav-btn btn btn-success hide">
-      &rarr; {{ page.downloadaction }}
-    </button>
+    <div class="nav navbar-left">
+      <a class="navbar-brand" href="/">
+        {{ page.headline }}
+      </a>
+    </div>
+    <div class="nav navbar-left">
+      <button type="submit" class="submit-form nav-btn btn btn-success hide">
+        &rarr; {{ page.downloadaction }}
+      </button>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          <span class="flag flag-{{ page.language }}"></span> <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          {% for lang in site.languages %}
+            {% if lang != page.language %}
+              <li>
+                <a href="{{ site.baseurl }}/{{ lang }}/">
+                  <span class="flag flag-{{ lang }}"></span>
+                  {{ site.data.translations.replyInLanguage[lang] }}
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </li>
+    </ul>
   </div>
 </nav>
 
