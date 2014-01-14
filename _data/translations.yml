@@ -1,19 +1,19 @@
 "Yes":
-  en: Yes
-  de: Ja
-  pl: Tak
-  fr: Oui
-  it: Sì
-  nl: Ja
-  es: Sí
+  en: "Yes"
+  de: "Ja"
+  pl: "Tak"
+  fr: "Oui"
+  it: "Sì"
+  nl: "Ja"
+  es: "Sí"
 "No":
-  en: No
-  de: Nein
-  pl: Nie
-  fr: Non
-  it: Non
-  nl: Niet
-  es: No
+  en: "No"
+  de: "Nein"
+  pl: "Nie"
+  fr: "Non"
+  it: "Non"
+  nl: "Niet"
+  es: "No"
 "No Opinion":
   en: No Opinion
   de: Keine Meinung
