@@ -58,6 +58,7 @@ $(function(){
     $(this).hide();
     $('#persona-questions').show();
     $progressBar.show();
+    loadGuide();
     window.setTimeout(function(){
       refreshScroll();
     }, 100);
@@ -68,6 +69,16 @@ $(function(){
 
   var $progressBar = $('#progress-bar').hide();
   $progressBar.css('width', $progressBar.parent().width() + 'px');
+
+  var loadGuide = function(){
+    var lang = $('html').attr('lang');
+    var slug = 'c4c_' + lang;
+    if (EUCopyright.answers[slug] !== undefined) {
+      EUCopyright.loadGuide(slug);
+    } else {
+      EUCopyright.loadGuide('c4c_en');
+    }
+  };
 
   var offsets = $([]), targets = $([]);
   var $scrollElement = $(window);
@@ -117,11 +128,5 @@ $(function(){
   refreshScroll();
   $(window).resize(refreshScroll);
   $(window).on('scroll', process);
-  var lang = $('html').attr('lang');
-  var slug = 'c4c_' + lang;
-  if (EUCopyright.answers[slug] !== undefined) {
-    EUCopyright.loadGuide(slug);
-  } else {
-    EUCopyright.loadGuide('c4c_en');
-  }
+  loadGuide();
 });
