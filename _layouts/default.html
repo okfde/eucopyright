@@ -24,7 +24,7 @@ layout: base
           {% for lang in site.languages %}
             {% if lang != page.language %}
               <li>
-                <a href="{{ site.baseurl }}/{{ lang }}/">
+                <a href="{{ site.baseurl }}/{{ lang }}/full/">
                   <span class="flag flag-{{ lang }}"></span>
                   {{ site.data.translations.replyInLanguage[lang] }}
                 </a>
@@ -44,6 +44,18 @@ layout: base
   </div>
 </div>
 {% endif %}
+
+<div class="container">
+  <div class="alert alert-info">
+    <a href="{{ site.baseurl }}/{{ page.language }}/">
+      {% if site.data.translations.gotosimplerguide[page.language] %}
+        {{ site.data.translations.gotosimplerguide[page.language] }}
+      {% else %}
+        {{ site.data.translations.gotosimplerguide.en }}
+      {% endif %}
+    </a>
+  </div>
+</div>
 
 <div class="container">
 
