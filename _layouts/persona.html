@@ -54,6 +54,9 @@ translations:
     en: Other languages
     de: Andere Sprachen
     pl: Inne języki
+  languagedisclaimer:
+    en: Translations in languages other than English are inofficial, crowd-sourced and possibly incomplete.
+    de: Übersetzungen in andere Sprachen als Englisch sind inoffiziell, crowd-gesourced und möglicherweise unvollständig.
   otherguides:
     en: Other answering tools
     de: Andere Antwortwerkzeuge
@@ -290,6 +293,9 @@ translations:
           {% endif %}
         {% endfor %}
       </ul>
+      <p>
+        {% if page.translations.languagedisclaimer[page.language] %}{{ page.translations.languagedisclaimer[page.language] }}{% else %}{{ page.translations.languagedisclaimer.en }}{% endif %}
+      </p>
       <h4>{% if page.translations.otherguides[page.language] %}{{ page.translations.otherguides[page.language] }}{% else %}{{ page.translations.otherguides.en }}{% endif %}</h4>
       <a href="http://www.copywrongs.eu/" class="btn btn-default">
         copywrongs.eu
