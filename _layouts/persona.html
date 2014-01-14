@@ -1,6 +1,33 @@
 ---
 layout: base
 title: Public Consultation on the review of the EU copyright rules
+questions:
+  all: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,28,29,30,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,71,72,73,74,77,80]
+  general: [1,11,12,13,20,21,22,23,24,25,26,64,65,67,68,71,77,80]
+  headlines:
+    1: accesstocontent
+    42: teaching
+    47: research
+    53: textdatamining
+    58: usergeneratedcontent
+    2: rightsholder_title
+    11: linking
+    13: downloadtoown
+    21: limitations
+    64: privatecopying
+    77: respectforrights
+    2: rightsholder_title
+    28: accesscontent
+    32: offpremiseaccess
+    36: elending
+    40: massdigitisation
+    50: disabilities
+    72: remuneration
+    15: registration
+    19: identifiers
+    66: privatecopying
+    9: rightsholder_title
+    80: otherissues
 translations:
   title:
     en: Let's fix EU Copyright!
@@ -328,158 +355,19 @@ translations:
       </p>
     </div>
     <div class="col-lg-8 col-md-8 col-sm-8 col-lg-pull-4 col-md-pull-4 col-sm-pull-4">
-      <section class="question-section section-teaching not-general">
-        <h3>{% if page.translations.teaching[page.language] %}{{ page.translations.teaching[page.language] }}{% else %}{{ page.translations.teaching.en }}{% endif %}</h3>
-        {% for question_num in (42..46) %}
-          {% include question_only_loop.html %}
+      <div class="question-sections">
+        {% for question_num in page.questions.all %}
+          <div class="question-section question-section-{{ question_num }} {% if page.questions.general contains question_num %}general{% else %}not-general{% endif %}">
+            {% capture title_name %}{{ page.questions.headlines[question_num] }}{% endcapture %}
+            {% if title_name %}
+              <h3>
+                {% if page.translations[title_name][page.language] %}{{ page.translations[title_name][page.language] }}{% else %}{{ page.translations[title_name].en }}{% endif %}
+              </h3>
+            {% endif %}
+            {% include question_only_loop.html %}
+          </div>
         {% endfor %}
-      </section>
-      <section class="question-section section-research not-general">
-        <h3>{% if page.translations.research[page.language] %}{{ page.translations.research[page.language] }}{% else %}{{ page.translations.research.en }}{% endif %}</h3>
-        {% for question_num in (47..49) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-      </section>
-      <section class="question-section section-textmining not-general">
-        <h3>{% if page.translations.textdatamining[page.language] %}{{ page.translations.textdatamining[page.language] }}{% else %}{{ page.translations.textdatamining.en }}{% endif %}</h3>
-        {% for question_num in (53..57) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-      </section>
-      <section class="question-section section-usergenerated not-general">
-        <h3>{% if page.translations.usergeneratedcontent[page.language] %}{{ page.translations.usergeneratedcontent[page.language] }}{% else %}{{ page.translations.usergeneratedcontent.en }}{% endif %}</h3>
-        {% for question_num in (58..63) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-      </section>
-      <section class="question-section section-rightsholder not-general">
-        <h3>{% if page.translations.rightsholder_title[page.language] %}{{ page.translations.rightsholder_title[page.language] }}{% else %}{{ page.translations.rightsholder_title.en }}{% endif %}</h3>
-        {% for question_num in (2..2) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-        {% for question_num in (4..4) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-        {% for question_num in (7..8) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-      </section>
-      <section class="question-section section-libraries not-general">
-        <h3>{% if page.translations.accesscontent[page.language] %}{{ page.translations.accesscontent[page.language] }}{% else %}{{ page.translations.accesscontent.en }}{% endif %}</h3>
-        {% for question_num in (28..31) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-        <h4>{% if page.translations.offpremiseaccess[page.language] %}{{ page.translations.offpremiseaccess[page.language] }}{% else %}{{ page.translations.offpremiseaccess.en }}{% endif %}</h4>
-        {% for question_num in (32..35) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-        <h4>{% if page.translations.elending[page.language] %}{{ page.translations.elending[page.language] }}{% else %}{{ page.translations.elending.en }}{% endif %}</h4>
-        {% for question_num in (36..39) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-        <h4>{% if page.translations.massdigitisation[page.language] %}{{ page.translations.massdigitisation[page.language] }}{% else %}{{ page.translations.massdigitisation.en }}{% endif %}</h4>
-        {% for question_num in (40..41) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-      </section>
-      <section class="question-section section-disabilities not-general">
-        <h3>{% if page.translations.disabilities[page.language] %}{{ page.translations.disabilities[page.language] }}{% else %}{{ page.translations.disabilities.en }}{% endif %}</h3>
-        {% for question_num in (50..52) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-      </section>
-      <section class="question-section section-remuneration not-general">
-        <h3>{% if page.translations.remuneration[page.language] %}{{ page.translations.remuneration[page.language] }}{% else %}{{ page.translations.remuneration.en }}{% endif %}</h3>
-        {% for question_num in (72..74) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-      </section>
-      <section class="question-section section-registration not-general">
-        <h3>{% if page.translations.registration[page.language] %}{{ page.translations.registration[page.language] }}{% else %}{{ page.translations.registration.en }}{% endif %}</h3>
-        {% for question_num in (15..18) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-      </section>
-      <section class="question-section section-identifiers">
-        <h3>{% if page.translations.interoperability[page.language] %}{{ page.translations.interoperability[page.language] }}{% else %}{{ page.translations.interoperability.en }}{% endif %}</h3>
-        {% for question_num in (19..19) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-      </section>
-      <section class="question-section section-privatecopying2 not-general">
-        <h3>{% if page.translations.privatecopying[page.language] %}{{ page.translations.privatecopying[page.language] }}{% else %}{{ page.translations.privatecopying.en }}{% endif %}</h3>
-        {% for question_num in (66..66) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-      </section>
-      <section class="question-section section-privatecopying3 not-general">
-        {% for question_num in (69..69) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-      </section>
-      <section class="question-section section-rightsholder2 not-general">
-        <h3>{% if page.translations.rightsholder_title[page.language] %}{{ page.translations.rightsholder_title[page.language] }}{% else %}{{ page.translations.rightsholder_title.en }}{% endif %}</h3>
-        {% for question_num in (9..10) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-        {% for question_num in (14..14) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-      </section>
-     <section class="question-section section-access general">
-        <h3>{% if page.translations.accesstocontent[page.language] %}{{ page.translations.accesstocontent[page.language] }}{% else %}{{ page.translations.accesstocontent.en }}{% endif %}</h3>
-        {% for question_num in (1..1) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-      </section>
-     <section class="question-section section-linking general">
-        <h3>{% if page.translations.linking[page.language] %}{{ page.translations.linking[page.language] }}{% else %}{{ page.translations.linking.en }}{% endif %}</h3>
-        {% for question_num in (11..12) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-      </section>
-      <section class="question-section section-digitalcontent general">
-        <h3>{% if page.translations.downloadtoown[page.language] %}{{ page.translations.downloadtoown[page.language] }}{% else %}{{ page.translations.downloadtoown.en }}{% endif %}</h3>
-        {% for question_num in (13..13) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-      </section>
-      <section class="question-section section-limitations general">
-        <h3>{% if page.translations.limitations[page.language] %}{{ page.translations.limitations[page.language] }}{% else %}{{ page.translations.limitations.en }}{% endif %}</h3>
-        {% for question_num in (21..26) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-      </section>
-      <section class="question-section section-privatecopying general">
-        <h3>{% if page.translations.privatecopying[page.language] %}{{ page.translations.privatecopying[page.language] }}{% else %}{{ page.translations.privatecopying.en }}{% endif %}</h3>
-        {% for question_num in (64..65) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-        {% for question_num in (67..68) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-        {% for question_num in (71..71) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-      </section>
-      <section class="question-section section-respectforrights general">
-        <h3>{% if page.translations.respectforrights[page.language] %}{{ page.translations.respectforrights[page.language] }}{% else %}{{ page.translations.respectforrights.en }}{% endif %}</h3>
-        {% for question_num in (77..77) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-      </section>
-      <section class="question-section section-termofprotection general">
-        <h3>{% if page.translations.termofprotection[page.language] %}{{ page.translations.termofprotection[page.language] }}{% else %}{{ page.translations.termofprotection.en }}{% endif %}</h3>
-        {% for question_num in (20..20) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-      </section>
-      <section class="question-section section-otherissues general">
-        <h3>{% if page.translations.otherissues[page.language] %}{{ page.translations.otherissues[page.language] }}{% else %}{{ page.translations.otherissues.en }}{% endif %}</h3>
-        {% for question_num in (80..80) %}
-          {% include question_only_loop.html %}
-        {% endfor %}
-      </section>
+      </div>
 
       <div class="well">
         <div class="form-group">

@@ -3,18 +3,48 @@
 
 $(function(){
   "use strict";
-  var personaSections = {
-    general: ['access', 'linking', 'digitalcontent', 'termofprotection', 'limitations', 'privatecopying', 'respectforrights', 'otherissues'],
-    onlineuser: ['access', 'linking', 'digitalcontent', 'limitations', 'privatecopying', 'respectforrights'],
-    parent: ['linking', 'digitalcontent', 'limitations', 'privatecopying', 'respectforrights'],
-    teacher: ['teaching', 'research', 'textmining'],
-    business: ['rightsholder', 'textmining', 'usergeneratedcontent', 'privatecopying2', 'privatecopying3'],
-    librarian: ['libraries', 'textmining', 'registration', 'termofprotection', 'identifiers'],
-    blogger: ['usergeneratedcontent'],
-    rightsholder: ['rightsholder2', 'remuneration', 'registration', 'privatecopying2'],
-    disabled: ['disabilities']
+
+  var specialCases = {
+    teacher: {
+      42: ['a'],
+      47: ['a'],
+      53: ['a']
+    },
+    business: {
+      53: ['a', 'b'],
+      58: ['b'],
+      59: ['b'],
+      60: ['b']
+    },
+    librarian: {
+      28: ['a'],
+      32: ['a', 'b'],
+      36: ['a', 'b'],
+      53: ['a']
+    },
+    blogger: {
+      58: ['a'],
+      59: ['a'],
+      60: ['a']
+    },
+    disabled: {
+      50: ['a', 'b']
+    }
+  };
+
+  var personaQuestionMap = {
+    general: [1, 4, 5, 11,12,13,14,20,21,22,23,24,25,26,64,65,67,68,71,77,80],
+    onlineuser: [1, 4, 5, 11, 12, 13, 21,22,23,24,25,26,64,65,67,68,71,77],
+    parent: [11, 12, 13, 21,22,23,24,25,26,64,65,67,68,71,77],
+    teacher: [42,43,44,45,46,47,48,49, 53,54,55,56,57],
+    business: [2,4,7,8,53,54,55,56,57,58,59,60,61,62,63,66,69],
+    librarian: [28,29,30,32,33,34,36,37,38,39,40,41,15,16,17,18,19,20,21,22,23,24,25,53,54,55],
+    blogger: [58,59,60,61,62,63],
+    rightsholder: [9,10,14,72,73,74,15,16,17,18,66],
+    disabled: [50,51,52]
   };
   var qIndex = {}, qCount = 0;
+  var questionSections = $('.question-sections');
   var toggleSections = function() {
     var personas = [];
     $('.personas .thumbnail').each(function(i, el) {
@@ -24,26 +54,28 @@ $(function(){
         personas.push(el.attr('id').split('-')[1]);
       }
     });
-    var groupObj = {}, personaSection;
-    for (var i = 0; i < personas.length; i += 1) {
-      personaSection = personaSections[personas[i]];
-      for (var j = 0; j < personaSection.length; j += 1) {
-        if (groupObj[personaSection[j]] === undefined) {
-          groupObj[personaSection[j]] = true;
+    var groupObj = {}, personaQuestions, questionList = [];
+    var addQuestions = function(persona){
+      personaQuestions = personaQuestionMap[persona];
+      for (var j = 0; j < personaQuestions.length; j += 1) {
+        if (groupObj[personaQuestions[j]] === undefined) {
+          groupObj[personaQuestions[j]] = true;
+          questionList.push(personaQuestions[j]);
         }
       }
+    };
+    for (var i = 0; i < personas.length; i += 1) {
+      addQuestions(personas[i]);
     }
+    addQuestions('general');
 
     $('#persona-questions .question-section').removeClass('active').hide();
-    $('.q').removeClass('active');
-    $('#persona-questions .question-section.general').show();
-    for (var group in groupObj) {
-      $('#persona-questions .section-' + group).addClass('active').show();
-      $('#persona-questions .section-' + group).find('.q').addClass('active');
+    for (i = 0; i < questionList.length; i += 1) {
+      $('#persona-questions .question-section-' + questionList[i]).appendTo(questionSections).addClass('active').show();
     }
-    qCount = $('.q.active').length;
+    qCount = $('.question-section.active').length;
     qIndex = {};
-    $('.q.active').each(function(i, el){
+    $('.question-section.active').each(function(i, el){
       qIndex[$(el).attr('id')] = i;
     });
   };
@@ -55,7 +87,6 @@ $(function(){
   $('.delete-localstorage').show();
   $('#persona-questions').hide();
   $('.continue-questions').click(function(){
-    $(this).hide();
     $('#persona-questions').show();
     $progressBar.show();
     loadGuide();
