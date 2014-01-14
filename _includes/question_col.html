@@ -28,7 +28,7 @@
             <div class="radio">
               <label>
                 <input type="radio" name="q-{{ question.num }}" id="q-{{ question.num }}-{{ forloop.index0 }}" value="{{ forloop.index0 }}" class="save">
-                <strong>{% if page.language == 'en' %}{{ option.label }}{% else %}{{ site.data.translations[option.label][page.language] }}{% endif %}</strong>
+                <strong>{% if site.data.translations[option.label][page.language] %}{{ site.data.translations[option.label][page.language] }}{% else %}{{ site.data.translations[option.label].en }}{% endif %}</strong>
               </label>
               {% if option.fulltext %}
                 <div class="radio-text help">
