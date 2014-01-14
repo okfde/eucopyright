@@ -485,8 +485,10 @@ translations:
           </p>
         </div>
         <div class="checkbox">
-          <label for="store">{% if page.translations.storelabel[page.language] %}{{ page.translations.storelabel[page.language] }}{% else %}{{ page.translations.storelabel.en }}{% endif %}</label>
-          <input type="checkbox" class="save" name="store">
+          <label>
+            {% if page.translations.storelabel[page.language] %}{{ page.translations.storelabel[page.language] }}{% else %}{{ page.translations.storelabel.en }}{% endif %}
+            <input type="checkbox" name="store" value="yes">
+          </label>
         </div>
         <button type="submit" class="submit-form btn btn-lg btn-success">
           {% if page.translations.submit[page.language] %}{{ page.translations.submit[page.language] }}{% else %}{{ page.translations.submit.en }}{% endif %}
