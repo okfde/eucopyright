@@ -117,5 +117,11 @@ $(function(){
   refreshScroll();
   $(window).resize(refreshScroll);
   $(window).on('scroll', process);
-  EUCopyright.loadGuide('c4c_' + $('html').attr('lang'));
+  var lang = $('html').attr('lang');
+  var slug = 'c4c_' + lang;
+  if (EUCopyright.answers[slug] !== undefined) {
+    EUCopyright.loadGuide(slug);
+  } else {
+    EUCopyright.loadGuide('c4c_en');
+  }
 });
