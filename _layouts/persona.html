@@ -50,6 +50,9 @@ translations:
     en: Continue to the questions
     de: Weiter zu den Fragen
     pl: Obejrzyj pytania
+  questionhint:
+    en: You do not have to fill out everything and can skip questions if you want to.
+    de: Du musst nicht alles ausfüllen und kannst Fragen auslassen, wenn du möchtest.
   otherlanguages:
     en: Other languages
     de: Andere Sprachen
@@ -272,10 +275,15 @@ translations:
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-6 col-md-6 col-sm-6">
           <a href="#persona-questions" class="continue-questions btn btn-primary btn-lg">
             &raquo; {% if page.translations.continuequestions[page.language] %}{{ page.translations.continuequestions[page.language] }}{% else %}{{ page.translations.continuequestions.en }}{% endif %}
           </a>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <p>
+            {% if page.translations.questionhint[page.language] %}{{ page.translations.questionhint[page.language] }}{% else %}{{ page.translations.questionhint.en }}{% endif %}
+          </p>
         </div>
       </div>
     </div>
