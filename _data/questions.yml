@@ -15,7 +15,7 @@
     details:
       en: "Please provide examples indicating the Member State, the sector and the type of content concerned (e.g. premium content such as certain films and TV series, audio-visual content in general, music, e-books, magazines, journals and newspapers, games, applications and other software)"
       de: "Bitte gib Beispiele mit deinem Land, dem Art des Inhalts an (z.B. Premium-Inhalte wie bestimmte Filme, TV-Serien, Musik, E-Books, Magazine, Zeitschriften und Zeitungen, Spiele, Anwendungen und andere Software)"
-      pl: "Proszę podać przykłady, wskazując na państwo członkowskie, sektor i rodzaj treści (np. treści płatne takie jak niektóre filmy i seriale telewizyjne, treści audiowizualne, muzyka, e-booki, magazyny, czasopisma i dzienniki, gry, aplikacje i oprogramowania komputerowe)"
+      pl: "Proszę podać przykłady, wskazując na państwo członkowskie, sektor i rodzaj treści (np. treści płatne takie jak niektóre filmy i seriale telewizyjne, treści audiowizualne, muzyka, e-booki, magazyny, czasopisma i dzienniki, gry, aplikacje i oprogramowanie komputerowe)"
     fulltext: true
     odf:
       - action: mark
@@ -213,7 +213,7 @@
     details:
       en: 'Please explain how this could be clarified and what type of clarification would be required (e.g. as in "targeting" approach explained above, as in "country of origin" approach)'
       de: 'Bitte erklären Sie wie dies besser klargestellt werden kann und welche Art von Klarstellung nötig wäre'
-      pl: 'Proszę zasugerować, w jaki sposób mogłoby to być wyjaśnione i jaki rodzaj wyjaśnienia byłby wymagany.'
+      pl: 'Proszę zasugerować, w jaki sposób należy doprecyzować ten zakres (np. zgodnie z podejściem "ukierunkowywania" wyjaśnionego powyżej, zgodnie z podejściem "państwa źródła")'
     fulltext: true
     odf:
       - action: mark
@@ -271,7 +271,7 @@
     details:
       en: 'Please explain what type of measures would be needed in order to address such problems (e.g. facilitation of joint licences when the rights are in different hands, legislation to achieve the "bundling of rights")'
       de: 'Bitte erläutern Sie, welche Art von Maßnahmen notwendig wären, um solche Probleme anzugehen (z.B. die Förderung von gemeinsamen Lizenzen, wenn die Rechte in verschiedenen Händen sind; die Gesetzgebung für "Bündelung der Rechte")'
-      pl: 'Proszę wyjaśnić, jak należałoby rozwiązać powyższe problemy (np. ułatwienie licencji łączonych, kiedy jest kilku posiadaczy praw, rozwiązania legislacyjne mające na celu możliwość tworzenia "pakietów praw").'
+      pl: 'Proszę wyjaśnić, jak należałoby rozwiązać powyższe problemy (np. ułatwienie licencji łączonych, kiedy jest kilku posiadaczy praw, rozwiązania legislacyjne mające na celu tworzenie "pakietów praw").'
     fulltext: true
     odf:
       - action: mark
@@ -291,7 +291,7 @@
 
 - num: 11
   text:
-    pl: "Czy podanie hiperłącza odnoszącego do utworu lub innego przedmiotu chronionego prawem autorskim, czy generalnie czy w specyficznych okolicznościach, powinno wymagać zezwolenia posiadacza praw?"
+    pl: "Czy podanie hiperłącza odnoszącego do utworu lub innego przedmiotu chronionego prawem autorskim, zawsze lub w niektórych przypadkach, powinno wymagać zezwolenia posiadacza praw?"
     en: "Should the provision of a hyperlink leading to a work or other subject matter protected under copyright, either in general or under specific circumstances, be subject to the authorisation of the rightholder?"
     de: "Sollte das Bereitstellen eines Hyperlinks, welcher zu einem urheberrechtlich geschützten Werk oder anderen Gegenstand führt, entweder im Allgemeinen oder unter bestimmten Umständen die Erlaubnis des Rechteinhabers erfordern?"
     fr: Est-ce que la mise à disposition d'un lien hypertexte menant à une œuvre ou à d'autres objets protégés en vertu du droit d'auteur, soit de manière générale ou dans des circonstances particulières, devrait être soumise à l'autorisation du titulaire des droits?
@@ -303,7 +303,7 @@
   options:
   - label: 'Yes'
     details:
-      pl: "Czy uważają Pastwo, że powinno tak być w każdym przypadku, czy tylko w niektórych i dlaczego"
+      pl: "Czy uważają Państwo, że powinno tak być w każdym przypadku, czy tylko w niektórych i dlaczego."
       en: "Please explain whether you consider this to be the case in general, or under specific circumstances, and why"
       de: "Bitte erkläre, ob das generell der Fall ist oder unter speziellen Umständnen und warum"
     fulltext: true
@@ -318,7 +318,7 @@
     details:
       en: "Please explain whether you consider this to be the case in general, or under specific circumstances, and why (e.g. because it does not amount to an act of communication to the public – or to a new public, or because it should be covered by a copyright exception)"
       de: "Bitte erkläre, ob das generell der Fall ist oder unter speziellen Umständen und warum (z.B. weil es kein Kommunikationsvorgang mit der Öffentlichkeit - oder mit einer neuen Öffentlichkeit - ist, oder weil es eine Urheberrechtsausnahme sein sollte)"
-      pl: 'Czy uważają Pastwo, że powinno tak być w każdym przypadku, czy tylko w niektórych i dlaczego (np. ponieważ działanie to nie jest równoważne z publicznym - w tym skierowanym do osób nieznajomych - aktem komunikacji  lub powinno ono być uznane za wyjątek).'
+      pl: 'Czy uważają Pastwo, że powinno tak być w każdym przypadku, czy tylko w niektórych i dlaczego (np. ponieważ działanie to nie jest równoważne z aktem publicznego udostępniania, w tym skierowanego do nowej publiczności,  lub powinno ono być uznane za wyjątek).'
     fulltext: true
     odf:
       - action: mark
@@ -334,7 +334,7 @@
 
 - num: 12
   text:
-    pl: "Czy przeglądanie strony internetowej, jeśli wiąże się to z dostępem do tymczasowej reprodukcji utworu lub innego przedmiotu chronionego prawem autorskim na ekranie i w pamięci podręcznej komputera użytkownika, czy generalnie czy w specyficznych okolicznościach,  powinno wymagać zezwolenia posiadacza praw?"
+    pl: "Czy przeglądanie strony internetowej, jeśli wiąże się to z dostępem do tymczasowej reprodukcji utworu lub innego przedmiotu chronionego prawem autorskim na ekranie i w pamięci podręcznej komputera użytkownika, zawsze lub w niektórych przypadkach,  powinno wymagać zezwolenia posiadacza praw?"
     en: "Should the viewing of a web-page where this implies the temporary reproduction of a work or other subject matter protected under copyright on the screen and in the cache memory of the user’s computer, either in general or under specific circumstances, be subject to the authorisation of the rightholder?"
     de: "Soll das Betrachten einer Website, was bedeutet, dass urheberrechtlich geschütze Webinhalte kurzzeitig auf dem Bildschirm oder im Speicher des Computers  reproduziert werden, entweder generell oder in bestimmten Fällen nur mit Erlaubnis des Rechteinhabers möglich sein?"
     nl: Moet het bekijken van een webpagina waar dit impliceert de tijdelijke reproductie van een werk of ander krachtens het auteursrecht beschermd materiaal op het scherm en in het cachegeheugen van de computer van de gebruiker, hetzij in het algemeen of in specifieke omstandigheden, afhankelijk zijn van de goedkeuring van de rechthebbende?
@@ -1867,7 +1867,7 @@
 
 - num: 80
   text:
-    pl: "Czy istnieją inne istote kwestie związane z europejskim systemem prawnoautorskim? Proszę uzasadnić i wskazać, jak kwestie te powinny być uregulowane."
+    pl: "Czy istnieją inne istotne kwestie związane z europejskim systemem prawnoautorskim? Proszę uzasadnić i wskazać, jak kwestie te powinny być uregulowane."
     en: Are there any other important matters related to the EU legal framework for copyright? Please explain and indicate how such matters should be addressed.
     de: "Gibt es weitere wichtige Dinge im Zusammenhang mit der europäischen Rechtslage im Bezug auf das Urheberrecht?  Bitte erklären und darauf hinweisen, wie man diese Fälle ansprechen könnte"
     fr: Y a-t-il d'autres questions importantes liées au cadre juridique de l'UE du droit d'auteur ? Expliquez et indiquez s'il vous plait comment ces questions doivent être abordées.
