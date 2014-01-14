@@ -1,12 +1,15 @@
 "Yes":
   de: Ja
   pl: Tak
+  it: "Sì"
 "No":
   de: Nein
   pl: Nie
+  it: No
 "No Opinion":
   de: Keine Meinung
   pl: Brak opinii
+  it: Non so
 emailSubject:
   en: 'Public Consultation on the review of the EU copyright rules'
   de: 'Öffentliche Konsultation zur Überprüfung der Regeln zum EU-Urheberrecht'
