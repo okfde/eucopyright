@@ -146,11 +146,11 @@ translations:
 ---
 
 <div class="container">
-  <h1 class="big-title">{{ page.translations.title[page.language] }}</h1>
+  <h1 class="big-title">{% if page.translations.title[page.language] %}{{ page.translations.title[page.language] }}{% else %}{{ page.translations.title.en }}{% endif %}</h1>
   <div class="row">
     <div class="col-lg-8 col-md-8 col-sm-8">
       <p class="lead">
-        {{ page.translations.subtitle[page.language] }}
+        {% if page.translations.subtitle[page.language] %}{{ page.translations.subtitle[page.language] }}{% else %}{{ page.translations.subtitle.en }}{% endif %}
       </p>
     </div>
   </div>
@@ -160,19 +160,19 @@ translations:
   <div class="row">
     <div class="col-lg-8 col-md-8 col-sm-8 personas">
       <p>
-        {{ page.translations.introparagraph[page.language] }}
+        {% if page.translations.introparagraph[page.language] %}{{ page.translations.introparagraph[page.language] }}{% else %}{{ page.translations.introparagraph.en }}{% endif %}
       </p>
       <div class="row">
         <div class="col-md-6 col-lg-6">
           <label class="thumbnail" id="label-onlineuser">
             <input type="checkbox" name="typeofrespondent" id="typeofrespondent-enduser" value="enduser" checked>
-            {{ page.translations.enduser[page.language] }}
+            {% if page.translations.enduser[page.language] %}{{ page.translations.enduser[page.language] }}{% else %}{{ page.translations.enduser.en }}{% endif %}
           </label>
         </div>
         <div class="col-md-6 col-lg-6">
           <label class="thumbnail" id="label-parent">
             <input type="checkbox" class="save" name="typeofrespondent" id="typeofrespondent-representEnduser" value="representEnduser">
-            {{ page.translations.parent[page.language] }}
+            {% if page.translations.parent[page.language] %}{{ page.translations.parent[page.language] }}{% else %}{{ page.translations.parent.en }}{% endif %}
           </label>
         </div>
       </div>
@@ -180,13 +180,13 @@ translations:
         <div class="col-md-6 col-lg-6">
           <label class="thumbnail" id="label-teacher">
             <input type="checkbox" class="save" name="typeofrespondent" id="typeofrespondent-institution" value="institution">
-            {{ page.translations.teacher[page.language] }}
+            {% if page.translations.teacher[page.language] %}{{ page.translations.teacher[page.language] }}{% else %}{{ page.translations.teacher.en }}{% endif %}
           </label>
         </div>
         <div class="col-md-6 col-lg-6">
           <label class="thumbnail" id="label-business">
             <input type="checkbox" class="save" name="typeofrespondent" id="typeofrespondent-intermediary" value="intermediary">
-            {{ page.translations.entrepreneur[page.language] }}
+            {% if page.translations.entrepreneur[page.language] %}{{ page.translations.entrepreneur[page.language] }}{% else %}{{ page.translations.entrepreneur.en }}{% endif %}
           </label>
         </div>
       </div>
@@ -194,13 +194,13 @@ translations:
         <div class="col-md-6 col-lg-6">
           <label class="thumbnail" id="label-librarian">
             <input type="checkbox" class="save" name="typeofrespondent" id="typeofrespondent-institution" value="institution">
-            {{ page.translations.librarian[page.language] }}
+            {% if page.translations.librarian[page.language] %}{{ page.translations.librarian[page.language] }}{% else %}{{ page.translations.librarian.en }}{% endif %}
           </label>
         </div>
         <div class="col-md-6 col-lg-6">
           <label class="thumbnail" id="label-blogger">
             <input type="checkbox" class="save" name="typeofrespondent" id="typeofrespondent-author" value="author">
-            {{ page.translations.blogger[page.language] }}
+            {% if page.translations.blogger[page.language] %}{{ page.translations.blogger[page.language] }}{% else %}{{ page.translations.blogger.en }}{% endif %}
           </label>
         </div>
       </div>
@@ -208,26 +208,26 @@ translations:
         <div class="col-md-6 col-lg-6">
           <label class="thumbnail" id="label-disabled">
             <input type="checkbox" class="save" name="typeofrespondent" id="typeofrespondent-enduser" value="enduser">
-            {{ page.translations.disabled[page.language] }}
+            {% if page.translations.disabled[page.language] %}{{ page.translations.disabled[page.language] }}{% else %}{{ page.translations.disabled.en }}{% endif %}
           </label>
         </div>
         <div class="col-md-6 col-lg-6">
           <label class="thumbnail" id="label-rightsholder">
             <input type="checkbox" class="save" name="typeofrespondent" id="typeofrespondent-publisher" value="publisher">
-            {{ page.translations.rightsholder[page.language] }}
+            {% if page.translations.rightsholder[page.language] %}{{ page.translations.rightsholder[page.language] }}{% else %}{{ page.translations.rightsholder.en }}{% endif %}
           </label>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-12">
           <a href="#persona-questions" class="continue-questions btn btn-primary btn-lg">
-            &raquo; {{ page.translations.continuequestions[page.language] }}
+            &raquo; {% if page.translations.continuequestions[page.language] %}{{ page.translations.continuequestions[page.language] }}{% else %}{{ page.translations.continuequestions.en }}{% endif %}
           </a>
         </div>
       </div>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4">
-      <h4>{{ page.translations.otherlanguages[page.language] }}</h4>
+      <h4>{% if page.translations.otherlanguages[page.language] %}{{ page.translations.otherlanguages[page.language] }}{% else %}{{ page.translations.otherlanguages.en }}{% endif %}</h4>
       <ul class="list-unstyled">
         {% for lang in site.languages %}
           {% if lang != page.language %}
@@ -240,7 +240,7 @@ translations:
           {% endif %}
         {% endfor %}
       </ul>
-      <h4>{{ page.translations.otherguides[page.language] }}</h4>
+      <h4>{% if page.translations.otherguides[page.language] %}{{ page.translations.otherguides[page.language] }}{% else %}{{ page.translations.otherguides.en }}{% endif %}</h4>
       <a href="http://www.copywrongs.eu/" class="btn btn-default">
         copywrongs.eu
       </a>
@@ -260,36 +260,36 @@ translations:
     <div class="col-lg-4 col-md-4 col-sm-4 col-lg-push-8 col-md-push-8 col-sm-push-8">
       <hr/>
       <p class="buffer-row">
-        {{ page.translations.explanationorigin[page.language] }}
+        {% if page.translations.explanationorigin[page.language] %}{{ page.translations.explanationorigin[page.language] }}{% else %}{{ page.translations.explanationorigin.en }}{% endif %}
       </p>
     </div>
     <div class="col-lg-8 col-md-8 col-sm-8 col-lg-pull-4 col-md-pull-4 col-sm-pull-4">
       <section class="question-section section-teaching not-general">
-        <h3>{{ page.translations.teaching[page.language] }}</h3>
+        <h3>{% if page.translations.teaching[page.language] %}{{ page.translations.teaching[page.language] }}{% else %}{{ page.translations.teaching.en }}{% endif %}</h3>
         {% for question_num in (42..46) %}
           {% include question_only_loop.html %}
         {% endfor %}
       </section>
       <section class="question-section section-research not-general">
-        <h3>{{ page.translations.research[page.language] }}</h3>
+        <h3>{% if page.translations.research[page.language] %}{{ page.translations.research[page.language] }}{% else %}{{ page.translations.research.en }}{% endif %}</h3>
         {% for question_num in (47..49) %}
           {% include question_only_loop.html %}
         {% endfor %}
       </section>
       <section class="question-section section-textmining not-general">
-        <h3>{{ page.translations.textdatamining[page.language] }}</h3>
+        <h3>{% if page.translations.textdatamining[page.language] %}{{ page.translations.textdatamining[page.language] }}{% else %}{{ page.translations.textdatamining.en }}{% endif %}</h3>
         {% for question_num in (53..57) %}
           {% include question_only_loop.html %}
         {% endfor %}
       </section>
       <section class="question-section section-usergenerated not-general">
-        <h3>{{ page.translations.usergeneratedcontent[page.language] }}</h3>
+        <h3>{% if page.translations.usergeneratedcontent[page.language] %}{{ page.translations.usergeneratedcontent[page.language] }}{% else %}{{ page.translations.usergeneratedcontent.en }}{% endif %}</h3>
         {% for question_num in (58..63) %}
           {% include question_only_loop.html %}
         {% endfor %}
       </section>
       <section class="question-section section-rightsholder not-general">
-        <h3>{{ page.translations.rightsholder_title[page.language] }}</h3>
+        <h3>{% if page.translations.rightsholder_title[page.language] %}{{ page.translations.rightsholder_title[page.language] }}{% else %}{{ page.translations.rightsholder_title.en }}{% endif %}</h3>
         {% for question_num in (2..2) %}
           {% include question_only_loop.html %}
         {% endfor %}
@@ -301,49 +301,49 @@ translations:
         {% endfor %}
       </section>
       <section class="question-section section-libraries not-general">
-        <h3>{{ page.translations.accesscontent[page.language] }}</h3>
+        <h3>{% if page.translations.accesscontent[page.language] %}{{ page.translations.accesscontent[page.language] }}{% else %}{{ page.translations.accesscontent.en }}{% endif %}</h3>
         {% for question_num in (28..31) %}
           {% include question_only_loop.html %}
         {% endfor %}
-        <h4>{{ page.translations.offpremiseaccess[page.language] }}</h4>
+        <h4>{% if page.translations.offpremiseaccess[page.language] %}{{ page.translations.offpremiseaccess[page.language] }}{% else %}{{ page.translations.offpremiseaccess.en }}{% endif %}</h4>
         {% for question_num in (32..35) %}
           {% include question_only_loop.html %}
         {% endfor %}
-        <h4>{{ page.translations.elending[page.language] }}</h4>
+        <h4>{% if page.translations.elending[page.language] %}{{ page.translations.elending[page.language] }}{% else %}{{ page.translations.elending.en }}{% endif %}</h4>
         {% for question_num in (36..39) %}
           {% include question_only_loop.html %}
         {% endfor %}
-        <h4>{{ page.translations.massdigitisation[page.language] }}</h4>
+        <h4>{% if page.translations.massdigitisation[page.language] %}{{ page.translations.massdigitisation[page.language] }}{% else %}{{ page.translations.massdigitisation.en }}{% endif %}</h4>
         {% for question_num in (40..41) %}
           {% include question_only_loop.html %}
         {% endfor %}
       </section>
       <section class="question-section section-disabilities not-general">
-        <h3>{{ page.translations.disabilities[page.language] }}</h3>
+        <h3>{% if page.translations.disabilities[page.language] %}{{ page.translations.disabilities[page.language] }}{% else %}{{ page.translations.disabilities.en }}{% endif %}</h3>
         {% for question_num in (50..52) %}
           {% include question_only_loop.html %}
         {% endfor %}
       </section>
       <section class="question-section section-remuneration not-general">
-        <h3>{{ page.translations.remuneration[page.language] }}</h3>
+        <h3>{% if page.translations.remuneration[page.language] %}{{ page.translations.remuneration[page.language] }}{% else %}{{ page.translations.remuneration.en }}{% endif %}</h3>
         {% for question_num in (72..74) %}
           {% include question_only_loop.html %}
         {% endfor %}
       </section>
       <section class="question-section section-registration not-general">
-        <h3>{{ page.translations.registration[page.language] }}</h3>
+        <h3>{% if page.translations.registration[page.language] %}{{ page.translations.registration[page.language] }}{% else %}{{ page.translations.registration.en }}{% endif %}</h3>
         {% for question_num in (15..18) %}
           {% include question_only_loop.html %}
         {% endfor %}
       </section>
       <section class="question-section section-identifiers">
-        <h3>{{ page.translations.interoperability[page.language] }}</h3>
+        <h3>{% if page.translations.interoperability[page.language] %}{{ page.translations.interoperability[page.language] }}{% else %}{{ page.translations.interoperability.en }}{% endif %}</h3>
         {% for question_num in (19..19) %}
           {% include question_only_loop.html %}
         {% endfor %}
       </section>
       <section class="question-section section-privatecopying2 not-general">
-        <h3>{{ page.translations.privatecopying[page.language] }}</h3>
+        <h3>{% if page.translations.privatecopying[page.language] %}{{ page.translations.privatecopying[page.language] }}{% else %}{{ page.translations.privatecopying.en }}{% endif %}</h3>
         {% for question_num in (66..66) %}
           {% include question_only_loop.html %}
         {% endfor %}
@@ -354,7 +354,7 @@ translations:
         {% endfor %}
       </section>
       <section class="question-section section-rightsholder2 not-general">
-        <h3>{{ page.translations.rightsholder_title[page.language] }}</h3>
+        <h3>{% if page.translations.rightsholder_title[page.language] %}{{ page.translations.rightsholder_title[page.language] }}{% else %}{{ page.translations.rightsholder_title.en }}{% endif %}</h3>
         {% for question_num in (9..10) %}
           {% include question_only_loop.html %}
         {% endfor %}
@@ -363,31 +363,31 @@ translations:
         {% endfor %}
       </section>
      <section class="question-section section-access general">
-        <h3>{{ page.translations.accesstocontent[page.language] }}</h3>
+        <h3>{% if page.translations.accesstocontent[page.language] %}{{ page.translations.accesstocontent[page.language] }}{% else %}{{ page.translations.accesstocontent.en }}{% endif %}</h3>
         {% for question_num in (1..1) %}
           {% include question_only_loop.html %}
         {% endfor %}
       </section>
      <section class="question-section section-linking general">
-        <h3>{{ page.translations.linking[page.language] }}</h3>
+        <h3>{% if page.translations.linking[page.language] %}{{ page.translations.linking[page.language] }}{% else %}{{ page.translations.linking.en }}{% endif %}</h3>
         {% for question_num in (11..12) %}
           {% include question_only_loop.html %}
         {% endfor %}
       </section>
       <section class="question-section section-digitalcontent general">
-        <h3>{{ page.translations.downloadtoown[page.language] }}</h3>
+        <h3>{% if page.translations.downloadtoown[page.language] %}{{ page.translations.downloadtoown[page.language] }}{% else %}{{ page.translations.downloadtoown.en }}{% endif %}</h3>
         {% for question_num in (13..13) %}
           {% include question_only_loop.html %}
         {% endfor %}
       </section>
       <section class="question-section section-limitations general">
-        <h3>{{ page.translations.limitations[page.language] }}</h3>
+        <h3>{% if page.translations.limitations[page.language] %}{{ page.translations.limitations[page.language] }}{% else %}{{ page.translations.limitations.en }}{% endif %}</h3>
         {% for question_num in (21..26) %}
           {% include question_only_loop.html %}
         {% endfor %}
       </section>
       <section class="question-section section-privatecopying general">
-        <h3>{{ page.translations.privatecopying[page.language] }}</h3>
+        <h3>{% if page.translations.privatecopying[page.language] %}{{ page.translations.privatecopying[page.language] }}{% else %}{{ page.translations.privatecopying.en }}{% endif %}</h3>
         {% for question_num in (64..65) %}
           {% include question_only_loop.html %}
         {% endfor %}
@@ -399,19 +399,19 @@ translations:
         {% endfor %}
       </section>
       <section class="question-section section-respectforrights general">
-        <h3>{{ page.translations.respectforrights[page.language] }}</h3>
+        <h3>{% if page.translations.respectforrights[page.language] %}{{ page.translations.respectforrights[page.language] }}{% else %}{{ page.translations.respectforrights.en }}{% endif %}</h3>
         {% for question_num in (77..77) %}
           {% include question_only_loop.html %}
         {% endfor %}
       </section>
       <section class="question-section section-termofprotection general">
-        <h3>{{ page.translations.termofprotection[page.language] }}</h3>
+        <h3>{% if page.translations.termofprotection[page.language] %}{{ page.translations.termofprotection[page.language] }}{% else %}{{ page.translations.termofprotection.en }}{% endif %}</h3>
         {% for question_num in (20..20) %}
           {% include question_only_loop.html %}
         {% endfor %}
       </section>
       <section class="question-section section-otherissues general">
-        <h3>{{ page.translations.otherissues[page.language] }}</h3>
+        <h3>{% if page.translations.otherissues[page.language] %}{{ page.translations.otherissues[page.language] }}{% else %}{{ page.translations.otherissues.en }}{% endif %}</h3>
         {% for question_num in (80..80) %}
           {% include question_only_loop.html %}
         {% endfor %}
@@ -419,23 +419,23 @@ translations:
 
       <div class="well">
         <div class="form-group">
-          <label for="name">{{ page.translations.fullname[page.language] }}</label>
+          <label for="name">{% if page.translations.fullname[page.language] %}{{ page.translations.fullname[page.language] }}{% else %}{{ page.translations.fullname.en }}{% endif %}</label>
           <input type="text" class="form-control save" name="name" id="name" placeholder="Enter your name">
           <p class="help-block">
-            {{ page.translations.namehelp[page.language] }}
+            {% if page.translations.namehelp[page.language] %}{{ page.translations.namehelp[page.language] }}{% else %}{{ page.translations.namehelp.en }}{% endif %}
           </p>
         </div>
         <div class="form-group">
-          <label for="email"><span class="hidden-xs hidden-sm">{{ page.translations.email[page.language] }}</label>
+          <label for="email"><span class="hidden-xs hidden-sm">{% if page.translations.email[page.language] %}{{ page.translations.email[page.language] }}{% else %}{{ page.translations.email.en }}{% endif %}</label>
           <input type="email" class="form-control save" name="email" placeholder="your@email.eu">
           <p class="help-block">
-            <strong class="visible-xs visible-sm">{{ page.translations.emaildocument[page.language] }}</strong>
-            <span class="hidden-xs hidden-sm">{{ page.translations.emaildocumentpossible[page.language] }}</span>
-            <small>{{ page.translations.emailprivacy[page.language] }}</small>
+            <strong class="visible-xs visible-sm">{% if page.translations.emaildocument[page.language] %}{{ page.translations.emaildocument[page.language] }}{% else %}{{ page.translations.emaildocument.en }}{% endif %}</strong>
+            <span class="hidden-xs hidden-sm">{% if page.translations.emaildocumentpossible[page.language] %}{{ page.translations.emaildocumentpossible[page.language] }}{% else %}{{ page.translations.emaildocumentpossible.en }}{% endif %}</span>
+            <small>{% if page.translations.emailprivacy[page.language] %}{{ page.translations.emailprivacy[page.language] }}{% else %}{{ page.translations.emailprivacy.en }}{% endif %}</small>
           </p>
         </div>
         <button type="submit" class="submit-form btn btn-lg btn-success">
-          {{ page.translations.submit[page.language] }}
+          {% if page.translations.submit[page.language] %}{{ page.translations.submit[page.language] }}{% else %}{{ page.translations.submit.en }}{% endif %}
         </button>
       </div>
     </div>
@@ -448,15 +448,15 @@ translations:
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title" id="myModalLabel">{{ page.translations.almostdone[page.language] }}</h4>
+          <h4 class="modal-title" id="myModalLabel">{% if page.translations.almostdone[page.language] %}{{ page.translations.almostdone[page.language] }}{% else %}{{ page.translations.almostdone.en }}{% endif %}</h4>
         </div>
         <div class="modal-body">
           <p class="lead hide email-sent final-cases">
-            {{ page.translations.sentbyemail[page.language] }}
+            {% if page.translations.sentbyemail[page.language] %}{{ page.translations.sentbyemail[page.language] }}{% else %}{{ page.translations.sentbyemail.en }}{% endif %}
           </p>
 
           <p class="lead hide download-only final-cases">
-            {{ page.translations.downloadonly[page.language] }}
+            {% if page.translations.downloadonly[page.language] %}{{ page.translations.downloadonly[page.language] }}{% else %}{{ page.translations.downloadonly.en }}{% endif %}
           </p>
 
           <div class="center-block text-center">
@@ -470,7 +470,7 @@ translations:
           <hr/>
 
           <small>
-            {{ page.translations.privacy[page.language] }}
+            {% if page.translations.privacy[page.language] %}{{ page.translations.privacy[page.language] }}{% else %}{{ page.translations.privacy.en }}{% endif %}
           </small>
 
         </div>
