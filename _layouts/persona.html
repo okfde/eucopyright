@@ -170,6 +170,9 @@ translations:
     en: Your email address and all other input will <strong>not</strong> be used except for sending you the finished document.
     de: Deine E-Mail-Adresse und alle anderen Angaben werden nur dazu genutzt, dir das fertige Dokument zu schicken.
     pl: Podany adres emailowy oraz inne podane informacje <strong>nie zostaną</strong> wykorzystane inaczej niż w celu wysłania gotowego dokumentu.
+  storelabel:
+    en: Allow us to store your answers and contact you about the campaign.
+    de: Erlaube es uns, deine Angaben zu speichern und dich zur Kampagne zu kontaktieren.
   submit:
     en: Submit this form
     de: Schicke das Formular ab
@@ -480,6 +483,10 @@ translations:
             <span class="hidden-xs hidden-sm">{% if page.translations.emaildocumentpossible[page.language] %}{{ page.translations.emaildocumentpossible[page.language] }}{% else %}{{ page.translations.emaildocumentpossible.en }}{% endif %}</span>
             <small>{% if page.translations.emailprivacy[page.language] %}{{ page.translations.emailprivacy[page.language] }}{% else %}{{ page.translations.emailprivacy.en }}{% endif %}</small>
           </p>
+        </div>
+        <div class="checkbox">
+          <label for="store">{% if page.translations.storelabel[page.language] %}{{ page.translations.storelabel[page.language] }}{% else %}{{ page.translations.storelabel.en }}{% endif %}</label>
+          <input type="checkbox" class="save" name="store">
         </div>
         <button type="submit" class="submit-form btn btn-lg btn-success">
           {% if page.translations.submit[page.language] %}{{ page.translations.submit[page.language] }}{% else %}{{ page.translations.submit.en }}{% endif %}
