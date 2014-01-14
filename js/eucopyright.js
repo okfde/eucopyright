@@ -391,6 +391,9 @@ $(function(){
   $('.div-toggle').hide();
   $('.toggle').show().click(function(e){
     e.preventDefault();
+    if ($(this).hasClass('toggle-hide')) {
+      $(this).hide();
+    }
     var div = $($(this).attr('href'));
     if (div.css('display') === 'block') {
       div.slideUp();
