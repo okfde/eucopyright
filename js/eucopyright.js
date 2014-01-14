@@ -243,13 +243,13 @@ EUCopyright.applyGuide = function(guide, question, answer) {
   if (answer.explanation) {
     isAnswered = true;
     $('#q-' + question.num + '-customexplanation').slideDown();
-    $('#q-' + question.num + '-customexplanation-text').text(answer.explanation);
+    $('#q-' + question.num + '-customexplanation-text').html(answer.explanation);
     if (answer.explanationmore) {
       $('#q-' + question.num + '-customexplanation').find('.toggle').show();
-      $('#q-' + question.num + '-customexplanationmore-text').text(answer.explanationmore);
+      $('#q-' + question.num + '-customexplanationmore-text').html(answer.explanationmore);
     } else {
       $('#q-' + question.num + '-customexplanation').find('.toggle').hide();
-      $('#q-' + question.num + '-customexplanationmore-text').text('').hide();
+      $('#q-' + question.num + '-customexplanationmore-text').html('').hide();
     }
   } else {
     $('#q-' + question.num + '-customexplanation').slideUp();
@@ -282,8 +282,8 @@ EUCopyright.loadQuestionGuide = function(slug, clb){
       answers[parseInt(row.Question, 10)] = {
         option: row.Option ? parseInt(row.Option, 10) - 1 : null,
         answer: row.Answer,
-        explanation: row.Explanation,
-        explanationmore: row.Explanation_more
+        explanation: row.Explanation.replace(/\n/g, '<br/>'),
+        explanationmore: row.Explanation_more.replace(/\n/g, '<br/>')
       };
     }
     EUCopyright.answerCache[slug] = answers;
