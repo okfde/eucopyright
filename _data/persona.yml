@@ -24,9 +24,9 @@ translations:
     de: Ich schaffe Inhalte als Blogger/in und produziere Remixe aus geschütztem Material
     en: I’m creating content as a blogger and produce remixes of protected material
     es: Creo contenidos como bloguero y produzco contenido derivado de material protegido
-    pl: Tworzę treści jako bloger/ka lub remiksuję treści chronione prawem autorskim
-    nl: Ik creëer content als blogger of maak remixen met auteursrechtelijk beschermde werken
     fr: Je crée du contenu en tant que blogueur et produit des remix basés notamment sur du matériel protégé par le droit d’auteur
+    nl: Ik creëer content als blogger of maak remixen met auteursrechtelijk beschermde werken
+    pl: Tworzę treści jako blogger/ka i produkuję remiksy na podstawie chronionych materiałów
   continuequestions:
     de: Weiter zu den Fragen
     en: Continue to the questions
@@ -45,9 +45,9 @@ translations:
     de: Ich habe eine Behinderung und versuche Inhalte in Formaten zu finden, die ich nutzen kann
     en: I’m a disabled user trying to access or adapt content in formats that I can actually use
     es: Tengo alguna discapacidad al intentar acceder o adaptar contenidos a formatos usables
-    pl: Jestem osobą niepełnosprawną i zależy mi na dostępie do treści w formatach, z których mogę korzystać
-    nl: Ik ben een gebruiker met beperkingen die probeert toegang te krijgen tot content, of content probeert om te zetten in formaten die bruikbaar zijn voor mij
     fr: J’ai un handicap et j’essaie d’avoir accès ou d’adapter du contenu vers des formats qui me sont utiles
+    nl: Ik ben een gebruiker met beperkingen die probeert toegang te krijgen tot content, of content probeert om te zetten in formaten die bruikbaar zijn voor mij
+    pl: Jestem użytkownikiem/czką z niepełnosprawnością ipróbuję docierać i korzystać z treści w formatach, które byłyby dla mnie użyteczne
   downloadonly:
     de: 'Das Dokument wird jetzt heruntergeladen. Bitte sende es per E-Mail an:'
     en: 'The document is now downloading. Please send it by email to:'
@@ -101,16 +101,16 @@ translations:
     de: Ich bin Online-Nutzer/in und teile Bilder, sehe Videos an, kaufe Medien online, etc.
     en: I’m an online user who shares pictures, watches videos, buys media online, etc.
     es: Soy un usuario en línea que comparte imágenes, ve vídeos, compra contenido online, etc.
-    pl: Jestem internautą, który dzieli się zdjęciami, ogląda wideo, kupuje treści, itd.
-    nl: Ik ben een online gebruiker die foto's deelt, video's bekijkt, online media koopt, enz.
     fr: Je suis un(e) internaute qui partage des photos, regarde des vidéos, achète du contenu numérique en ligne, etc.
+    nl: "Ik ben een online gebruiker die foto's deelt, video's bekijkt, online media koopt, enz."
+    pl: Jestem użytkownikiem/czką internetu i dzielę się zdjęciami, oglądam filmy, robię zakupy w Sieci itp.
   entrepreneur:
     de: Ich bin Freiberufler/in, Unternehmer/in oder Geschäftsperson
     en: I’m a freelancer, entrepreneur or businessperson
     es: Soy profesional independiente, emprendedor o persona de negocios
-    pl: Jestem wolnym strzelcem lub przedsiębiorcą
-    nl: Ik ben een freelancer, ondernemer of actief in de bedrijfswereld
     fr: Je suis indépendant, entrepreneur ou dans le monde des affaires
+    nl: Ik ben een freelancer, ondernemer of actief in de bedrijfswereld
+    pl: Jestem freelancerem/ką, przedsiębiorcą/czynią, pracuję w biznesie
   explanationorigin:
     de: <span class="guide">Die farbig hervorgehobenen Erklärungen</span> wurden von einer vielen Interessengruppen aus ganz Europa zusammengestellt, von Rechteinhabern über zivile Organisationen zu großen Verbrauchervertretungen und alles dazwischen. <a target="_blank" href="http://fixcopyright.eu/about-us/">Erfahre mehr über die Autoren.</a>
     en: <span class="guide">The explanations coloured like this</span> have been put together by a broad cross-section of interest groups from across Europe, from rights holders to public interest NGOs to large consumer representatives and everything in between. <a target="_blank" href="http://fixcopyright.eu/about-us/">Learn more about them here.</a>
@@ -148,9 +148,9 @@ translations:
     de: Ich bin Bibliothekar/in oder aktiv im Bereich kulturelles Erbe
     en: I’m a librarian or active in the cultural heritage area
     es: Soy bibliotecario o un activo en el área de patrimonio cultural
-    pl: Jestem bibliotekarką/rzem lub inaczej działam sferze dziedzictwa kulturowego
-    nl: Ik ben een bibliothecaris of actief in de cultureel erfgoedsector
     fr: Je suis bibliothécaire ou actif dans le domaine du patrimoine culturel
+    nl: Ik ben een bibliothecaris of actief in de cultureel erfgoedsector
+    pl: Jestem bibliotekarzem/ką lub działam w obszarze dziedzictwa kulturalnego
   limitations:
     de: Beschränkungen und Ausnahmen
     en: Limitations and exceptions
@@ -211,9 +211,9 @@ translations:
     de: Ich bin Elternteil und sorge mich, dass ich und meine Kinder online Probleme kriegen
     en: I’m a parent worrying about whether what my kids do online will get them (and me) into trouble
     es: Soy un padre preocupado acerca de si lo que mis hijos hacen en línea les traerá (y a mí) problemas
-    pl: Jestem rodzicem, który martwi się o to, czy własne dzieci mogą narobić sobie (i mnie) w internecie kłopotów
-    nl: Ik ben een ouder die bezorgd is of wat mijn kinderen online doen hun (en mij) in de problemen zal brengen
     fr: Je suis parent et je m’inquiète quant aux conséquences négatives possibles pour mes enfants (et moi-même) de leurs activités sur Internet
+    nl: Ik ben een ouder die bezorgd is of wat mijn kinderen online doen hun (en mij) in de problemen zal brengen
+    pl: Jestem rodzicem, który martwi się, czy działania moich dzieci w Sieci nie wpędzą nas w kłopoty
   privacy:
     de: Bitte beachte <a href="http://ec.europa.eu/internal_market/consultations/2013/copyright-rules/docs/privacy-statement_en.pdf">die Datenschutzerklärung der Europäischen Kommission</a>.
     en: The <a href="http://ec.europa.eu/internal_market/consultations/2013/copyright-rules/docs/privacy-statement_en.pdf">Privacy statement of the European Commission</a> applies.
@@ -265,9 +265,9 @@ translations:
     de: Ich bin Rechteinhaber/in und würde gerne von neuen Formen der Vergütung profitieren
     en: I’m a rightsholder that would like to benefit from new forms of remuneration
     es: Soy titular de derechos y me gustaría sacar provecho de las nuevas formas de remuneración
-    pl: Jestem posiadaczem praw, który chciałby odnosić korzyści z nowych form wynagrodzeń
-    nl: Ik ben een rechthebbende die gebruik zou willen maken van nieuwe vormen van renumeratie
     fr: Je suis un ayant droit qui souhaiterait bénéficier de nouvelles possibilités de rémunération
+    nl: Ik ben een rechthebbende die gebruik zou willen maken van nieuwe vormen van renumeratie
+    pl: Jestem posiadaczem/ką praw i chcę czerpać korzyści z nowych form wynagradzania
   rightsholder_title:
     de: Rechteinhaber
     en: Rightsholder
@@ -305,9 +305,9 @@ translations:
     de: Ich bin Lehrer/in, Akademiker/in oder Forscher/in
     en: I’m a teacher, academic or researcher
     es: Soy profesor, académico o investigador
-    pl: Jetem nauczycielem, wykładowcą akademickim lub badaczem
-    nl: Ik ben een onderwijzer, academici of onderzoeker
     fr: Je suis dans l’éducation, le monde académique ou la recherche
+    nl: Ik ben een onderwijzer, academici of onderzoeker
+    pl: Jestem nauczycielem/ką, pracownikiem/czką naukowym/ą, badaczem/ką
   teaching:
     de: Unterrichten
     en: Teaching
@@ -340,6 +340,6 @@ translations:
     de: Nutzererstelle Inhalte
     en: User generated content
     es: Contenido generado por el usuario
-    pl: Treści tworzone przez użytkownikó∑
-    nl: Door gebruikers gegenereerde inhoud (user generated content)
     fr: Contenu généré par l’utilisateur (user generated content)
+    nl: Door gebruikers gegenereerde inhoud (user generated content)
+    pl: Treści tworzone przez użytkowników

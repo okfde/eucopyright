@@ -11,7 +11,7 @@
       en: Please provide examples indicating the Member State, the sector and the type of content concerned (e.g. premium content such as certain films and TV series, audio-visual content in general, music, e-books, magazines, journals and newspapers, games, applications and other software)
       es: Proporciona ejemplos sobre el país miembro, el sector y el tipo de contenido (p.ej. contenido premium como películas o series de TV, contenido audiovisual en general, música, libros electrónicos, revistas, periódicos, juegos, aplicaciones o demás software)
       it: Si prega di fornire esempi che indichino lo Stato membro, il settore e il tipo di contenuto in questione (ad esempio, contenuti premium come film e serie TV, contenuti audio-visivi in generale, musica, e-book, riviste, giornali, giochi, applicazioni e altro software)
-      pl: Proszę podać przykłady, wskazując na państwo członkowskie, sektor i rodzaj treści (np. treści płatne takie jak niektóre filmy i seriale telewizyjne, treści audiowizualne, muzyka, e-booki, magazyny, czasopisma i dzienniki, gry, aplikacje i oprogramowania komputerowe)
+      pl: Proszę podać przykłady, wskazując na państwo członkowskie, sektor i rodzaj treści (np. treści płatne takie jak niektóre filmy i seriale telewizyjne, treści audiowizualne, muzyka, e-booki, magazyny, czasopisma i dzienniki, gry, aplikacje i oprogramowanie komputerowe)
     fulltext: true
     label: 'Yes'
     odf:
@@ -262,7 +262,7 @@
       de: Bitte erklären Sie wie dies besser klargestellt werden kann und welche Art von Klarstellung nötig wäre
       en: Please explain how this could be clarified and what type of clarification would be required (e.g. as in "targeting" approach explained above, as in "country of origin" approach)
       es: Explica cómo se podría aclarar y qué tipo de aclaración se requiere
-      pl: Proszę zasugerować, w jaki sposób mogłoby to być wyjaśnione i jaki rodzaj wyjaśnienia byłby wymagany.
+      pl: Proszę zasugerować, w jaki sposób należy doprecyzować ten zakres (np. zgodnie z podejściem "ukierunkowywania" wyjaśnionego powyżej, zgodnie z podejściem "państwa źródła")
     fulltext: true
     label: 'No'
     odf:
@@ -334,7 +334,7 @@
       de: Bitte erläutern Sie, welche Art von Maßnahmen notwendig wären, um solche Probleme anzugehen (z.B. die Förderung von gemeinsamen Lizenzen, wenn die Rechte in verschiedenen Händen sind; die Gesetzgebung für "Bündelung der Rechte")
       en: Please explain what type of measures would be needed in order to address such problems (e.g. facilitation of joint licences when the rights are in different hands, legislation to achieve the "bundling of rights")
       es: Explica el tipo de medidas necesarias para solucionar estos problemas (por ejemplo, facilitar licencias conjuntas cuando los derechos pertenecen a diferentes personas, legislación crear "lotes de licencias")
-      pl: Proszę wyjaśnić, jak należałoby rozwiązać powyższe problemy (np. ułatwienie licencji łączonych, kiedy jest kilku posiadaczy praw, rozwiązania legislacyjne mające na celu możliwość tworzenia "pakietów praw").
+      pl: Proszę wyjaśnić, jak należałoby rozwiązać powyższe problemy (np. ułatwienie licencji łączonych, kiedy jest kilku posiadaczy praw, rozwiązania legislacyjne mające na celu tworzenie "pakietów praw").
     fulltext: true
     label: 'Yes'
     odf:
@@ -373,7 +373,7 @@
       de: Bitte erkläre, ob das generell der Fall ist oder unter speziellen Umständnen und warum
       en: Please explain whether you consider this to be the case in general, or under specific circumstances, and why
       es: Explica si consideras que este es el caso general o en circunstancias concretas y por qué
-      pl: Czy uważają Pastwo, że powinno tak być w każdym przypadku, czy tylko w niektórych i dlaczego
+      pl: Czy uważają Państwo, że powinno tak być w każdym przypadku, czy tylko w niektórych i dlaczego.
     fulltext: true
     label: 'Yes'
     odf:
@@ -387,7 +387,7 @@
       de: Bitte erkläre, ob das generell der Fall ist oder unter speziellen Umständen und warum (z.B. weil es kein Kommunikationsvorgang mit der Öffentlichkeit - oder mit einer neuen Öffentlichkeit - ist, oder weil es eine Urheberrechtsausnahme sein sollte)
       en: Please explain whether you consider this to be the case in general, or under specific circumstances, and why (e.g. because it does not amount to an act of communication to the public – or to a new public, or because it should be covered by a copyright exception)
       es: Explica si consideras que este es el caso general, o si se trata de circunstancias específicas y por qué (p.ej. porque no se trata de un acto de comunicación pública, o a un público nuevo, o porque consideras que debería estar cubierto por la excepción de copyright)
-      pl: Czy uważają Pastwo, że powinno tak być w każdym przypadku, czy tylko w niektórych i dlaczego (np. ponieważ działanie to nie jest równoważne z publicznym - w tym skierowanym do osób nieznajomych - aktem komunikacji  lub powinno ono być uznane za wyjątek).
+      pl: Czy uważają Pastwo, że powinno tak być w każdym przypadku, czy tylko w niektórych i dlaczego (np. ponieważ działanie to nie jest równoważne z aktem publicznego udostępniania, w tym skierowanego do nowej publiczności,  lub powinno ono być uznane za wyjątek).
     fulltext: true
     label: 'No'
     odf:
@@ -408,7 +408,7 @@
     fr: Est-ce que la mise à disposition d'un lien hypertexte menant à une œuvre ou à d'autres objets protégés en vertu du droit d'auteur, soit de manière générale ou dans des circonstances particulières, devrait être soumise à l'autorisation du titulaire des droits?
     it: La fornitura di un collegamento ipertestuale che porta a un'opera o ad altro materiale protetto dal diritto d'autore, sia in generale che in determinate circostanze, dovrebbe essere soggetta all'autorizzazione del titolare del diritto?
     nl: Moet het verschaffen van een hyperlink die leidt naar een werk of een andere zaak beschermd door het auteursrecht, hetzij in het algemeen of in specifieke omstandigheden, afhankelijk zijn van de toestemming van de rechthebbende?
-    pl: Czy podanie hiperłącza odnoszącego do utworu lub innego przedmiotu chronionego prawem autorskim, czy generalnie czy w specyficznych okolicznościach, powinno wymagać zezwolenia posiadacza praw?
+    pl: Czy podanie hiperłącza odnoszącego do utworu lub innego przedmiotu chronionego prawem autorskim, zawsze lub w niektórych przypadkach, powinno wymagać zezwolenia posiadacza praw?
   to: everyone
   type: multiple_choice
 - explanation:
@@ -456,7 +456,7 @@
     es: La visualización un sitio web, cuando implica la reproducción temoral de una obra u otro contenido protegido por copyright en la pantalla y en la memoria cache del ordenador del usuario, ya sea en general o en circunstancias especiales, ¿debe estar sometida a la autorización del propietario de los derechos?
     it: La visualizzazione di una pagina web che implica la riproduzione temporanea di un'opera o di altro materiale protetto dal diritto d'autore, su schermo o in memoria cache, sia in generale che in determinate circostanze, dovrebbe essere soggetta ad autorizzazione del titolare del diritto?
     nl: Moet het bekijken van een webpagina waar dit impliceert de tijdelijke reproductie van een werk of ander krachtens het auteursrecht beschermd materiaal op het scherm en in het cachegeheugen van de computer van de gebruiker, hetzij in het algemeen of in specifieke omstandigheden, afhankelijk zijn van de goedkeuring van de rechthebbende?
-    pl: Czy przeglądanie strony internetowej, jeśli wiąże się to z dostępem do tymczasowej reprodukcji utworu lub innego przedmiotu chronionego prawem autorskim na ekranie i w pamięci podręcznej komputera użytkownika, czy generalnie czy w specyficznych okolicznościach,  powinno wymagać zezwolenia posiadacza praw?
+    pl: Czy przeglądanie strony internetowej, jeśli wiąże się to z dostępem do tymczasowej reprodukcji utworu lub innego przedmiotu chronionego prawem autorskim na ekranie i w pamięci podręcznej komputera użytkownika, zawsze lub w niektórych przypadkach,  powinno wymagać zezwolenia posiadacza praw?
   to: everyone
   type: multiple_choice
 - explanation:
@@ -2543,6 +2543,6 @@
     fr: Y a-t-il d'autres questions importantes liées au cadre juridique de l'UE du droit d'auteur ? Expliquez et indiquez s'il vous plait comment ces questions doivent être abordées.
     it: Ci sono altre questioni importanti legate al quadro giuridico dell'UE per il copyright? Spiegate e indicate come tali questioni debbano essere affrontate.
     nl: Zijn er andere belangrijke zaken die samenhangen met het rechtssysteem voor copyright in de EU?  Leg uit en toon aan hoe zulke zaken moeten worden aangepakt.
-    pl: Czy istnieją inne istote kwestie związane z europejskim systemem prawnoautorskim? Proszę uzasadnić i wskazać, jak kwestie te powinny być uregulowane.
+    pl: Czy istnieją inne istotne kwestie związane z europejskim systemem prawnoautorskim? Proszę uzasadnić i wskazać, jak kwestie te powinny być uregulowane.
   to: everyone
   type: open_question
