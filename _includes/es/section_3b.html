@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-lg-8 col-md-8">
+    <h3>Teaching</h3>
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <a href="#intro-3b-1" class="intro-link toggle">Show introduction</a>
+  </div>
+</div>
+<div id="intro-3b-1" style="display:none" class="row">
+  <div class="col-lg-8 col-md-8">
+    <p>
+      Directive 2001/29/EC<sup><a class="sdfootnoteanc" name="sdfootnote46anc" href="#sdfootnote46sym">46</a></sup> enables Member States to implement in their national legislation limitations and exceptions for the purpose of illustration for non-commercial teaching. Such exceptions would typically allow a teacher to use parts of or full works to illustrate his course, e.g. by distributing copies of fragments of a book or of newspaper articles in the classroom or by showing protected content on a smart board without having to obtain authorisation from the right holders.
+      The open formulation of this (optional) provision allows for rather different implementation at Member States level. The implementation of the exception differs from Member State to Member State, with several Member States providing instead a framework for the licensing of content for certain educational uses. Some argue that the law should provide for better possibilities for distance learning and study at home.
+    </p>
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <h4>Summary</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+</div>
+
+{% for question_num in (42..46) %}
+  {% for question in site.data.questions %}
+    {% if question.num == question_num %}
+      {% include question.html %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}

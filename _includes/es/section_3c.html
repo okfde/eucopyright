@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-lg-8 col-md-8">
+    <h3>Research</h3>
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <a href="#intro-3c-1" class="intro-link toggle">Show introduction</a>
+  </div>
+</div>
+<div id="intro-3c-1" style="display:none" class="row">
+  <div class="col-lg-8 col-md-8">
+    <p>
+      Directive 2001/29/EC<sup><a class="sdfootnoteanc" name="sdfootnote47anc" href="#sdfootnote47sym">47</a></sup> enables Member States to choose whether to implement in their national laws a limitation for the purpose of non-commercial scientific research. The open formulation of this (optional) provision allows for rather different implementations at Member States level.
+    </p>
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <h4>Summary</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+</div>
+
+{% for question_num in (47..49) %}
+  {% for question in site.data.questions %}
+    {% if question.num == question_num %}
+      {% include question.html %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}

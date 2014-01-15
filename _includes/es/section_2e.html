@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-lg-8 col-md-8">
+    <h3>Term of protection – is it appropriate?</h3>
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <a href="#intro-2h" class="intro-link toggle">Show introduction</a>
+  </div>
+</div>
+<div id="intro-2h" style="display:none" class="row">
+  <div class="col-lg-8 col-md-8">
+    <p>
+      Works and other subject matter are protected under copyright for a limited period of time. After the term of protection has expired, a work falls into the public domain and can be freely used by anyone (in accordance with the applicable national rules on moral rights). The Berne Convention<sup><a class="sdfootnoteanc" name="sdfootnote35anc" href="#sdfootnote35sym">35</a></sup> requires a minimum term of protection of 50 years after the death of the author. The EU rules extend this term of protection to 70 years after the death of the author (as do many other countries, e.g. the US).
+    </p>
+    <p>
+      With regard to performers in the music sector and phonogram producers, the term provided for in the EU rules also extend 20 years beyond what is mandated in international agreements, providing for a term of protection of 70 years after the first publication. Performers and producers in the audio-visual sector, however, do not benefit from such an extended term of protection.
+    </p>
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <h4>Summary</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+</div>
+
+{% for question_num in (20..20) %}
+  {% for question in site.data.questions %}
+    {% if question.num == question_num %}
+      {% include question.html %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}

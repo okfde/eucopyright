@@ -1,0 +1,63 @@
+<div class="row">
+  <div class="col-lg-8 col-md-8">
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <a href="#intro-4-1" class="intro-link toggle">Show introduction</a>
+  </div>
+</div>
+<div id="intro-4-1" style="display:none" class="row">
+  <div class="col-lg-8 col-md-8">
+    <p>
+      Directive 2001/29/EC enables Member States to implement in their national legislation exceptions or limitations to the reproduction right for copies made for private use and photocopying<sup><a class="sdfootnoteanc" name="sdfootnote55anc" href="#sdfootnote55sym">55</a></sup>. Levies are charges imposed at national level on goods typically used for such purposes (blank media, recording equipment, photocopying machines, mobile listening devices such as mp3/mp4 players, computers, etc.) with a view to compensating rightholders for the harm they suffer when copies are made without their authorisation by certain categories of persons (i.e.&nbsp;natural persons making copies for their private use) or through use of certain technique (i.e.&nbsp;reprography). In that context, levies are important for rightholders.
+    </p>
+    <p>
+      With the constant developments in digital technology, the question arises as to whether the copying of files by consumers/end-users who have purchased content online - e.g. when a person has bought an MP3 file and goes on to store multiple copies of that file (in her computer, her tablet and her mobile phone) - also triggers, or should trigger, the application of private copying levies. It is argued that, in some cases, these levies may indeed be claimed by rightholders whether or not the licence fee paid by the service provider already covers copies made by the end user. This approach could potentially lead to instances of double payments whereby levies could be claimed on top of service providers’ licence fees<sup><a class="sdfootnoteanc" name="sdfootnote56anc" href="#sdfootnote56sym">56</a></sup><sup><a class="sdfootnoteanc" name="sdfootnote57anc" href="#sdfootnote57sym">57</a></sup>.
+    </p>
+    <p>
+      There is also an on-going discussion as to the application or not of levies to certain types of cloud-based services such as personal lockers or personal video recorders.
+    </p>
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <h4>Summary</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+</div>
+
+{% for question_num in (64..67) %}
+  {% for question in site.data.questions %}
+    {% if question.num == question_num %}
+      {% include question.html %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+<div class="row">
+  <div class="col-lg-8 col-md-8">
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <a href="#intro-4-2" class="intro-link toggle">Show introduction</a>
+  </div>
+</div>
+<div id="intro-4-2" style="display:none" class="row">
+  <div class="col-lg-8 col-md-8">
+    <p>
+      Diverging national systems levy different products and apply different tariffs. This results in obstacles to the free circulation of goods and services in the Single Market. At the same time, many Member States continue to allow the indiscriminate application of private copying levies to all transactions irrespective of the person to whom the product subject to a levy is sold (e.g. private person or business). In that context, not all Member States have ex ante exemption and/or ex post reimbursement schemes which could remedy these situations and reduce the number of undue payments<sup><a class="sdfootnoteanc" name="sdfootnote61anc" href="#sdfootnote61sym">61</a></sup>.
+    </p>
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <h4>Summary</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+</div>
+
+{% for question_num in (68..71) %}
+  {% for question in site.data.questions %}
+    {% if question.num == question_num %}
+      {% include question.html %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}

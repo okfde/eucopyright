@@ -1,0 +1,44 @@
+<div class="row">
+  <div class="col-lg-8 col-md-8">
+    <h3>The territorial scope of the rights involved in digital transmissions and the segmentation of the market through licensing agreements</h3>
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <a href="#intro-2d" class="intro-link toggle">Show introduction</a>
+  </div>
+</div>
+<div id="intro-2d" style="display:none" class="row">
+  <div class="col-lg-8 col-md-8">
+    <p>
+      Holders of copyright and related rights – e.g. writers, singers, musicians - do not enjoy a single protection in the EU. Instead, they are protected on the basis of a bundle of national rights in each Member State. Those rights have been largely harmonised by the existing EU Directives. However, differences remain and the geographical scope of the rights is limited to the territory of the Member State granting them. Copyright is thus territorial in the sense that rights are acquired and enforced on a country-by-country basis under national law<sup><a class="sdfootnoteanc" name="sdfootnote9anc" href="#sdfootnote9sym">9</a></sup>.
+    </p>
+    <p>
+      The dissemination of copyright-protected content on the Internet – e.g. by a music streaming service, or by an online e-book seller – therefore requires, in principle, an authorisation for each national territory in which the content is communicated to the public. Rightholders are, of course, in a position to grant a multi-territorial or pan-European licence, such that content services can be provided in several Member States and across borders. A number of steps have been taken at EU level to facilitate multi-territorial licences: the proposal for a Directive on Collective Rights Management<sup><a class="sdfootnoteanc" name="sdfootnote10anc" href="#sdfootnote10sym">10</a></sup> should significantly facilitate the delivery of multi-territorial licences in musical works for online services<sup><a class="sdfootnoteanc" name="sdfootnote11anc" href="#sdfootnote11sym">11</a></sup>; the structured stakeholder dialogue “Licences for Europe”<sup><a class="sdfootnoteanc" name="sdfootnote12anc" href="#sdfootnote12sym">12</a></sup> and market-led developments such as the on-going work in the Linked Content Coalition<sup><a class="sdfootnoteanc" name="sdfootnote13anc" href="#sdfootnote13sym">13</a></sup>.
+    </p>
+    <p>
+      &quot;Licences for Europe&quot; addressed in particular the specific issue of cross-border portability, i.e. the ability of consumers having subscribed to online services in their Member State to keep accessing them when travelling temporarily to other Member States. As a result, representatives of the audio-visual sector issued a joint statement affirming their commitment to continue working towards the further development of cross-border portability<sup><a class="sdfootnoteanc" name="sdfootnote14anc" href="#sdfootnote14sym">14</a></sup>.
+    </p>
+    <p>
+      Despite progress, there are continued problems with the cross-border provision of, and access to, services. These problems are most obvious to consumers wanting to access services that are made available in Member States other than the one in which they live. Not all online services are available in all Member States and consumers face problems when trying to access such services across borders. In some instances, even if the “same” service is available in all Member States, consumers cannot access the service across borders (they can only access their “national” service, and if they try to access the &quot;same&quot; service in another Member State they are redirected to the one designated for their country of residence).
+    </p>
+    <p>
+      This situation may in part stem from the territoriality of rights and difficulties associated with the clearing of rights in different territories. Contractual clauses in licensing agreements between right holders and distributors and/or between distributors and end users may also be at the origin of some of the problems (denial of access, redirection).
+    </p>
+    <p>
+      The main issue at stake here is, therefore, whether further measures (legislative or non-legislative, including market-led solutions) need to be taken at EU level in the medium term<sup><a class="sdfootnoteanc" name="sdfootnote15anc" href="#sdfootnote15sym">15</a></sup> to increase the cross-border availability of content services in the Single Market, while ensuring an adequate level of protection for right holders.
+    </p>
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <h4>Summary</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+</div>
+
+{% for question_num in (1..7) %}
+  {% for question in site.data.questions %}
+    {% if question.num == question_num %}
+      {% include question.html %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}

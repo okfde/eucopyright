@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-lg-8 col-md-8">
+    <h3>Registration of works and other subject matter – is it a good idea?</h3>
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <a href="#intro-2f" class="intro-link toggle">Show introduction</a>
+  </div>
+</div>
+<div id="intro-2f" style="display:none" class="row">
+  <div class="col-lg-8 col-md-8">
+    <p>
+      Registration is not often discussed in copyright in the EU as the existing international treaties in the area prohibit formalities as a condition for the protection and exercise of rights. However, this prohibition is not absolute<sup><a class="sdfootnoteanc" name="sdfootnote29anc" href="#sdfootnote29sym">29</a></sup>. Moreover a system of registration does not need to be made compulsory or constitute a&nbsp;precondition for the protection and exercise of rights. With a longer term of protection and with the increased opportunities that digital technology provides for the use of content (including older works and works that otherwise would not have been disseminated), the advantages and disadvantages of a system of registration are increasingly being considered<sup><a class="sdfootnoteanc" name="sdfootnote30anc" href="#sdfootnote30sym">30</a></sup>.
+    </p>
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <h4>Summary</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+</div>
+
+{% for question_num in (15..18) %}
+  {% for question in site.data.questions %}
+    {% if question.num == question_num %}
+      {% include question.html %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}

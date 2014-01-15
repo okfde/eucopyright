@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="col-lg-8 col-md-8">
+    <h3>Text and data mining</h3>
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <a href="#intro-3e-1" class="intro-link toggle">Show introduction</a>
+  </div>
+</div>
+<div id="intro-3e-1" style="display:none" class="row">
+  <div class="col-lg-8 col-md-8">
+    <p>
+      Text and data mining/content mining/data analytics<sup><a class="sdfootnoteanc" name="sdfootnote51anc" href="#sdfootnote51sym">51</a></sup> are different terms used to describe increasingly important techniques used in particular by researchers for the exploration of vast amounts of existing texts and data (e.g., journals, web sites, databases etc.). Through the use of software or other automated processes, an analysis is made of relevant texts and data in order to obtain new insights, patterns and trends.
+    </p>
+    <p>
+      The texts and data used for mining are either freely accessible on the internet or accessible through subscriptions to e.g. journals and periodicals that give access to the databases of publishers. A copy is made of the relevant texts and data (e.g. on browser cache memories or in computers RAM memories or onto the hard disk of a computer), prior to the actual analysis. Normally, it is considered that to mine protected works or other subject matter, it is necessary to obtain authorisation from the right holders for the making of such copies unless such authorisation can be implied (e.g. content accessible to general public without restrictions on the internet, open access).
+    </p>
+    <p>
+      Some argue that the copies required for text and data mining are covered by the exception for temporary copies in Article 5.1 of Directive 2001/29/EC. Others consider that text and data mining activities should not even be seen as covered by copyright. None of this is clear, in particular since text and data mining does not consist only of a single method, but can be undertaken in several different ways. Important questions also remain as to whether the main problems arising in relation to this issue go beyond copyright (i.e. beyond the necessity or not to obtain the authorisation to use content) and relate rather to the need to obtain “access” to content (i.e. being able to use e.g. commercial databases).
+    </p>
+    <p>
+      A specific Working Group was set up on this issue in the framework of the &quot;Licences for Europe&quot; stakeholder dialogue. No consensus was reached among participating stakeholders on either the problems to be addressed or the results. At the same time, practical solutions to facilitate text and data mining of subscription-based scientific content were presented by publishers as an outcome of “Licences for Europe”<sup><a class="sdfootnoteanc" name="sdfootnote52anc" href="#sdfootnote52sym">52</a></sup>. In the context of these discussions, other stakeholders argued that no additional licences should be required to mine material to which access has been provided through a subscription agreement and considered that a&nbsp;specific exception for text and data mining should be introduced, possibly on the basis of a&nbsp;distinction between commercial and non-commercial.
+    </p>
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <h4>Summary</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+</div>
+
+{% for question_num in (53..57) %}
+  {% for question in site.data.questions %}
+    {% if question.num == question_num %}
+      {% include question.html %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
