@@ -1,12 +1,37 @@
 "Yes":
-  de: Ja
-  pl: Tak
+  en: "Yes"
+  de: "Ja"
+  pl: "Tak"
+  fr: "Oui"
+  it: "Sì"
+  nl: "Ja"
+  es: "Sí"
 "No":
-  de: Nein
-  pl: Nie
+  en: "No"
+  de: "Nein"
+  pl: "Nie"
+  fr: "Non"
+  it: "Non"
+  nl: "Niet"
+  es: "No"
 "No Opinion":
+  en: No Opinion
   de: Keine Meinung
   pl: Brak opinii
+  fr: Pas d'opinion
+  it: Nessun parere
+  nl: Geen mening
+  es: Sin opinión
+title:
+  en: Public Consultation on the review of the EU copyright rules
+  de: Öffentliche Befragung zur Reform des Urheberrechts in der EU
+  pl: Publiczne Konsultacje zmian w prawie autorskim UE
+readmore:
+  en: "Read more..."
+  de: "Mehr..."
+gotosimplerguide:
+  en: Too many questions? Use a simpler form tailored to your interests!
+  de: Zu viele Fragen? Nutze ein einfacheres Formular zugeschnitten auf deine Interessen!
 emailSubject:
   en: 'Public Consultation on the review of the EU copyright rules'
   de: 'Öffentliche Konsultation zur Überprüfung der Regeln zum EU-Urheberrecht'

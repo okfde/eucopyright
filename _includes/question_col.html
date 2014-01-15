@@ -10,13 +10,25 @@
         </h3>
       </div>
       <div class="panel-body">
-        <blockquote class="guide div-toggle" id="q-{{ question.num }}-customexplanation"{% unless question.explanation %} style="display:none"{% endunless %}>{{ question.explanation }}</blockquote>
+        <blockquote class="guide div-toggle" id="q-{{ question.num }}-customexplanation"{% unless question.explanation %} style="display:none"{% endunless %}>
+          <p id="q-{{ question.num }}-customexplanation-text">{% if question.explanation[page.language] %}{{ question.explanation[page.language]|newline_to_br }}{% endif %}</p>
+            <a href="#q-{{ question.num }}-customexplanationmore-text" class="toggle toggle-hide" style="display: none">
+              {% if site.data.translations.readmore[page.language] %}
+                {{ site.data.translations.readmore[page.language] }}
+              {% else %}
+                {{ site.data.translations.readmore.en }}
+              {% endif %}
+            </a>
+          <p id="q-{{ question.num }}-customexplanationmore-text" style="display:none">
+            {{ question.explanationmore[page.language]|newline_to_br }}
+          </p>
+        </blockquote>
         {% if question.type == 'multiple_choice' %}
           {% for option in question.options %}
             <div class="radio">
               <label>
                 <input type="radio" name="q-{{ question.num }}" id="q-{{ question.num }}-{{ forloop.index0 }}" value="{{ forloop.index0 }}" class="save">
-                <strong>{% if page.language == 'en' %}{{ option.label }}{% else %}{{ site.data.translations[option.label][page.language] }}{% endif %}</strong>
+                <strong>{% if site.data.translations[option.label][page.language] %}{{ site.data.translations[option.label][page.language] }}{% else %}{{ site.data.translations[option.label].en }}{% endif %}</strong>
               </label>
               {% if option.fulltext %}
                 <div class="radio-text help">

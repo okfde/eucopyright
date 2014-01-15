@@ -1,3 +1,12 @@
+- name: Creativity4Copyright
+  slug: c4c_en
+  language: en
+  url: "https://docs.google.com/spreadsheet/pub?key=0ArFfxkXoJit-dFBJMV8xM2UtTGNrOGhRVjh1d0xSYlE&output=csv"
+- name: Wikimedia
+  slug: wikimedia
+  language: en
+  url: "https://docs.google.com/spreadsheet/pub?key=0Am6UBdM-6oM6dDBEaGZxbmtEaXg2Vlp2VkR3MkxXNlE&output=csv"
+  questions: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 26, 30, 34, 36, 37, 39, 42, 43, 48, 53, 54, 55, 56, 57, 58, 63, 64, 65, 72, 74, 75, 76, 77, 78, 79, 80]
 - name: Junge Piraten (DE) work in progress
   slug: jupis
   language: de
