@@ -39,4 +39,4 @@ def main(mode, base_file, new_file, overwrite_language):
     sys.stdout.write(yaml.safe_dump(old, allow_unicode=True, default_flow_style=False, encoding='utf-8', width=10000))
 
 if __name__ == '__main__':
-    persona(*sys.argv)
+    main(*sys.argv[1:])
