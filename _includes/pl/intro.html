@@ -65,7 +65,12 @@
           <small>Twój adres e-mail <strong>nie</strong> będzie przez nas przechowywany.</small>
         </p>
       </div>
-
+      <div class="checkbox">
+        <label>
+          {% if site.data.persona.translations.storelabel[page.language] %}{{ site.data.persona.translations.storelabel[page.language] }}{% else %}{{ site.data.persona.translations.storelabel.en }}{% endif %}
+          <input type="checkbox" name="store" value="yes">
+        </label>
+      </div>
     </div>
     <div class="col-lg-4 col-md-4">
 

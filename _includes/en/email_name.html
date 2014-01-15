@@ -14,3 +14,9 @@
     <small>Your email address and all other input will <strong>not</strong> be used except for sending you the finished document.</small>
   </p>
 </div>
+<div class="checkbox">
+  <label>
+    {% if site.data.persona.translations.storelabel[page.language] %}{{ site.data.persona.translations.storelabel[page.language] }}{% else %}{{ site.data.persona.translations.storelabel.en }}{% endif %}
+    <input type="checkbox" name="store" value="yes">
+  </label>
+</div>

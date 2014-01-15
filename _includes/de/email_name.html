@@ -14,3 +14,9 @@
     <small>Deine E-Mail-Adresse und alle anderen Angaben werden nur dazu genutzt, dir das fertige Dokument zu schicken.</small>
   </p>
 </div>
+<div class="checkbox">
+  <label>
+    {% if site.data.persona.translations.storelabel[page.language] %}{{ site.data.persona.translations.storelabel[page.language] }}{% else %}{{ site.data.persona.translations.storelabel.en }}{% endif %}
+    <input type="checkbox" name="store" value="yes">
+  </label>
+</div>
