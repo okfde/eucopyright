@@ -1,0 +1,245 @@
+translations:
+  accesscontent:
+    de: Zugang zu Inhalten in Bibliotheken und Archiven
+    en: Access to content in libraries and archives
+    es: Acceso a contenido en bibliotecas y archivos
+    pl: Dostęp do treści w bibliotekach i archiwach
+  accesstocontent:
+    de: Zugang zu Inhalten
+    en: Access to Content
+    es: Acceso a contenidos
+    pl: Dostęp do treści
+  almostdone:
+    de: Fast fertig!
+    en: Almost done!
+    es: Casi terminado!
+    pl: Niemal gotowe!
+  blogger:
+    de: Ich schaffe Inhalte als Blogger/in und produziere Remixe aus geschütztem Material
+    en: I’m creating content as a blogger and produce remixes of protected material
+    es: Creo contenidos como bloguero y produzco contenido derivado de material protegido
+    pl: Tworzę treści jako bloger/ka lub remiksuję treści chronione prawem autorskim
+  continuequestions:
+    de: Weiter zu den Fragen
+    en: Continue to the questions
+    es: Continuar con las preguntas
+    pl: Obejrzyj pytania
+  disabilities:
+    de: Behinderungen
+    en: Disabilities
+    es: Discapacidad
+    pl: Niepełnosprawność
+  disabled:
+    de: Ich habe eine Behinderung und versuche Inhalte in Formaten zu finden, die ich nutzen kann
+    en: I’m a disabled user trying to access or adapt content in formats that I can actually use
+    es: Tengo alguna discapacidad al intentar acceder o adaptar contenidos a formatos usables
+    pl: Jestem osobą niepełnosprawną i zależy mi na dostępie do treści w formatach, z których mogę korzystać
+  downloadonly:
+    de: 'Das Dokument wird jetzt heruntergeladen. Bitte sende es per E-Mail an:'
+    en: 'The document is now downloading. Please send it by email to:'
+    es: 'El documento se está descargando. Por favor, envíalo por email a:'
+    pl: 'Trwa ściąganie dokumentu. Proszę wysłać go pocztą elektroniczną do:'
+  downloadtoown:
+    de: Herunterladen zum Erwerb digitaler Inhalte
+    en: Download to own digital content
+    es: Descarga para adquirir contenidos digitales
+    pl: Ściąganie treści cyfrowych w celu ich posiadania
+  elending:
+    de: Elektronische Ausleihe
+    en: E-Lending
+    es: Préstamo electrónico
+    pl: Wypożyczenia elektroniczne
+  email:
+    de: 'Optional: </span>Deine E-Mail-Adresse'
+    en: 'Optional: </span>Your email address'
+    es: 'Opcional: </span>Dirección de email'
+    pl: 'Opcjonalnie: </span>Proszę podać adres email'
+  emaildocument:
+    de: Das fertige Dokument wird an deine E-Mail-Adresse geschickt.
+    en: The finished document will be sent to your email address.
+    es: El documento final se enviará a tu dirección de email.
+    pl: Gotowy dokument zostanie wysłany na podany adres email.
+  emaildocumentpossible:
+    de: Wir können dir das fertige Dokument zuschicken.
+    en: We can send you the finished document by email.
+    es: Podemos enviarte el focumento final por email.
+    pl: Możesz otrzymać gotowy dokument pocztą elektroniczną.
+  emailprivacy:
+    de: Deine E-Mail-Adresse und alle anderen Angaben werden nur dazu genutzt, dir das fertige Dokument zu schicken.
+    en: Your email address and all other input will <strong>not</strong> be used except for sending you the finished document.
+    es: Tu email y cualquier otro dato introducido <strong>no</strong> será usado para otra cosa que el envío del documento final.
+    pl: Podany adres emailowy oraz inne podane informacje <strong>nie zostaną</strong> wykorzystane inaczej niż w celu wysłania gotowego dokumentu.
+  enduser:
+    de: Ich bin Online-Nutzer/in und teile Bilder, sehe Videos an, kaufe Medien online, etc.
+    en: I’m an online user who shares pictures, watches videos, buys media online, etc.
+    es: Soy un usuario en línea que comparte imágenes, ve vídeos, compra contenido online, etc.
+    pl: Jestem internautą, który dzieli się zdjęciami, ogląda wideo, kupuje treści, itd.
+  entrepreneur:
+    de: Ich bin Freiberufler/in, Unternehmer/in oder Geschäftsperson
+    en: I’m a freelancer, entrepreneur or businessperson
+    es: Soy profesional independiente, emprendedor o persona de negocios
+    pl: Jestem wolnym strzelcem lub przedsiębiorcą
+  explanationorigin:
+    de: <span class="guide">Die farbig hervorgehobenen Erklärungen</span> wurden von einer vielen Interessengruppen aus ganz Europa zusammengestellt, von Rechteinhabern über zivile Organisationen zu großen Verbrauchervertretungen und alles dazwischen. <a target="_blank" href="http://fixcopyright.eu/about-us/">Erfahre mehr über die Autoren.</a>
+    en: <span class="guide">The explanations coloured like this</span> have been put together by a broad cross-section of interest groups from across Europe, from rights holders to public interest NGOs to large consumer representatives and everything in between. <a target="_blank" href="http://fixcopyright.eu/about-us/">Learn more about them here.</a>
+    es: <span class="guide">Las explicaciones coloreadas así</span> se han agrupado por una amplia muestra representativa de grupos de interés de toda Europa, desde titulares de derechos hasta ONG's de interés público pasando por grandes representantes de los consumidores y otros. <a target="_blank" href="http://fixcopyright.eu/about-us/">Más información aquí.</a>
+    pl: <span class="guide">Wyjaśnienia w tym kolorze</span> zostały przygotowane przez szeroką koalicję europejskich grup interesu, od posiadaczy praw przez organizacje społeczne działające w imię interesu publicznego, po grupy konsumenckie - i liczne inne podmioty. <a target="_blank" href="http://fixcopyright.eu/about-us/">Dowiedz się więcej, kim jesteśmy.</a>
+  fullname:
+    de: Dein voller Name
+    en: Your full name
+    es: Nombre completo
+    pl: Imię i nazwisko
+  interoperability:
+    de: Interoperabilität von Identifikationsmerkmalen
+    en: Interoperability of identifiers
+    es: Interoperabilidad de identificadores
+    pl: Interoperacyjność identyfikatorów
+  introparagraph:
+    de: Wähle eine oder mehrere Kategorien aus, die dich am besten beschreiben – das führt dich zu den Fragen, die am Relevantesten für dich sind. Alternativ kannst du, wenn du genau Mut hast, <a href="/de/full/">auch dir alle 80 Fragen der Konsultation anschauen!</a>
+    en: Select one or more categories below that best describe you – this will lead you to the questions that are most relevant to your activities. Alternatively, if you are brave enough, <a href="/en/">have a look at all 80 consultation questions!</a>
+    es: Selecciona una o más categorías de abajo que mejor te describen - esto te llevará a las preguntas que sean más relevantes a tus actividades. Como alternativa, si eres lo suficientemente valiente, <a href="/en/">¡echa un vistazo a las 80 preguntas de la encuesta!</a>
+    pl: Wybierz jedną lub więcej kategorii, której opisują Twoją sytuację. Na podstawie Twojego wyboru przedstawimy pytania Ciebie dotyczące. Możesz też, jeśli masz dość odwagi, <a href="/pl/">przejrzeć wszystkie 80 pytań zadanych w ramach konsultacji!</a>
+  languagedisclaimer:
+    de: Übersetzungen in andere Sprachen als Englisch sind inoffiziell, crowd-gesourced und möglicherweise unvollständig.
+    en: Translations in languages other than English are inofficial, crowd-sourced and possibly incomplete.
+  librarian:
+    de: Ich bin Bibliothekar/in oder aktiv im Bereich kulturelles Erbe
+    en: I’m a librarian or active in the cultural heritage area
+    es: Soy bibliotecario o un activo en el área de patrimonio cultural
+    pl: Jestem bibliotekarką/rzem lub inaczej działam sferze dziedzictwa kulturowego
+  limitations:
+    de: Beschränkungen und Ausnahmen
+    en: Limitations and exceptions
+    es: Limitaciones y excepciones
+    pl: Ograniczenia i wyjątki
+  linking:
+    de: Verlinken und Browsen
+    en: Linking and Browsing
+    es: Enlaces y navegación web
+    pl: Linkowanie i przeglądanie
+  massdigitisation:
+    de: Massen-Digitalisierung
+    en: Mass digitisation
+    es: Digitalización masiva
+    pl: Masowa digitalizacja
+  namehelp:
+    de: Bitte gib deinen Namen an, damit deine Stimme bei der EU zählt.
+    en: Please provide your name to make your voice count.
+    es: Por favor, introduce tu nombre para que su voz cuente.
+    pl: Proszę podać swoje imię i nazwisko, aby głos był wazny.
+  offpremiseaccess:
+    de: Online-Zugang zu Bibliotheksbeständen
+    en: Off-premises access to library collections
+    es: Acceso desde otros sitios a los fondos bibliotecarios
+    pl: Dostęp do zasobów bibliotek poza ich murami
+  otherguides:
+    de: Andere Antwortwerkzeuge
+    en: Other answering tools
+    es: Otras guías para responder
+    pl: Inne narzędzia
+  otherissues:
+    de: Andere Probleme
+    en: Other Issues
+    es: Otras cuestiones
+    pl: Inne kwestie
+  otherlanguages:
+    de: Andere Sprachen
+    en: Other languages
+    es: Otros idiomas
+    pl: Inne języki
+  parent:
+    de: Ich bin Elternteil und sorge mich, dass ich und meine Kinder online Probleme kriegen
+    en: I’m a parent worrying about whether what my kids do online will get them (and me) into trouble
+    es: Soy un padre preocupado acerca de si lo que mis hijos hacen en línea les traerá (y a mí) problemas
+    pl: Jestem rodzicem, który martwi się o to, czy własne dzieci mogą narobić sobie (i mnie) w internecie kłopotów
+  privacy:
+    de: Bitte beachte <a href="http://ec.europa.eu/internal_market/consultations/2013/copyright-rules/docs/privacy-statement_en.pdf">die Datenschutzerklärung der Europäischen Kommission</a>.
+    en: The <a href="http://ec.europa.eu/internal_market/consultations/2013/copyright-rules/docs/privacy-statement_en.pdf">Privacy statement of the European Commission</a> applies.
+    es: Se aplica la <a href="http://ec.europa.eu/internal_market/consultations/2013/copyright-rules/docs/privacy-statement_en.pdf">Declaración de Privacidad de la Comisión Europea</a>.
+    pl: Konsultacje są objęte <a href="http://ec.europa.eu/internal_market/consultations/2013/copyright-rules/docs/privacy-statement_en.pdf">regulaminem ochrony prywatności Komisji Europejskiej</a>.
+  privatecopying:
+    de: Privatkopie und Fotokopie
+    en: Private Copying &amp; repography
+    es: Copia privada y la reprografía
+    pl: Prywatne kopiowanie i reprografia
+  questionhint:
+    de: Du musst nicht alles ausfüllen und kannst Fragen auslassen, wenn du möchtest.
+    en: You do not have to fill out everything and can skip questions if you want to.
+  registration:
+    de: Registrierung von Werken
+    en: Registration of works
+    es: Registro de obras
+    pl: Rejestracja utworów
+  remuneration:
+    de: Faire Vergütung von Autoren &amp; Künstlern
+    en: Fair remuneration of authors &amp; performers
+    es: Remuneración justa de los autores y artistas
+    pl: Sprawiedliwe wynagrodzenia twórców i wykonawców
+  research:
+    de: Forschung
+    en: Research
+    es: Investigación
+    pl: Badania
+  respectforrights:
+    de: Respekt für Rechte
+    en: Respect for rights
+    es: Respeto a los derechos
+    pl: Poszanowanie praw
+  rightsholder:
+    de: Ich bin Rechteinhaber/in und würde gerne von neuen Formen der Vergütung profitieren
+    en: I’m a rightsholder that would like to benefit from new forms of remuneration
+    es: Soy titular de derechos y me gustaría sacar provecho de las nuevas formas de remuneración
+    pl: Jestem posiadaczem praw, który chciałby odnosić korzyści z nowych form wynagrodzeń
+  rightsholder_title:
+    de: Rechteinhaber
+    en: Rightsholder
+    es: Titular de derechos
+    pl: Właściciel praw
+  sentbyemail:
+    de: 'Wir haben dir das fertige Dokument per E-Mail geschickt (<span class="email-sent-to"></span>). Bitte leite das Dokument weiter an:'
+    en: 'The finished document is sent to you by email (<span class="email-sent-to"></span>). Please forward it to:'
+    es: 'El documento final se te envía por email (<span class="email-sent-to"></span>). Por favor, reenvíalo a:'
+    pl: 'Skończony dokument został wysłany na podany adres email (<span class="email-sent-to"></span>). Proszę wysłać jego kopię do:'
+  storelabel:
+    de: Erlaube es uns, deine Angaben zu speichern und dich zur Kampagne zu kontaktieren.
+    en: Allow us to store your answers and contact you about the campaign.
+  submit:
+    de: Schicke das Formular ab
+    en: Submit this form
+    es: Enviar formulario
+    pl: Wyślij formularz
+  subtitle:
+    de: Die Europäische Kommission denkt über die Zukunft des Urheberrechts in der EU nach und deine Meinung kann sie in die richtige Richtung lenken.
+    en: The European Commission is thinking about the future of copyright in the EU, and your input can push them into the right direction.
+    es: La Comisión Europea está pensando en el futuro de los derechos de autor en la UE, y tu opinión puede empujarlos en la dirección correcta.
+    pl: Komisja Europejska prowadzi namysł nad reformą prawa autorskiego w Europie. Twoja opinia może pozytywnie wpłynąć na kierunek podejmowanych działań.
+  teacher:
+    de: Ich bin Lehrer/in, Akademiker/in oder Forscher/in
+    en: I’m a teacher, academic or researcher
+    es: Soy profesor, académico o investigador
+    pl: Jetem nauczycielem, wykładowcą akademickim lub badaczem
+  teaching:
+    de: Unterrichten
+    en: Teaching
+    es: Enseñanza
+    pl: Oświata
+  termofprotection:
+    de: Schutzdauer
+    en: Term of protection
+    es: Plazo de protección
+    pl: Czas ochrony
+  textdatamining:
+    de: Text- und Data-Mining
+    en: Text and data mining
+    es: Texto y minería de datos
+    pl: Eksploracja tekstów i danych
+  title:
+    de: Reparier das EU-Urheberrecht!
+    en: Let's fix EU Copyright!
+    es: ¡Vamos a arreglar los Derechos de Autor en la EU!
+    pl: Naprawmy prawo autorskie w Unii Europejskiej!
+  usergeneratedcontent:
+    de: Nutzererstelle Inhalte
+    en: User generated content
+    es: Contenido generado por el usuario
+    pl: Treści tworzone przez użytkownikó∑
