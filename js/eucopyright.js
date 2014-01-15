@@ -276,15 +276,20 @@ EUCopyright.loadQuestionGuide = function(slug, clb){
 
     for (var i = 1; i < csv.length; i += 1) {
       var row = {};
+      if (csv[i].length <= 1) 
+	continue; // skip empty line in csv (usually last one)
       for (var j = 0; j < csv[0].length; j += 1) {
         row[csv[0][j]] = csv[i][j];
       }
-      answers[parseInt(row.Question, 10)] = {
+      var answer = {
         option: row.Option ? parseInt(row.Option, 10) - 1 : null,
         answer: row.Answer,
         explanation: row.Explanation.replace(/\n/g, '<br/>'),
-        explanationmore: row.Explanation_more.replace(/\n/g, '<br/>')
       };
+      if (row.Explanation_more) {
+	answer.explanationmore = row.Explanation_more.replace(/\n/g, '<br/>');
+      }
+      answers[parseInt(row.Question, 10)] = answer;
     }
     EUCopyright.answerCache[slug] = answers;
     clb(EUCopyright.answerCache[slug]);
