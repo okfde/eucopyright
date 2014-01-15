@@ -89,13 +89,13 @@ $(function(){
   $('.continue-questions').click(function(){
     $('#persona-questions').show();
     $progressBar.show();
-    loadGuide();
     window.setTimeout(function(){
       refreshScroll();
     }, 100);
   });
   window.setTimeout(function(){
     toggleSections();
+    loadGuide();
   }, 100);
 
   var $progressBar = $('#progress-bar').hide();
