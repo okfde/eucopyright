@@ -1,5 +1,5 @@
 /* jshint strict: true, quotmark: false, es3: true */
-/* global $: false, EUCopyright: false */
+/* global $: false, EUCopyright: false, docCookies: false */
 
 $(function(){
   "use strict";
@@ -82,7 +82,7 @@ $(function(){
 
     qCount = $('.question-section.active').length;
     qIndex = {};
-    $('.question-section.active').each(function(i, el){
+    $('.q.active').each(function(i, el){
       qIndex[$(el).attr('id')] = i;
     });
   };
@@ -95,6 +95,10 @@ $(function(){
   $('#persona-questions').hide();
   $('.continue-questions').click(function(){
     $('#persona-questions').show();
+    $('.fixed-questionhint').css({
+      'position': 'fixed',
+      'width': $('.question-sections').width() + 'px'
+    });
     $progressBar.show();
     window.setTimeout(function(){
       refreshScroll();
@@ -102,6 +106,13 @@ $(function(){
   });
   var $progressBar = $('#progress-bar').hide();
   $progressBar.css('width', $progressBar.parent().width() + 'px');
+
+  $('.fixed-questionhint').bind('closed.bs.alert', function () {
+    docCookies.setItem('personaQuestionHint', 'closed');
+  });
+  if (docCookies.getItem('personaQuestionHint') === 'closed') {
+    $('.fixed-questionhint').hide();
+  }
 
   var loadGuide = function(options){
     var lang = $('html').attr('lang');

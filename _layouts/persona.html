@@ -109,11 +109,6 @@ questions:
             &raquo; {% if site.data.persona.translations.continuequestions[page.language] %}{{ site.data.persona.translations.continuequestions[page.language] }}{% else %}{{ site.data.persona.translations.continuequestions.en }}{% endif %}
           </a>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-4">
-          <p>
-            {% if site.data.persona.translations.questionhint[page.language] %}{{ site.data.persona.translations.questionhint[page.language] }}{% else %}{{ site.data.persona.translations.questionhint.en }}{% endif %}
-          </p>
-        </div>
       </div>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4">
@@ -201,6 +196,10 @@ questions:
     </div>
   </div>
   </form>
+  <div class="fixed-questionhint alert alert-warning fade in col-lg-12">
+    <a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>
+    {% if site.data.persona.translations.questionhint[page.language] %}{{ site.data.persona.translations.questionhint[page.language] }}{% else %}{{ site.data.persona.translations.questionhint.en }}{% endif %}
+  </div>
   {% include footer.html %}
 <!-- Modal -->
   <div class="modal fade" id="download-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
