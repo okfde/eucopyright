@@ -1,6 +1,6 @@
 - explanation:
     en: 'Explanation: Today, most content are licensed and distributed on a territorial basis, which means that the content accessible varies from one country to another. Therefore, citizens often have problems accessing content from another country, or they cannot access the same content as citizens in another EU Member States. It creates unjustified barriers to enjoy cultural goods.'
-    es: 'Aclaración: Hoy en día la mayoría de los contenidos se autorizan y distribuyen de forma territorial, lo que significa que el contenido disponible de un país a otro es variable. Por lo tanto, los ciudadanos muchas veces tienen problemas para acceder a contenidos de otros países miembros de la UE. Crea barreras no justificadas para el disfrute de los bienes culturales.'
+    es: 'Explicación: Hoy en día la mayoría de los contenidos se autorizan y distribuyen de forma territorial, lo que significa que el contenido disponible de un país a otro es variable. Por lo tanto, los ciudadanos muchas veces tienen problemas para acceder a contenidos de otros países miembros de la UE. Crea barreras no justificadas para el disfrute de los bienes culturales.'
   explanationmore:
     en: 'Example: Give an example if you have experienced geo-blocking, for example you wanted to watch a video online but were told ‘this content is not available in your country’. Explain if you feel this is not acceptable in a European single market. '
     es: 'Ejemplo: indica algún ejemplo que hayas experimentado con el bloqueo geográfico, por ejemplo, si has querido ver un vídeo online y te ha salido ‘este contenido no está disponible en tu país’. Comenta si crees que esto no debería ser aceptable en el mercado único europeo.'
@@ -40,7 +40,7 @@
   type: multiple_choice
 - explanation:
     en: "Explanation: There are multiple examples of business that can be launched in some EU countries and not in others due to copyright complexities: \n●       Spotify which was not available in every EU Member State a full four years after its launch and had to undergo long discussions with GEMA (German Collecting Society) before launching the service in Germany due to excessive fees requests;"
-    es: "Nota: hay varios ejemplos de negocios que se pueden lanzar en algunos países de la UE y no en otros debido a la complejidad del copyright: \n●       Spotify no estuvo disponible  en todos los países miembros de la UE durante cuatro años después de su lanzamiento y tuvo que someterse a largas negociaciones con GEMA (German Collecting Society) antes de poder lanzar su servicio en Alemania debido a las altas tasas solicitadas;"
+    es: "Explicación: hay varios ejemplos de negocios que se pueden lanzar en algunos países de la UE y no en otros debido a la complejidad del copyright: \n●       Spotify no estuvo disponible  en todos los países miembros de la UE durante cuatro años después de su lanzamiento y tuvo que someterse a largas negociaciones con GEMA (German Collecting Society) antes de poder lanzar su servicio en Alemania debido a las altas tasas solicitadas;"
   explanationmore:
     en: '●       Netflix and its current situation whereby it faces very long discussions and negotiations before being able to launch its service in different EU Member States (France being one example).
 
@@ -105,7 +105,7 @@
   type: open_question
 - explanation:
     en: 'Explanation: Yes, there are problems. Copyright reform is needed to adapt to the digital world we live in. The rules must be harmonised to create a EU digital single market without borders and give EU citizens the same access to content and services. This means that innovative services should be able to flourish and EU citizens should be able to enjoy those services across the EU.'
-    es: 'Nota: Sí, hay problemas. La reforma de Copyright es necesaria para adaptarnos al mundo digital en el que vivimos. Debe armonizarse la ley para crear un mercado digital único en UE sin fronteras y ofrecer a los ciudadanos europeos el mismo acceso a los contenidos y servicios. Esto sirve para que puedan florecer los negocios innovadores y que todos los ciudadanos europeos puedan disfrutarlos.'
+    es: 'Explicación: Sí, hay problemas. La reforma de Copyright es necesaria para adaptarnos al mundo digital en el que vivimos. Debe armonizarse la ley para crear un mercado digital único en UE sin fronteras y ofrecer a los ciudadanos europeos el mismo acceso a los contenidos y servicios. Esto sirve para que puedan florecer los negocios innovadores y que todos los ciudadanos europeos puedan disfrutarlos.'
   explanationmore:
     en: It is simply unacceptable that getting a digital single market is so complicated due to digital borders that should not exist on the Internet and that users and service providers are constantly wondering if what they do is legal or not.
     es: No es aceptable que sea tan difícil un mercado digital único debido a las fronteras digitales que no deberían existir en Internet y que los usuarios y proveedores de servicios se tengan que estar preguntando constantemente si lo que hacen es legal.
@@ -125,7 +125,7 @@
   type: open_question
 - explanation:
     en: 'Explanation: The purpose of creating content should surely be to share with a maximum of users and hence to enable a maximum of users to access it. '
-    es: 'Nota: el objetivo de crear contenidos debería ser la posibilidad de poder compartirlos con el mayor número posible de usuarios y por lo tanto facilitar al máximo número posible de usuarios el acceso. '
+    es: 'Explicación: el objetivo de crear contenidos debería ser la posibilidad de poder compartirlos con el mayor número posible de usuarios y por lo tanto facilitar el acceso al máximo número posible de usuarios. '
   explanationmore:
     en: ''
   num: 5
@@ -162,7 +162,7 @@
   type: multiple_choice
 - explanation:
     en: 'Explanation: Why impose territorial restrictions if you can make content you hold the rights to accessible in all EU countries?'
-    es: 'Nota: ¿Por qué imponer restricciones territoriales si puedes hacer que el contenido sobre el que tienes derechos esté disponible en todos los países de la UE?'
+    es: 'Explicación: ¿Por qué imponer restricciones territoriales si puedes hacer que el contenido sobre el que tienes derechos esté disponible en todos los países de la UE?'
   explanationmore:
     en: ''
   num: 6
@@ -198,7 +198,7 @@
   type: multiple_choice
 - explanation:
     en: 'Explanation:  copyright reform is needed to adapt to the digital world we live in. The rules must be harmonised to create a EU digital single market without borders and give EU citizens the same access to content and services. This means that innovative services should be able to flourish and EU citizens should be able to enjoy those services across the EU'
-    es: 'Nota:  la reforma de copyright es necesaria para adaptarnos al mundo digital en el que vivimos. Debe armonizarse la ley para crear un mercado digital único en UE sin fronteras y ofrecer a los ciudadanos europeos el mismo acceso a los contenidos y servicios. Esto sirve para que puedan florecer los negocios innovadores y que todos los ciudadanos europeos puedan disfrutarlos'
+    es: 'Explicación:  la reforma de copyright es necesaria para adaptarnos al mundo digital en el que vivimos. Debe armonizarse la ley para crear un mercado digital único en UE sin fronteras y ofrecer a los ciudadanos europeos el mismo acceso a los contenidos y servicios. Esto sirve para que puedan florecer los negocios innovadores y que todos los ciudadanos europeos puedan disfrutarlos'
   explanationmore:
     en: ' It is simply unacceptable that getting a digital single market is so complicated due to digital borders that should not exist on the Internet and that users and service providers are constantly wondering if what they do is legal or not. '
     es: No es aceptable que sea tan difícil un mercado digital único debido a las fronteras digitales que no deberían existir en Internet y que los usuarios y proveedores de servicios se tengan que estar preguntando constantemente si lo que hacen es legal.
@@ -315,7 +315,7 @@
   type: multiple_choice
 - explanation:
     en: "Explanation: Under the current rules, the categories of right are not adapted to digital uses. \n\nAs a user, this means you often have access to less attractive and innovative services and have less choice. A good example is the roll-out of Spotify, which is happening country-per country and in some cases at the pace of a snail.\n"
-    es: "Nota: con la normativa actual, las categorías de derechos no están adaptadas a los usos digitales. \n\nComo usuario, significa que normalmente tienes acceso a servicios menos atractivos e innovadores, y menos opciones. Un buen ejemplo es el caso de Spotify, que avanza país por país y a veces a paso de tortuga.\n"
+    es: "Explicación: con la normativa actual, las categorías de derechos no están adaptadas a los usos digitales. \n\nComo usuario, significa que normalmente tienes acceso a servicios menos atractivos e innovadores, y menos opciones. Un buen ejemplo es el caso de Spotify, que avanza país por país y a veces a paso de tortuga.\n"
   explanationmore:
     en: As a service provider, this delays the possibility to quickly offer new and innovative services, because you need to go into lengthy and often expensive negotiations and more expansive, that make everything more complicated.
     es: Si eres proveedor de servicios, se ralentiza la posibilidad de ofrecer rápidamente servicios nuevos e innovadores, porque tienes que someterte a prolongadas y caras negociaciones que complican todo el proyecto.
@@ -353,7 +353,7 @@
   type: multiple_choice
 - explanation:
     en: 'Explanation: The ability to freely link from one resource to another is one of the fundamental building blocks of the Internet. Users do it every day when they post a Facebook update, put a tweet on Twitter, write a blog post, comment, etc. Requiring the authorisation of rights holders before being allowed to place a link to a resources that is available online would break the internet as we know it and lead to a nightmarish permission culture.'
-    es: 'Nota: la capacidad para poder enlazar libremente desde un recurso a otro es un bloque fundamental de Internet.Los usuarios lo hacen cada día cuando publican en Facebook, actualizan Twitter, escriben un blog, comentan, etc. El requisito de solicitar la autorización del propietario de los derechos antes de poder publicar un vínculo a un recurso que está disponible online se cargaría internet como lo conocemios y sería una pesadilla burocrática.'
+    es: 'Explicación: la capacidad para poder enlazar libremente desde un recurso a otro es un bloque fundamental de Internet.Los usuarios lo hacen cada día cuando publican en Facebook, actualizan Twitter, escriben un blog, comentan, etc. El requisito de solicitar la autorización del propietario de los derechos antes de poder publicar un vínculo a un recurso que está disponible online se cargaría internet como lo conocemios y sería una pesadilla burocrática.'
   explanationmore:
     en: Rights holders have sufficient rights that allow them to control if they want their works to be available online or not. Once a work is published online anyone must be free to link to the work. It is like putting a footnote in a document.
     es: Los propietarios de los derechos tienen la capacidad suficiente para controlar si quieren que sus obras estén disponibles online. Una vez see publica algo online todos deben tener derecho a enlazarlo. Es como añadir un pie de página en un documento.
@@ -403,7 +403,7 @@
   type: multiple_choice
 - explanation:
     en: 'Explanation: When you look at a website, parts of what you see on the screen are copied on the hard disk of your computer. More generally, your everyday uses of digital technology create multiple temporary digital copies of content which are essential to accessing and sharing content on the Internet. '
-    es: 'Nota: cuando visitas un sitio web, una parte de lo que estás viendo en la pantalla se está copiando en el disco duro de tu ordenador. En general, tu uso de tecnología digital crea múltiples copias temporales del contenido, las cuales son necesarias ara acceder y compartir contenidos en internet. '
+    es: 'Explicación: cuando visitas un sitio web, una parte de lo que estás viendo en la pantalla se está copiando en el disco duro de tu ordenador. En general, tu uso de tecnología digital crea múltiples copias temporales del contenido, las cuales son necesarias ara acceder y compartir contenidos en internet. '
   explanationmore:
     en: 'Requiring the authorisation of the rightholder for viewing and reading content that is already available amounts to an additional permission which could lead to citizens infringing the law by merely surfing on the Internet. This directly touches on your’ fundamental right to receive and impart information. Critically, this is about citizens’ right to read. '
     es: 'Requerir la autorización del propietario de los derechos para poder ver y leer el contenido que ya está disponible genera un nuevo permiso que lleva a los ciudadanos a infringir leyes con solo navegar por internet. Esto afecta directamente a tu derecho fundamental a recibir y compartir información. Se trata del derecho de los ciudadanos a leer. '
@@ -443,7 +443,7 @@
   text:
     de: Soll das Betrachten einer Website, was bedeutet, dass urheberrechtlich geschütze Webinhalte kurzzeitig auf dem Bildschirm oder im Speicher des Computers  reproduziert werden, entweder generell oder in bestimmten Fällen nur mit Erlaubnis des Rechteinhabers möglich sein?
     en: Should the viewing of a web-page where this implies the temporary reproduction of a work or other subject matter protected under copyright on the screen and in the cache memory of the user’s computer, either in general or under specific circumstances, be subject to the authorisation of the rightholder?
-    es: La visualización un sitio web, cuando implica la reproducción temoral de una obra u otro contenido protegido por copyright en la pantalla y en la memoria cache del ordenador del usuario, ya sea en general o en circunstancias especiales, ¿debe estar sometida a la autorización del propietario de los derechos?
+    es: La visualización un sitio web, cuando implica la reproducción temporal de una obra u otro contenido protegido por copyright en la pantalla y en la memoria cache del ordenador del usuario, ya sea en general o en circunstancias especiales, ¿debe estar sometida a la autorización del propietario de los derechos?
     nl: Moet het bekijken van een webpagina waar dit impliceert de tijdelijke reproductie van een werk of ander krachtens het auteursrecht beschermd materiaal op het scherm en in het cachegeheugen van de computer van de gebruiker, hetzij in het algemeen of in specifieke omstandigheden, afhankelijk zijn van de goedkeuring van de rechthebbende?
     pl: Czy przeglądanie strony internetowej, jeśli wiąże się to z dostępem do tymczasowej reprodukcji utworu lub innego przedmiotu chronionego prawem autorskim na ekranie i w pamięci podręcznej komputera użytkownika, czy generalnie czy w specyficznych okolicznościach,  powinno wymagać zezwolenia posiadacza praw?
   to: everyone
@@ -455,7 +455,7 @@
       Share any examples you have on how you faced such restrictions.
 
       '
-    es: 'Nota: a veces está restringido el uso de archivos digitales debido a las denominadas herramientas ‘DRM’ o de ‘gestión de derechos digitales’ que evitan poder pasar un archivo de un dispositivo a otro o poder copiarlo. Este tipo de restricciones no son aplicables offline, donde puedes coger un libro y dárselo a otra persona para que lo lea, ¿por qué debería estar permitido online?
+    es: 'Explicación: a veces está restringido el uso de archivos digitales debido a las denominadas herramientas ‘DRM’ o de ‘gestión de derechos digitales’ que evitan poder pasar un archivo de un dispositivo a otro o poder copiarlo. Este tipo de restricciones no son aplicables offline, donde puedes coger un libro y dárselo a otra persona para que lo lea, ¿por qué debería estar permitido online?
 
 
       Comparte ejemplos propios sobre estas restricciones.
@@ -502,7 +502,7 @@
       Any restriction of the right to resell your digital property means that secondary markets where used goods are traded would not be allowed, removing the possibility for users to obtain a product at lower prices.
 
       '
-    es: 'Nota: Debe permitirse la reventa de contenidos digitales previamente adquiridos. El derecho de usuario está bien definido en el mundo "offline" y también debe reconocerse en el mundo digital
+    es: 'Explicación: Debe permitirse la reventa de contenidos digitales previamente adquiridos. El derecho de usuario está bien definido en el mundo "offline" y también debe reconocerse en el mundo digital
 
       Cualquier restricción en el derecho a reventa de tu propiedad digital significa que no se permitirían los mercados secundarios donde se comercia con los bienes usados, evitando así que los usuarios puedan obtener un producto a precios menores.
 
@@ -529,7 +529,7 @@
       Such a registration system should also contain information on works that are in the Public Domain and on works that have been made available under open content licenses such as the Creative Commons Licenses.
 
       '
-    es: 'Nota: actualmente es muy difícil saber qué obras están protegidas por los derechos de copyright y quién debería pedir permiso para utilizarlas. Un sistema de registro a nivel europeo facilitaría el proceso y ofrecería mayor seguridad jurídica.
+    es: 'Explicación: actualmente es muy difícil saber qué obras están protegidas por los derechos de copyright y quién debería pedir permiso para utilizarlas. Un sistema de registro a nivel europeo facilitaría el proceso y ofrecería mayor seguridad jurídica.
 
       Dicho sistema de registro también debería contener información sobre las obras que pertenecen al Dominio Público y sobre las obras que estén disponibles con licencias de contenico abierto, como las licencias Creative Commons.
 
@@ -560,7 +560,7 @@
   type: multiple_choice
 - explanation:
     en: 'Explanation: The creation of a registration system at the EU level would be beneficial to both authors and users as it makes it easier to know if something is protected by copyright or not and to find the rightholders of a specific work. In other words, it would be cheaper and clearer to find out if a work is copyrighted and who has the rights to it. '
-    es: 'Nota: La creación de un sistema de registro a nivel europeo sería beneficiosa para los autores y para los usuarios, ya que facilita saber si algo está protegido por copyright o no y a encontrar los propietarios de los derechos de una obra específica. En otras palabras, sería más barato y sencillo encontrar si una obra tiene derechos de copyright o no. '
+    es: 'Explicación: La creación de un sistema de registro a nivel europeo sería beneficiosa para los autores y para los usuarios, ya que facilita saber si algo está protegido por copyright o no y a encontrar los propietarios de los derechos de una obra específica. En otras palabras, sería más barato y sencillo encontrar si una obra tiene derechos de copyright o no. '
   explanationmore:
     en: 'A (mandatory) registration system would also provide a more efficient mechanism for commercial licensing opportunities. and would prevent the appearance of future orphan works. But of course, adopting such a system cannot be to the detriment of keeping and enhancing the list of copyright exceptions. Such a system would also give a more accurate overview of creativity and culture in the EU.
     es: 'Un sistema de registro (obligatorio) también propocionaría un mecanismo más eficiente para las oportunidades de licencias comerciales. También evitaría la aparición de obras huérfanas. Claro que dicho sistema no debería servir para evitar mantener y mejorar la lista de excepciones de copyright. Dicho sistema también proporcionaría un resumen más preciso de la creatividad y la cultura en la UE.
@@ -582,7 +582,7 @@
   type: open_question
 - explanation:
     en: 'Explanation: Having a (mandatory) registration system will require an extra effort from rightholders. This small extra effort would however be minimal compared to the benefits of having the registration information available. In the digital environment both registering a work and searching for registered works can be done with very little effort.'
-    es: 'Nota: un sistema de registro (obligatorio) supondría un esfuerzo adicional para los propietarios de los derechos. Este reducido esfuerzo adicional sería mínimo comparado con los beneficios que representa tener la indormación de registro disponible. En el entorno digital, registrar una obra y buscar las obras registradas se puede realizar con un mínimo esfuerzo.'
+    es: 'Explicación: un sistema de registro (obligatorio) supondría un esfuerzo adicional para los propietarios de los derechos. Este reducido esfuerzo adicional sería mínimo comparado con los beneficios que representa tener la indormación de registro disponible. En el entorno digital, registrar una obra y buscar las obras registradas se puede realizar con un mínimo esfuerzo.'
   explanationmore:
     en: ''
   num: 17
@@ -601,7 +601,7 @@
   type: open_question
 - explanation:
     en: 'Explanation: There could be several incentives for rightholders to register their works. Rules could be put in place whereby certain elements of copyright protection are only available to rightholders who have registered their works. For example, registration might be required for a rightsholder to start an enforcement action. Another incentive might be that rightholders need to register their works in order to be eligible to collect royalties through collective rights management organizations.'
-    es: 'Nota: hay varios incentivos para que los propietarios de los derechos registren sus obras. Se podrían establecer normas de forma que los elementos de protección de copyright solo estén disponibles para los propietarios que hayan registrado su obra. Por ejemplo, el registro podría ser necesario para un propietario que quiera iniciar un proceso legal. Otro incentivo podría ser que los propietarios de los derechos deban registrar sus obras para poder cobrar los royalties a través de organizaciones de recaudación colectiva de derechos.'
+    es: 'Explicación: hay varios incentivos para que los propietarios de los derechos registren sus obras. Se podrían establecer normas de forma que los elementos de protección de copyright solo estén disponibles para los propietarios que hayan registrado su obra. Por ejemplo, el registro podría ser necesario para un propietario que quiera iniciar un proceso legal. Otro incentivo podría ser que los propietarios de los derechos deban registrar sus obras para poder cobrar los royalties a través de organizaciones de recaudación colectiva de derechos.'
   explanationmore:
     en: 'Finally, registration could be made a prerequisite for prolonging copyright protection after an initial term (this would assume a much shorter duration than the current term). For example, with an initial copyright term of protection of 20 years (similar to patents), rightholders who register their works in the system would have the ability to extend the term for works they intend to exploit after the first 20 years of protection. '
     es: 'Finalmente, el registro podría ser un requisito previo para prolongar la protección del copyright después de un periodo inicial (debería ser un plazo mucho más reducido que el actual). Por ejemplo, con una protección inicial de copyright de 20 años (similar a las patentes), los propietarios de los derechos que registren sus obras en el sistema tendrían la capacidad para extender el plazo de las obras que deseen continuar explotando después de los primeros 20 años de protección. '
@@ -639,7 +639,7 @@
   type: open_question
 - explanation:
     en: 'Explanation: In the EU, copyrighted material remains protected up to 70 years after the death of the author. Moreover, sometimes this duration is counted from another date and the death of the author and it is not always clear who all the authors of a work are (for example, for songs). That is confusing and excessively long if you think that the purpose of copyright is to enable artists, writers to create.'
-    es: 'Nota: En la UE, los contenidos con copyright permanecen protyegidos hasta 70 años después de la muerte del autor. Además, a veces está duración se cuenta a partir de una fecha diferente a la muerte del autor y no siempre está claro quiénes son los autores de una obra (por ejemplo en las canciones). Esto es confuso y excesivamente prolongado si consideras que el objetivo del copyright es permitir que los artistas y escritores puedan crear.'
+    es: 'Explicación: En la UE, los contenidos con copyright permanecen protyegidos hasta 70 años después de la muerte del autor. Además, a veces está duración se cuenta a partir de una fecha diferente a la muerte del autor y no siempre está claro quiénes son los autores de una obra (por ejemplo en las canciones). Esto es confuso y excesivamente prolongado si consideras que el objetivo del copyright es permitir que los artistas y escritores puedan crear.'
   explanationmore:
     en: This duration must be reduced to enhance access to knowledge and culture much more quickly. 15 to 25 years seems a more proportionate duration, or even 50 years, which is the minimum set in international rules.
     es: Esta duración debe reducirse para permitir el acceso al conocimiento y la cultura mucho más rápido. 15 a 25 años parece una duración más apropiada, incluso 50 años, que es el mínimo establecido en las leyes internacionales.
@@ -687,7 +687,7 @@
   type: multiple_choice
 - explanation:
     en: 'Explanation: Each EU country can pick and choose amongst the current list of exceptions. This means in practice that even though something you do in your country might be perfectly legal, it could be illegal when put online or shared with friends, family or colleagues in another country. That is confusing and scary. European citizens should have the same rights with regards to access to knowledge and culture regardless of where they live.'
-    es: 'Nota: cada país de la UE puede elegir la lista actual de excepciones. Esto significa en la práctica que algo que haces legalmente en tu país sea ilegal cuando lo publicas en internet o lo compartes con amigos, familia o compañeros de otros países. Esto es confuso y aterrador. Los ciudadanos europeos deben tener los mismos derechos en lo correspondiente al acceso al conocimiento y la cultura, con independencia de dónde vivan.'
+    es: 'Explicación: cada país de la UE puede elegir la lista actual de excepciones. Esto significa en la práctica que algo que haces legalmente en tu país sea ilegal cuando lo publicas en internet o lo compartes con amigos, familia o compañeros de otros países. Esto es confuso y aterrador. Los ciudadanos europeos deben tener los mismos derechos en lo correspondiente al acceso al conocimiento y la cultura, con independencia de dónde vivan.'
   explanationmore:
     en: 'The list of exceptions needs to be the same in every EU country and must be more flexible to adapt to technological change. More fundamentally, the approach whereby everything falls under copyright except when an ‘exception’ gives a user more freedom is flawed to start with and it should be the other way round: human rights and freedoms should be the rule and copyright the exception.'
     es: 'La lista de excepciones debe ser la misma en todos los países de la UE, y debe ser más flexible para adaptarse al cambio tecnológico. Pero sobretodo, es erróneo conceptualmente el enfoque de que todo está protegido por copyright excepto cuando una ‘excepción’ que ofrece más libertad al usuario, y debería ser al revés: los derechos y las libertades humanas deben ser la norma y el copyright la excepción exception.'
@@ -787,7 +787,7 @@
   type: multiple_choice
 - explanation:
     en: 'Explanation: Removing exceptions is unacceptable. On the contrary, a more flexible approach is needed, combining the current system of a list of exceptions (but made mandatory for all EU countries and specified as not exhaustive), but stating specifically that these cases must be interpreted as applying to ‘similar uses’ and add a more general open norm based on ‘fair use’ or general principles of fairness. Other countries such as the US use this ‘fair use’ principle: Fair use means you can use copyright material as long as the use is fair, for example reporting the news, parody or satire. Europe would benefit from such a flexible concept, that can adapt as technology changes.'
-    es: 'Nota: no es admisible la eleminiación de excepciones. Al contrario, se requiere un acercamiento más flexible, mediante la combinación del sistema actual de lista de excepciones (que sean obligatorias en todos los países de la UE), pero indicando específicamente que estos casos deben interpretarse como aplicación de ‘usos similares’ y aladir una norma más general y abierta basada en el ‘uso justo’. Otros países como EEUU utilizan el principio de ‘uso justo’. : el uso justo significa que puedes utilizar material con copyright siempre y cuando se trate de un uso justo, por ejemplo en las noticias, parodias o satiras. Europe se beneficiaría de un concepto tan flexible que se pueda adaptar a los cambios en la tecnología.'
+    es: 'Explicación: no es admisible la eleminiación de excepciones. Al contrario, se requiere un acercamiento más flexible, mediante la combinación del sistema actual de lista de excepciones (que sean obligatorias en todos los países de la UE), pero indicando específicamente que estos casos deben interpretarse como aplicación de ‘usos similares’ y aladir una norma más general y abierta basada en el ‘uso justo’. Otros países como EEUU utilizan el principio de ‘uso justo’. : el uso justo significa que puedes utilizar material con copyright siempre y cuando se trate de un uso justo, por ejemplo en las noticias, parodias o satiras. Europe se beneficiaría de un concepto tan flexible que se pueda adaptar a los cambios en la tecnología.'
   explanationmore:
     en: Citizens must notably be allowed to share protected works and adaptation for non-commercial purposes. For citizens to express themselves online it is necessary that they can use copyright protected material that others have created as part of their own expressions (think remixes and so called user generated content).
     es: Los ciudadanos deben tener derecho a compartir y adaptar obras protegidas para usos no comerciales. Para que los ciudadanos se expresen online es necesario que puedan utilizar los materiales protegidos mediante copyright creados por otros, como parte de su expresión (obras derivadas y contenidos desarrollados por usuarios).
@@ -1073,7 +1073,7 @@
   type: open_question
 - explanation:
     en: 'Explanation: The best solution for the problem is broadening the scope of the exception currently provided for in article 5(3)n of the Copyright Directive in order to ensure that  anyone can make their collections available on-line for scientific and educational purposes without restriction to on-site terminals. This broadened exception should be implemented in the same manner in all EU countries.'
-    es: 'Nota: la mejor solución para el problema es ampliar el ámbito de excepción existente actualmente en el artículo 5(3)n de la directiva de  Copyright para garantizar que cualquiera pueda poner a disposición online sus catálogos para fines científicos y educacionales sin la restricción de terminales en el lugar. La ampliación de esta excepción debería implementarse por igual en todos los países de la UE.'
+    es: 'Explicación: la mejor solución para el problema es ampliar el ámbito de excepción existente actualmente en el artículo 5(3)n de la directiva de  Copyright para garantizar que cualquiera pueda poner a disposición online sus catálogos para fines científicos y educacionales sin la restricción de terminales en el lugar. La ampliación de esta excepción debería implementarse por igual en todos los países de la UE.'
   explanationmore:
     en: ''
   num: 33
@@ -1185,7 +1185,7 @@
       ●        All e-books titles should be available to libraries at the time of publication;
 
       ●        Publishers should deliver e-books in interoperable formats;'
-    es: 'Nota: deberían aplicarse los siguientes principios en toda la UE:
+    es: 'Explicación: deberían aplicarse los siguientes principios en toda la UE:
 
       ●        Todos los libros electrónicos disponibles a la venta deberían estar disponibles para el acceso y adquisición por parte de las bibliotecas;
 
@@ -2301,7 +2301,7 @@
   type: multiple_choice
 - explanation:
     en: 'Explanation: The limitation of intermediaries’ liability is important. Without it, there is a high risk of censorship and of going against freedom of expression, freedom of communication but also freedom to conduct a business. Middlemen should not be liable and privatised enforcement is not the solution. The rule of law  needs to apply.'
-    es: 'Nota: Es importante limitar la responsabilidad de los intermediarios. De lo contrario hay un alto riesgo de censura contra la libertad de expresión, contra la libertad de comunicación y contra la libertad de comercio. Los intermediarios no deben ser los responsables y sancionadores privados. Debe aplicarse la ley.'
+    es: 'Explicación: Es importante limitar la responsabilidad de los intermediarios. De lo contrario hay un alto riesgo de censura contra la libertad de expresión, contra la libertad de comunicación y contra la libertad de comercio. Los intermediarios no deben ser los responsables y sancionadores privados. Debe aplicarse la ley.'
   explanationmore:
     en: The problem is that community wireless networks, anonymizing services, fixed internet service providers, online data storage places, search engines and other actors suffer uncertainty because of the intermediary liability in copyright. As a result, they sometimes take down things that are legal, out of fear of being sued. That is bad for EU citizens free speech rights and can chill innovation and creativity.
     es: El problema es que las redes inalámbriscas comunitarias, los servicios anonimizadores, los proveedores de internet fijo, los sitios de almacenamiento en la nube, los motores de búsqueda y otros agentes sufren la incertidumbre debido a la responsabilidad de copyright de los intermediarios. Como resultado, muchas veces se dejan de publicar contenidos legales, por miedo a ser denunciados. Esto es negativo para la libertad de expresión de los ciudadanos europeos EU y puede afectar a la innovación y la creatividad.
@@ -2320,7 +2320,7 @@
   type: open_question
 - explanation:
     en: 'Explanation: the current copyright system is completely tilted towards the rightholders, and does not take users’ much into consideration, if at all. Copyright should aim to encourage creativity and innovation for the benefit of the society as a whole. However, current copyright law fails to achieve its dual mission, as the notion of consumers’ rights is absent.'
-    es: 'Nota: el sistema actual de copyright está completamente inclinado hacia los propietarios de los derechos, y no tiene en cuenta a los usuarios. Los derechos de copyright deberían estar dirigidos a promocionar la creatividad y la innovación para beneficiar a la sociedad en su conjunto. Sin embargo, las leyes actuales de  copyright no alcanzan este doble objetivo, y no está presente la noción de los derechos del consumidor.'
+    es: 'Explicación: el sistema actual de copyright está completamente inclinado hacia los propietarios de los derechos, y no tiene en cuenta a los usuarios. Los derechos de copyright deberían estar dirigidos a promocionar la creatividad y la innovación para beneficiar a la sociedad en su conjunto. Sin embargo, las leyes actuales de  copyright no alcanzan este doble objetivo, y no está presente la noción de los derechos del consumidor.'
   explanationmore:
     en: ' Consumers do not know what they can and cannot do with copyright protected material. The current legislation is simply out of date and fails to respond to the challenges of the digital environment.'
     es: ' Los consumidores no saben quçe pueden y qué no pueden hacer con los materiales protegidos mediante copyright. La legislación actual está desfasada y no responde a los desafíos del entorno digital.'
@@ -2369,7 +2369,7 @@
   type: multiple_choice
 - explanation:
     en: 'Explanation: Any tool to achieve more harmonisation and flexibility should be pursued.'
-    es: 'Nota: Debe favorecerse cualquier recurso para alcanzar mayor flexibilidad y armonización.'
+    es: 'Explicación: Debe favorecerse cualquier recurso para alcanzar mayor flexibilidad y armonización.'
   explanationmore:
     en: ''
   num: 78
