@@ -50,10 +50,10 @@ translations:
     pl: Jestem użytkownikiem/czką z niepełnosprawnością ipróbuję docierać i korzystać z treści w formatach, które byłyby dla mnie użyteczne
   downloadonly:
     de: 'Das Dokument wird jetzt heruntergeladen. Bitte sende es per E-Mail an:'
-    en: 'The document is now downloading. Please send it by email to:'
+    en: 'The document is now downloading. You need to send it by email to:'
     es: 'El documento se está descargando. Por favor, envíalo por email a:'
     pl: 'Trwa ściąganie dokumentu. Proszę wysłać go pocztą elektroniczną do:'
-    nl: 'Het document wordt nu gedownload. Mail het aub naar:'
+    nl: 'Het document wordt nu gedownload. U hoeft het alleen nog maar te versturen naar:'
     fr: 'Le document est en train de télécharger. Veuillez l’envoyer par courriel à :'
   downloadtoown:
     de: Herunterladen zum Erwerb digitaler Inhalte
