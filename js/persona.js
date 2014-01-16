@@ -100,10 +100,6 @@ $(function(){
       refreshScroll();
     }, 100);
   });
-  window.setTimeout(function(){
-    toggleSections();
-  }, 100);
-
   var $progressBar = $('#progress-bar').hide();
   $progressBar.css('width', $progressBar.parent().width() + 'px');
 
@@ -165,5 +161,20 @@ $(function(){
   refreshScroll();
   $(window).resize(refreshScroll);
   $(window).on('scroll', process);
+  window.setTimeout(function(){
+    var oneFound = false;
+    if (window.location.search){
+      var urlParams = EUCopyright.parseUrlParams();
+      for (var key in personaQuestionMap) {
+        oneFound = oneFound || (urlParams[key] !== undefined);
+        $('#label-' + key).find('input').prop('checked', urlParams[key] !== undefined);
+      }
+    }
+    toggleSections();
+    if (oneFound){
+      $('.continue-questions').click();
+      document.location.href = $('.continue-questions').attr('href');
+    }
+  }, 200);
   loadGuide({activeOnly: true});
 });

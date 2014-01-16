@@ -8,7 +8,7 @@ EUCopyright.settings.defaultToNoOpinion = EUCopyright.settings.defaultToNoOpinio
 (function(){
   "use strict";
 
-var parseUrlParams = function (querystr) {
+EUCopyright.parseUrlParams = function (querystr) {
   var urlParams;
   querystr = querystr || window.location.search;
   var match,
@@ -381,7 +381,7 @@ $(function(){
 
   $('.load-question-guide').click(function(e){
     e.preventDefault();
-    var params = parseUrlParams($(this).attr('href'));
+    var params = EUCopyright.parseUrlParams($(this).attr('href'));
     EUCopyright.loadGuide(params.guide);
   });
 
@@ -527,7 +527,7 @@ $(function(){
     });
   }, 100);
 
-  var urlParams = parseUrlParams();
+  var urlParams = EUCopyright.parseUrlParams();
   if (urlParams.guide) {
     EUCopyright.loadGuide(urlParams.guide);
   }
