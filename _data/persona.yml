@@ -54,7 +54,7 @@ translations:
     es: 'El documento se está descargando. Por favor, envíalo por email a:'
     pl: 'Trwa ściąganie dokumentu. Proszę wysłać go pocztą elektroniczną do:'
     nl: 'Het document wordt nu gedownload. U hoeft het alleen nog maar te versturen naar:'
-    fr: 'Le document est en train de télécharger. Veuillez l’envoyer par courriel à :'
+    fr: 'Le document est en train de télécharger. Vous devez l’envoyer par courriel à :'
   downloadtoown:
     de: Herunterladen zum Erwerb digitaler Inhalte
     en: Download to own digital content
@@ -71,11 +71,11 @@ translations:
     fr: Prêts électroniques
   email:
     de: 'Optional: </span>Deine E-Mail-Adresse'
-    en: 'Optional: </span>Your email address'
+    en: 'Optional: </span>Your email address (fill this in to receive a standard e-mail to send in your submission to the European Commission)'
     es: 'Opcional: </span>Dirección de email'
     pl: 'Opcjonalnie: </span>Proszę podać adres email'
-    nl: 'Facultatief: </span>Uw e-mail adres:'
-    fr: 'Facultatif: </span>Votre adresse e-mail: '
+    nl: 'Facultatief: </span>Uw e-mail adres (vul dit in om een standaard e-mail te ontvangen om uw antwoord naar de Europese Commissie te versturen)'
+    fr: 'Facultatif: </span>Votre adresse e-mail (en indiquant votre adresse e-mail, vous recevrez un email standard à envoyer à la Commission européenne)'
   emaildocument:
     de: Das fertige Dokument wird an deine E-Mail-Adresse geschickt.
     en: The finished document will be sent to your email address.
@@ -134,11 +134,11 @@ translations:
     fr: Interopérabilité d’identifiants
   introparagraph:
     de: Wähle eine oder mehrere Kategorien aus, die dich am besten beschreiben – das führt dich zu den Fragen, die am Relevantesten für dich sind. Alternativ kannst du, wenn du genau Mut hast, <a href="/de/full/">auch dir alle 80 Fragen der Konsultation anschauen!</a>
-    en: Select one or more categories below that best describe you – this will lead you to the questions that are most relevant to your activities. Alternatively, if you are brave enough, <a href="/en/full/">have a look at all 80 consultation questions!</a>
+    en: Select one or more categories below that best describe you – this will lead you to the questions that are most relevant to your activities. Alternatively, if you are brave enough, <a href="/en/full/">have a look at all 80 consultation questions!</a>< /br>Please note this website is not from the European Commission.
     es: Selecciona una o más categorías de abajo que mejor te describen - esto te llevará a las preguntas que sean más relevantes a tus actividades. Como alternativa, si eres lo suficientemente valiente, <a href="/en/full/">¡echa un vistazo a las 80 preguntas de la encuesta!</a>
     pl: Wybierz jedną lub więcej kategorii, której opisują Twoją sytuację. Na podstawie Twojego wyboru przedstawimy pytania Ciebie dotyczące. Możesz też, jeśli masz dość odwagi, <a href="/pl/full/">przejrzeć wszystkie 80 pytań zadanych w ramach konsultacji!</a>
-    nl: Selecteer één of meerdere categoriëen die jou het best omschrijven - dit brengt je naar de vragen die het meest relevant zijn voor jouw activiteiten. Als alternatief kan je, indien je jou geroepen voelt, <a href="/nl/full">de 80 consultatievragen allemaal bekijken!</a>
-    fr: Veuillez choisir une ou plusieurs des catégories ci-dessous et qui semblent vous décrire le mieux – ce choix vous permettra de voir les questions les plus pertinentes en fonction de vos activités. A titre alternatif, vous pouvez aussi opter de <a href="/fr/full">voir l’ensemble des 80 questions de la consultation!</a>
+    nl: Selecteer één of meerdere categoriëen die jou het best omschrijven - dit brengt je naar de vragen die het meest relevant zijn voor jouw activiteiten. Als alternatief kan je, indien je jou geroepen voelt, <a href="/nl/full">de 80 consultatievragen allemaal bekijken!</a>< /br>Deze website is geen initiatief van de Europese Commissie.
+    fr: Veuillez choisir une ou plusieurs des catégories ci-dessous et qui semblent vous décrire le mieux – ce choix vous permettra de voir les questions les plus pertinentes en fonction de vos activités. A titre alternatif, vous pouvez aussi opter de <a href="/fr/full">voir l’ensemble des 80 questions de la consultation!</a>< /br>Ce site ne provient pas de la Commission européenne.
   languagedisclaimer:
     de: Übersetzungen in andere Sprachen als Englisch sind inoffiziell, crowd-gesourced und möglicherweise unvollständig.
     en: Translations in languages other than English are unofficial, crowd-sourced and possibly incomplete.
@@ -277,11 +277,11 @@ translations:
     fr: Ayant droit
   sentbyemail:
     de: 'Wir haben dir das fertige Dokument per E-Mail geschickt (<span class="email-sent-to"></span>). Bitte leite das Dokument weiter an:'
-    en: 'The finished document is sent to you by email (<span class="email-sent-to"></span>). Please forward it to:'
+    en: 'The finished document is sent to you by email (<span class="email-sent-to"></span>). You need to forward it to:'
     es: 'El documento final se te envía por email (<span class="email-sent-to"></span>). Por favor, reenvíalo a:'
     pl: 'Skończony dokument został wysłany na podany adres email (<span class="email-sent-to"></span>). Proszę wysłać jego kopię do:'
-    nl: 'Het ingevuld document is naar u verzonden per e-mail (<span class="email-sent-to"></span>). Gelieve het door te sturen naar:'
-    fr: 'Le document rempli par vos soins vous a été envoyé par e-mail (<span class="email-sent-to"></span>). Veuillez l’envoyer à:'
+    nl: 'Het ingevuld document is naar u verzonden per e-mail (<span class="email-sent-to"></span>). U moet het enkel nog doorsturen naar:'
+    fr: 'Le document rempli par vos soins vous a été envoyé par e-mail (<span class="email-sent-to"></span>). Vous devez l’envoyer à:'
   storelabel:
     de: Erlaube es uns, deine Angaben zu speichern und dich zur Kampagne zu kontaktieren.
     en: Allow us to store your answers and contact you about the campaign.
