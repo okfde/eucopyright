@@ -199,13 +199,13 @@ EUCopyright.compile = function(data, settings){
 
 EUCopyright.answerCache = {};
 
-EUCopyright.applyGuideToAll = function(guide){
+EUCopyright.applyGuideToAll = function(guide, options){
   var question, answer, answers = EUCopyright.answerCache[guide.slug];
   for (var i = 0; i < EUCopyright.questions.length; i += 1) {
     if (answers[EUCopyright.questions[i].num]) {
       question = EUCopyright.questions[i];
       answer = answers[question.num];
-      EUCopyright.applyGuide(guide, question, answer);
+      EUCopyright.applyGuide(guide, question, answer, options);
     }
   }
 };
@@ -218,8 +218,12 @@ EUCopyright.supports_html5_storage = function() {
   }
 };
 
-EUCopyright.applyGuide = function(guide, question, answer) {
+EUCopyright.applyGuide = function(guide, question, answer, options) {
+  options = options || {};
   var isAnswered = false;
+  if (options.activeOnly && !$('#q-' + question.num).hasClass('active')) {
+    return;
+  }
   if (question.type === 'multiple_choice' && question.options) {
     if (answer.option !== null) {
       isAnswered = true;
@@ -296,12 +300,12 @@ EUCopyright.loadQuestionGuide = function(slug, clb){
   });
 };
 
-EUCopyright.loadGuide = function(slug){
+EUCopyright.loadGuide = function(slug, options){
   $('.load-question-guide').removeClass('active');
   $('.load-question-guide-' + slug).addClass('active');
 
-  EUCopyright.loadQuestionGuide(slug, function(answers){
-    EUCopyright.applyGuideToAll(EUCopyright.answers[slug], answers);
+  EUCopyright.loadQuestionGuide(slug, function(){
+    EUCopyright.applyGuideToAll(EUCopyright.answers[slug], options);
   });
 };
 

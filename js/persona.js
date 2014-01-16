@@ -70,9 +70,16 @@ $(function(){
     addQuestions('general');
 
     $('#persona-questions .question-section').removeClass('active').hide();
+    $('.q').removeClass('active');
+    // Mark all as "No Opinion"
+    $('.q input[type=radio][value=2]').prop('checked', true);
     for (i = 0; i < questionList.length; i += 1) {
       $('#persona-questions .question-section-' + questionList[i]).appendTo(questionSections).addClass('active').show();
+      $('#q-' + questionList[i]).addClass('active');
     }
+    // Overwrite guide only for active questions
+    loadGuide({activeOnly: true});
+
     qCount = $('.question-section.active').length;
     qIndex = {};
     $('.question-section.active').each(function(i, el){
@@ -95,19 +102,18 @@ $(function(){
   });
   window.setTimeout(function(){
     toggleSections();
-    loadGuide();
   }, 100);
 
   var $progressBar = $('#progress-bar').hide();
   $progressBar.css('width', $progressBar.parent().width() + 'px');
 
-  var loadGuide = function(){
+  var loadGuide = function(options){
     var lang = $('html').attr('lang');
     var slug = 'c4c_' + lang;
     if (EUCopyright.answers[slug] !== undefined) {
-      EUCopyright.loadGuide(slug);
+      EUCopyright.loadGuide(slug, options);
     } else {
-      EUCopyright.loadGuide('c4c_en');
+      EUCopyright.loadGuide('c4c_en', options);
     }
   };
 
@@ -159,5 +165,5 @@ $(function(){
   refreshScroll();
   $(window).resize(refreshScroll);
   $(window).on('scroll', process);
-  loadGuide();
+  loadGuide({activeOnly: true});
 });
