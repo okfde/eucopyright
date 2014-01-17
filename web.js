@@ -2,6 +2,7 @@
 /* global require: false, process: false, console: false, Buffer: false */
 
 var fs = require('fs');
+var pg = require('pg');
 var yaml = require('js-yaml');
 var EUCopyrightQuestions = yaml.safeLoad(fs.readFileSync('_data/questions.yml', 'utf8'));
 var translations = yaml.safeLoad(fs.readFileSync('_data/translations.yml', 'utf8'));
@@ -65,6 +66,26 @@ var createText = function(data, settings) {
   );
 };
 
+var storeSubmission = function(data){
+  data = JSON.stringify(data);
+  pg.connect(process.env.DATABASE_URL, function(err, client, done) {
+    var handleError = function(err) {
+      if(!err) return false;
+      console.info('Error storing data:' + err);
+      done(client);
+      return true;
+    };
+    client.query('INSERT INTO submission (timestamp, data) VALUES ($1, $2)',
+      [new Date(), data],
+      function(err) {
+        if(handleError(err)) return;
+        console.info('Stored data.');
+        done();
+      }
+    );
+  });
+};
+
 var sendEmail = function(email, name, buffer, lang){
   var body = translations.emailBody[lang] || translations.emailBody.en;
   name = name || translations.emailName[lang] || translations.emailName.en;
@@ -91,6 +112,9 @@ var sendEmail = function(email, name, buffer, lang){
 
 app.post('/document', function(req, res){
   var buffer = createODT(createText(req.body, {}));
+  if (req.body.store) {
+    storeSubmission(req.body);
+  }
   if (req.body.email && validateEmail(req.body.email)) {
     sendEmail(req.body.email, req.body.name, buffer, req.body.language || 'en');
     if (req.query.redirect) {

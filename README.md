@@ -51,3 +51,13 @@ Set some environment variables:
 
     heroku config:set FROM_EMAIL_ADDRESS=verified@emailaddress.eu
     heroku config:set "ALLOWED_DOMAIN=http://youcan.fixcopyright.eu"
+
+### Database
+
+    CREATE TABLE submission
+    (
+      id serial NOT NULL,
+      timestamp timestamp NOT NULL,
+      data text NOT NULL,
+      CONSTRAINT submission_pkey PRIMARY KEY (id)
+    );

@@ -1,20 +1,50 @@
 /* jshint strict: true, quotmark: false, es3: true */
-/* global $: false, EUCopyright: false */
+/* global $: false, EUCopyright: false, docCookies: false */
 
 $(function(){
   "use strict";
-  var personaSections = {
-    general: ['access', 'linking', 'digitalcontent', 'termofprotection', 'limitations', 'privatecopying', 'respectforrights', 'otherissues'],
-    onlineuser: ['access', 'linking', 'digitalcontent', 'limitations', 'privatecopying', 'respectforrights'],
-    parent: ['linking', 'digitalcontent', 'limitations', 'privatecopying', 'respectforrights'],
-    teacher: ['teaching', 'research', 'textmining'],
-    business: ['rightsholder', 'textmining', 'usergeneratedcontent', 'privatecopying2', 'privatecopying3'],
-    librarian: ['libraries', 'textmining', 'registration', 'termofprotection', 'identifiers'],
-    blogger: ['usergeneratedcontent'],
-    rightsholder: ['rightsholder2', 'remuneration', 'registration', 'privatecopying2'],
-    disabled: ['disabilities']
+
+  var specialCases = {
+    teacher: {
+      42: ['a'],
+      47: ['a'],
+      53: ['a']
+    },
+    business: {
+      53: ['a', 'b'],
+      58: ['b'],
+      59: ['b'],
+      60: ['b']
+    },
+    librarian: {
+      28: ['a'],
+      32: ['a', 'b'],
+      36: ['a', 'b'],
+      53: ['a']
+    },
+    blogger: {
+      58: ['a'],
+      59: ['a'],
+      60: ['a']
+    },
+    disabled: {
+      50: ['a', 'b']
+    }
+  };
+
+  var personaQuestionMap = {
+    general: [1, 4, 5, 11,12,13,14,20,21,22,23,24,25,26,64,65,67,68,71,77,80],
+    onlineuser: [1, 4, 5, 11, 12, 13, 21,22,23,24,25,26,64,65,67,68,71,76,77,78],
+    parent: [11, 12, 13, 21,22,23,24,25,26,64,65,67,68,71,77],
+    teacher: [42,43,44,45,46,47,48,49, 53,54,55,56,57],
+    business: [2,4,7,8,53,54,55,56,57,58,59,60,61,62,63,66,69],
+    librarian: [28,29,30,32,33,34,36,37,38,39,40,41,15,16,17,18,19,20,21,22,23,24,25,53,54,55],
+    blogger: [58,59,60,61,62,63],
+    rightsholder: [9,10,14,72,73,74,15,16,17,18,66],
+    disabled: [50,51,52]
   };
   var qIndex = {}, qCount = 0;
+  var questionSections = $('.question-sections');
   var toggleSections = function() {
     var personas = [];
     $('.personas .thumbnail').each(function(i, el) {
@@ -24,24 +54,33 @@ $(function(){
         personas.push(el.attr('id').split('-')[1]);
       }
     });
-    var groupObj = {}, personaSection;
-    for (var i = 0; i < personas.length; i += 1) {
-      personaSection = personaSections[personas[i]];
-      for (var j = 0; j < personaSection.length; j += 1) {
-        if (groupObj[personaSection[j]] === undefined) {
-          groupObj[personaSection[j]] = true;
+    var groupObj = {}, personaQuestions, questionList = [];
+    var addQuestions = function(persona){
+      personaQuestions = personaQuestionMap[persona];
+      for (var j = 0; j < personaQuestions.length; j += 1) {
+        if (groupObj[personaQuestions[j]] === undefined) {
+          groupObj[personaQuestions[j]] = true;
+          questionList.push(personaQuestions[j]);
         }
       }
+    };
+    for (var i = 0; i < personas.length; i += 1) {
+      addQuestions(personas[i]);
     }
+    addQuestions('general');
 
     $('#persona-questions .question-section').removeClass('active').hide();
     $('.q').removeClass('active');
-    $('#persona-questions .question-section.general').show();
-    for (var group in groupObj) {
-      $('#persona-questions .section-' + group).addClass('active').show();
-      $('#persona-questions .section-' + group).find('.q').addClass('active');
+    // Mark all as "No Opinion"
+    $('.q input[type=radio][value=2]').prop('checked', true);
+    for (i = 0; i < questionList.length; i += 1) {
+      $('#persona-questions .question-section-' + questionList[i]).appendTo(questionSections).addClass('active').show();
+      $('#q-' + questionList[i]).addClass('active');
     }
-    qCount = $('.q.active').length;
+    // Overwrite guide only for active questions
+    loadGuide({activeOnly: true});
+
+    qCount = $('.question-section.active').length;
     qIndex = {};
     $('.q.active').each(function(i, el){
       qIndex[$(el).attr('id')] = i;
@@ -55,19 +94,35 @@ $(function(){
   $('.delete-localstorage').show();
   $('#persona-questions').hide();
   $('.continue-questions').click(function(){
-    $(this).hide();
     $('#persona-questions').show();
+    $('.fixed-questionhint').css({
+      'position': 'fixed',
+      'width': $('.question-sections').width() + 'px'
+    });
     $progressBar.show();
     window.setTimeout(function(){
       refreshScroll();
     }, 100);
   });
-  window.setTimeout(function(){
-    toggleSections();
-  }, 100);
-
   var $progressBar = $('#progress-bar').hide();
   $progressBar.css('width', $progressBar.parent().width() + 'px');
+
+  $('.fixed-questionhint').bind('closed.bs.alert', function () {
+    docCookies.setItem('personaQuestionHint', 'closed');
+  });
+  if (docCookies.getItem('personaQuestionHint') === 'closed') {
+    $('.fixed-questionhint').hide();
+  }
+
+  var loadGuide = function(options){
+    var lang = $('html').attr('lang');
+    var slug = 'c4c_' + lang;
+    if (EUCopyright.answers[slug] !== undefined) {
+      EUCopyright.loadGuide(slug, options);
+    } else {
+      EUCopyright.loadGuide('c4c_en', options);
+    }
+  };
 
   var offsets = $([]), targets = $([]);
   var $scrollElement = $(window);
@@ -117,5 +172,20 @@ $(function(){
   refreshScroll();
   $(window).resize(refreshScroll);
   $(window).on('scroll', process);
-  EUCopyright.loadGuide('c4c_' + $('html').attr('lang'));
+  window.setTimeout(function(){
+    var oneFound = false;
+    if (window.location.search){
+      var urlParams = EUCopyright.parseUrlParams();
+      for (var key in personaQuestionMap) {
+        oneFound = oneFound || (urlParams[key] !== undefined);
+        $('#label-' + key).find('input').prop('checked', urlParams[key] !== undefined);
+      }
+    }
+    toggleSections();
+    if (oneFound){
+      $('.continue-questions').click();
+      document.location.href = $('.continue-questions').attr('href');
+    }
+  }, 200);
+  loadGuide({activeOnly: true});
 });

@@ -8,7 +8,7 @@ EUCopyright.settings.defaultToNoOpinion = EUCopyright.settings.defaultToNoOpinio
 (function(){
   "use strict";
 
-var parseUrlParams = function (querystr) {
+EUCopyright.parseUrlParams = function (querystr) {
   var urlParams;
   querystr = querystr || window.location.search;
   var match,
@@ -199,13 +199,13 @@ EUCopyright.compile = function(data, settings){
 
 EUCopyright.answerCache = {};
 
-EUCopyright.applyGuideToAll = function(guide){
+EUCopyright.applyGuideToAll = function(guide, options){
   var question, answer, answers = EUCopyright.answerCache[guide.slug];
   for (var i = 0; i < EUCopyright.questions.length; i += 1) {
     if (answers[EUCopyright.questions[i].num]) {
       question = EUCopyright.questions[i];
       answer = answers[question.num];
-      EUCopyright.applyGuide(guide, question, answer);
+      EUCopyright.applyGuide(guide, question, answer, options);
     }
   }
 };
@@ -218,8 +218,12 @@ EUCopyright.supports_html5_storage = function() {
   }
 };
 
-EUCopyright.applyGuide = function(guide, question, answer) {
+EUCopyright.applyGuide = function(guide, question, answer, options) {
+  options = options || {};
   var isAnswered = false;
+  if (options.activeOnly && !$('#q-' + question.num).hasClass('active')) {
+    return;
+  }
   if (question.type === 'multiple_choice' && question.options) {
     if (answer.option !== null) {
       isAnswered = true;
@@ -243,13 +247,13 @@ EUCopyright.applyGuide = function(guide, question, answer) {
   if (answer.explanation) {
     isAnswered = true;
     $('#q-' + question.num + '-customexplanation').slideDown();
-    $('#q-' + question.num + '-customexplanation-text').text(answer.explanation);
+    $('#q-' + question.num + '-customexplanation-text').html(answer.explanation);
     if (answer.explanationmore) {
       $('#q-' + question.num + '-customexplanation').find('.toggle').show();
-      $('#q-' + question.num + '-customexplanationmore-text').text(answer.explanationmore);
+      $('#q-' + question.num + '-customexplanationmore-text').html(answer.explanationmore);
     } else {
       $('#q-' + question.num + '-customexplanation').find('.toggle').hide();
-      $('#q-' + question.num + '-customexplanationmore-text').text('').hide();
+      $('#q-' + question.num + '-customexplanationmore-text').html('').hide();
     }
   } else {
     $('#q-' + question.num + '-customexplanation').slideUp();
@@ -276,27 +280,33 @@ EUCopyright.loadQuestionGuide = function(slug, clb){
 
     for (var i = 1; i < csv.length; i += 1) {
       var row = {};
+      if (csv[i].length <= 1) {
+	      continue; // skip empty line in csv (usually last one)
+      }
       for (var j = 0; j < csv[0].length; j += 1) {
         row[csv[0][j]] = csv[i][j];
       }
-      answers[parseInt(row.Question, 10)] = {
+      var answer = {
         option: row.Option ? parseInt(row.Option, 10) - 1 : null,
         answer: row.Answer,
-        explanation: row.Explanation,
-        explanationmore: row.Explanation_more
+        explanation: row.Explanation.replace(/\n/g, '<br/>')
       };
+      if (row.Explanation_more) {
+	answer.explanationmore = row.Explanation_more.replace(/\n/g, '<br/>');
+      }
+      answers[parseInt(row.Question, 10)] = answer;
     }
     EUCopyright.answerCache[slug] = answers;
     clb(EUCopyright.answerCache[slug]);
   });
 };
 
-EUCopyright.loadGuide = function(slug){
+EUCopyright.loadGuide = function(slug, options){
   $('.load-question-guide').removeClass('active');
   $('.load-question-guide-' + slug).addClass('active');
 
-  EUCopyright.loadQuestionGuide(slug, function(answers){
-    EUCopyright.applyGuideToAll(EUCopyright.answers[slug], answers);
+  EUCopyright.loadQuestionGuide(slug, function(){
+    EUCopyright.applyGuideToAll(EUCopyright.answers[slug], options);
   });
 };
 
@@ -371,7 +381,7 @@ $(function(){
 
   $('.load-question-guide').click(function(e){
     e.preventDefault();
-    var params = parseUrlParams($(this).attr('href'));
+    var params = EUCopyright.parseUrlParams($(this).attr('href'));
     EUCopyright.loadGuide(params.guide);
   });
 
@@ -391,6 +401,9 @@ $(function(){
   $('.div-toggle').hide();
   $('.toggle').show().click(function(e){
     e.preventDefault();
+    if ($(this).hasClass('toggle-hide')) {
+      $(this).hide();
+    }
     var div = $($(this).attr('href'));
     if (div.css('display') === 'block') {
       div.slideUp();
@@ -514,10 +527,53 @@ $(function(){
     });
   }, 100);
 
-  var urlParams = parseUrlParams();
+  var urlParams = EUCopyright.parseUrlParams();
   if (urlParams.guide) {
     EUCopyright.loadGuide(urlParams.guide);
   }
 });
+
+/*
+Mozilla Cooke Reader/Writer
+https://developer.mozilla.org/en-US/docs/Web/API/document.cookie#A_little_framework.3A_a_complete_cookies_reader.2Fwriter_with_full_unicode_support
+*/
+
+window.docCookies = {
+  getItem: function (sKey) {
+    return decodeURIComponent(document.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*" + encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=\\s*([^;]*).*$)|^.*$"), "$1")) || null;
+  },
+  setItem: function (sKey, sValue, vEnd, sPath, sDomain, bSecure) {
+    if (!sKey || /^(?:expires|max\-age|path|domain|secure)$/i.test(sKey)) { return false; }
+    var sExpires = "";
+    if (vEnd) {
+      switch (vEnd.constructor) {
+        case Number:
+          sExpires = vEnd === Infinity ? "; expires=Fri, 31 Dec 9999 23:59:59 GMT" : "; max-age=" + vEnd;
+          break;
+        case String:
+          sExpires = "; expires=" + vEnd;
+          break;
+        case Date:
+          sExpires = "; expires=" + vEnd.toUTCString();
+          break;
+      }
+    }
+    document.cookie = encodeURIComponent(sKey) + "=" + encodeURIComponent(sValue) + sExpires + (sDomain ? "; domain=" + sDomain : "") + (sPath ? "; path=" + sPath : "") + (bSecure ? "; secure" : "");
+    return true;
+  },
+  removeItem: function (sKey, sPath, sDomain) {
+    if (!sKey || !this.hasItem(sKey)) { return false; }
+    document.cookie = encodeURIComponent(sKey) + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT" + ( sDomain ? "; domain=" + sDomain : "") + ( sPath ? "; path=" + sPath : "");
+    return true;
+  },
+  hasItem: function (sKey) {
+    return (new RegExp("(?:^|;\\s*)" + encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=")).test(document.cookie);
+  },
+  keys: /* optional method: you can safely remove it! */ function () {
+    var aKeys = document.cookie.replace(/((?:^|\s*;)[^\=]+)(?=;|$)|^\s*|\s*(?:\=[^;]*)?(?:\1|$)/g, "").split(/\s*(?:\=[^;]*)?;\s*/);
+    for (var nIdx = 0; nIdx < aKeys.length; nIdx++) { aKeys[nIdx] = decodeURIComponent(aKeys[nIdx]); }
+    return aKeys;
+  }
+};
 
 }());
