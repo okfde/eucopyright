@@ -144,6 +144,7 @@ translations:
     en: Translations in languages other than English are unofficial, crowd-sourced and possibly incomplete.
     nl: Vertalingen in andere talen dan het Engels zijn niet officieel, gecrowdsourced en mogelijks onvolledig.
     fr: Les traductions à partir du texte d’origine en anglais ne sont pas officielles, crowd-sourcé et dans certains cas incomplètes
+    pl: Tłumaczenia serwisu - poza źródłową wersją angielską - są nieoficjalne, crowdsourcowane i potencjalnie niekompletne. 
   librarian:
     de: Ich bin Bibliothekar/in oder aktiv im Bereich kulturelles Erbe
     en: I’m a librarian or active in the cultural heritage area
@@ -233,6 +234,7 @@ translations:
     en: You do not have to fill out everything and can skip questions if you want to.
     nl: Het is niet verplicht van alle vragen te beantwoorden.
     fr: Vous ne devez pas répondre à toutes les questions qui s’affichent pour finaliser votre contribution.
+    pl: Odpowiedź na wszystkie pytania nie jest wymagana.
   registration:
     de: Registrierung von Werken
     en: Registration of works
