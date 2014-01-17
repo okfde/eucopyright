@@ -1,0 +1,44 @@
+<div class="row">
+  <div class="col-lg-8 col-md-8">
+    <h3>El &aacute;mbito territorial de los derechos correspondientes a las transmisiones digitales y la segmentaci&oacute;n del mercado mediante acuerdos de licencias</h3>
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <a href="#intro-2d" class="intro-link toggle">Mostrar introducci&oacute;n</a>
+  </div>
+</div>
+<div id="intro-2d" style="display:none" class="row">
+  <div class="col-lg-8 col-md-8">
+    <p>
+      Los tenedores de derechos de copyright y derechos relacionados, p.ej. escritores, cantantes, m&uacute;sicos, no disfrutan de una &uacute;nica protecci&oacute;n en la UE. Por el contrario, est&aacute;n protegidos a un conjunto de derechos nacionales de cada Pa&iacute;s Miembro. Estos derechos se han armonizado notablemente en las Directivas existentes de la UE. Sin embargo, todav&iacute;a hay diferencias y el &aacute;mbito geogr&aacute;fico de los derechos est&aacute; limitado al territorio del Pa&iacute;s Miembro que los concede. El derecho de copyright es por lo tanto territorial en el sentido de que los derechos se adquieren y aplican pa&iacute;s por pa&iacute;s mediante leyes nacionales<sup><a class="sdfootnoteanc" name="sdfootnote9anc" href="#sdfootnote9sym">9</a></sup>.
+    </p>
+    <p>
+      Esta diseminaci&oacute;n de los contenidos protegidos mediante copyright en internet, por ejemplo los servicios de streaming de m&uacute;sica, los vendedores de libros electr&oacute;nicos, requieren en principio la autorizaci&oacute;n de cada territorio nacional en el que se pone el contenido a disposici&oacute;n del p&uacute;blico. Los tenedores de los derechos, naturalmente, tienen capacidad para otorgar licencias a multiterritoriales a nivel europeo, de forma que los servicios de contenido se puedan ofrecer en varios pa&iacute;ses miembros de forma transfronteriza. Se han tomado varios pasos a nivel UE para facilitar las licencias multi-territoriales: la propuesta de una Directiva para la Gesti&oacute;n colectiva de derechos <sup><a class="sdfootnoteanc" name="sdfootnote10anc" href="#sdfootnote10sym">10</a></sup> deber&iacute;a facilitar notablemente el otorgamiento de licencias multi.territoriales en obras musicales para servicios online<sup><a class="sdfootnoteanc" name="sdfootnote11anc" href="#sdfootnote11sym">11</a></sup>; el di&aacute;logo estructurado de las partes &ldquo;Licencias para Europa&rdquo;<sup><a class="sdfootnoteanc" name="sdfootnote12anc" href="#sdfootnote12sym">12</a></sup> y los desarrollos basados en el mercado en la coalici&oacute;n Linked Content Coalition<sup><a class="sdfootnoteanc" name="sdfootnote13anc" href="#sdfootnote13sym">13</a></sup>.
+    </p>
+    <p>
+      &quot;Licencias para Europa&quot; se refiere especialmente a la cuesti&oacute;n de la portabilidad transfronteriza, es decir, la capacidad de los usuarios que se hayan suscrito a servicios online en su pa&iacute;s miembro para poder seguir accediendo a ellos cuando est&eacute;n viajando temporalmente por Europa. Como resultado, los representantes del sector audiovisual han emitido un comunicado conjunto en el que afirman su compromiso para seguir trabajando hacia el desarrollo continuado de la portabilidad transfronteriza<sup><a class="sdfootnoteanc" name="sdfootnote14anc" href="#sdfootnote14sym">14</a></sup>.
+    </p>
+    <p>
+      A pesar del progreso, hay problemas continuos con la oferta y acceso de servicios transfronterizos. Estos problemas son obvios para los consumidores que desean acceder a servicios en otros pa&iacute;ses miembros que no sean el suyo. No todos los servicios online est&aacute;n disponibles en todos los Estados Miembros, y los consumidores se enfrentan a problemas cuando quieren acceder a dichos servicios de manera transfronteriza. En algunos casos, incluso si el &ldquo;mismo&rdquo; servicio est&aacute; disponible en todos los Pa&iacute;ses Miembro, los consumidores no pueden acceder al servicio de manera transfronteriza (solo pueden acceder a su servicio &ldquo;nacional&rdquo;, y si intentan acceder al &quot;mismo&quot; servicio en otro Pa&iacute;s Miembro, se les redirige al designado para su pa&iacute;s de residencia).
+    </p>
+    <p>
+      Esta situaci&oacute;n proviene de la territorialidad de los derechos y las dificultades asociadas con la autorizaci&oacute;n de los derechos en diferentes territorios. Las cl&aacute;usulas contractuales en los acuerdos de licencia entre los tenedores de los derechos y los distribuidores y/o entre los distribuidores y los usuarios finales pueden tambi&eacute;n ser el origen de este problema (denegaci&oacute;n de acceso, redireccionamiento).
+    </p>
+    <p>
+      El principal problema es saber si deben tomarse medidas adicionales (legislativas o no legislativas, incluido las soluciones dictadas por el mercado) en la UE a medio plazo<sup><a class="sdfootnoteanc" name="sdfootnote15anc" href="#sdfootnote15sym">15</a></sup> para aumentar la disponibilidad de servicios de contenidos en el Mercado &uacute;nico, mientras se garantiza el nivel adecuado de protecci&oacute;n para los tenedores de los derechos.
+    </p>
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <h4>Resumen</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+</div>
+
+{% for question_num in (1..7) %}
+  {% for question in site.data.questions %}
+    {% if question.num == question_num %}
+      {% include question.html %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}

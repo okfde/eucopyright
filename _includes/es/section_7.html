@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-lg-8 col-md-8">
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <a href="#intro-7-1" class="intro-link toggle">Show introduction</a>
+  </div>
+</div>
+<div id="intro-7-1" style="display:none" class="row">
+  <div class="col-lg-8 col-md-8">
+    <p>
+      The idea of establishing a unified EU Copyright Title has been present in the copyright debate for quite some time now, although views as to the merits and the feasibility of such an objective are divided. A unified EU Copyright Title would totally harmonise the area of copyright law in the EU and replace national laws. There would then be a single EU title instead of a bundle of national rights. Some see this as the only manner in which a truly Single Market for content protected by copyright can be ensured, while others believe that the same objective can better be achieved by establishing a higher level of harmonisation while allowing for a certain degree of flexibility and specificity in Member States’ legal systems.
+    </p>
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <h4>Summary</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+</div>
+
+{% for question_num in (78..79) %}
+  {% for question in site.data.questions %}
+    {% if question.num == question_num %}
+      {% include question.html %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}

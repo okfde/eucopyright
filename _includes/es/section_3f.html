@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-lg-8 col-md-8">
+    <h3>User-generated content</h3>
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <a href="#intro-3f-1" class="intro-link toggle">Show introduction</a>
+  </div>
+</div>
+<div id="intro-3f-1" style="display:none" class="row">
+  <div class="col-lg-8 col-md-8">
+    <p>
+      Technological and service developments mean that citizens can copy, use and distribute content at little to no financial cost. As a consequence, new types of online activities are developing rapidly, including the making of so-called “user-generated content”. While users can create totally original content, they can also take one or several pre-existing works, change something in the work(s), and upload the result on the Internet e.g. to platforms and blogs<sup><a class="sdfootnoteanc" name="sdfootnote53anc" href="#sdfootnote53sym">53</a></sup>. User-generated content (UGC) can thus cover the modification of pre-existing works even if the newly-generated/&quot;uploaded&quot; work does not necessarily require a creative effort and results from merely adding, subtracting or associating some pre-existing content with other pre-existing content. This kind of activity is not “new” as such. However, the development of social networking and social media sites that enable users to share content widely has vastly changed the scale of such activities and increased the potential economic impact for those holding rights in the pre-existing works. Re-use is no longer the preserve of a&nbsp;technically and artistically adept elite. With the possibilities offered by the new technologies, re-use is open to all, at no cost. This in turn raises questions with regard to fundamental rights such the freedom of expression and the right to property.
+    </p>
+    <p>
+      A specific Working Group was set up on this issue in the framework of the &quot;Licences for Europe&quot; stakeholder dialogue. No consensus was reached among participating stakeholders on either the problems to be addressed or the results or even the definition of UGC. Nevertheless, a wide range of views were presented as to the best way to respond to this phenomenon. One view was to say that a new exception is needed to cover UGC, in particular non-commercial activities by individuals such as combining existing musical works with videos, sequences of photos, etc. Another view was that no legislative change is needed: UGC is flourishing, and licensing schemes are increasingly available (licence schemes concluded between rightholders and platforms as well as micro-licences concluded between rightholders and the users generating the content. In any event, practical solutions to ease user-generated content and facilitate micro-licensing for small users were pledged by rightholders across different sectors as a result of the “Licences for Europe” discussions<sup><a class="sdfootnoteanc" name="sdfootnote54anc" href="#sdfootnote54sym">54</a></sup>.
+    </p>
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <h4>Summary</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+</div>
+
+{% for question_num in (58..63) %}
+  {% for question in site.data.questions %}
+    {% if question.num == question_num %}
+      {% include question.html %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}

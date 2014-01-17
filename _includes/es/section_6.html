@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-lg-8 col-md-8">
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <a href="#intro-6-1" class="intro-link toggle">Show introduction</a>
+  </div>
+</div>
+<div id="intro-6-1" style="display:none" class="row">
+  <div class="col-lg-8 col-md-8">
+    <p>
+      Directive 2004/48/EE<sup><a class="sdfootnoteanc" name="sdfootnote64anc" href="#sdfootnote64sym">64</a></sup> provides for a harmonised framework for the civil enforcement of intellectual property rights, including copyright and related rights. The Commission has consulted broadly on this text<sup><a class="sdfootnoteanc" name="sdfootnote65anc" href="#sdfootnote65sym">65</a></sup>. Concerns have been raised as to whether some of its provisions are still fit to ensure a proper respect for copyright in the digital age. On the one hand, the current measures seem to be insufficient to deal with the new challenges brought by the dissemination of digital content on the internet; on the other hand, there are concerns about the current balance between enforcement of copyright and the protection of fundamental rights, in particular the right for a private life and data protection. While it cannot be contested  that enforcement measures should always be available in case of infringement of copyright, measures could be proposed to strengthen respect for copyright when the infringed content is used for a commercial purpose<sup><a class="sdfootnoteanc" name="sdfootnote66anc" href="#sdfootnote66sym">66</a></sup>. One means to do this could be to clarify the role of intermediaries in the IP infrastructure<sup><a class="sdfootnoteanc" name="sdfootnote67anc" href="#sdfootnote67sym">67</a></sup>. At the same time, there could be clarification of the safeguards for respect of private life and data protection for private users.
+    </p>
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <h4>Summary</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+</div>
+
+{% for question_num in (75..77) %}
+  {% for question in site.data.questions %}
+    {% if question.num == question_num %}
+      {% include question.html %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}

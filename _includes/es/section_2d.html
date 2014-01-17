@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-lg-8 col-md-8">
+    <h3>How to improve the use and interoperability of identifiers</h3>
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <a href="#intro-2g" class="intro-link toggle">Show introduction</a>
+  </div>
+</div>
+<div id="intro-2g" style="display:none" class="row">
+  <div class="col-lg-8 col-md-8">
+    <p>
+      There are many private databases of works and other subject matter held by producers, collective management organisations, and institutions such as libraries, which are based to a&nbsp;greater or lesser extent on the use of (more or less) interoperable, internationally agreed ‘identifiers’.
+      Identifiers can be compared to a reference number embedded in a work, are specific to the sector in which they have been developed<sup><a class="sdfootnoteanc" name="sdfootnote31anc" href="#sdfootnote31sym">31</a></sup>, and identify, variously, the work itself, the owner or the contributor to a work or other subject matter. There are notable examples of where industry is undertaking actions to improve the interoperability of such identifiers and databases.
+      The Global Repertoire Database<sup><a class="sdfootnoteanc" name="sdfootnote32anc" href="#sdfootnote32sym">32</a></sup> should, once operational, provide a single source of information on the ownership and control of musical works worldwide. The Linked Content Coalition<sup><a class="sdfootnoteanc" name="sdfootnote33anc" href="#sdfootnote33sym">33</a></sup> was established to develop building blocks for the expression and management of rights and licensing across all content and media types.
+      It includes the development of a Rights Reference Model (RRM) – a comprehensive data model for all types of rights in all types of content. The UK Copyright Hub<sup><a class="sdfootnoteanc" name="sdfootnote34anc" href="#sdfootnote34sym">34</a></sup> is seeking to take such identification systems a step further, and to create a linked platform, enabling automated licensing across different sectors.
+    </p>
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <h4>Summary</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+</div>
+
+{% for question_num in (19..19) %}
+  {% for question in site.data.questions %}
+    {% if question.num == question_num %}
+      {% include question.html %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
