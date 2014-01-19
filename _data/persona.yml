@@ -331,6 +331,15 @@ translations:
     pl: Eksploracja tekstów i danych
     nl: Tekst en data mining
     fr: Recherche et extraction de données
+  timeforgeneralquestions:
+    de: Hast du noch etwas Zeit für ein paar weitere Fragen?
+    en: Do you have some time left to answer a few more questions?
+  timeforgeneralquestionsyes:
+    de: Ja, zeig mir noch ein paar Fragen
+    en: Yes, show me a few more questions
+  timeforgeneralquestionsno:
+    de: Nein, ich bin fertig
+    en: No, I'm done
   title:
     de: Reparier das EU-Urheberrecht!
     en: Let's fix EU Copyright!

@@ -45,6 +45,7 @@ $(function(){
   };
   var qIndex = {}, qCount = 0;
   var questionSections = $('.question-sections');
+  var generalQuestionSection = $('#general-questions');
   var toggleSections = function() {
     var personas = [];
     $('.personas .thumbnail').each(function(i, el) {
@@ -55,7 +56,7 @@ $(function(){
       }
     });
     var groupObj = {}, personaQuestions, questionList = [];
-    var addQuestions = function(persona){
+    var addQuestions = function(persona, questionList){
       personaQuestions = personaQuestionMap[persona];
       for (var j = 0; j < personaQuestions.length; j += 1) {
         if (groupObj[personaQuestions[j]] === undefined) {
@@ -65,32 +66,50 @@ $(function(){
       }
     };
     for (var i = 0; i < personas.length; i += 1) {
-      addQuestions(personas[i]);
+      addQuestions(personas[i], questionList);
     }
-    addQuestions('general');
+    var generalQuestions = [];
+    addQuestions('general', generalQuestions);
+
+    $('#general-questions .question-section').appendTo(questionSections);
 
     $('#persona-questions .question-section').removeClass('active').hide();
-    $('.q').removeClass('active');
+    $('.q').removeClass('active countactive');
     // Mark all as "No Opinion"
-    $('.q input[type=radio][value=2]').prop('checked', true);
+    $('.q input[type=radio]').prop('checked', false);
     for (i = 0; i < questionList.length; i += 1) {
-      $('#persona-questions .question-section-' + questionList[i]).appendTo(questionSections).addClass('active').show();
-      $('#q-' + questionList[i]).addClass('active');
+      $('.question-section-' + questionList[i]).appendTo(questionSections).addClass('active').show();
+      $('#q-' + questionList[i]).addClass('active countactive');
+    }
+
+    for (i = 0; i < generalQuestions.length; i += 1) {
+      $('.question-section-' + generalQuestions[i]).removeClass('active').appendTo(generalQuestionSection);
     }
     // Overwrite guide only for active questions
     loadGuide({activeOnly: true});
 
-    qCount = $('.question-section.active').length;
-    qIndex = {};
-    $('.q.active').each(function(i, el){
-      qIndex[$(el).attr('id')] = i;
-    });
+    $('.timeformorequestions').show();
+    $('#general-questions').hide();
   };
 
   $('.personas .thumbnail input').change(function(){
     toggleSections();
     refreshScroll();
   });
+  $('#show-general-questions').click(function(){
+    $('.q').removeClass('active');
+    $('#general-questions .question-section').addClass('active').show();
+    $('#general-questions .q').addClass('active countactive');
+    loadGuide({activeOnly: true});
+    $('.timeformorequestions').hide();
+    $('#general-questions').slideDown();
+    refreshScroll();
+  });
+
+  $('#show-finish-form').click(function(){
+    $('.timeformorequestions').hide();
+  });
+
   $('.delete-localstorage').show();
   $('#persona-questions').hide();
   $('.continue-questions').click(function(){
@@ -153,11 +172,16 @@ $(function(){
     }).css('width', ((qIndex[target] + 1) / qCount * 100) + '%');
   };
   var refreshScroll = function(){
+    qCount = $('.q.countactive').length;
+    qIndex = {};
+    $('.q.countactive').each(function(i, el){
+      qIndex[$(el).attr('id')] = i;
+    });
     offsets = $([]);
     targets = $([]);
     var offsetMethod = 'offset';
     $('body')
-      .find('.q.active')
+      .find('.q.countactive')
       .map(function () {
         var $el = $(this);
         return [[ $el[offsetMethod]().top + (!$.isWindow($scrollElement.get(0)) && $scrollElement.scrollTop()),

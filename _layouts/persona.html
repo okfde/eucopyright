@@ -165,8 +165,25 @@ questions:
           </div>
         {% endfor %}
       </div>
-
-      <div class="well">
+      <div class="panel panel-default timeformorequestions">
+        <div class="panel-body">
+          <h3>
+            {% if site.data.persona.translations.timeforgeneralquestions[page.language] %}{{ site.data.persona.translations.timeforgeneralquestions[page.language] }}{% else %}{{ site.data.persona.translations.timeforgeneralquestions.en }}{% endif %}
+          </h3>
+        </div>
+        <div class="panel-footer">
+          <a href="#general-questions" id="show-general-questions" class="btn btn-primary">
+            {% if site.data.persona.translations.timeforgeneralquestionsyes[page.language] %}{{ site.data.persona.translations.timeforgeneralquestionsyes[page.language] }}{% else %}{{ site.data.persona.translations.timeforgeneralquestionsyes.en }}{% endif %}
+          </a>
+          <a href="#finish-form" id="show-finish-form" class="btn btn-default">
+            {% if site.data.persona.translations.timeforgeneralquestionsno[page.language] %}{{ site.data.persona.translations.timeforgeneralquestionsno[page.language] }}{% else %}{{ site.data.persona.translations.timeforgeneralquestionsno.en }}{% endif %}
+          </a>
+        </div>
+      </div>
+      <hr/>
+      <div id="general-questions" style="display: none">
+      </div>
+      <div id="finish-form" class="well">
         <div class="form-group">
           <label for="name">{% if site.data.persona.translations.fullname[page.language] %}{{ site.data.persona.translations.fullname[page.language] }}{% else %}{{ site.data.persona.translations.fullname.en }}{% endif %}</label>
           <input type="text" class="form-control save" name="name" id="name" placeholder="Enter your name">
