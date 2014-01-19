@@ -1194,6 +1194,12 @@
     - action: mark
       key: P1033
   text:
+    de: '(a) [Insbesondere, wenn Sie eine Bibliothek sind:] Hatten Sie konkrete Probleme bei dem Versuch die elektronische Ausleihe (e-Lending) - ggf. grenzübergreifend - für Bücher oder andere Werke Ihrer Sammlung einzuführen?
+
+      (b) [Insbesondere, wenn Sie ein Endnutzer/Verbraucher sind:] Hatten Sie konkrete Probleme beim Versuch Bücher oder andere Werke elektronisch (ggf. grenzüberschreitend) bei Institutionen wie öffentliche Bibliotheken auszuleihen (e-lending)?
+
+      (c) [Insbesondere, wenn Sie ein Rechteinhaber sind:] Haben Sie Verträge mit Bibliotheken, die eine elektronische Ausleihe von Büchern oder anderen Werken (ggf. grenzüberschreitend) erlaubt?
+      '
     en: '(a) [In particular if you are a library:] Have you experienced specific problems when trying to negotiate agreements to enable the electronic lending (e-lending), including across borders, of books or other materials held in your collection?
 
       (b) [In particular if you are an end user/consumer:] Have you experienced specific problems when trying to borrow books or other materials electronically (e-lending), including across borders, from institutions such as public libraries?
@@ -1257,6 +1263,7 @@
   - action: remove
     key: P1039
   text:
+    de: Wenn es dabei Probleme gibt, wie löst man diese am Besten?
     en: If there are problems, how would they best be solved?
     it: Se ci fossero problemi, come dovrebbero venir risolti?
     pl: Jeśli pojawiają się problemy, w jaki sposób najlepiej je rozwiązać?
@@ -1277,6 +1284,7 @@
   - action: remove
     key: P1052
   text:
+    de: Welche Unterschiede sehen Sie in der Verwaltung von physischen und elektronischen Sammlungen, auch bezogen auf Zugang für Ihre Abonnenten? Welche Probleme gab es?
     en: What differences do you see in the management of physical and online collections, including providing access to your subscribers? What problems have you encountered?
     it: Quali differenze vedete nella gestione delle collezioni fisiche e online, oltre al fornire l'accesso ai vostri abbonati? Quali problemi avete incontrato?
     pl: '[W szczególności, jeśli są Państwo użytkownikami instytucjonalnymi:] Jakie widzą Państwo różnice w zarządzaniu kolekcjami fizycznie istniejącymi i kolekcjami online, z uwzględnieniem zapewnienia dostępu do nich Państwa subskrybentom? Jakie napotkali Państwo problemy?'
@@ -1298,6 +1306,7 @@
   - action: remove
     key: P1066
   text:
+    de: Welchen Unterschied sehen Sie zwischen den traditionellen Tätigkeiten einer Bibliothek wie Beratung oder öffentliche Ausleihe vor Ort und Aktivitäten wie Online-Beratung und elektronische Ausleihe? Auf welche Probleme sind Sie gestoßen?
     en: What difference do you see between libraries’ traditional activities such as on-premises consultation or public lending and activities such as off-premises (online, at a distance) consultation and e-lending? What problems have you encountered?
     it: Che differenza vedete tra le attività tradizionali delle biblioteche come la consultazione in loco o il prestito e attività fuori sede (on-line, a distanza), la consultazione e l'e-lending? Quali problemi avete incontrato?
     pl: '[W szczególności, jeśli są Państwo posiadaczami praw autorskich:] Jakie widzą Państwo różnice między tradycyjną działalnością bibliotek taką jak korzystanie z kolekcji na miejscu lub wypożyczanie i działalnością zdalną (online, z daleka) taką jak zdalne korzystanie z kolekcji i e-wypożyczanie? Jakie napotkali Państwo problemy?'
@@ -1310,6 +1319,7 @@
   num: 40
   options:
   - details:
+      en: Bitte erklären Sie warum und wie es am Besten erreicht werden könnte
       en: Please explain why and how it could best be achieved
       pl: Proszę wyjaśnić dlaczego i jak to może zostać osiągnięte
     fulltext: true
@@ -1322,6 +1332,7 @@
     - action: remove
       key: P1111
   - details:
+      de: Bitte erklären Sie
       en: Please explain
       pl: Proszę wyjaśnić dlaczego
     fulltext: true
@@ -1338,6 +1349,7 @@
     - action: mark
       key: P1115
   text:
+    de: Ist es in Ihrem Land notwendig, einen grenzüberschreitenden Effekt für das MoU von 2011 (die Vereinbarung zwischen Bibliotheken und Verwertungsgesellschaften) gesetzlich festzuschreiben, so dass nicht mehr im kommerziellen Umlauf befindliche Werke in der ganzen EU verfügbar werden?
     en: Would it be necessary in your country to enact legislation to ensure that the results of the 2011 MoU (i.e. the agreements concluded between libraries and collecting societies) have a cross-border effect so that out of commerce works can be accessed across the EU?
     it: Sarebbe necessario nel vostro Paese promulgare una legge per garantire che i risultati del MoU 2011 (cioè gli accordi conclusi tra biblioteche e società di gestione collettiva) abbiano un effetto transfrontaliero garantendo che le opere fuori commercio possano essere consultate in UE?
     pl: '[W szczególności, jeśli są Państwo użytkownikami instytucjonalnymi zaangażowanymi bądź pragnącymi zaagażować się w projekty masowej digitalizacji, posiadaczami praw autorskich, przedstawicielami organizacji zbiorowego zarządzania:] Czy w Państwa kraju byłoby konieczne wydanie przepisów prawnych, aby zapewnić, że rezultaty Porozumienia z 2001 r. (tj. umów zawartych pomiędzy bibliotekami i organizacjami zbiorowego zarządzania) są skuteczne transgranicznie, aby w całej Europie zapewnić dostęp do utworów niedostępnych w handlu?'
@@ -1350,6 +1362,7 @@
   num: 41
   options:
   - details:
+      de: Bitte erklären Sie
       en: Please explain
       pl: Proszę wyjaśnić dlaczego
     fulltext: true
@@ -1362,6 +1375,7 @@
     - action: remove
       key: P1126
   - details:
+      de: Bitte erklären Sie
       en: Please explain
       pl: Proszę wyjaśnić dlaczego
     fulltext: true
@@ -1378,6 +1392,7 @@
     - action: mark
       key: P1130
   text:
+    de: Ist es notwendig weitere Mechanismen für andere Arten von Inhalten (z.B. Audio- oder Filmsammlungen, Rundfunkarchive) zu entwickeln?
     en: Would it be necessary to develop mechanisms, beyond those already agreed for other types of content (e.g. for audio- or audio-visual collections, broadcasters’ archives)?
     it: Sarebbe necessario sviluppare meccanismi, oltre a quelli già concordati per altri tipi di contenuto (ad esempio, raccolte audio o audio-visive, archivi di emittenti)?
     pl: Czy byłoby konieczne rozwijanie mechanizmów poza juz wypracowanymi dla innych typów treści (np. kolekcjami audio- i audiowizualnymi, archiwami nadawców)?
@@ -1393,6 +1408,7 @@
   num: 42
   options:
   - details:
+      de: Bitte erklären Sie
       en: Please explain
       pl: Proszę wyjaśnić dlaczego
     fulltext: true
@@ -1413,6 +1429,11 @@
     - action: mark
       key: P1172
   text:
+    de: '(a) [Insbesondere, wenn Sie ein/e Verbraucher/in oder ein/e insitutionelle/r Nutzer/in sind:] Hatten Sie konkrete Probleme bei dem Versuch Werke oder andere Inhalte als Lehrmaterial zu verwenden (ggf. auch grenzüberschreitend)?
+
+      (b) [Insbesondere, wenn Sie Rechteinhaber sind:] Hatten Sie konkrete Probleme durch die Art wie Werke oder andere Inhalte als Lehrmaterial (ggf. auch grenzüberschreitend) eingesetzt wurden?
+
+      '
     en: '(a) [In particular if you are an end user/consumer or an institutional user:] Have you experienced specific problems when trying to use works or other subject-matter for illustration for teaching, including across borders?
 
       (b) [In particular if you are a right holder:] Have you experienced specific problems resulting from the way in which works or other subject-matter are used for illustration for teaching, including across borders?
@@ -1443,6 +1464,7 @@
   - action: remove
     key: P1177
   text:
+    de: Wenn es Probleme gibt, wie könnte man diese am Besten lösen?
     en: If there are problems, how would they best be solved?
     it: Se ci fossero problemi, come dovrebbero venir risolti?
     pl: Jeśli pojawiają się problemy, w jaki sposób najlepiej je rozwiązać?
@@ -1466,6 +1488,7 @@
   - action: remove
     key: P1182
   text:
+    de: Welche Marktmechanismen existieren, um die Verwendung von Inhalten als Lehrmaterial zu vereinfachen? Wie erfolgreich sind sie?
     en: What mechanisms exist in the market place to facilitate the use of content for illustration for teaching purposes? How successful are they?
     it: Quali meccanismi esistono sul mercato per facilitare l'utilizzo dei contenuti per l'illustrazione a fini didattici? Quanto sono utili?
     pl: Jakie mechanizmy rynkowe ułatwiają korzystanie z treści w ramach nauczania? W jakim stopniu są one skuteczne?
@@ -1482,6 +1505,7 @@
   - action: remove
     key: P1187
   text:
+    de: Wenn Sie glauben, dass eine gesetzliche Lösung gebraucht wird, was wären die wichtigsten Bestandteile? Welche Tätigkeiten der begünstigten Institutionen sollen unter welchen Bedingungen abgedeckt sein?
     en: If your view is that a legislative solution is needed, what would be its main elements? Which activities of the beneficiary institutions should be covered and under what conditions?
     it: Se il vostro punto di vista è che sia necessaria una soluzione legislativa, quale sarebbero i suoi elementi principali? Quali attività delle istituzioni beneficiarie dovrebbero essere coperti e in quali condizioni?
     pl: Jeśli uważają Państwo, że potrzebne jest rozwiązanie ustawowe, jakie byłyby jego główne elementy?  Jakie aktywności instytucji-beneficjentów powinno ono obejmować i na jakich warunkach?
@@ -1498,6 +1522,7 @@
   - action: remove
     key: P1192
   text:
+    de: Wenn Ihre Ansicht ist, dass eine andere Lösung gebraucht wird, welche würde das sein?
     en: If your view is that a different solution is needed, what would it be?
     it: Se il vostro punto di vista è che sia necessaria una soluzione diversa, quale sarebbe?
     pl: Jeśli uważają Państwo, że potrzebne jest rozwiązanie innego rodzaju, jakie ono by było?
@@ -1515,6 +1540,7 @@
   num: 47
   options:
   - details:
+      de: Bitte erklären Sie
       en: Please explain
       pl: Proszę wyjaśnić dlaczego
     fulltext: true
@@ -1535,6 +1561,11 @@
     - action: mark
       key: P1238
   text:
+    de: '(a) [Insbesondere, wenn Sie ein/e Verbraucher/in oder institutionelle/r Nutzer/in sind:] Hatten Sie konkrete Probleme bei dem Versuch Werke oder andere Inhalte für Forschungsprojekte und -tätigkeiten zu verwenden (ggf. auch grenzüberschreitend)?
+
+      (b) [Insbesondere, wenn Sie Rechteinhaber/in sind:] Hatten Sie konkrete Probleme dadurch wie Werke oder andere Inhalte für Forschungsprojekte oder -tätigkeiten verwendet wurden (ggf. auch grenzüberschreitend)?
+
+      '
     en: '(a) [In particular if you are an end user/consumer or an institutional user:] Have you experienced specific problems when trying to use works or other subject matter in the context of research projects/activities, including across borders?
 
       (b) [In particular if you are a right holder:] Have you experienced specific problems resulting from the way in which works or other subject-matter are used in the context of research projects/activities, including across borders?
@@ -1563,6 +1594,7 @@
   - action: remove
     key: P1243
   text:
+    de: Wenn es Probleme gibt, wie könnte man diese am Besten lösen?
     en: If there are problems, how would they best be solved?
     it: Se ci fossero problemi, come dovrebbero venir risolti?
     pl: Jeśli pojawiają się problemy, w jaki sposób najlepiej je rozwiązać?
@@ -1579,6 +1611,7 @@
   - action: remove
     key: P1249
   text:
+    de: Welche Mechanismen gibt es in den Mitgliedsstaaten, die die Verwendung von Inhalten für Forschungszwecke vereinfachen? Wie erfolgreich sind sie?
     en: What mechanisms exist in the Member States to facilitate the use of content for research purposes? How successful are they?
     it: Quali meccanismi esistono negli Stati membri per facilitare l'utilizzo dei contenuti per scopi di ricerca? Quanto sono utili?
     pl: Jakie mechanizmy istniejące w krajach członkowskich ułatwiają korzystanie z treści w celach badawczych? W jakim stopniu są one skuteczne?
@@ -1593,6 +1626,7 @@
   num: 50
   options:
   - details:
+      de: Bitte erklären Sie mit Beispielen
       en: Please explain by giving examples
       pl: Proszę uzasadnić, podając przykłady
     fulltext: true
