@@ -82,6 +82,11 @@ textarea {
 
 .footer-row {
   padding: 1em 0;
+  margin-bottom: 40px;
+}
+
+.footer-row a {
+  margin: 0 0.25em;
 }
 
 .toggle {
