@@ -173,6 +173,7 @@
   num: 6
   options:
   - details:
+      de: Bitte erklären Sie mit Beispielen
       en: Please explain by giving examples
       es: Proporciona ejemplos
       pl: Proszę uzasadnić, podając przykłady
@@ -224,6 +225,7 @@
     - action: remove
       key: P555
   - details:
+      de: Bitte erklären Sie
       en: Please explain
       pl: Proszę wyjaśnić
     fulltext: true
@@ -434,6 +436,7 @@
     - action: remove
       key: P686
   - details:
+      de: Bitte erklären Sie, ob Sie glauben, dass dies allgemein der Fall ist oder nur unter speziellen Umständen und warum (z.B. weil es von einer Urheberrechtsausnahme abgedeckt ist oder sein sollte)
       en: Please explain whether you consider this to be the case in general, or under specific circumstances, and why (e.g. because it is or should be covered by a copyright exception)
       es: Explica si consideras que este es el caso general, o si se trata de circunstancias específicas y por qué (p.ej. porque consideras que está o debería estar cubierto por la excepción de copyright)
       pl: Proszę wyjaśnić czemu i czy zasada ma dotyczyć każdego przeglądania, czy tylko jakichś specyficznych przypadków
@@ -477,6 +480,7 @@
   num: 13
   options:
   - details:
+      de: Bitte erklären Sie mit Beispielen
       en: Please explain by giving examples
       es: Proporciona ejemplos
       pl: Proszę uzasadnić, podając przykłady
@@ -1078,6 +1082,13 @@
   - action: remove
     key: P968
   text:
+    de: '(a) [Insbesondere, wenn Sie ein insititutionelle/r Nutzer/in sind:] Hatten Sie konkrete Probleme bei dem Versuch Verträge mit Rechteinhabern auszuhandeln, die es Ihnen ermöglichen würden Remote-Zugriff (ggf. auch grenzüberschreitend) auf Ihre Sammlung (oder Teile davon) für Studien- und Forschungszwecke zu geben?
+
+      (b) [Insbesondere, wenn Sie ein/e Verbraucher/in sind:] Hatten Sie konkrete Probleme dabei, auf Werke und andere Inhalte in den Sammlungen von Institutionen wie Universitäten oder Nationalbibliotheken zuzugreifen (ggf. auch grenzüberschreitend), wenn Sie nicht selbst am Ort der Institution waren?
+
+      (c) [Insbesondere, wenn Sie ein/e Rechteinhaber/in sind:] Haben Sie Verträge mit insititutionellen Nutzern ausgehandelt, die es diesen Institutionen ermöglichen, Remote-Zugriff (ggf. auch grenzüberschreitend) auf die Werke ihrer Sammlungen für Studien- und Forschungszwecke zu geben?
+
+      '
     en: '(a) [In particular if you are an institutional user:] Have you experienced specific problems when trying to negotiate agreements with rights holders that enable you to provide remote access, including across borders, to your collections (or parts thereof) for purposes of research and private study?
 
       (b) [In particular if you are an end user/consumer:] Have you experienced specific problems when trying to consult, including across borders, works and other subject-matter held in the collections of institutions such as universities and national libraries when you are not on the premises of the institutions in question?
@@ -1142,6 +1153,7 @@
   - action: remove
     key: P978
   text:
+    de: Wenn Sie glauben, dass eine gesetzliche Lösung gebraucht wird, was wären die wichtigsten Bestandteile? Welche Tätigkeiten der begünstigten Institutionen sollen unter welchen Bedingungen abgedeckt sein?
     en: If your view is that a legislative solution is needed, what would be its main elements? Which activities of the beneficiary institutions should be covered and under which conditions?
     it: Se il vostro punto di vista è che sia necessaria una soluzione legislativa, quale sarebbero i suoi elementi principali? Quali attività delle istituzioni beneficiarie dovrebbero essere coperte e a quali condizioni?
     pl: Jeśli uważają Państwo, że potrzebne jest rozwiązanie ustawowe, jakie byłyby jego główne elementy? Jakie aktywności instytucji-beneficjentów powinno ono obejmować i na jakich warunkach?
@@ -1173,6 +1185,7 @@
   num: 36
   options:
   - details:
+      de: Bitte erklären Sie mit konkreten Beispielen
       en: Please explain with specific examples
       es: Proporciona ejemplos específicos
       pl: Proszę wyjaśnić na podstawie konkretnych przypadków
@@ -1319,7 +1332,7 @@
   num: 40
   options:
   - details:
-      en: Bitte erklären Sie warum und wie es am Besten erreicht werden könnte
+      de: Bitte erklären Sie warum und wie es am Besten erreicht werden könnte
       en: Please explain why and how it could best be achieved
       pl: Proszę wyjaśnić dlaczego i jak to może zostać osiągnięte
     fulltext: true
@@ -1647,6 +1660,13 @@
     - action: mark
       key: P1297
   text:
+    de: '(a) [Insbesondere, wenn Sie eine Person mit Behinderung oder eine Organisation, die behinderte Personen vertritt, sind:] Hatten Sie durch die Umsetzung der Ausnahme durch Mitgliedstaaten Probleme mit dem Zugang zu Inhalten (ggf. auch grenzübergreifend)?
+
+      (b) [Insbesondere, wenn Sie eine Organisation sind, die Dienste für Personen mit Behinderung anbietet:] Hatten Sie Probleme mit dem Verteilen/Kommunizieren von Inhalten in speziellen Formaten in der EU?
+
+      (c) [Insbesondere, wenn Sie Rechteinhaber/in sind:] Haben Sie konkrete Probleme aus der Anwendung von Beschränkungen oder Ausnahmen, die den Vertrieb / die Kommunikation von Werken in speziellen Formaten erlaubt (ggf. auch grenzübergreifend)?
+
+      '
     en: '(a) [In particular if you are a person with a disability or an organisation representing persons with disabilities:] Have you experienced problems with accessibility to content, including across borders, arising from Member States’ implementation of this exception?
 
       (b) [In particular if you are an organisation providing services for persons with disabilities:] Have you experienced problems when distributing/communicating works published in special formats across the EU?
@@ -1681,6 +1701,7 @@
   - action: remove
     key: P1305
   text:
+    de: Falls es Probleme gibt, was könnte getan werden, um die Zugänglichkeit zu verbessern?
     en: If there are problems, what could be done to improve accessibility?
     it: Se ci fossero problemi, cosa si potrebbe fare per migliorare l'accessibilità?
     pl: Jeśli pojawiają się problemy, co można zrobić, aby poprawić dostępność?
@@ -1697,6 +1718,7 @@
   - action: remove
     key: P1310
   text:
+    de: Welche Markmechanismen gibt es, die die Zugänglichkeit von Inhalten vereinfachen? Wie erfoglreich sind sie?
     en: What mechanisms exist in the market place to facilitate accessibility to content? How successful are they?
     it: Quali meccanismi esistono sul mercato per facilitare l'accessibilità dei contenuti? Quanto sono utili?
     pl: 'Jakie istnieją mechanizmy rynkowe dostępu do treści? Czy i jak są skuteczne? '
@@ -1713,6 +1735,7 @@
   num: 53
   options:
   - details:
+      de: Bitte erklären Sie
       en: Please explain
       pl: Proszę wyjaśnić
     fulltext: true
@@ -1725,6 +1748,7 @@
     - action: remove
       key: P1369
   - details:
+      de: Bitte erklären Sie
       en: Please explain
       pl: Proszę wyjaśnić
     fulltext: true
@@ -1741,6 +1765,13 @@
     - action: mark
       key: P1373
   text:
+    de: '(a) [Insbesondere, wenn Sie ein/e Verbraucher/in oder institutionelle Nutzer/in sind:] Sind Sie auf Hindernisse in Zusammenhang mit dem Urheberrecht gestoßen, als Sie versuchten, Text- oder Data-Mining-Methoden zu nutzen (ggf. auch grenzüberschreitend)?
+
+      (b) [Insbesondere, wenn Sie ein Diensteanbieter sind:] Sind Sie auf Hindernisse in Zusammenhang mit dem Urheberrecht gestoßen, als Sie versuchten Dienste auf Basis von Text- oder Data-Mining-Methoden anzubieten (ggf. auch grenzüberschreitend)?
+
+      (c) [Insbesondere, wenn Sie Rechteinhaber sind:] Hatten Sie konkrete Probleme durch die Nutzung von Text- und Data-Mining in Verbindung mit urheberrechtlich geschützten Inhalten (ggf. auch grenzüberschreitend)?
+
+      '
     en: '(a) [In particular if you are an end user/consumer or an institutional user:] Have you experienced obstacles, linked to copyright, when trying to use text or data mining methods, including across borders?
 
       (b) [In particular if you are a service provider:] Have you experienced obstacles, linked to copyright, when providing services based on text or data mining methods, including across borders?
@@ -1775,6 +1806,7 @@
   - action: remove
     key: P1378
   text:
+    de: Wenn es Probleme gibt, wie könnte man diese am Besten lösen?
     en: If there are problems, how would they best be solved?
     it: Se ci fossero problemi, come dovrebbero venir risolti?
     pl: Jeśli pojawiają się problemy, w jaki sposób najlepiej je rozwiązać?
@@ -1791,6 +1823,7 @@
   - action: remove
     key: P1383
   text:
+    de: Falls Sie glauben, dass eine gesetzliche Lösung gebraucht wird, was wären ihre Hauptbestandteile? Welche Tätigkeiten sollten erfasst werden und unter welchen Bedingungen?
     en: If your view is that a legislative solution is needed, what would be its main elements? Which activities should be covered and under what conditions?
     it: Se il vostro punto di vista è che sia necessaria una soluzione legislativa, quale sarebbero i suoi elementi principali? Quali attività dovrebbero essere coperte e in quali condizioni?
     pl: Jeżeli w Państwa opinii wymagane jest rozwiązanie ustawowe, jakie powinny być jego główne elementy? Jakie działania powinny być nim objęte i pod jakimi warunkami?
@@ -1807,6 +1840,7 @@
   - action: remove
     key: P1388
   text:
+    de: Wenn Sie glauben, dass eine andere Lösung gebraucht wird, was wäre sie?
     en: If your view is that a different solution is needed, what would it be?
     it: Se il vostro punto di vista è che sia necessaria una soluzione diversa, quale sarebbe?
     pl: Jeżeli w Państwa opinii konieczne jest inne rozwiązanie, to jakie ono powinno być?
@@ -1823,6 +1857,7 @@
   - action: remove
     key: P1392
   text:
+    de: Gibt es noch andere Probleme, die nicht mit dem Urheberrecht zusammenhängen und Hindernisse für die Verwendung von Text- und Data-Mining-Methoden darstellen.
     en: Are there other issues, unrelated to copyright, that constitute barriers to the use of text or data mining methods?
     it: Ci sono altre questioni, non correlate al diritto d'autore, che costituiscono ostacoli all'utilizzo di testo o di tecniche di data mining?
     pl: Czy są inne kwestie, niezwiązane z prawem autorskim, które stanowią przeszkody w korzystaniu z metod maszynowej analizy tekstów i danych?
@@ -1835,6 +1870,7 @@
   num: 58
   options:
   - details:
+      de: Bitte erklären Sie mit Beispielen
       en: Please explain by giving examples
       pl: Proszę uzasadnić, podając przykłady.
     fulltext: true
@@ -1915,6 +1951,7 @@
   num: 59
   options:
   - details:
+      de: Bitte erklären Sie
       en: Please explain
       pl: Proszę wyjaśnić
     fulltext: true
@@ -1927,6 +1964,7 @@
     - action: remove
       key: P1449
   - details:
+      de: Bitte erklären Sie
       en: Please explain
       pl: Proszę wyjaśnić
     fulltext: true
@@ -1943,6 +1981,11 @@
     - action: mark
       key: P1453
   text:
+    de: '(a) [Insbesondere, wenn Sie eine Verbraucher/in oder Rechteinhaber/in sind:] Hatten Sie Probleme, als Sie versuchten sicherzustellen, dass Ihre Werke, die auf existierenden Werken aufbauen, ordentlich für die Online-Nutzung gekennzeichnet sind? Sind proprietäre System ausreichend in diesem Kontext?
+
+      (b) [Insbesondere, wenn Sie ein Diensteanbieter sind:] Geben Sie Ihren Nutzern, die selbst-erstellte Werke (basierend auf existierenden Werken) über Ihren Dienst veröffentlichen/verteilen, die Möglichkeit, diese Werke ordentlich für die Online-Nutzung zu kennzeichnen?
+
+      '
     en: '(a) [In particular if you are an end user/consumer or a right holder:] Have you experienced problems when trying to ensure that the work you have created (on the basis of pre-existing works) is properly identified for online use? Are proprietary systems sufficient in this context?
 
       (b) [In particular if you are a service provider:] Do you provide possibilities for users that are publishing/disseminating the works they have created (on the basis of pre-existing works) through your service to properly identify these works for online use?
@@ -1969,6 +2012,7 @@
   num: 60
   options:
   - details:
+      de: Bitte erklären Sie
       en: Please explain
       pl: Proszę wyjaśnić
     fulltext: true
@@ -1981,6 +2025,7 @@
     - action: remove
       key: P1472
   - details:
+      de: Bitte erklären Sie
       en: Please explain
       pl: Proszę wyjaśnić
     fulltext: true
@@ -1997,6 +2042,11 @@
     - action: mark
       key: P1476
   text:
+    de: '(a) [Insbesondere, wenn Sie eine Verbraucher/in oder eine Rechteinhaber/in sind:] Hatten Sie Probleme bei dem Versuch für die Werke, die Sie erstellt haben (auf Basis existierender Werke), vergütet zu werden?
+
+      (b) [Insbesondere, wenn Sie ein Dienstanbieter sind:] Bieten Sie Vergütungsmöglichkeiten für Nutzer an, die ihre erstellten Werke (auf Basis existierender Werke) über Ihren Dienst veröffentlichen/verbreiten?
+
+      '
     en: '(a) [In particular if you are an end user/consumer or a right holder):] Have you experienced problems when trying to be remunerated for the use of the work you have created (on the basis of pre-existing works)?
 
       (b) [In particular if you are a service provider:] Do you provide remuneration schemes for users publishing/disseminating the works they have created (on the basis of pre-existing works) through your service?
@@ -2025,6 +2075,7 @@
   - action: remove
     key: P1481
   text:
+    de: Falls es Probleme gibt, wie könnte man diese am Besten lösen?
     en: If there are problems, how would they best be solved?
     it: Se ci fossero problemi, come dovrebbero venir risolti?
     pl: Jeśli pojawiają się problemy, w jaki sposób najlepiej je rozwiązać?
@@ -2041,6 +2092,7 @@
   - action: remove
     key: P1486
   text:
+    de: Falls Sie glauben, dass eine gesetzliche Lösung gebraucht wird, was wären ihre Hauptbestandteile? Welche Tätigkeiten sollten erfasst werden und unter welchen Bedingungen?
     en: If your view is that a legislative solution is needed, what would be its main elements? Which activities should be covered and under what conditions?
     it: Se il vostro punto di vista è che sia necessaria una soluzione legislativa, quale sarebbero i suoi elementi principali? Quali attività dovrebbero essere coperte e in quali condizioni?
     pl: Jeśli uważają Państwo, że potrzebne jest rozwiązanie ustawowe, jakie byłyby jego główne elementy?
@@ -2057,6 +2109,7 @@
   - action: remove
     key: P1491
   text:
+    de: Falls Sie glauben, dass eine andere Lösung gebraucht wird, welche sollte das sein?
     en: If your view is that a different solution is needed, what would it be?
     it: Se il vostro punto di vista è che sia necessaria una soluzione diversa, quale sarebbe?
     pl: Jeśli uważają Państwo, że potrzebne jest rozwiązanie innego rodzaju, jakie ono by było?
@@ -2069,6 +2122,7 @@
   num: 64
   options:
   - details:
+      de: Bitte erklären Sie
       en: Please explain
       pl: Proszę wyjaśnić
     fulltext: true
@@ -2081,6 +2135,7 @@
     - action: remove
       key: P1510
   - details:
+      de: Bitte erklären Sie
       en: Please explain
       pl: Proszę wyjaśnić
     fulltext: true
@@ -2117,6 +2172,7 @@
   num: 65
   options:
   - details:
+      de: Bitte erklären Sie
       en: Please explain
       pl: Proszę wyjaśnić
     fulltext: true
@@ -2129,6 +2185,7 @@
     - action: remove
       key: P1526
   - details:
+      de: Bitte erklären Sie
       en: Please explain
       pl: Proszę wyjaśnić
     fulltext: true
@@ -2145,6 +2202,7 @@
     - action: mark
       key: P1530
   text:
+    de: Sollten Abgaben für digitale Privatkopien erhoben werden, die von Endnutzern im Kontext eines Dienstes angefertigt wurden, der von Rechteinhabern lizensiert wurde und wo der Schaden für den Rechteinhaber minimal ist?
     en: Should digital copies made by end users for private purposes in the context of a service that has been licensed by rightholders, and where the harm to the rightholder is minimal, be subject to private copying levies?
     it: Copie digitali attuate da utenti finali per scopi privati ​​nel contesto di un servizio licenziato dai titolari del diritto, e dove il danno per il titolare dei diritti sia minimo, dovrebbero essere oggetto di prelievi per copie private?
     pl: Czy kopie cyfrowe sporządzane przez użytkowników końcowych na własne potrzeby w ramach usługi autoryzowanej przez posiadaczy praw, gdy szkoda dla uprawnionych jest minimalna, powinny być objęte systemem opłat rekompensacyjnych (private copying levies)?
@@ -2161,6 +2219,7 @@
   - action: remove
     key: P1535
   text:
+    de: Wie würden Änderungen der Abgaben in Bezug auf die Anwendung von Online-Dienstleistungen (z.B. Dienste basierend auf Cloud Computing, die es Nutzern ermöglicht, Kopien auf verschiedenen Geräten zu haben) Auswirkungen auf die Entwicklung und Funktionsweise neuer Geschäftsmodelle auf der einen und auf die Einnahmen der Rechteinhaber auf der anderen Seite haben?
     en: How would changes in levies with respect to the application to  online services (e.g. services based on cloud computing  allowing, for instance, users to have copies on different devices) impact the development and functioning of new business models on the one hand and rightholders’ revenue on the other?
     it: Che impatto avrebbero variazioni sui prelievi rispetto all'applicazione di servizi online (es. servizi basati sul cloud computing che consente, per esempio, agli utenti di possedere copie su dispositivi diversi) sullo sviluppo e il funzionamento di nuovi modelli di business da un lato e le entrate dei titolari dall'altro?
     pl: W jaki sposób zmiany w systemie opłat poprzez zastosowanie ich do usług online (np. usług wykorzystująca chmurę obliczeniową, pozwalając użytkownikom korzystać z kopii na różnych urządzeniach) wpłynęłyby na rozwój i funkcjonowanie z jednej strony nowych modeli biznesowych, a z drugiej strony na przychody uprawnionych?
@@ -2182,6 +2241,7 @@
   num: 67
   options:
   - details:
+      de: Bitte erklären Sie
       en: Please explain
       pl: Proszę wyjaśnić
     fulltext: true
@@ -2194,6 +2254,7 @@
     - action: remove
       key: P1544
   - details:
+      de: Bitte erklären Sie
       en: Please explain
       pl: Proszę wyjaśnić
     fulltext: true
@@ -2210,6 +2271,7 @@
     - action: mark
       key: P1548
   text:
+    de: Würden Sie einen zusätzlichen Wert darin sehen, wenn Abgaben auf Rechnungen von abgabepflichtigen Produkten angegeben wären?
     en: Would you see an added value in making levies visible on the invoices for products subject to levies?
     it: Vorreste vedere un valore aggiunto durante i prelievi indicato sulle fatture per i prodotti soggetti a prelievi?
     pl: Jaką wartość dodaną stanowi umieszczanie informacji o opłatach na fakturach za produkty, których opłaty dotyczą?
@@ -2222,6 +2284,7 @@
   num: 68
   options:
   - details:
+      de: Bitte geben Sie die Art der Transkation und den Prozentanteil der zu Unrecht erhobenen Zahlungen an. ngen. Bitte geben Sie auch an, wie a-priori-Befreiung und/oder Ex-post-Erstattungssysteme helfen könnten, die Situation zu verbessern.
       en: Please specify the type of transaction and indicate the percentage of the undue payments. Please also indicate how a priori exemption and/or ex post reimbursement schemes could help to remedy the situation.
     fulltext: true
     label: 'Yes'
@@ -2233,6 +2296,7 @@
     - action: remove
       key: P1554
   - details:
+      de: Bitte erklären Sie
       en: Please explain
       pl: Proszę wyjaśnić
     fulltext: true
@@ -2249,6 +2313,7 @@
     - action: mark
       key: P1558
   text:
+    de: Haben Sie eine Situation erlebt, in der grenzübergreifende Transaktionen zu unrechtmäßig erhobenen oder doppelten Abgabenzahlungen geführt haben oder zu anderen Hindernisse für den freien Verkehr von Waren und Dienstleistungen?
     en: Have you experienced a situation where a cross-border transaction resulted in undue levy payments, or duplicate payments of the same levy, or other obstacles to the free movement of goods or services?
     it: Vi siete trovati nella situazione in cui una transazione transfrontaliera abbia portato a pagamenti indebiti, o pagamenti duplicati dello stesso prelievo, o altri ostacoli alla libera circolazione di beni o servizi?
     pl: Czy spotkali się Państwo z transakcją trasgraniczną, której wynikiem było uiszczenie nienależnych opłat lub podwójne uiszczenie tej samej opłaty lub inne przeszkody w wolnym obrocie dóbr i usług?
@@ -2272,6 +2337,7 @@
   - action: remove
     key: P1565
   text:
+    de: Wie viel Prozent der abgabenpflichten Produkte werden an andere Personen als natürliche Personen verkauft für Zwecke, die  eindeutig nichts mit Privatkopien zu tun haben? Führen irgendwelche dieser Transaktionen zu unrechtmäßigen Zahlungen? Bitte erklären Sie Ihre Beispiele im Detail (Art der Produkte, die Art der Transaktion, Interessengruppen, etc.).
     en: What percentage of products subject to a levy is sold to persons other than natural persons for purposes clearly unrelated to private copying? Do any of those transactions result in undue payments? Please explain in detail the example you provide (type of products, type of transaction, stakeholders, etc.).
     it: Qual è la percentuale di prodotti soggetti a prelievo che viene venduto a persone diverse da persone fisiche per fini chiaramente estranei alla copia privata? Alcune di tali operazioni si traducono in pagamenti indebiti? Si prega di indicare in dettaglio esempi da voi forniti (tipo di prodotti, tipo di operazione, parti interessate, ecc...)
     pl: Jaki procent produktów objętych opłatami jest sprzedawany osobom innym niż osobom, których naturalnym celem ewidentnie nie jest kopiowanie na użytek własny? Czy którekolwiek z tych transakcji skutkuje nienależnymi płatnościami? Proszę szczegółowo wyjaśnić, podając przykłady (typ produktów, rodzaj transakcji, udziałowcy, etc.)
@@ -2288,6 +2354,7 @@
   - action: remove
     key: P1570
   text:
+    de: Wo solche unzulässigen Zahlungen entstehen, wie viel Prozent des Handels ist betroffen? Inwieweit könnten a-priori-Befreiungen und / oder Ex-post-Erstattungssysteme, die in einigen Mitgliedstaaten bestehen, helfen die Situation zu verbessern?
     en: Where such undue payments arise, what percentage of trade do they affect? To what extent could a priori exemptions and/or ex post reimbursement schemes existing in some Member States help to remedy the situation?
     it: Dove nascono tali pagamenti indebiti? Qual è la percentuale del commercio interessato? In che misura esenzioni a priori e/o sistemi di rimborso ex post, esistenti in alcuni Stati membri, sarebbero d'aiuto per porre rimedio alla situazione?
     pl: Jeśli zdarzają się takie nienależne płatności, jakiego procentu sprzedaży to dotyczy? W jakim stopniu zwolnienia  z opłat a priori oraz/lub systemy refundacji ex post istniejące w niektórych krajach członkowskich stanowią środek zaradczy w takich sytuacjach?
