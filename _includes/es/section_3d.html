@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-lg-8 col-md-8">
+    <h3>Disabilities</h3>
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <a href="#intro-3d-1" class="intro-link toggle">Show introduction</a>
+  </div>
+</div>
+<div id="intro-3d-1" style="display:none" class="row">
+  <div class="col-lg-8 col-md-8">
+    <p>
+      Directive 2001/29/EC<sup><a class="sdfootnoteanc" name="sdfootnote48anc" href="#sdfootnote48sym">48</a></sup> provides for an exception/limitation for the benefit of people with a&nbsp;disability. The open formulation of this (optional) provision allows for rather different implementations at Member States level. At EU and international level projects have been launched to increase the accessibility of works and other subject-matter for persons with disabilities (notably by increasing the number of works published in special formats and facilitating their distribution across the European Union)<sup> </sup><sup><a class="sdfootnoteanc" name="sdfootnote49anc" href="#sdfootnote49sym">49</a></sup>.
+    </p>
+    <p>
+      The Marrakesh Treaty<sup><a class="sdfootnoteanc" name="sdfootnote50anc" href="#sdfootnote50sym">50</a></sup> has been adopted to facilitate access to published works for persons who are blind, visually impaired, or otherwise print disabled. The Treaty creates a mandatory exception to copyright that allows organisations for the blind to produce, distribute and make available accessible format copies to visually impaired persons without the authorisation of the rightholders. The EU and its Member States have started work to sign and ratify the Treaty. This may require the adoption of certain provisions at EU level (e.g. to ensure the possibility to exchange accessible format copies across borders).
+    </p>
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <h4>Summary</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+</div>
+
+{% for question_num in (50..52) %}
+  {% for question in site.data.questions %}
+    {% if question.num == question_num %}
+      {% include question.html %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}

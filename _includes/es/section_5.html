@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-lg-8 col-md-8">
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <a href="#intro-5-1" class="intro-link toggle">Show introduction</a>
+  </div>
+</div>
+<div id="intro-5-1" style="display:none" class="row">
+  <div class="col-lg-8 col-md-8">
+    <p>
+      The EU copyright acquis recognises for authors and performers a number of exclusive rights and, in the case of performers whose performances are fixed in phonograms, remuneration rights. There are few provisions in the EU copyright law governing the <I>transfer </I>of rights from authors or performers to producers<sup><a class="sdfootnoteanc" name="sdfootnote62anc" href="#sdfootnote62sym">62</a></sup> or determining who the owner of the rights is when the work or other subject matter is created in the context of an employment contract<sup><a class="sdfootnoteanc" name="sdfootnote63anc" href="#sdfootnote63sym">63</a></sup>. This is an area that has been traditionally left for Member States to regulate and there are significant differences in regulatory approaches. Substantial differences also exist between different sectors of the creative industries.
+    </p>
+    <p>
+      Concerns continue to be raised that authors and performers are not adequately remunerated, in particular but not solely, as regards online exploitation. Many consider that the economic benefit of new forms of exploitation is not being fairly shared along the whole value chain. Another commonly raised issue concerns contractual practices, negotiation mechanisms, presumptions of transfer of rights, buy-out clauses and the lack of possibility to terminate contracts. Some stakeholders are of the opinion that rules at national level do not suffice to improve their situation and that action at EU level is necessary.
+    </p>
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <h4>Summary</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+</div>
+
+{% for question_num in (72..74) %}
+  {% for question in site.data.questions %}
+    {% if question.num == question_num %}
+      {% include question.html %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}

@@ -1,5 +1,5 @@
 /* jshint strict: true, quotmark: false, es3: true */
-/* global $: false, EUCopyright: false */
+/* global $: false, EUCopyright: false, docCookies: false */
 
 $(function(){
   "use strict";
@@ -45,6 +45,7 @@ $(function(){
   };
   var qIndex = {}, qCount = 0;
   var questionSections = $('.question-sections');
+  var generalQuestionSection = $('#general-questions');
   var toggleSections = function() {
     var personas = [];
     $('.personas .thumbnail').each(function(i, el) {
@@ -55,7 +56,7 @@ $(function(){
       }
     });
     var groupObj = {}, personaQuestions, questionList = [];
-    var addQuestions = function(persona){
+    var addQuestions = function(persona, questionList){
       personaQuestions = personaQuestionMap[persona];
       for (var j = 0; j < personaQuestions.length; j += 1) {
         if (groupObj[personaQuestions[j]] === undefined) {
@@ -65,49 +66,80 @@ $(function(){
       }
     };
     for (var i = 0; i < personas.length; i += 1) {
-      addQuestions(personas[i]);
+      addQuestions(personas[i], questionList);
     }
-    addQuestions('general');
+    var generalQuestions = [];
+    addQuestions('general', generalQuestions);
+
+    $('#general-questions .question-section').appendTo(questionSections);
 
     $('#persona-questions .question-section').removeClass('active').hide();
+    $('.q').removeClass('active countactive');
+    // Mark all as "No Opinion"
+    $('.q input[type=radio]').prop('checked', false);
     for (i = 0; i < questionList.length; i += 1) {
-      $('#persona-questions .question-section-' + questionList[i]).appendTo(questionSections).addClass('active').show();
+      $('.question-section-' + questionList[i]).appendTo(questionSections).addClass('active').show();
+      $('#q-' + questionList[i]).addClass('active countactive');
     }
-    qCount = $('.question-section.active').length;
-    qIndex = {};
-    $('.question-section.active').each(function(i, el){
-      qIndex[$(el).attr('id')] = i;
-    });
+
+    for (i = 0; i < generalQuestions.length; i += 1) {
+      $('.question-section-' + generalQuestions[i]).removeClass('active').appendTo(generalQuestionSection);
+    }
+    // Overwrite guide only for active questions
+    loadGuide({activeOnly: true});
+
+    $('.timeformorequestions').show();
+    $('#general-questions').hide();
   };
 
   $('.personas .thumbnail input').change(function(){
     toggleSections();
     refreshScroll();
   });
+  $('#show-general-questions').click(function(){
+    $('.q').removeClass('active');
+    $('#general-questions .question-section').addClass('active').show();
+    $('#general-questions .q').addClass('active countactive');
+    loadGuide({activeOnly: true});
+    $('.timeformorequestions').hide();
+    $('#general-questions').slideDown();
+    refreshScroll();
+  });
+
+  $('#show-finish-form').click(function(){
+    $('.timeformorequestions').hide();
+  });
+
   $('.delete-localstorage').show();
   $('#persona-questions').hide();
   $('.continue-questions').click(function(){
     $('#persona-questions').show();
+    $('.fixed-questionhint').css({
+      'position': 'fixed',
+      'width': $('.question-sections').width() + 'px'
+    });
     $progressBar.show();
-    loadGuide();
     window.setTimeout(function(){
       refreshScroll();
     }, 100);
   });
-  window.setTimeout(function(){
-    toggleSections();
-  }, 100);
-
   var $progressBar = $('#progress-bar').hide();
   $progressBar.css('width', $progressBar.parent().width() + 'px');
 
-  var loadGuide = function(){
+  $('.fixed-questionhint').bind('closed.bs.alert', function () {
+    docCookies.setItem('personaQuestionHint', 'closed');
+  });
+  if (docCookies.getItem('personaQuestionHint') === 'closed') {
+    $('.fixed-questionhint').hide();
+  }
+
+  var loadGuide = function(options){
     var lang = $('html').attr('lang');
     var slug = 'c4c_' + lang;
     if (EUCopyright.answers[slug] !== undefined) {
-      EUCopyright.loadGuide(slug);
+      EUCopyright.loadGuide(slug, options);
     } else {
-      EUCopyright.loadGuide('c4c_en');
+      EUCopyright.loadGuide('c4c_en', options);
     }
   };
 
@@ -140,11 +172,16 @@ $(function(){
     }).css('width', ((qIndex[target] + 1) / qCount * 100) + '%');
   };
   var refreshScroll = function(){
+    qCount = $('.q.countactive').length;
+    qIndex = {};
+    $('.q.countactive').each(function(i, el){
+      qIndex[$(el).attr('id')] = i;
+    });
     offsets = $([]);
     targets = $([]);
     var offsetMethod = 'offset';
     $('body')
-      .find('.q.active')
+      .find('.q.countactive')
       .map(function () {
         var $el = $(this);
         return [[ $el[offsetMethod]().top + (!$.isWindow($scrollElement.get(0)) && $scrollElement.scrollTop()),
@@ -159,5 +196,20 @@ $(function(){
   refreshScroll();
   $(window).resize(refreshScroll);
   $(window).on('scroll', process);
-  loadGuide();
+  window.setTimeout(function(){
+    var oneFound = false;
+    if (window.location.search){
+      var urlParams = EUCopyright.parseUrlParams();
+      for (var key in personaQuestionMap) {
+        oneFound = oneFound || (urlParams[key] !== undefined);
+        $('#label-' + key).find('input').prop('checked', urlParams[key] !== undefined);
+      }
+    }
+    toggleSections();
+    if (oneFound){
+      $('.continue-questions').click();
+      document.location.href = $('.continue-questions').attr('href');
+    }
+  }, 200);
+  loadGuide({activeOnly: true});
 });

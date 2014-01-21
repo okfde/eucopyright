@@ -3,7 +3,7 @@
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.data.translations.title[page.language] }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title }}{% else %}{% if site.data.translations.title[page.language] %}{{ site.data.translations.title[page.language] }}{% else %}{{ site.data.translations.title.en }}{% endif %}{% endif %}</title>
   <script>
     if (document.location.hostname.indexOf('okfde.github.io') !== -1) {
       document.location.replace('http://{{ site.domain }}/' + document.location.pathname.split('/').slice(2).join('/'));

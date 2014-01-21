@@ -1,0 +1,356 @@
+translations:
+  accesscontent:
+    de: Zugang zu Inhalten in Bibliotheken und Archiven
+    en: Access to content in libraries and archives
+    es: Acceso a contenido en bibliotecas y archivos
+    pl: Dostęp do treści w bibliotekach i archiwach
+    nl: Toegang to content in bibliotheken en archieven
+    fr: Accès au contenu de bibliothèques et archives
+  accesstocontent:
+    de: Zugang zu Inhalten
+    en: Access to Content
+    es: Acceso a contenidos
+    pl: Dostęp do treści
+    nl: Toegang tot content
+    fr: Accès au contenu
+  almostdone:
+    de: Fast fertig!
+    en: Almost done!
+    es: Casi terminado!
+    pl: Niemal gotowe!
+    nl: Bijna klaar!
+    fr: Presque terminé!
+  blogger:
+    de: Ich schaffe Inhalte als Blogger/in und produziere Remixe aus geschütztem Material
+    en: I’m creating content as a blogger and produce remixes of protected material
+    es: Creo contenidos como bloguero y produzco contenido derivado de material protegido
+    fr: Je crée du contenu en tant que blogueur et produit des remix basés notamment sur du matériel protégé par le droit d’auteur
+    nl: Ik creëer content als blogger of maak remixen met auteursrechtelijk beschermde werken
+    pl: Tworzę treści jako blogger/ka i produkuję remiksy na podstawie chronionych materiałów
+  continuequestions:
+    de: Weiter zu den Fragen
+    en: Continue to the questions
+    es: Continuar con las preguntas
+    pl: Przejdź do pytań
+    nl: Ga naar de vragen
+    fr: Continuer vers les questions
+  disabilities:
+    de: Behinderungen
+    en: Disabilities
+    es: Discapacidad
+    pl: Niepełnosprawność
+    nl: Beperkingen
+    fr: Handicaps
+  disabled:
+    de: Ich habe eine Behinderung und versuche Inhalte in Formaten zu finden, die ich nutzen kann
+    en: I’m a disabled user trying to access or adapt content in formats that I can actually use
+    es: Tengo alguna discapacidad al intentar acceder o adaptar contenidos a formatos usables
+    fr: J’ai un handicap et j’essaie d’avoir accès ou d’adapter du contenu vers des formats qui me sont utiles
+    nl: Ik ben een gebruiker met beperkingen die probeert toegang te krijgen tot content, of content probeert om te zetten in formaten die bruikbaar zijn voor mij
+    pl: Jestem użytkownikiem/czką z niepełnosprawnością ipróbuję docierać i korzystać z treści w formatach, które byłyby dla mnie użyteczne
+  downloadonly:
+    de: 'Das Dokument wird jetzt heruntergeladen. Bitte sende es per E-Mail an:'
+    en: 'The document is now downloading. You need to send it by email to:'
+    es: 'El documento se está descargando. Por favor, envíalo por email a:'
+    pl: 'Trwa ściąganie dokumentu. Proszę wysłać go pocztą elektroniczną do:'
+    nl: 'Het document wordt nu gedownload. U hoeft het alleen nog maar te versturen naar:'
+    fr: 'Le document est en train de télécharger. Vous devez l’envoyer par courriel à :'
+  downloadtoown:
+    de: Herunterladen zum Erwerb digitaler Inhalte
+    en: Download to own digital content
+    es: Descarga para adquirir contenidos digitales
+    pl: Ściąganie treści cyfrowych w celu ich posiadania
+    nl: Downloaden van aangekochte content
+    fr: Télécharger suite à une acquisition de contenu numérique 
+  elending:
+    de: Elektronische Ausleihe
+    en: E-Lending
+    es: Préstamo electrónico
+    pl: Wypożyczenia elektroniczne
+    nl: Uitlenen van digitale werken (e-lending)
+    fr: Prêts électroniques
+  email:
+    de: 'Optional: </span>Deine E-Mail-Adresse'
+    en: 'Optional: </span>Your email address (fill this in to receive a standard e-mail to send in your submission to the European Commission)'
+    es: 'Opcional: </span>Dirección de email'
+    pl: 'Opcjonalnie: </span>Proszę podać adres email'
+    nl: 'Facultatief: </span>Uw e-mail adres (vul dit in om een standaard e-mail te ontvangen om uw antwoord naar de Europese Commissie te versturen)'
+    fr: 'Facultatif: </span>Votre adresse e-mail (en indiquant votre adresse e-mail, vous recevrez un email standard à envoyer à la Commission européenne)'
+  emaildocument:
+    de: Das fertige Dokument wird an deine E-Mail-Adresse geschickt.
+    en: The finished document will be sent to your email address.
+    es: El documento final se enviará a tu dirección de email.
+    pl: Gotowy dokument zostanie wysłany na podany adres email.
+    nl: Het door u ingevulde document zal naar uw e-mail adres verstuurd worden.
+    fr: Le document rempli par vos soins sera envoyé vers votre adresse e-mail.
+  emaildocumentpossible:
+    de: Wir können dir das fertige Dokument zuschicken.
+    en: We can send you the finished document by email.
+    es: Podemos enviarte el focumento final por email.
+    pl: Możesz otrzymać gotowy dokument pocztą elektroniczną.
+    nl: We kunnen het door u het ingevulde document per e-mail naar u vesturen.
+    fr: Le document rempli par vos soins sera envoyé vers votre adresse e-mail.
+  emailprivacy:
+    de: Deine E-Mail-Adresse und alle anderen Angaben werden nur dazu genutzt, dir das fertige Dokument zu schicken.
+    en: Your email address and all other input will <strong>not</strong> be used except for sending you the finished document.
+    es: Tu email y cualquier otro dato introducido <strong>no</strong> será usado para otra cosa que el envío del documento final.
+    pl: Podany adres emailowy oraz inne podane informacje <strong>nie zostaną</strong> wykorzystane inaczej niż w celu wysłania gotowego dokumentu.
+    nl: Uw e-mail adres en alle andere informatie zal <strong>niet</strong> gebruikt worden, behalve om het ingevulde document naar u te versturen.
+    fr: Votre adresse e-mail et toute autre information ne seront <strong>pas</strong> utilisés, sauf dans le but de vous envoyer le document rempli par vos soins.
+  enduser:
+    de: Ich bin Online-Nutzer/in und teile Bilder, sehe Videos an, kaufe Medien online, etc.
+    en: I’m an online user who shares pictures, watches videos, buys media online, etc.
+    es: Soy un usuario en línea que comparte imágenes, ve vídeos, compra contenido online, etc.
+    fr: Je suis un(e) internaute qui partage des photos, regarde des vidéos, achète du contenu numérique en ligne, etc.
+    nl: "Ik ben een online gebruiker die foto's deelt, video's bekijkt, online media koopt, enz."
+    pl: Jestem użytkownikiem/czką internetu i dzielę się zdjęciami, oglądam filmy, robię zakupy w Sieci itp.
+  entrepreneur:
+    de: Ich bin Freiberufler/in, Unternehmer/in oder Geschäftsperson
+    en: I’m a freelancer, entrepreneur or businessperson
+    es: Soy profesional independiente, emprendedor o persona de negocios
+    fr: Je suis indépendant, entrepreneur ou dans le monde des affaires
+    nl: Ik ben een freelancer, ondernemer of actief in de bedrijfswereld
+    pl: Jestem freelancerem/ką, przedsiębiorcą/czynią, pracuję w biznesie
+  explanationorigin:
+    de: <span class="guide">Die farbig hervorgehobenen Erklärungen</span> wurden von einer vielen Interessengruppen aus ganz Europa zusammengestellt, von Rechteinhabern über zivile Organisationen zu großen Verbrauchervertretungen und alles dazwischen. <a target="_blank" href="http://fixcopyright.eu/about-us/">Erfahre mehr über die Autoren.</a>
+    en: <span class="guide">The explanations coloured like this</span> have been put together by a broad cross-section of interest groups from across Europe, from rights holders to public interest NGOs to large consumer representatives and everything in between. <a target="_blank" href="http://fixcopyright.eu/about-us/">Learn more about them here.</a>
+    es: <span class="guide">Las explicaciones coloreadas así</span> se han agrupado por una amplia muestra representativa de grupos de interés de toda Europa, desde titulares de derechos hasta ONG's de interés público pasando por grandes representantes de los consumidores y otros. <a target="_blank" href="http://fixcopyright.eu/about-us/">Más información aquí.</a>
+    pl: <span class="guide">Wyjaśnienia w tym kolorze</span> zostały przygotowane przez szeroką koalicję europejskich grup interesu, od posiadaczy praw przez organizacje społeczne działające w imię interesu publicznego, po grupy konsumenckie - i liczne inne podmioty. <a target="_blank" href="http://fixcopyright.eu/about-us/">Dowiedz się więcej, kim jesteśmy.</a>
+    nl: <span class="guide">De uitleg ingekleurd zoals dit</span> werd opgesteld door een brede dwarsdoorsnede van belangengroepen uit heel Europe, gaande van rechthebbenden, NGOs die het publiek belang behartigen tot grote consumentenorganisaties en alles daartussen. Om meer te weten, <a target="_blank" href="http://fixcopyright.eu/about-us/">klik hier</a>
+    fr: <span class="guide">Les explications sur fond coloré</span> ont été rédigées par un large éventail de groupes d’intérêts basés dans toute l’Europe, allant d’ayants droits à des ONG d’intérêt public, en passant par des organisations de protection du consommateur. Pour en savoir plus, <a target="_blank" href="http://fixcopyright.eu/about-us/">cliquez ici</a>
+  fullname:
+    de: Dein voller Name
+    en: Your full name
+    es: Nombre completo
+    pl: Imię i nazwisko
+    nl: Uw volledige naam
+    fr: Votre nom complet
+  interoperability:
+    de: Interoperabilität von Identifikationsmerkmalen
+    en: Interoperability of identifiers
+    es: Interoperabilidad de identificadores
+    pl: Interoperacyjność identyfikatorów
+    nl: Interoperabiliteit van identifiers
+    fr: Interopérabilité d’identifiants
+  introparagraph:
+    de: Wähle eine oder mehrere Kategorien aus, die dich am besten beschreiben – das führt dich zu den Fragen, die am Relevantesten für dich sind. Alternativ kannst du, wenn du genau Mut hast, <a href="/de/full/">auch dir alle 80 Fragen der Konsultation anschauen!</a>
+    en: Select one or more categories below that best describe you – this will lead you to the questions that are most relevant to your activities. Alternatively, if you are brave enough, <a href="/en/full/">have a look at all 80 consultation questions!</a><br/>Please note this website is not from the European Commission.
+    es: Selecciona una o más categorías de abajo que mejor te describen - esto te llevará a las preguntas que sean más relevantes a tus actividades. Como alternativa, si eres lo suficientemente valiente, <a href="/en/full/">¡echa un vistazo a las 80 preguntas de la encuesta!</a>
+    pl: Wybierz jedną lub więcej kategorii, której opisują Twoją sytuację. Na podstawie Twojego wyboru przedstawimy pytania Ciebie dotyczące. Możesz też, jeśli masz dość odwagi, <a href="/pl/full/">przejrzeć wszystkie 80 pytań zadanych w ramach konsultacji!</a>
+    nl: Selecteer één of meerdere categoriëen die jou het best omschrijven - dit brengt je naar de vragen die het meest relevant zijn voor jouw activiteiten. Als alternatief kan je, indien je jou geroepen voelt, <a href="/nl/full">de 80 consultatievragen allemaal bekijken!</a><br/>Deze website is geen initiatief van de Europese Commissie.
+    fr: Veuillez choisir une ou plusieurs des catégories ci-dessous et qui semblent vous décrire le mieux – ce choix vous permettra de voir les questions les plus pertinentes en fonction de vos activités. A titre alternatif, vous pouvez aussi opter de <a href="/fr/full">voir l’ensemble des 80 questions de la consultation!</a><br/>Ce site ne provient pas de la Commission européenne.
+  languagedisclaimer:
+    de: Übersetzungen in andere Sprachen als Englisch sind inoffiziell, crowd-gesourced und möglicherweise unvollständig.
+    en: Translations in languages other than English are unofficial, crowd-sourced and possibly incomplete.
+    nl: Vertalingen in andere talen dan het Engels zijn niet officieel, gecrowdsourced en mogelijks onvolledig.
+    fr: Les traductions à partir du texte d’origine en anglais ne sont pas officielles, crowd-sourcé et dans certains cas incomplètes
+    pl: Pozostałe wersje językowe zostały przygotowane nieoficjalnie, za pomocą crowdsourcingu i mogą być niekompletne.
+  librarian:
+    de: Ich bin Bibliothekar/in oder aktiv im Bereich kulturelles Erbe
+    en: I’m a librarian or active in the cultural heritage area
+    es: Soy bibliotecario o un activo en el área de patrimonio cultural
+    fr: Je suis bibliothécaire ou actif dans le domaine du patrimoine culturel
+    nl: Ik ben een bibliothecaris of actief in de cultureel erfgoedsector
+    pl: Jestem bibliotekarzem/ką lub działam w obszarze dziedzictwa kulturalnego
+  limitations:
+    de: Beschränkungen und Ausnahmen
+    en: Limitations and exceptions
+    es: Limitaciones y excepciones
+    pl: Ograniczenia i wyjątki
+    nl: Beperkingen en uitzonderingen
+    fr: Limitations et exceptions
+  linking:
+    de: Verlinken und Browsen
+    en: Linking and Browsing
+    es: Enlaces y navegación web
+    pl: Linkowanie i przeglądanie
+    nl: Linken en surfen
+    fr: Liens et navigation
+  massdigitisation:
+    de: Massen-Digitalisierung
+    en: Mass digitisation
+    es: Digitalización masiva
+    pl: Masowa digitalizacja
+    nl: Massadigitalisering 
+    fr: Numérisation en masse
+  namehelp:
+    de: Bitte gib deinen Namen an, damit deine Stimme bei der EU zählt.
+    en: Please provide your name to make your voice count.
+    es: Por favor, introduce tu nombre para que su voz cuente.
+    pl: Proszę podać swoje imię i nazwisko, aby głos był wazny.
+    nl: Gelieve uw naam op te geven zodat uw stem gehoord wordt.
+    fr: Merci de préciser votre nom, afin de vous assurer que votre voix soit entendue.
+  offpremiseaccess:
+    de: Online-Zugang zu Bibliotheksbeständen
+    en: Off-premises access to library collections
+    es: Acceso desde otros sitios a los fondos bibliotecarios
+    pl: Dostęp do zasobów bibliotek poza ich murami
+    nl: Online toegang to bibliotheekcollecties
+    fr: Accès hors des bibliothèques à leur collection d’ouvrages
+  otherguides:
+    de: Andere Antwortwerkzeuge
+    en: Other answering tools
+    es: Otras guías para responder
+    pl: Inne narzędzia
+    nl: Andere tools om te antwoorden
+    fr: Autres outils de réponse
+  otherissues:
+    de: Andere Probleme
+    en: Other Issues
+    es: Otras cuestiones
+    pl: Inne kwestie
+    nl: Andere problemen
+    fr: Autres problèmes
+  otherlanguages:
+    de: Andere Sprachen
+    en: Other languages
+    es: Otros idiomas
+    pl: Inne języki
+    nl: Andere talen
+    fr: Autres langages
+  parent:
+    de: Ich bin Elternteil und sorge mich, dass ich und meine Kinder online Probleme kriegen
+    en: I’m a parent worrying about whether what my kids do online will get them (and me) into trouble
+    es: Soy un padre preocupado acerca de si lo que mis hijos hacen en línea les traerá (y a mí) problemas
+    fr: Je suis parent et je m’inquiète quant aux conséquences négatives possibles pour mes enfants (et moi-même) de leurs activités sur Internet
+    nl: Ik ben een ouder die bezorgd is of wat mijn kinderen online doen hun (en mij) in de problemen zal brengen
+    pl: Jestem rodzicem, który martwi się, czy działania moich dzieci w Sieci nie wpędzą nas w kłopoty
+  privacy:
+    de: Bitte beachte <a href="http://ec.europa.eu/internal_market/consultations/2013/copyright-rules/docs/privacy-statement_en.pdf">die Datenschutzerklärung der Europäischen Kommission</a>.
+    en: The <a href="http://ec.europa.eu/internal_market/consultations/2013/copyright-rules/docs/privacy-statement_en.pdf">Privacy statement of the European Commission</a> applies.
+    es: Se aplica la <a href="http://ec.europa.eu/internal_market/consultations/2013/copyright-rules/docs/privacy-statement_en.pdf">Declaración de Privacidad de la Comisión Europea</a>.
+    pl: Konsultacje są objęte <a href="http://ec.europa.eu/internal_market/consultations/2013/copyright-rules/docs/privacy-statement_en.pdf">regulaminem ochrony prywatności Komisji Europejskiej</a>.
+    nl: Het <a href="http://ec.europa.eu/internal_market/consultations/2013/copyright-rules/docs/privacy-statement_en.pdf">privacy beleid van de Europese Commissie</a> is van toepassing. 
+    fr: La <a href="http://ec.europa.eu/internal_market/consultations/2013/copyright-rules/docs/privacy-statement_en.pdf">procédure de la Commission européenne relative à la vie privée</a> est d’application.
+  privatecopying:
+    de: Privatkopie und Fotokopie
+    en: Private Copying &amp; reprography
+    es: Copia privada y la reprografía
+    pl: Prywatne kopiowanie i reprografia
+    nl: Thuiskopie &amp; reprografie
+    fr: Copie privée et réprographie
+  questionhint:
+    de: Du musst nicht alles ausfüllen und kannst Fragen auslassen, wenn du möchtest.
+    en: You do not have to fill out everything and can skip questions if you want to.
+    nl: Het is niet verplicht van alle vragen te beantwoorden.
+    fr: Vous ne devez pas répondre à toutes les questions qui s’affichent pour finaliser votre contribution.
+    pl: Nie musisz odpowiadać na wszystkie pytania, możesz pominąć te, które Cię nie dotyczą.
+  registration:
+    de: Registrierung von Werken
+    en: Registration of works
+    es: Registro de obras
+    pl: Rejestracja utworów
+    nl: Registratie van werken
+    fr: Enregistrement d’oeuvres
+  remuneration:
+    de: Faire Vergütung von Autoren &amp; Künstlern
+    en: Fair remuneration of authors &amp; performers
+    es: Remuneración justa de los autores y artistas
+    pl: Sprawiedliwe wynagrodzenia twórców i wykonawców
+    nl: Billijke vergoeding voor auteurs en uitvoerende kunstenaars
+    fr: Rémunération équitable des auteurs et artistes
+  research:
+    de: Forschung
+    en: Research
+    es: Investigación
+    pl: Badania
+    nl: Onderzoek
+    fr: Recherche
+  respectforrights:
+    de: Respekt für Rechte
+    en: Respect for rights
+    es: Respeto a los derechos
+    pl: Poszanowanie praw
+    nl: Respect voor rechten
+    fr: Respect des droits
+  rightsholder:
+    de: Ich bin Rechteinhaber/in und würde gerne von neuen Formen der Vergütung profitieren
+    en: I’m a rightsholder that would like to benefit from new forms of remuneration
+    es: Soy titular de derechos y me gustaría sacar provecho de las nuevas formas de remuneración
+    fr: Je suis un ayant droit qui souhaiterait bénéficier de nouvelles possibilités de rémunération
+    nl: Ik ben een rechthebbende die gebruik zou willen maken van nieuwe vormen van renumeratie
+    pl: Jestem posiadaczem/ką praw i chcę czerpać korzyści z nowych form wynagradzania
+  rightsholder_title:
+    de: Rechteinhaber
+    en: Rightsholder
+    es: Titular de derechos
+    pl: Właściciel praw
+    nl: Rechthebbende
+    fr: Ayant droit
+  sentbyemail:
+    de: 'Wir haben dir das fertige Dokument per E-Mail geschickt (<span class="email-sent-to"></span>). Bitte leite das Dokument weiter an:'
+    en: 'The finished document is sent to you by email (<span class="email-sent-to"></span>). You need to forward it to:'
+    es: 'El documento final se te envía por email (<span class="email-sent-to"></span>). Por favor, reenvíalo a:'
+    pl: 'Skończony dokument został wysłany na podany adres email (<span class="email-sent-to"></span>). Proszę wysłać jego kopię do:'
+    nl: 'Het ingevuld document is naar u verzonden per e-mail (<span class="email-sent-to"></span>). U moet het enkel nog doorsturen naar:'
+    fr: 'Le document rempli par vos soins vous a été envoyé par e-mail (<span class="email-sent-to"></span>). Vous devez l’envoyer à:'
+  storelabel:
+    de: Erlaube es uns, deine Angaben zu speichern und dich zur Kampagne zu kontaktieren.
+    en: Allow us to store your answers and contact you about the campaign.
+    nl: Laat ons toe om jouw antwoorden te bewaren en jou te contacteren over de campagne.
+    fr: Veuillez nous autoriser à conserver un exemplaire de votre réponse et de vous contacter a sujet de cette campagne.
+  submit:
+    de: Schicke das Formular ab
+    en: Submit this form
+    es: Enviar formulario
+    pl: Wyślij formularz
+    nl: Verstuur dit formulier
+    fr: Envoyez le formulaire
+  subtitle:
+    de: Die Europäische Kommission denkt über die Zukunft des Urheberrechts in der EU nach und deine Meinung kann sie in die richtige Richtung lenken.
+    en: The European Commission is thinking about the future of copyright in the EU, and your input can push them into the right direction.
+    es: La Comisión Europea está pensando en el futuro de los derechos de autor en la UE, y tu opinión puede empujarlos en la dirección correcta.
+    pl: Komisja Europejska prowadzi namysł nad reformą prawa autorskiego w Europie. Twoja opinia może pozytywnie wpłynąć na kierunek podejmowanych działań.
+    nl: De Europese Commissie denkt over de toekomst van het auteursrecht in de EU, en jouw input kan hen op de juiste weg zetten.
+    fr: La Commission européenne a lancé une réflexion sur l’avenir du droit d’auteur dans l’UE, et votre contribution peut leur permettre d’aller dans la bonne direction.
+  teacher:
+    de: Ich bin Lehrer/in, Akademiker/in oder Forscher/in
+    en: I’m a teacher, academic or researcher
+    es: Soy profesor, académico o investigador
+    fr: Je suis dans l’éducation, le monde académique ou la recherche
+    nl: Ik ben een onderwijzer, academici of onderzoeker
+    pl: Jestem nauczycielem/ką, pracownikiem/czką naukowym/ą, badaczem/ką
+  teaching:
+    de: Unterrichten
+    en: Teaching
+    es: Enseñanza
+    pl: Oświata
+    nl: Onderwijs
+    fr: Education
+  termofprotection:
+    de: Schutzdauer
+    en: Term of protection
+    es: Plazo de protección
+    pl: Czas ochrony
+    nl: Beschermingsduur
+    fr: Durée de protection
+  textdatamining:
+    de: Text- und Data-Mining
+    en: Text and data mining
+    es: Texto y minería de datos
+    pl: Eksploracja tekstów i danych
+    nl: Tekst en data mining
+    fr: Recherche et extraction de données
+  timeforgeneralquestions:
+    de: Hast du noch etwas Zeit für ein paar weitere Fragen?
+    en: Do you have some time left to answer a few more questions?
+  timeforgeneralquestionsyes:
+    de: Ja, zeig mir noch ein paar Fragen
+    en: Yes, show me a few more questions
+  timeforgeneralquestionsno:
+    de: Nein, ich bin fertig
+    en: No, I'm done
+  title:
+    de: Reparier das EU-Urheberrecht!
+    en: Let's fix EU Copyright!
+    es: ¡Vamos a arreglar los Derechos de Autor en la EU!
+    pl: Naprawmy prawo autorskie w Unii Europejskiej!
+    nl: Help het Europees auteursrecht te hervormen!
+    fr: Réparons le droit d’auteur!
+  usergeneratedcontent:
+    de: Nutzererstelle Inhalte
+    en: User generated content
+    es: Contenido generado por el usuario
+    fr: Contenu généré par l’utilisateur (user generated content)
+    nl: Door gebruikers gegenereerde inhoud (user generated content)
+    pl: Treści tworzone przez użytkowników
