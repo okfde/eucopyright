@@ -1,52 +1,100 @@
 ---
 layout: base
-title: "Youtube "
+title: "Youtube retten!"
 language: de
+
 ---
 <div class="container">
-  <div class="jumbotron">
-    <h1>Geblockte Videos nerven!</h1>
-    <p>Schreib deinen Ärger auf und hilf das Urheberrecht in der EU zu verändern!</p>
-<!--       <div class="col-lg-6">
-        <img src="img/youtube.png" alt="Dieses Video ist in deinem Land nicht verfügbar"/>
-      </div>
-    </div> -->
-    <a href="#los" class="btn btn-primary btn-lg">Fragen ausfüllen!</a>
-  </div>
-
   <div class="row">
-    <div class="col-lg-6 col-lg-offset-3">
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" class="form-control" id="name" placeholder="Dein Name">
-        <p class="help-block">
-          Bitte gib deinen echten Namen an, damit deine Stimme bei der EU-Kommission zählt.
+    <div class="col-lg-8 col-lg-offset-2">
+      <div class="jumbotron">
+        <h1>Youtube retten!</h1>
+        <p>
+          Europa sucht ein neues Urheberrecht!<br/>
+          Deine Meinung wird in die Reform miteinfließen.
         </p>
       </div>
-      <input type="hidden" name="typeofrespondent" value="enduser" checked>
     </div>
   </div>
-  <div class="row q-1">
-    <div class="col-lg-6 col-lg-offset-3">
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <input type="hidden" name="q-1" id="q-1-0" value="0" checked>
-          <p>
-            Bitte beschreib in eigenen Worten, auf welche Inhalte (z.B. auf Youtube) du in Deutschland nicht zugreifen kannst:
-          </p>
-          <textarea class="form-control" id="q-1-0-text" placeholder="">In Deutschland kann ich nicht...</textarea>
+  <form id="consultation-form" method="post" action="{{ site.document_service }}?redirect=http%3a//{{ site.domain }}/{{ page.language }}/thanks.html">
+    <input type="hidden" name="language" value="{{ page.language }}"/>
+    <input type="hidden" name="typeofrespondent" value="enduser" checked>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <div class="q-1">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h3>
+                Beschreibe, auf was du alles nicht zugreifen kannst.
+              </h3>
+              <p>z.B. manche YouTube-Videos, Grooveshark, Netflix...</p>
+              <input type="hidden" name="q-1" id="q-1-0" value="0" checked>
+              <textarea class="form-control" id="q-1-0-text" placeholder="">In Deutschland kann ich nicht...</textarea>
+            </div>
+          </div>
         </div>
+
+        <div class="form-group">
+          <label for="name">Dein voller Name</label>
+          <input type="text" class="form-control save" name="name" id="name" placeholder="Dein ganzer Name">
+          <p class="help-block">
+            Bitte gib deinen Namen an, damit deine Stimme bei der EU zählt.
+          </p>
+        </div>
+        <div class="form-group">
+          <label for="email">Deine E-Mail-Adresse</label>
+          <input type="email" class="form-control save" name="email" placeholder="deine@email.de">
+          <p class="help-block">
+            Deine E-Mail-Adresse und alle anderen Angaben werden nur dazu genutzt, dir das fertige Dokument zu schicken.
+          </p>
+        </div>
+        <div class="checkbox">
+          <label>
+            {% if site.data.persona.translations.storelabel[page.language] %}{{ site.data.persona.translations.storelabel[page.language] }}{% else %}{{ site.data.persona.translations.storelabel.en }}{% endif %}
+            <input type="checkbox" name="store" value="yes">
+          </label>
+        </div>
+        <button type="submit" class="submit-form nav-btn btn btn-success btn-lg">
+          &rarr; Abschicken
+        </button>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-6 col-lg-offset-3">
-      <button type="submit" class="download-document nav-btn btn btn-success">
-        &rarr; Abschicken
-      </button>
-    </div>
-  </div>
+  </form>
 
+  {% include footer.html %}
+<!-- Modal -->
+  <div class="modal fade" id="download-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel">{% if site.data.persona.translations.almostdone[page.language] %}{{ site.data.persona.translations.almostdone[page.language] }}{% else %}{{ site.data.persona.translations.almostdone.en }}{% endif %}</h4>
+        </div>
+        <div class="modal-body">
+          <p class="lead hide email-sent final-cases">
+            {% if site.data.persona.translations.sentbyemail[page.language] %}{{ site.data.persona.translations.sentbyemail[page.language] }}{% else %}{{ site.data.persona.translations.sentbyemail.en }}{% endif %}
+          </p>
+
+          <p class="lead hide download-only final-cases">
+            {% if site.data.persona.translations.downloadonly[page.language] %}{{ site.data.persona.translations.downloadonly[page.language] }}{% else %}{{ site.data.persona.translations.downloadonly.en }}{% endif %}
+          </p>
+
+          <div class="center-block text-center">
+            <div class="row">
+              <div class="col-xs-8 col-xs-offset-2">
+                <input type="text" class="form-control" value="markt-copyright-consultation@ec.europa.eu"/>
+              </div>
+            </div>
+          </div>
+
+          <hr/>
+
+          <small>
+            {% if site.data.persona.translations.privacy[page.language] %}{{ site.data.persona.translations.privacy[page.language] }}{% else %}{{ site.data.persona.translations.privacy.en }}{% endif %}
+          </small>
+
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 </div>
-
-{% include de/download_modal.html %}
