@@ -25,7 +25,7 @@
 title:
   en: Public Consultation on the review of the EU copyright rules
   de: Öffentliche Befragung zur Reform des Urheberrechts in der EU
-  fr: Consultation publique sur la réforme du copyright dans l'UE
+  fr: Consultation publique sur la réforme du copyright dans l’UE
   pl: Publiczne Konsultacje zmian w prawie autorskim UE
 readmore:
   en: "Read more..."
@@ -38,7 +38,7 @@ gotosimplerguide:
 emailSubject:
   en: 'Public Consultation on the review of the EU copyright rules'
   de: 'Öffentliche Konsultation zur Überprüfung der Regeln zum EU-Urheberrecht'
-  fr: 'Consultation publique sur la réforme du droit d'auteur dans l'UE'
+  fr: 'Consultation publique sur la réforme du droit d’auteur dans l’UE'
   pl: 'Konsultacje społeczne dotyczące przeglądu zasad prawa autorskiego Unii Europejskiej'
 # Keep trailing spaces in the following!
 emailBody:
@@ -87,7 +87,7 @@ emailBody:
   fr: |
     {{ name }},
     
-    Veuillez faire suivre l'e-mail suivant à markt-copyright-consultation@ec.europa.eu .
+    Veuillez faire suivre l’e-mail suivant à markt-copyright-consultation@ec.europa.eu .
     
     Merci pour votre soutien!
     
@@ -97,8 +97,8 @@ emailBody:
 
     Madame, Monsieur
     
-    Veuillez trouver en pièce-jointe ma réponse à la consultation de l'UE sur le droit d'auteur.
-    Vous serait-il possible de m'en confirmer la bonne réception?
+    Veuillez trouver en pièce-jointe ma réponse à la consultation de l’UE sur le droit d’auteur.
+    Vous serait-il possible de m’en confirmer la bonne réception?
     
     Merci par avance.
     Cordialement
