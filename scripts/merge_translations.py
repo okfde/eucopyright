@@ -26,15 +26,17 @@ def questions(old, new, overwrite_language):
                     oo['details'][overwrite_language] = on['details'][overwrite_language]
 
 
-def main(mode, base_file, new_file, overwrite_language):
+def main(mode, base_file, new_file=None, overwrite_language=None):
     old = yaml.load(file(base_file).read())
-    new = yaml.load(file(new_file).read())
 
-    assert len(overwrite_language) == 2
-    if mode == 'persona':
-        persona(old, new, overwrite_language)
-    elif mode == 'questions':
-        questions(old, new, overwrite_language)
+    if new_file is not None and overwrite_language is not None:
+        new = yaml.load(file(new_file).read())
+
+        assert len(overwrite_language) == 2
+        if mode == 'persona':
+            persona(old, new, overwrite_language)
+        elif mode == 'questions':
+            questions(old, new, overwrite_language)
 
     sys.stdout.write(yaml.safe_dump(old, allow_unicode=True, default_flow_style=False, encoding='utf-8', width=10000))
 
