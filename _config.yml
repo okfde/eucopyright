@@ -1,4 +1,4 @@
-baseurl: ""
+baseurl: "/eucopyright"
 beta: false
 domain: "youcan.fixcopyright.eu"
 exclude: [node_modules]
